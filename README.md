@@ -23,6 +23,7 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 | **Extraplus (Español)** | 🟡 | Traducción en progreso. |
 | **Kiss Button (Español)** | 🟢 | Submod terminado y listo para su uso. |
 
+> Los submods no son míos; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
 ---
 
 ## 🧪 Tecnologías & Herramientas
@@ -44,5 +45,8 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 https://drive.google.com/drive/folders/1QnbpOBEQZEOwVVfq6bTOEGQNP-3Efl3f?usp=drive_link
 
 
---
-> Los submods no son míos; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚
+---
+## ¿Alguna traduccion te dio un error o alguna sugerencia para nuevos submods? 💡💾
+ 
+ ¡Ponte en contacto conmigo! trabajare en un formulario para que puedas enviar sugerencias, errores (tanto en el codigo como en la ortografia) y posibles futuros submods. Todavia esta en desarrollo este apartado asi que tengan paciencia 
+
