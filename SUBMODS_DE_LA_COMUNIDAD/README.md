@@ -1,7 +1,7 @@
 <p align="center"><img src="https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/iconos/fc54442e793ecd3a6282d36542dc729a.gif?raw=true" width="900"></p>
 
 
-<h1>**APARTADO TODAVIA NO TERMINADO (es que hay peresa xd)**</h1>
+<h1>APARTADO TODAVIA NO TERMINADO (es que hay peresa xd)</h1>
 
 ## ¡Oh! ¡Hola! 👋
 Si te preguntas para que es este apartado es para submods que **no he traducido yo**
