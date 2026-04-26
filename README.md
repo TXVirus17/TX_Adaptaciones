@@ -39,7 +39,8 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 
 - Dentro del apartado de **Releases**
 
-- Mi carpeta de Drive (se estaraa actualizando cada que un submod este listo)
+- Mi carpeta de Drive (se estara actualizando cada que un submod este listo)
+
 https://drive.google.com/drive/folders/1QnbpOBEQZEOwVVfq6bTOEGQNP-3Efl3f?usp=drive_link
 
 
