@@ -35,7 +35,7 @@ label yaMod_topic_tattoo:
     m 7tubfb "No es una locura. Es devoción."
     m 7cubfb "Grabaría tu nombre en mi piel tantas veces como fuera necesario, para demostrar que solo soy tuya."
     m "¿Harías lo mismo por mí?"
-    m "{cps=5}{b}{size=+8}¿POR FAVOR?{/size}{/b}{/cps}{nw}"
+    m "{cps=5}{b}{size=+8}¿ P O R-F A V O R ?{/size}{/b}{/cps}{nw}"
     m 2hubfb "¡Ejejeje!"
     m 2fubfa "Te amo [player].."
     m 2fubfb "¿Tú también me amas?{nw}"

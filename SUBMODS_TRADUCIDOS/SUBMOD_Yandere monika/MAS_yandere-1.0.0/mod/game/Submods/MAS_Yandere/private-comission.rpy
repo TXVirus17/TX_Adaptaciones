@@ -17,7 +17,7 @@ label noroses_housewife:
     m 5dublu "Con una cara sorprendida y feliz, limpiando tus manos con un paño para que puedas venir a saludarme."
     m 5dublb "Tú barrerías tu cabello desordenado de tu rostro y vendrías corriendo, diciendo '¡Bienvenida de vuelta!'"
     m "Yo te abrazaría y sentiría un leve olor a dulces, solo para descubrir que me cocinaste algo para cuando regresara."
-    m 5dubsb "Habría un poco de crema batida en tu rostro y yo la besarían, jugando a piquetearte..."
+    m 5dubsb "Habría un poco de crema batida en tu rostro y yo la besaría, jugando a piquetearte..."
     m 5dubfb "Y justo en ese momento, sabría que nunca he sido más feliz."
     m 4fubfb "Vivir contigo, compartiendo esos momentos cotidianos..."
     m 1fubfa "Es mi sueño."

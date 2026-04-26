@@ -4,10 +4,11 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_superpsycholove",
-            category=[mas_songs.TYPE_SHORT],
+            category=["Yandere"],
             prompt="Super Psycho Love",
             aff_range=(mas_aff.NORMAL, None),
-            random=True
+            random=True,
+            pool=True
         ),
         code="SNG"
     )
@@ -35,10 +36,11 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_thehorrorofourlove",
-            category=[mas_songs.TYPE_SHORT],
+            category=["Yandere"],
             prompt="The Horror of Our Love",
             aff_range=(mas_aff.NORMAL, None),
-            random=True
+            random=True,
+            pool=True
         ),
         code="SNG"
     )
@@ -76,10 +78,11 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_smokeandmirrors",
-            category=[mas_songs.TYPE_SHORT],
+            category=["Yandere"],
             prompt="Smoke and Mirrors",
             aff_range=(mas_aff.NORMAL, None),
-            random=True
+            random=True,
+            pool=True
         ),
         code="SNG"
     )
@@ -103,10 +106,11 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_youremine",
-            category=[mas_songs.TYPE_SHORT],
+            category=["Yandere"],
             prompt="You're Mine",
             aff_range=(mas_aff.NORMAL, None),
-            random=True
+            random=True,
+            pool=True
         ),
         code="SNG"
     )
@@ -135,10 +139,11 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_youbelongtome",
-            category=[mas_songs.TYPE_SHORT],
+            category=["Yandere"],
             prompt="You Belong to Me",
             aff_range=(mas_aff.NORMAL, None),
-            random=True
+            random=True,
+            pool=True
         ),
         code="SNG"
     )
@@ -170,10 +175,11 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_themusicofthenight",
-            category=[mas_songs.TYPE_SHORT],
+            category=["Yandere"],
             prompt="The Music Of The Night",
             aff_range=(mas_aff.NORMAL, None),
-            random=True
+            random=True,
+            pool=True
         ),
         code="SNG"
     )
@@ -183,7 +189,7 @@ label yaMod_song_themusicofthenight:
     m "{i}~Leave all thoughts of the life you knew before~                 \n{size=-5}(Abandona todo pensamiento de la vida que conocías antes...)      {/size}{/i}"
     m "{i}~Let your soul take you where you long to be~                    \n{size=-5}(Deja que tu alma te lleve a donde anhelas estar...)      {/size}{/i}"
     m "{i}~Only then can you belong to me~                                 \n{size=-5}(Solo entonces podrás pertenecerme...)      {/size}{/i}"
-    m "{i}~Floating, falling, sweet intoxication~                          \n{size=-5}(Flotando, cayendo, dulce intoxicación...))      {/size}{/i}"
+    m "{i}~Floating, falling, sweet intoxication~                          \n{size=-5}(Flotando, cayendo, dulce intoxicación...)      {/size}{/i}"
     m 2tub "{i}~Touch me, trust me, savour each sensation~                 \n{size=-5}(Tócame, confía en mí, saborea cada sensación...)      {/size}{/i}"
     m "{i}~Let the dream begin, let your darker side give in~              \n{size=-5}(Deja que el sueño comience, deja que tu lado oscuro se rinda...)      {/size}{/i}"
     m "{i}~To the power of the music that I write~                         \n{size=-5}(Al poder de la música que escribo...)      {/size}{/i}"
