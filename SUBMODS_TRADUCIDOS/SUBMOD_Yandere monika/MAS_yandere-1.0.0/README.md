@@ -50,7 +50,7 @@ Este trabajo es una **obra derivada autorizada para fines de traducción**. No s
 
 **Dialogos Especiales:** Listo ✅
 
-**Pruebas en diapositivos:** En estado de pruebas (Prueba 3 en ejecucion)
+**Pruebas en dispositivos:** En estado de pruebas (Prueba 3 en ejecucion)
 
 
 

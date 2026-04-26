@@ -19,7 +19,7 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 ## 🚀 Proyectos Actuales
 | Proyecto | Estado | Descripción |
 | :--- | :---: | :--- |
-| **MAS_yandere (Español)** | 🟡 | En pruebas. |
+| **MAS_yandere (Español)** | 🟡 | Casi listo :p. |
 | **Extraplus (Español)** | 🟡 | Traducción en progreso. |
 | **Kiss Button (Español)** | 🟢 | Submod terminado y listo para su uso. |
 
@@ -34,7 +34,14 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 
 ---
 
-## 📫 Contacto
-- Puedes encontrar mis traducciones en la sección de **Repositories** o descargarlas directamente en el apartado de **Releases**, tambien se habilitara un apartado de **Drive** para facilitar la descarga de los submods.
+##  📥Descargas
+-Mis traducciones las puedes encontrar en los siguientes lugares:
 
-*"Hacer que los demás lleguen a la cima sin importar lo que me pase."* 💚
+- Dentro del apartado de **Releases**
+
+- Mi carpeta de Drive (se estaraa actualizando cada que un submod este listo)
+https://drive.google.com/drive/folders/1QnbpOBEQZEOwVVfq6bTOEGQNP-3Efl3f?usp=drive_link
+
+
+--
+> Los submods no son míos; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚
