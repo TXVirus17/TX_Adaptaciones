@@ -26,6 +26,7 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 > Los submods no son míos; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
 ---
 
+
 ## 🧪 Tecnologías & Herramientas
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
