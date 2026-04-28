@@ -412,7 +412,7 @@ label monika_no_food:
         python:
             monika_chr.remove_acs(extraplus_acs_waffles)
             monika_chr.wear_acs(extraplus_acs_remptyplate)
-        m 1hua "Ay, parece qu terminé mis waffles."
+        m 1hua "Ay, parece que terminé mis waffles."
         m 1sua "Estaban muy deliciosos~"
         m "Iré por el postre. ¡Espérame aqui!"
         $ monika_chr.remove_acs(extraplus_acs_remptyplate)

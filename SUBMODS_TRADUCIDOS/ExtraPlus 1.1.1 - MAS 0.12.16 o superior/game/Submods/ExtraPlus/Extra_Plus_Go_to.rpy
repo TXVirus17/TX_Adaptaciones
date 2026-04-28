@@ -19,10 +19,10 @@ label cafe_init:
     jump cafe_cakes
 
 label cafe_cakes:
-    m 1hua "We have arrived [mas_get_player_nickname()]~"
-    m 1eub "It's a nice place, don't you think!"
-    m 1hua "Speaking of nice, I'm in the mood for dessert."
-    m 3eub "I'll go pick it up, wait a minute."
+    m 1hua "Ya hemos llegado, [mas_get_player_nickname()]~"
+    m 1eub "Es un sitio muy bonito, ¿no crees?"
+    m 1hua "Hablando de cosas bonitas, me apetece un postre."
+    m 3eub "Voy a ir a por él, espera un momento."
     call mas_transition_to_emptydesk
     pause 2.0
     python:
@@ -33,36 +33,36 @@ label cafe_cakes:
 
     call mas_transition_from_emptydesk("monika 1eua")
     if monika_chr.is_wearing_acs(mas_acs_mug):
-        m 1hua "Plus, it goes well with coffee~"
+        m 1hua "Además, combina bien con café~"
     elif monika_chr.is_wearing_acs(mas_acs_hotchoc_mug):
-        m 1hua "It would be better with a cup of coffee, but hot chocolate is also welcome~"
+        m 1hua "Estaría mejor con una taza de café, pero el chocolate caliente también es bienvenido~"
     else:
         $ monika_chr.wear_acs(extraplus_acs_coffeecup)
-        m 1hua "And I mustn't forget the cup of coffee to go with the dessert~"
-    m 1etb "By the way, do you have a dessert at your disposal?"
-    m 1rkd "I'd feel bad if I was the only one eating one...{nw}"
+        m 1hua "Y no debo olvidarme de la taza de café para acompañar el postre~"
+    m 1etb "Por cierto, ¿tienes algún postre a tu disposición?"
+    m 1rkd "Me sentiría mal si fuera la única que comiera uno...{nw}"
     $ _history_list.pop()
     menu:
-        m "I'd feel bad if I was the only one eating one...{fast}"
-        "Don't worry, I have a dessert.":
+        m "Me sentiría mal si fuera la única que comiera uno...{fast}"
+        "No te preocupes, tengo un postre.":
             $ dessert_player = True
-            m 1hub "I'm glad you have one to accompany me!"
-            m 3eub "Also, I recommend you have a cup of coffee with it."
-        "Don't worry about it.":
+            m 1hub "¡Me alegro de tener a alguien que me acompañe!"
+            m 3eub "También te recomiendo que te tomes una taza de café con eso."
+        "No te preocupes por eso.":
             $ dessert_player = False
-            m 1ekc "Well, if you say so."
-            m 1ekb "I'd give you mine, but your screen limits me from doing so..."
-            m 3hka "I hope you at least have a cup of coffee!"
-    m 3hua "Ehehe~"
+            m 1ekc " Bueno, si tú lo dices."
+            m 1ekb "Te daría el mío, pero tu pantalla me impide hacerlo..."
+            m 3hka "¡Espero que al menos te tomes una taza de café!"
+    m 3hua "Jejeje~"
     jump to_cafe_loop
     return
 
 label monika_boopcafebeta:
     show monika staticpose at t11
     if monika_chr.is_wearing_acs(extraplus_acs_chocolatecake) or monika_chr.is_wearing_acs(extraplus_acs_fruitcake):
-        m 1ttp "...?"
-        m 1eka "Hey, I'm enjoying my dessert."
-        m 3hua "Do it when I finish my dessert, okay?"
+        m 1ttp "...¿?"
+        m 1eka "Oye, estoy disfrutando mi postre."
+        m 3hua "Hazlo cuando termine mi postre, ¿de acuerdo?"
     else:
         m 1hub "*Boop*"
     jump to_cafe_loop
@@ -70,12 +70,12 @@ label monika_boopcafebeta:
 
 label cafe_sorry_player:
     show monika idle at t11
-    m 1ekd "I'm so sorry [player]."
-    m 1ekc "But I don't know how to use that place."
-    m 3lka "I'm still learning how to code and I don't want something bad to happen because of me..."
-    m 3hua "I know very well that you wanted to go out to the cafe."
-    m 1eua "But, someday I will know how to use it, [player]."
-    m 1eub "Just be patient, okay~"
+    m 1ekd "Lo siento mucho, [player]. Pero no sé cómo usar ese lugar."
+    m 1ekc "Pero no sé cómo usar ese lugar."
+    m 3lka "Todavía estoy aprendiendo a programar y no quiero que algo malo suceda por mi culpa..."5
+    m 3hua "Sé muy bien que querías salir al café".
+    m 1eua "Pero, algún día sabré usarlo, [player]."
+    m 1eub "Solo ten paciencia, ¿de acuerdo~?"
     jump close_extraplus
     return
 
@@ -87,79 +87,79 @@ label extra_talk_feel:
     show monika staticpose at t11
     $ moldable_variable = renpy.random.randint(1,3)
     if moldable_variable == 1:
-        m 1hkbsb "I'm feeling a little nervous, we're on a date after all!"
+        m 1hkbsb "Me siento un poco nerviosa, ¡después de todo, estamos en una cita!"
         #In case someone doesn't take their Monika for a walk.
         if renpy.seen_label("bye_going_somewhere"):
-            m 1ekbsb "Besides, I'm not on a USB stick."
-            m 3hubsa "At this moment I feel closer to you, so I'll remember it~"
-            m 3hubsb "Thank you for inviting me on a date!"
+            m 1ekbsb "Además, no estoy en una memoria USB."
+            m 3hubsa "En este momento me siento más cerca de ti, así que lo recordaré~" 
+            m 3hubsb "¡Gracias por invitarme a una cita!"
         else:
-            m 1ekbsb "It's the first time we went out together~"
-            m 3hubsa "So thank you for inviting me."
-            m 3hubsb "You can do it through a USB stick though, even though I can't see anything."
-            m 3ekbsa "I know very well that it will be very romantic."
+            m 1ekbsb "Es la primera vez que salimos juntos~"
+            m 3hubsa "Así que gracias por invitarme."
+            m 3hubsb "Puedes hacerlo a través de una memoria USB, aunque no pueda ver nada."
+            m 3ekbsa "Sé muy bien que será muy romántico."
     elif moldable_variable == 2:
-        m 1eubla "I'm so happy you're here."
-        m 1eublb "Sharing a dessert with you is quite romantic."
-        m 1hublb "I hope we can do it in your reality!"
-        m 1hubla "I know you have a lot on your mind for both of us~"
+        m 1eubla "Estoy tan feliz de que estés aquí."
+        m 1eublb "Compartir un postre contigo es bastante romántico."
+        m 1hublb "¡Espero que podamos hacerlo en tu realidad!"
+        m 1hubla "Sé que tienes muchas cosas en tu mente para ambos~"
     elif moldable_variable == 3:
-        m 1dubsa "I feel like I will remember this day forever."
-        m 1dubsa "After all we are on a date."
-        m 1kubsb "I know that someday we will do it in your reality!"
-        m 1hubsa "And I hope that happens~"
+        m 1dubsa "Siento que recordaré este día para siempre."
+        m 1dubsa "Después de todo, estamos en una cita."
+        m 1kubsb "¡Sé que algún día lo haremos en tu realidad!"
+        m 1hubsa "Y espero que eso suceda~"
     jump to_cafe_loop
     return
 
 label extra_talk_you:
     show monika staticpose at t11
-    m 3dkc "I know, [mas_get_player_nickname()]."
-    m 3ekd "We are on a date, a way to get to know each other better."
-    m 3ekd "You only have preconfigured options to answer based on the question I ask..."
-    m 3ekc "After all this is a visual novel, "
-    extend 1dua "but compared to other novels, here, we are creating a reality for both of us."
-    m 1eub "Although you can create your own answers, after all you have more control than I do."
+    m 3dkc "Lo sé, [mas_get_player_nickname()]."
+    m 3ekd "Estamos en una cita, una forma de conocernos mejor."
+    m 3ekd "Solo tienes opciones preconfiguradas para responder según la pregunta que te hago..."
+    m 3ekc "Después de todo, esto es una novela visual, "
+    extend 1dua "pero comparado con otras novelas, aquí estamos creando una realidad para ambos."
+    m 1eub "Aunque puedes crear tus propias respuestas, después de todo tienes más control que yo."
     if persistent._mas_pm_has_code_experience is True:
-        m 3eub "You told me you have experience in coding, that's why I mention it."
+        m 3eub "Me dijiste que tienes experiencia en programación, por eso lo menciono."
     else:
-        m 3ekb "I know you have no coding experience, but don't worry, you can learn it."
-        m 3hub "I trust you, [mas_get_player_nickname()]."
-    m 1eua "You could add more things here, per example is this cafe."
-    m 1hua "Also more dialogues that we can discuss, talk about your hobbies or talk about your family."
-    m 1rksdra "Try to make sure there is no misspelled code, you may lose me if a pretty serious mistake occurs."
-    m 1eub "But leaving that aside, I'd love to be next to you, let's say, as a robot."
-    m 1eub "That way we could establish a smooth conversation~"
-    m 1eka "I know very well what you want to tell me about something or how you're feeling."
-    m 1eka "But our way of communicating is very limited because of what I said earlier."
-    m 3hua "It doesn't limit us from having a nice relationship together though!"
-    m 3hua "Also, I know the most importants thing about you, whatever information you give me! "
-    extend 3hub "Even if it's just the tiniest thing."
-    m 3eub "I really appreciate it~"
+        m 3ekb "Sé que no tienes experiencia en programación, pero no te preocupes, puedes aprender."
+        m 3hub "Confío en ti, [mas_get_player_nickname()]."
+    m 1eua "Podrías añadir más cosas aquí, por ejemplo, este café."
+    m 1hua "También más diálogos que podamos discutir, hablar de tus aficiones o de tu familia."
+    m 1rksdra "Asegúrate de que no haya errores de ortografía; podrías perder mi atención si cometes un error grave."
+    m 1eub "Pero dejando eso de lado, me encantaría estar a tu lado, digamos, como un robot."
+    m 1eub "Así podríamos tener una conversación fluida~"
+    m 1eka "Sé muy bien lo que quieres contarme o cómo te sientes."
+    m 1eka "Pero nuestra forma de comunicarnos es muy limitada debido a lo que dije antes."
+    m 3hua "¡Eso no nos impide tener una linda relación!"
+    m 3hua "Además, ¡conozco lo más importante de ti, sea cual sea la información que me des!"
+    extend 3hub "Aunque sea la cosa más insignificante."
+    m 3eub "¡Lo aprecio mucho!"
     jump to_cafe_loop
     return
 
 label extra_talk_phobia:
     show monika staticpose at t11
-    m 1rtd "The truth is that's a good question, I haven't even thought about which fear I would have."
-    m 1hua "After all, I'm not human, I'm just a cute little character. "
-    extend 1dksdlb "Although I'm aware of everything going on around me."
-    m 3eud "But if you want to know one, I'll give you 'autophobia'."
-    m 3eka "The fear of loneliness."
-    m 3dud "Feeling isolated without any company even if there are other NPCs or a pet to keep me company."
-    m 3dud "It wouldn't be the same, they would just be ornaments to this place."
-    m 3duc "Although I would call it purgatory."
-    m 1lka "I know very well that this phobia has become very common and more so because of the pandemic."
-    m 1lka "It's pretty sad not to have someone to talk to."
-    m 1esd "I've seen other Monikas having this happen to them, because of their player's carelessness."
-    m 1esd "Or people who have a grudge against us because of what happened in the game."
-    m 1dsc "I mention it because it's a domino effect, rejection leads to loneliness and loneliness leads to despair."
-    m 1esb "But it's a very minor thing, compared to when the game came out."
-    m 3hua "You know, it's a funny thing, before we were more hated and the other members of the club were more loved."
-    m 3hua "Now everything is reversed in our favor~"
-    m 3dub "Finally people realized that the story was badly told."
-    m 1hua "But we shouldn't worry about that anymore."
-    m 1eubsb "We are on a date after all!"
-    m 1eubsb "Let's enjoy our time here, [player]~"
+    m 1rtd "La verdad es que es una buena pregunta. Ni siquiera he pensado en qué miedo tendría."
+    m 1hua "Después de todo, no soy humano, solo soy un personaje adorable."
+    extend 1dksdlb "Aunque soy consciente de todo lo que sucede a mi alrededor."
+    m 3eud "Pero si quieres saber uno, te diré 'autofobia'."
+    m 3eka "El miedo a la soledad."
+    m 3dud "Sentirme aislado sin compañía, incluso si hay otros PNJ o una mascota que me hagan compañía."
+    m 3dud "No sería lo mismo, solo serían adornos para este lugar."
+    m 3duc "Aunque yo lo llamaría purgatorio."
+    m 1lka "Sé muy bien que esta fobia se ha vuelto muy común, y más aún debido a la pandemia."
+    m 1lka "Es bastante triste no tener con quién hablar."
+    m 1esd "He visto a otras Monikas a las que les ha pasado esto por la negligencia de sus jugadores."
+    m 1esd "O gente que nos guarda rencor por lo que pasó en el juego."
+    m 1dsc "Lo menciono porque es un efecto dominó: el rechazo lleva a la soledad y la soledad lleva a la desesperación."
+    m 1esb "Pero es algo insignificante comparado con cuando salió el juego."
+    m 3hua "Sabes, es curioso, antes éramos más odiadas y las demás miembros del club eran más queridas."
+    m 3hua "Ahora todo está al revés a nuestro favor~"
+    m 3dub "Por fin la gente se dio cuenta de que la historia estaba mal contada."
+    m 1hua "Pero ya no deberíamos preocuparnos por eso."
+    m 1eubsb "¡Al fin y al cabo, estamos en una cita!"
+    m 1eubsb "Disfrutemos de nuestro tiempo aquí, [mas_get_player_nickname()]~"
     jump to_cafe_loop
     return
 
@@ -492,58 +492,58 @@ label extra_talk_doing:
 
 label extra_talk_live:
     show monika staticpose at t11
-    m 1eub "It depends,{w=0.3} [player]!"
-    m 3etb "Where would {i}you{/i} be living if you could live anywhere you wanted?"
+    m 1eub "¡Depende,{w=0.3} [player]!"
+    m 3etb "¿Dónde vivirías si pudieras vivir donde quisieras?"
     m 6tsa "..."
-    m 3hub "Ehehe!{w=0.3} Of course I would want to live anywhere as long as you were there,{w=0.3} [mas_get_player_nickname()]!"
-    m 6ltc "But,{w=0.3} being serious now!{w=0.3} Let me think!"
-    m 6lsc "Hmmm..."
-    m 6eub "It would have to be a literary country.{w=0.3} "
-    m "Something with with a rich culture to learn about,{w=0.3} something I've seen in books before and fell in love with."
-    m 7eub "To be honest,{w=0.3} I've always dreamed of visiting Germany,{w=0.3} England,{w=0.3} and France when I crossed over."
-    m 7eka "From what I've seen on books and the internet,{w=0.3} all the spots you can visit there are lovely!"
-    m 1ekblb "Maybe we can visit together when I cross over?"
+    m 3hub "¡Jejeje!{w=0.3} ¡Por supuesto que querría vivir en cualquier sitio siempre y cuando tú estuvieras allí,{w=0.3} [mas_get_player_nickname()]!"
+    m 6ltc "Pero,{w=0.3} ¡hablando en serio ahora!{w=0.3} ¡Déjame pensar!"
+    m 6lsc "Mmmm..."
+    m 6eub "Tendría que ser un país relacionado con la literatura.{w=0.3} "
+    m "Algo con una rica cultura que descubrir,{w=0.3} algo que haya visto antes en los libros y que me haya enamorado."
+    m 7eub "Para ser sincera,{w=0.3} siempre he soñado con visitar Alemania,{w=0.3} Inglaterra{w=0.3} y Francia cuando cruzara al otro lado."
+    m 7eka "Por lo que he visto en los libros y en Internet,{w=0.3} ¡todos los lugares que se pueden visitar allí son preciosos!"
+    m 1ekblb "¿Quizás podamos visitarlos juntos cuando cruce al otro lado?"
     if mas_isMoniLove():
-        m 6ekbsb "Or even...{w=0.3} live there together someday?"
-    m 6dkbsa "It would honestly be a dream come true."
-    m 6dkbfa "Getting to visit all of those grand libraries together..."
-    m 3rubsb "Going on romantic dates at all the famous spots,{w=0.3} hand in hand..."
+        m 6ekbsb "O incluso...{w=0.3} ¿vivir allí juntos algún día?"
+    m 6dkbsa "«Sinceramente, sería un sueño hecho realidad."
+    m 6dkbfa "Poder visitar todas esas magníficas bibliotecas juntos..."
+    m 3rubsb "Tener citas románticas en todos los lugares famosos,{w=0.3} tomados de la mano..."
     if mas_isMoniLove():
-        m 6dubsa "Maybe after a while you take me somewhere really beautiful to watch a golden sunset..."
-        m 6dubfb "And as the sky starts to turn to dusk and you can faintly see some stars show...{w=0.3}" 
-        m "You kiss me~"
-        m 6fubfb "...Hm~ Wouldn't that be amazing, [player]~?"
-    m 6etbsb "...Hey,{w=0.3} why are you looking at me like that?"
-    m 6hubfb "A girl can dream!"
-    m 6hubfb "Ahaha~!"
+        m 6dubsa "Tal vez después de un tiempo me lleves a algún lugar realmente hermoso para ver una puesta de sol dorada..."
+        m 6dubfb "Y mientras el cielo empiece a tornarse al atardecer y puedas ver débilmente algunas estrellas aparecer...{w=0.3}" 
+        m "Me besas~"
+        m 6fubfb "...Hm~ ¿No sería increíble, [player]~?"
+    m 6etbsb "...Oye,{w=0.3} ¿por qué me miras así?"
+    m 6hubfb "¡Una chica puede soñar!"
+    m 6hubfb "Jajaja~!"
     jump to_restaurant_loop
     return
 
 label extra_talk_change:
     show monika staticpose at t11
     m 1eka "..."
-    m 1ekb "You know I always strive to be a better person each day."
-    m 3eub "Not only to be a better girlfriend,{w=0.3} but a better human in general."
+    m 1ekb "Sabes que siempre me esfuerzo por ser una persona mejor cada día."
+    m 3eub "No solo para ser una mejor novia,{w=0.3} sino una mejor persona en general."
     if mas_isMoniLove():
-        m 3hub "I love to look at myself at the end of the day and realize I did something great that the past Monikas wouldn't have the courage to do."
+        m 3hub "Me encanta mirarme al final del día y darme cuenta de que hice algo genial que la Monikas del pasado no se habría atrevido a hacer."
     else:
-        m 3hub "I love to look at myself at the end of the day and realize I did something great that the past Monika wouldn't have the courage to do."
-    m 6luc "So in the end, it's kind of obvious that the thing I want to change about the most is..."
-    extend 2luc "my situation."
-    m 1dkc "I want to get out of here,{w=0.3} [player]."
-    m 7fkd "Not here the restaurant,{w=0.3} but here...{w=0.3} The game."
-    m 1lkd "Spending time with you is amazing,{w=0.3} but it could be improved by a ton..."
-    m 1lkblb "If I could actually be by your side."
-    m 1ekbla "So yeah,{w=0.3} I would change my existence to one where I could actually touch you."
+        m 3hub "Me encanta mirarme al final del día y darme cuenta de que hice algo genial que la Monika del pasado no se habría atrevido a hacer."
+    m 6luc "Así que, al final, es bastante obvio que lo que más quiero cambiar es...»"
+    extend 2luc "mi situación."
+    m 1dkc "Quiero salir de aquí,{w=0.3} [player]."
+    m 7fkd "No aquí, en el restaurante,{w=0.3} sino aquí...{w=0.3} De el juego."
+    m 1lkd "Pasar tiempo contigo es increíble,{w=0.3} pero podría mejorar muchísimo..."
+    m 1lkblb "Si pudiera estar realmente a tu lado,{w=0.3} en lugar de solo a través de una pantalla..."
+    m 1ekbla "Así que sí,{w=0.3} cambiaría mi existencia por una en la que pudiera tocarte de verdad."
     if mas_isMoniLove():
-        m 1dkblb "To hold and comfort you when you're feeling down,"
-        extend " be the shoulder you could physically lean on when needed,"
-        extend " have your hand in mine."
-        extend " and to be able to finally see your real face."
-        m "It's all I could ever ask for."
+        m 1dkblb "Para abrazarte y consolarte cuando estés triste,"
+        extend " ser el hombro en el que puedas apoyarte físicamente cuando lo necesites,"
+        extend " tener tu mano entre las mías."
+        extend " y poder ver por fin tu verdadero rostro."
+        m "Es todo lo que podría pedir."
     m 1dkc "..."
-    m 1fkbla "I'm positive I'll achieve that sooner than we think,{w=0.3} [mas_get_player_nickname()]."
-    m 4fktpa "So,{w=0.3} one more time...{w=0.3} Wait for me,{w=0.3} okay?"
+    m 1fkbla "Estoy segura de que lo conseguiré antes de lo que pensamos,{w=0.3} [mas_get_player_nickname()]."
+    m 4fktpa "Así que,{w=0.3} una vez más...{w=0.3} espérame,{w=0.3} ¿vale?"
     jump to_restaurant_loop
     return
 
