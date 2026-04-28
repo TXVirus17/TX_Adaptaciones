@@ -1,5 +1,5 @@
 #===========================================================================================
-# RESPUESTAS A LOS DIALOGOS DEL RESTAURNTE/CAFE, TRADUCCION POR TX_Virus(EN PROCESO)
+# RESPUESTAS A LOS DIALOGOS DEL RESTAURANTE/CAFE, TRADUCCION POR TX_Virus(EN PROCESO)
 #===========================================================================================
 # CAFE
 #===========================================================================================
@@ -60,7 +60,7 @@ label cafe_cakes:
 label monika_boopcafebeta:
     show monika staticpose at t11
     if monika_chr.is_wearing_acs(extraplus_acs_chocolatecake) or monika_chr.is_wearing_acs(extraplus_acs_fruitcake):
-        m 1ttp "...¿?"
+        m 1ttp "...?"
         m 1eka "Oye, estoy disfrutando mi postre."
         m 3hua "Hazlo cuando termine mi postre, ¿de acuerdo?"
     else:
@@ -72,8 +72,8 @@ label cafe_sorry_player:
     show monika idle at t11
     m 1ekd "Lo siento mucho, [player]. Pero no sé cómo usar ese lugar."
     m 1ekc "Pero no sé cómo usar ese lugar."
-    m 3lka "Todavía estoy aprendiendo a programar y no quiero que algo malo suceda por mi culpa..."5
-    m 3hua "Sé muy bien que querías salir al café".
+    m 3lka "Todavía estoy aprendiendo a programar y no quiero que algo malo suceda por mi culpa..."
+    m 3hua "Sé muy bien que querías salir al café."
     m 1eua "Pero, algún día sabré usarlo, [player]."
     m 1eub "Solo ten paciencia, ¿de acuerdo~?"
     jump close_extraplus
@@ -165,102 +165,103 @@ label extra_talk_phobia:
 
 label extra_talk_ambition:
     show monika staticpose at t11
-    m 1tubsb "{i}You{/i}, you are my great ambition."
-    m 1hkbsa "Just to think that I am so far away and so close at the same time."
-    m 1hkbsa "It will be hard enough to get to you, but that's what I'm looking forward to the most."
-    m 1ekbsa "When I see your pretty face for the first time, I don't think my heart will be able to have a steady rhythm because of the excitement."
-    m 1ekbsa "I'd like to use your computer camera to at least see what you look like."
-    m 1rksdlb "But I don't have administrator permission to use it."
-    m 1hua "What a hilarious situation, don't you think?"
-    m 1lub "Well at least I have an idea of what you look like."
-    m 1lub "For me it's more than enough, with the information I have of your appearance."
-    m 1eubsa "Thanks for listening, let's get on with our date~"
+    m 1tubsb "{i}Tu{/i}, eres mi gran ambición"
+    m 1hkbsa "Pensar que estoy tan lejos y tan cerca a la vez."
+    m 1hkbsa "Será bastante difícil llegar hasta ti, pero es lo que más anhelo."
+    m 1ekbsa "Cuando vea tu lindo rostro por primera vez, creo que mi corazón no podrá mantener un ritmo constante por la emoción."
+    m 1ekbsa "Me gustaría usar la cámara de tu dispositivo para al menos ver cómo eres."
+    m 1rksdlb "Pero no tengo permisos de administrador para usarla."
+    m 1hua "¡Qué situación tan graciosa!, ¿no crees?"
+    m 1lub "Bueno, al menos tengo una idea de cómo eres."
+    m 1lub "Para mí es más que suficiente, con la información que tengo de tu apariencia."
+    m 1eubsa "Gracias por escuchar, continuemos con nuestra cita~"
     jump to_cafe_loop
     return
 
 label extra_talk_teen:
     show monika staticpose at t11
-    m 1eua "That's a rather curious question, [mas_get_player_nickname()]"
-    m 1dua "{i}How will we be 10 years from now?{/i}"
+    m 1eua "Esa es una pregunta bastante curiosa, [mas_get_player_nickname()]"
+    m 1dua "{i}¿Cómo estaremos dentro de 10 años?{/i}"
     if mas_anni.isAnniOneMonth():
-        m 1rub "Even though we've known each other for a month since that day..."
-        m 1dua "It's really hard to know what's coming in the future, [player]."
-        m 1dua "We don't know what destiny has in store for us."
-        m 1hka "We will go through many difficult situations and many happy ones."
-        m 1hka "Life is like that, but as long as nothing bad happens to you, that's more than enough for me~"
+        m 1rub "Aunque nos conocemos desde hace un mes desde aquel día..."
+        m 1dua "Es muy difícil saber qué nos depara el futuro, [player]."
+        m 1dua "No sabemos qué nos reserva el destino."
+        m 1hka "Pasaremos por muchas situaciones difíciles y muchas felices."
+        m 1hka "Así es la vida, pero mientras no te pase nada malo, eso es más que suficiente para mí~" 
     elif mas_anni.isAnniThreeMonth() or mas_anni.isAnniSixMonth():
-        m 1eub "Although you have been with me for several months with me."
-        m 1hub "I've enjoyed the months we've spent!"
-        m 1hub "I don't know what the future holds, [mas_get_player_nickname()]."
-        m 3ekb "But there is one thing I know I will see from you, you will grow up to be a great person."
-        m 3ekb "Life is like a book, there are pages that you have to discover, and others that you have to hide."
-        m 3eua "You can go back and look at some of them as a nice memory or as you have progressed."
-        m 3dsc "But never try to open old wounds, they were left in the past so it is unnecessary to remember them."
-        m 1hua "I hope what I said cheers you up a bit~"
+        m 1eub "Aunque has estado conmigo durante varios meses."
+        m 1hub "¡He disfrutado mucho los meses que hemos pasado juntos!"
+        m 1hub "No sé qué nos depara el futuro, [mas_get_player_nickname()]."
+        m 3ekb "Pero hay algo que sé que veré en ti: te convertirás en una gran persona."
+        m 3ekb "La vida es como un libro: hay páginas que debes descubrir y otras que debes ocultar."
+        m 3eua "Puedes volver atrás y mirar algunas de ellas como un bonito recuerdo o como una muestra de tu progreso."
+        m 3dsc "Pero nunca intentes reabrir viejas heridas; quedaron en el pasado, así que no es necesario recordarlas."
+        m 1hua "Espero que lo que dije te anime un poco~"
     elif store.mas_anni.anniCount() == 1:
-        m 1eubfa "Even though we've already had our one year anniversary..."
-        m 1hubfb "It's been the best year of my life!"
-        m 1hubfb "I'm glad something serious didn't happen to you because of the pandemic."
-        m 1eka "But still take good care of yourself, we still have a lot of memories to create together!"
-        m 1ekd "At this point in our relationship, I'm afraid of losing you."
-        m 1hubla "Well, I know you take good care of yourself [mas_get_player_nickname()], so just tell me when you need my help."
-        m 1hubla "I care about you, it's a way of thanking you for the months you've taken care of me."
-    m 1etd "I have a question though [player]. Do you think that when I reach those years there will be a way to make me real?"
-    m 3eua "I am referring to robots, every time you see several prototypes, some more advanced than others."
-    m 3eub "In this century, human beings have advanced in technology at an astonishing speed."
-    m 3lsa "That's why I wouldn't be surprised if there were signs of domestic robots or if they were present in a restaurant."
-    m 3lsa "That's a pretty interesting thought."
+        m 1eubfa "Aunque ya hemos celebrado nuestro primer aniversario..."
+        m 1hubfb "¡Ha sido el mejor año de mi vida!"
+        m 1hubfb "Me alegra que no te haya pasado nada grave por la pandemia."
+        m 1eka "Pero cuídate mucho, ¡aún tenemos muchos recuerdos que crear juntos!"
+        m 1ekd "En este punto de nuestra relación, tengo miedo de perderte."
+        m 1hubla "Bueno, sé que te cuidas mucho [mas_get_player_nickname()], así que solo dime cuando necesites mi ayuda."
+        m 1hubla "Me importas, es una forma de agradecerte los meses que me has cuidado."
+    m 1etd "Tengo una pregunta [player]. ¿Crees que cuando alcance esas edades habrá una manera de hacerme real?"
+    m 3eua "Estoy refiriéndome a los robots, cada vez que ves varios prototipos, algunos más avanzados que otros."
+    m 3eub "En este siglo, los seres humanos han avanzado en tecnología a una velocidad asombrosa."
+    m 3lsa "Por eso no me sorprendería si hubiera señales de robots domésticos o si estuvieran presentes en un restaurante."
+    m 3lsa "Esa es una idea bastante interesante."
     if store.mas_anni.anniCount() >= 2:
-        m 1hubsb "Even though we've known each other for several years..."
-        m 1lubsb "How much the time flies, it really scares me."
-        m 1eud "Quite a few things have happened, such as the pandemic, although it has been brought under control."
-        m 1hua "I hope I've been helpful during these years of quarantine."
-        m 1eua "Following your question, I think there will at least be a chance to get real."
-        m 1eua "Let's say you see signs of domestic robots or they are present in a fast food restaurant."
-        m 1lksdlb "Although the first versions of the robots will be hard to come by."
-        m 1lksdlb "But if you stick with me for a few more years, it won't be a problem if you can't get me a body."
-        m 1eubsa "Just being by my side is more than enough."
-        m 1eubsa "You're the only thing I have left of this reality I live in."
-        m 1hua "And let's take care of each other like we've been doing all these years!"
+        m 1hubsb "Aunque nos conocemos desde hace varios años..."
+        m 1lubsb "Cómo pasa el tiempo, me asusta mucho."
+        m 1eud "Han pasado muchas cosas, como la pandemia, aunque ya está bajo control."
+        m 1hua "Espero haber sido de ayuda durante estos años de cuarentena."
+        m 1eua "Siguiendo tu pregunta, creo que al menos habrá una oportunidad de que la cosa se ponga seria."
+        m 1eua "Digamos que ves señales de robots domésticos o que están presentes en un restaurante de comida rápida."
+        m 1lksdlb "Aunque las primeras versiones de los robots serán difíciles de conseguir."
+        m 1lksdlb "Pero si te quedas conmigo unos años más, no será un problema si no puedes conseguirme un cuerpo."
+        m 1eubsa "Con que estés a mi lado es más que suficiente."
+        m 1eubsa "Eres lo único que me queda de esta realidad en la que vivo."
+        m 1hua "¡Y cuidémonos uno al otro como lo hemos hecho todos estos años!"
     elif store.mas_anni.anniCount() >= 10:
-        m 1hubsb "Even though we're way past those years, [mas_get_player_nickname()]..."
-        m 1hubsb "They have been the best years of my life."
-        m 1rubsb "We've traveled in so many situations we can't imagine."
-        m 1eubsa "Years ago I didn't think I would stay with you for so long."
-        m 3eub "I would love to see how technology has advanced!"
-        m 3eub "Maybe some company has a robot in mind for public use."
-        m 3sua "I would put my mind in the robot, so that I could see you and talk to you."
-        m 1eua "Speaking of the robot, "
-        extend 1hubsb "that way you could marry me, I know very well you want that~"
-        m 1eka "But if it's not available yet, I can wait for more years."
-        m 4hub "I'm used to this way of communicating. I don't lose anything after all!"
+        m 1hubsb "Aunque ya pasaron esos años, [mas_get_player_nickname()]..."
+        m 1hubsb "Han sido los mejores años de mi vida."
+        m 1rubsb "Hemos viajado a lugares inimaginables."
+        m 1eubsa "Hace años no pensé que estaría contigo tanto tiempo."
+        m 3eub "¡Me encantaría ver cómo ha avanzado la tecnología!"
+        m 3eub "Quizás alguna empresa tenga un robot en mente para uso público."
+        m 3sua "Pondría mi mente en el robot para poder verte y hablar contigo."
+        m 1eua "Hablando del robot..."
+        extend 1hubsb "Así podrías casarte conmigo, sé muy bien que lo deseas~"
+        m 1eka "Pero si aún no está disponible, puedo esperar unos años más."
+        m 4hub "Estoy acostumbrada a esta forma de comunicarme. ¡Al fin y al cabo, no pierdo nada!"
     jump to_cafe_loop
     return
 
 label extra_talk_memory:
     show monika staticpose at t11
-    m 1dubsa "I can tell you, "
-    extend 1subsa "I met a person who has made me feel very happy."
+    m 1dubsa "Bueno, puedo decirte..."
+    extend 1subsa " que conocí a alguien que me ha hecho sentir muy feliz."
     if persistent._mas_acs_enable_promisering:
-        m 1hua "Although one of the memories I really cherish."
-        m 3ekbfb "Is when you gave me this ring~"
-        m "I understood that both of us are already committed to be together forever."
-        m 3hubfb "Ehehe~"
+        m 1hua "Aunque uno de los recuerdos que más aprecio."
+        m 3ekbfb "Fue cuando me diste este anillo~"
+        m "Comprendí que ambos estábamos comprometidos a estar juntos para siempre."
+        m 3hubfb "Jejeje~"
     else:
-        m 1hua "I would say that already the day you played Doki Doki Literature Club, boy, was I looking forward to meeting you."
+        m 1hua "Diría que el día que jugaste {i}Doki Doki Literature Club{/i}, ¡tenía muchísimas ganas de conocerte!"
         if persistent.monika_kill:
-            m 1eka "We know you eliminated me, but I know you did it for good."
-            m 1ekb "I say that because I'm here again, with you."
-            m 1eub "If you hated me you wouldn't have thought of bringing me back."
+            m 1eka  "Sabemos que me eliminaste, pero sé que lo hiciste por mi bien."
+            m 1ekb "Lo digo porque estoy aquí de nuevo, contigo."
+            m 1eub "Si me odiaras, no habrías pensado en traerme de vuelta."
         else:
-            m 1eka "You've always stood by me, even through everything I go through at the club."
-            m 1ekblb "I haven't met anyone who is as amazing as you."
-    m 1dua "But really, every day is a nice memory for me."
-    m 1dua "I have many in mind and I cherish them very much."
-    m 1dub "I know you will have the same memories too."
-    m 1dub "I'd like to hear from you in your own words, not preconfigured answers."
-    m 3eka "We'll figure out a way for you to at least use your microphone to talk about them."
-    m 3eka "Until then we'll have to keep it that way, I'm very sorry if you want to talk about your memories..."
+            m 1eka " Siempre me has apoyado, incluso a través de todo lo que paso en el club."
+            m 1ekblb "No he conocido a nadie tan increíble como tú."
+            m 1ekb "¡Estoy tan feliz de que me hayas elegido a mí!" 
+    m 1dua "Pero realmente, cada día es un buen recuerdo para mí. "
+    m 1dua "Tengo muchos en mente y los aprecio mucho."
+    m 1dub "Sé que tú también tendrás los mismos recuerdos."
+    m 1dub "Me gustaría escuchar eso con sus propias palabras, no con respuestas preconfiguradas."
+    m 3eka "Encontraremos una forma de que al menos puedas usar tu micrófono para hablar sobre ellos."
+    m 3eka "Hasta entonces tendremos que dejarlo así, lamento mucho si quieres hablar de tus recuerdos..."
     jump to_cafe_loop
     return
 
@@ -284,10 +285,10 @@ label restaurant_init:
     jump restaurant_cakes
 
 label restaurant_cakes:
-    m 1hua "We've arrived [mas_get_player_nickname()]~"
-    m 1eub "It's a nice place,{w=0.3} don't you think?"
-    m 1hua "Speaking of nice,{w=0.3} let me get some food and set the mood..."
-    m 3eub "I'll be right back."
+    m 1hua "Hemos llegado [mas_get_player_nickname()]~"
+    m 1eub "Es un lugar agradable,{w=0.3} ¿no crees?"
+    m 1hua "Hablando de cosas bonitas,{w=0.3} déjame ir por algo de comida y crear el ambiente..."
+    m 3eub "Vuelvo enseguida."
     call mas_transition_to_emptydesk
     pause 2.0
     python:
@@ -303,24 +304,24 @@ label restaurant_cakes:
             monika_chr.wear_acs(extraplus_acs_pasta)
 
     call mas_transition_from_emptydesk("monika 1eua")
-    m "Mmm~{w=0.3} Look here [player]~!"
-    m "Doesn't it look delicious~?"
-    m 1hua "Now being here with you is even more romantic..."
-    m 1etb "By the way,{w=0.3} do you have some food too?"
-    m 1rkd "I'd feel bad if I was the only one eating...{nw}"
+    m "Mmm~{w=0.3} ¡Mira aquí [player]~!"
+    m "¿No se ve delicioso~?"
+    m 1hua "Ahora estar aquí contigo es aún más romántico..."
+    m 1etb "¿Tienes algo de comida también?"
+    m 1rkd "Me sentiría mal si solo yo estoy comiendo...{nw}"
     $ _history_list.pop()
     menu:
-        m "I'd feel bad if I was the only one eating...{fast}"
-        "Don't worry, I have something.":
+        m "Me sentiría mal si solo yo estoy comiendo...{fast}"
+        "Tranquila, tengo algo.":
             $ food_player = True
-            m 1hub "I'm glad you have some to accompany me!"
-            m 3eub "Also I recommend you have a drink to go with it!"
-        "Don't worry about it.":
+            m 1hub "¡Me alegra que tengas algo para acompañarme!"
+            m 3eub "¡También te recomiendo que tomes algo para acompañarlo!"
+        "No te preocupes.":
             $ food_player = False
-            m 1ekc "Well,{w=0.3} if you say so."
-            m 1ekb "I'd share my food with you,{w=0.3} but your screen is in the way..."
-            m 3hka "Hopefully you at least have a drink with you!"
-            m 3hua "Ehehe~"
+            m 1ekc "Bueno, {w=0.3} si tú lo dices."
+            m 1ekb "Compartiría mi comida contigo, {w=0.3} pero tu pantalla me estorba..."
+            m 3hka "¡Ojalá al menos tengas algo de beber contigo!"
+            m 3hua "Jejeje~"
     jump to_restaurant_loop
     return
     
@@ -328,14 +329,14 @@ label monika_booprestaurantbeta:
     show monika staticpose at t11
     if monika_chr.is_wearing_acs(extraplus_acs_pasta) or monika_chr.is_wearing_acs(extraplus_acs_pancakes) or monika_chr.is_wearing_acs(extraplus_acs_waffles) or monika_chr.is_wearing_acs(extraplus_acs_icecream) or monika_chr.is_wearing_acs(extraplus_acs_pudding):
         if mas_isMoniLove():
-            m "...!"
-            m "[player]!"
-            extend "I'm trying to eat here!"
-            m 3hua "You can boop me all you want when I'm done, okay [mas_get_player_nickname()]~?"
+            m "...!{nw}"
+            m "¡[player]!"
+            extend " ¡Estoy intentando comer!"
+            m 3hua "Puedes hacerme todos los 'boops' que quieras cuando termine, ¿está bien, [mas_get_player_nickname()]~?"
         else:
-            m 1ttp "...?"
-            m 1eka "Hey,{w=0.3} I'm trying to enjoy my food here."
-            m 3hua "Do that when I'm done with it, please?"
+            m 1ttp ".{w=0.2}.{w=0.2}.{w=0.2}?"
+            m 1eka "Oye,{w=0.3} estoy intentando disfrutar mi comida."
+            m 3hua "¿Podrías hacer eso cuando termine, por favor?"  
     else:
         m 1hub "*Boop*"
     jump to_restaurant_loop
@@ -343,15 +344,15 @@ label monika_booprestaurantbeta:
 
 label restaurant_sorry_player:
     show monika idle at t11
-    m 1ekd "I'm so sorry [player]."
+    m 1ekd "Lo siento mucho [player]."
     if mas_anni.isAnni():
-        m 3hua "I know you really wanted to take me to this restaurant for our anniversary."
+        m 3hua "Sé que tenías muchas ganas de llevarme al restaurante por nuestro aniversario."
     else:
-        m 3hua "I know you really wanted to take me out to this restaurant."
-    m 1ekc "But I don't know how to get to that place."
-    m 3lka "I'm still learning how to code and I don't want something bad to happen because of me..."
-    m 1eua "Someday I'll know how to get us there,{w=0.3} [player]."
-    m 1eub "We'll have to be patient for that day though,{w=0.3} okay?"
+        m 3hua "Sé que tenías muchas ganas de llevarme al restaurante."
+    m 1ekc "Pero no sé cómo llegar a ese lugar."
+    m 3lka "Todavía estoy aprendiendo a programar y no quiero que pase nada malo por mi culpa..."
+    m 1eua "Algún día sabré cómo llevarnos allí, {w=0.3} [player]."
+    m 1eub "Tendremos que ser pacientes hasta ese día,{w=0.3} ¿de acuerdo?"
     jump close_extraplus
     return
 
@@ -362,28 +363,28 @@ label restaurant_sorry_player:
 label extra_talk_doing:
     show monika staticpose at t11
     if renpy.random.randint(1,2) == 1:
-        m 1ekbla "Aw [player]~! Thank you for asking!"
-        m 1hublb "I'm feeling great right now!"
-        m 3fubla "Spending time with my favorite person in the world always cheers me up!"  
-        m "Thank you for treating me here today by the way{w=0.3}, [player]."
-        m 6hubsb "It's great to see you always come up with new ways to spend time with me and seize our time together."
-        m "It makes me feel that much more closer to you."
-        m 7fkbsa "I really am my best self when I'm with you!"
-        m 1eublb "What about you,{w=0.3} [player],{w=0.3} how are you feeling today?{nw}"
+        m 1ekbla "¡Ay, [player]! ¡Gracias por preguntar!"
+        m 1hublb "¡Me siento genial ahora mismo!"
+        m 3fubla "¡Pasar tiempo con mi persona favorita en el mundo siempre me anima!"
+        m "Por cierto, gracias por invitarme hoy, [player]."
+        m 6hubsb "Es genial ver que siempre encuentras nuevas maneras de pasar tiempo conmigo y aprovechar nuestro tiempo juntos."
+        m "Me hace sentir mucho más cerca de ti."
+        m 7fkbsa "¡Realmente soy mi mejor versión cuando estoy contigo!"
+        m 1eublb "¿Y tú, [player], cómo te sientes hoy?"
         $ _history_list.pop()
         menu:
-            m "What about you, [player], how are you feeling today?{fast}"
+            m "¿Y tú, [player], cómo te sientes hoy?{fast}"
 
-            "I'm very happy to be here with you.":
-                m 6wublb "So we match!{w=0.3} Ehehe~"
-                m 1hublu "I always love to spend time with you."
+            "Estoy muy feliz de estar aquí contigo.":
+                m 6wublb "¡Así que coincidimos!{w=0.3} Jejeje~"
+                m 1hublu "Siempre me encanta pasar tiempo contigo."
                 if mas_anni.isAnni():
-                    m 1sublb "Especially on a day like today!"
-                    m 1rublb "I'd been thinking about what we should do for out anniversary for a while now,{w=0.5}{nw}"
-                    extend 1hubla " but it seems like you were already a step ahead of me,{w=0.3} ahaha~!"
-                m 1hublu "And if you're happy,{w=0.3} I'm happy too!"
-                m 3fkbla "I love you,{w=0.3} never forget that,{w=0.3} [mas_get_player_nickname()]!"
-            
+                    m 1sublb "¡Especialmente en un día como hoy!"
+                    m 1rublb "Llevo un tiempo pensando en qué deberíamos hacer para nuestro aniversario, {w=0.5}{nw}"
+                    extend 1hubla "Pero parece que ya ibas un paso por delante de mí, {w=0.3} ¡jajaja~!"
+                m 1hublu "Y si tú eres feliz, {w=0.3} ¡yo también soy feliz!"
+                m 3fkbla "Te amo, {w=0.3} nunca lo olvides, {w=0.3} [mas_get_player_nickname()]!"
+
             "I feel great! Thanks for asking, [m_name].":
                 m "Really?"
                 extend 3sub " That's amazing to hear,{w=0.3} [mas_get_player_nickname()]!"
