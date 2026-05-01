@@ -19,9 +19,10 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 ## 🚀 Proyectos Actuales
 | Proyecto | Estado | Descripción |
 | :--- | :---: | :--- |
-| **MAS_yandere (Español)** | 🟡 | Casi listo :p. |
+| **MAS_yandere (Español)** | 🟢 | Submod Terminado. |
 | **Extraplus (Español)** | 🟡 | Traducción en progreso. |
 | **Kiss Button (Español)** | 🟢 | Submod terminado y listo para su uso. |
+| **Recopilacion Submods DokiDokiDaEs (Español)** | 🔴 | Empezando su Traduccion. |
 
 > Los submods no son míos; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
 ---

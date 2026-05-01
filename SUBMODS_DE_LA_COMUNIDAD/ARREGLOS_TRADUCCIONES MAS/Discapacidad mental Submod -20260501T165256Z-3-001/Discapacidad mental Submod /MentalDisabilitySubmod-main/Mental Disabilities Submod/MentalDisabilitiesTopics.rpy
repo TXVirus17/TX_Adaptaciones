@@ -187,6 +187,7 @@ init 5 python:
         )
     )
 
+#TRADUCIR 0.0
 label mentalmeditation:
     m 3eua "Have you ever heard of meditation, [player]?"
     m 1eub "Meditation is the act of balancing your emotions and staying in touch with your surroundings."
