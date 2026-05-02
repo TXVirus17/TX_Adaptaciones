@@ -3,7 +3,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_idle_movie",
-            prompt="Do you want to watch a movie?",
+            prompt="¿Quieres ver una película?",
             category=['be right back'],
             pool=True,
             unlocked=True
@@ -17,22 +17,23 @@ label monika_idle_movie:
             mas_isMoniHappy(higher=True)
             and random.randint(1,5) == 1
         ):
-            m 1tta "Oh how exciting [player]!"
+            m 1tta "¡Oh, qué emocionante  [player]!"
         else:
 
             m 1eub "I'm looking forward to seeing what you've picked [player]!"
 
-        m 1hua "I wonder what genre you have in mind?"
-        m 3hub "Either way I'm sure it will be fun watching anything with you,{w=0.5}{nw} "
-        extend 3wublb "don't you think?~"
-        m 1eua "See you soon [player]!"
+        m 1hua "¿Qué género tienes en mente?"
+        m 3hub "De cualquier manera, estoy segura de que será divertido ver cualquier cosa contigo,{w=0.5}{nw} "
+        extend 3wublb "¿No crees?~"
+        m 1eua "¡Nos vemos pronto [player]!"
 
     elif mas_isMoniUpset():
-        m 2esc "Ok."
+        m 2esc "De acuerdo."
 
     elif mas_isMoniDis():
-        m 6lkc "Take your time, just..."
-        m 6ekd "Don't forget to come back when you're done... Ok?"
+        m 6lkc "Tómate tu tiempo, solo..."
+        m 6ekd "No olvides volver cuando termines... ¿Esta bien?"
+        m 6lka "De lo contrario."
     else:
 
         m 6ckc "..."
@@ -44,7 +45,7 @@ label monika_idle_movie_callback:
 
     if mas_isMoniNormal(higher=True):
         $ wb_quip = mas_brbs.get_wb_quip()
-        m 1eua "I really enjoyed watching that with you [player]!"
+        m 1eua "¡Me encantó ver eso contigo [player]!"
         m 1eub "[wb_quip]"
     else:
 

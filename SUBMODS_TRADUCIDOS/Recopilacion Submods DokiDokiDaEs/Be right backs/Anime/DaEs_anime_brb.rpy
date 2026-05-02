@@ -3,7 +3,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_idle_anime",
-            prompt="I'm going to go watch some anime",
+            prompt="Voy a ver algo de anime.",
             category=['be right back'],
             pool=True,
             unlocked=True
@@ -17,22 +17,23 @@ label monika_idle_anime:
             mas_isMoniHappy(higher=True)
             and random.randint(1,5) == 1
         ):
-            m 1tta "Mind if I watch with you [player]?"
+            m 1tta "¿Te importa si veo anime contigo [player]?"
         else:
 
-            m 1eub "Oh! You're going to watch some anime?"
+            m 1eub "¡Oh! ¿Vas a ver anime?"
 
-        m 1hua "Hope you enjoy your show!"
-        m 3hub "When I cross over we can watch anime together,{w=0.5}{nw} "
-        extend 3wublb "doesn't that sound romantic?~"
-        m 1eua "See you soon [player]!"
+        m 1hua "¡Espero que disfrutes!"
+        m 3hub "Cuando llegue al otro lado, podemos ver anime juntos,{w=0.5}{nw} "
+        extend 3wublb "¿no te parece romántico?~"
+        m 1eua "¡Nos vemos pronto [player]!"
 
     elif mas_isMoniUpset():
-        m 2esc "Ok."
+        m 2esc "De acuerdo."
 
     elif mas_isMoniDis():
-        m 6lkc "Take your time, just..."
-        m 6ekd "Don't forget to come back when you're done... Ok?"
+        m 6lkc "Tómate tu tiempo, solo..."
+        m 6ekd "No olvides volver cuando termines... ¿De acuerdo?"
+        m 6esc "De lo contrario:"
     else:
 
         m 6ckc "..."
@@ -44,7 +45,7 @@ label monika_idle_anime_callback:
 
     if mas_isMoniNormal(higher=True):
         $ wb_quip = mas_brbs.get_wb_quip()
-        m 1eua "Finished watching for now, [player]?"
+        m 1eua "¿Has terminado de ver por ahora, [player]?"
         m 1eub "[wb_quip]"
     else:
 

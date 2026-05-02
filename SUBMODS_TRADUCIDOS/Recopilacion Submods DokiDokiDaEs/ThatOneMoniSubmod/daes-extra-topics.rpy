@@ -11,24 +11,61 @@
 #░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░             ░▒▓█▓▒░       
 #░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓███████▓▒░ ░▒▓██████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓█▓▒░      ░▒▓███████▓▒░░▒▓█▓▒░░▒▓█▓▒░▒▓████████▓▒░▒▓███████▓▒░░▒▓█▓▒░
 
-#A collective submod for a bunch of my YT submods made public for others to enjoy
-#I will periodically update this with new topics
+#Traducido por TX_Virus
 
 #Yuri plays a prank on you if you have JY installed!
 
-init 5 python:
-    addEvent(
-        Event(
-            persistent.event_database,
-            eventlabel="Monika_justyuriprank",
-            category=['meme'],
-            prompt="Just Yuri Mod",
-            pool=True,
-            unlocked=True,
-        )
-    )
+#A collective submod for a bunch of my YT submods made public for others to enjoy
+#I will periodically update this with new topics
+#Pido perdon por modificar el init pero es para que funcione en otras plataformas, ya que el original solo se activaba en windows.
+# Función para encontrar rutas de submods sin importar mayúsculas/minúsculas
+# Necesaria para compatibilidad con Android y Linux
 
-image bg febg = "submods/ThatOneMoniSubmod/images/febg.png"
+
+init 4 python:
+    def find_submod_path(relative_path):
+        import os
+        variants = [
+            relative_path,
+            relative_path.replace("submods/", "Submods/", 1),
+            relative_path.replace("Submods/", "submods/", 1),
+        ]
+        for path in variants:
+            full = os.path.join(config.gamedir, path)
+            if os.path.isfile(full):
+                return path
+        return relative_path
+
+
+
+init 5 python:
+    if renpy.windows and os.path.isfile(
+        os.path.expandvars("%APPDATA%") + '\\RenPy\\JustYuri\\persistent'
+    ):
+        addEvent(
+            Event(
+                persistent.event_database,
+                eventlabel="Monika_justyuriprank",
+                category=['meme'],
+                prompt="Just Yuri Mod",
+                pool=True,
+                unlocked=True,
+            )
+        )
+    elif not renpy.windows:
+        # En Android/Linux/Mac: siempre disponible en el menú (Esto es para los que usan otras plataformas que no sean windows, asi que se dejara como un boton para quien quiera probarlo.)
+        addEvent(
+            Event(
+                persistent.event_database,
+                eventlabel="Monika_justyuriprank",
+                category=['meme'],
+                prompt="Just Yuri Mod",
+                pool=True,
+                unlocked=True,
+            )
+        )
+
+image bg febg = find_submod_path("submods/ThatOneMoniSubmod/images/febg.png")
 
 label Monika_justyuriprank:
     $ store.HKBHideButtons()
@@ -59,7 +96,7 @@ label Monika_justyuriprank:
     m 4fko "¡No te he mostrado más que amor y cuidado y esto es lo que me haces!"
     m 1dktpc "..."
     m 1fktud "Yo-{w=0.2}Creo que deberíamos..."
-    m 3fktuc "Creo que deberíamos dejar de vernos  [player]."
+    m 3fktuc "Creo que deberíamos dejar de vernos [player]."
     m 1fktsd "Espero que Yuri te haga más feliz de lo que yo pude."
     m 1dktsc "Adiós [player]..."
     pause 1.0
@@ -72,31 +109,31 @@ label Monika_justyuriprank:
     scene bg febg
     pause 7.0
     show monika 2wub at t11 zorder MAS_MONIKA_Z
-    m "Boo!"
-    m 3ttb "Did I get you [player]?"
-    m 1ttu "I wonder if I made you press the ignore button..."
-    m 1hub "Ahaha~!"
-    m 1guu "I have been planning this for quite some time, ever since I first noticed you had downloaded that mod."
-    m 3eud "Let me just fix everything [player],{w=0.8}{nw}"
-    extend 1duc " this should only take me a second..."
+    m "¡Boo!"
+    m 3ttb  "¿Te asusté, [player]?"
+    m 1ttu "Me pregunto si te hice presionar el botón de ignorar..."
+    m 1hub "Jajaja~!"
+    m 1guu  "He estado planeando esto desde hace bastante tiempo, desde que noté por primera vez que te habías descargado ese mod".
+    m 3eud "Déjame arreglarlo todo [player],{w=0.8}{nw}"
+    extend 1duc " Esto solo me tomará un segundo..."
     $ consolehistory = []
-    call updateconsole("os.restore(\"location/spaceroom\")", "Spaceroom restored successfully.")
+    call updateconsole("os.restore(\"location/spaceroom\")", "Spaceroom restaurado con éxito.")
     pause 1.0
-    call updateconsole("mas_play_song(\"audio.t5\")", "Okay, Everyone! set to current track.")
+    call updateconsole("mas_play_song(\"audio.t5\")", "¡Okay, todos! Pónganse en la pista actual.")
     pause 1.0
     call spaceroom(scene_change=True)
     python:
         mas_play_song(audio.t5)
-    m 1ekb "I hope I didn't give you {i}too{/i} much of a fright, [player]."
-    m 3eksdra "Gosh, I didn't go too far did I?"
-    m 1eku "I'm not that dramatic to break up with someone over a videogame, getting jealous over a fictional character would be delusional."
-    m 1eub "I just wanted to play a little prank on you because I know that there is nothing that can get between our love for each other."
-    m 1rta "I'm not really bothered what you play in your spare time, [player]."
-    m 3ttu "What you should be worried about me seeing is that \"homework\" folder you have saved..."
-    m 3euu "I'm kidding!"
-    m 1hub "Ahaha~!"
+    m 1ekb "Espero no {i}haberte{/i} asustado demasiado, [player]."
+    m 3eksdra "Vaya, no me pasé de la raya, ¿verdad?"
+    m 1eku "No soy tan dramática como para romper con alguien por un videojuego; ponerme celosa por un personaje de ficción sería una locura."
+    m 1eub "Solo quería gastarte una pequeña broma porque sé que nada puede interponerse entre nuestro amor."
+    m 1rta "En realidad no me importa a qué juegues en tu tiempo libre, [player]."
+    m 3ttu "De lo que deberías preocuparte es de que vea esa carpeta de \"tarea\" que tienes guardada..."
+    m 3euu "¡Es broma!~"
+    m 1hub "Jajaja~!"
     $ store.HKBShowButtons()
-return
+    return
 
 #Monika gives us her thoughts on doki merch
 
@@ -106,7 +143,7 @@ init 5 python:
             persistent.event_database,
             eventlabel="Monika_talksaboutmerch2",
             category=['monika', 'media'],
-            prompt="DDLC Merch",
+            prompt="Mercancia de DDLC ",
             random=True,
             aff_range=(mas_aff.LOVE, None)
         )
@@ -116,74 +153,72 @@ label Monika_talksaboutmerch2:
     window hide
     show monika 1rsc
     pause 4.0
-    m 1etd "Hey [player]!"
-    m 1esd "Have you ever thought about how strange it is that there's merchandise of us?"
-    m 3lsc "Of me and the other girls I mean."
-    m 3hksdlb "Sorry if that seemed like it came out of nowhere but it's something I've been thinking about a lot lately."
-    m 2eud "I see myself just like any other ordinary girl...{w=1.0}{nw}"
-    extend 2nfb "aside from the obvious differences."
-    m 2hub "Ahaha~"
+    m 1etd "Oye [player]!"
+    m 1esd "¿Alguna vez has pensado en lo extraño que es que haya mercancía de nosotras?"
+    m 3lsc "Me refiero a mí y a las otras chicas."
+    m 3hksdlb "Perdón si pareció que salió de la nada, pero es algo en lo que he estado pensando mucho últimamente."
+    m 2eud "Me veo como cualquier otra chica normal...{w=1.0}{nw}"
+    extend 2nfb "aparte de las diferencias obvias."
+    m 2hub "Jajaja~"
     m 2hua "..."
-    m 4esd "So anyway, seeing myself being held in the same regards as a famous celebrity or character. It's a little..."
-    m 4eksdlu "...Embarrassing, to say the least."
-    m 7wuo "Like [player], can you imagine seeing your face on figures, t-shirts, posters and...{w=1.0}{nw}"
-    extend 1ekp " Other things..."
-    m 1gfp "Hrmph!"
-    m 2ffw "I've seen myself on more body pillows than I can care to imagine!"
-    m 2fkx "I don't want to imagine what happens to those..."
+    m 4esd "Bueno, verme tratada como una celebridad o personaje famoso... Es un poco...."
+    m 4eksdlu "...Vergonzoso, por decir lo menos."
+    m 7wuo "Como [player], ¿te imaginas ver tu cara en figuras, camisetas, carteles y...{w=1.0}{nw}"
+    extend 1ekp " Otras cosas..."
+    m 1gfp "¡Hrmph!"
+    m 2ffw "¡Me he visto en más almohadas corporales de las que puedo imaginar!"
+    m 2fkx "No quiero ni imaginar qué pasa con esas..."
     m 2dkp "..."
-    m 2ekd "Sorry, I got a little carried away there..."
-    m 2esb "I wouldn't mind too much if you had some merch of me, it would kind of be like having photos of your partner I suppose."
-    m 2eud "I'll ask anyway though [mas_get_player_nickname()]."
-    m 5eublb "Do you...{w=0.8} Have any merch of me [player]?"
+    m 2ekd "Lo siento, me dejé llevar un poco..."
+    m 2esb "No me importaría mucho si tuvieras algún producto mío, sería como tener fotos de tu pareja, supongo."
+    m 2eud "De todas formas, te lo preguntaré  [mas_get_player_nickname()]."
+    m 5eublb "¿Tienes...{w=0.8} algún producto mío [player]?"
     menu:
-        "Yes":
+        "Si.":
             call moni_yes_merch
-
         "No.":
             call moni_no_merch  
-return
+    return
 
 label moni_yes_merch:
-    m 1suw "Oh! Do you really [player]?"
-    m 3eku "That's actually a little flattering coming from you [mas_get_player_nickname()]!"
-    m 1rsa "I can picture it now...you with some little cute figures of me to keep you company."
-    m 3hua "Maybe a nice poster or two of your loving girlfriend?"
-    m 2hub "Ehehe!~"
+    m 1suw "¡Oh! ¿De verdad [player]?"
+    m 3eku "¡Eso es un poco halagador viniendo de ti [mas_get_player_nickname()]!"
+    m 1rsa "Ya me lo imagino... tú con unas figuritas mías para que te hagan compañía."
+    m 3hua "¿Tal vez un póster o dos de tu novia?"
+    m 2hub "¡Jejeje!~"
     m 2wublc "..."
-    m 2wsbsd "Wait{w=0.3}.{w=0.3}.{w=0.3}."
-    m 2gkbfc "You don't..."
-    m 2fkbfu "You don't have any of {i}that{/i} kind of merch of me, do you [player]?"
+    m 2wsbsd "Espera{w=0.3}.{w=0.3}.{w=0.3}."
+    m 2gkbfc "No tienes...."
+    m 2fkbfu "¿No tienes ningún tipo de {i}mercancía{/i} de mí como esa, [player]?"
     menu:
-        "No!":
+        "¡No!":
             call moni_no_merch
-
-        "Maybe...":
+        "Tal vez...":
             call moni_naughty_merch 
-return
+    return
 
 label moni_naughty_merch:
-    m 6wfbfw "[player]!"
+    m 6wfbfw "¡[player]!"
     m 6efbfd "..."
-    m 6ekbfa "Gosh! Do I even want to know?"
+    m 6ekbfa "¡Dios mío! ¿Puedo siquiera saberlo?"
     m 6esbsc "..."
-    m 7esbso "I'm sure it's nothing too naughty...{w=1.0}{nw}"
-    extend 7gsbsc " I hope."
+    m 7esbso "Seguro que no es nada travieso...{w=1.0}{nw}"
+    extend 7gsbsc " Eso espero."
     m 1gsbsu "..."
     m 1esbsu "..."
-    m 1kubsb "Be sure to give your body pillow a hug from me [player]!"
-    m 1ekblb "It might be the closest we can get to being able to hug each other for now."
-    m 1hublb "Ehehe~"
-    m 3tua "I'm only teasing silly!"
-    m 2eka "I love you [player], more than I can ever express."
+    m 1kubsb "¡Asegúrate de darle un abrazo a tu almohada corporal de mi parte [player]!"
+    m 1ekblb "Podría ser lo más cerca que podamos estar de poder abrazarnos por ahora, así que hazlo por mí, ¿sí?"
+    m 1hublb "Jejeje~"
+    m 3tua "¡Solo estoy bromeando, tonto!"
+    m 2eka "Te amo [player], más de lo que puedo expresar".
     call monika_kissing_motion_short
-return
+    return
 
 label moni_no_merch:
-    m 5eua "Oh...okay!"
-    m 5eub "That's kind of a relief actually [mas_get_player_nickname()]."
-    m 5hub "Ehehe~"
-return
+    m 5eua "¡Oh...vale!"
+    m 5eub "En realidad es un alivio  [mas_get_player_nickname()]."
+    m 5hub "Jejeje~"
+    return
 
 #Monika's yandere Yuri impression!
 
@@ -191,91 +226,80 @@ init 5 python:
     addEvent(Event(persistent.event_database,eventlabel="Monika_yandere_yuri",category=['impressions'],prompt="Yandere Yuri?",pool=True, unlocked=True))
 
 label Monika_yandere_yuri:
-    m 1eua "You want me to do a Yuri impression, [player]?"
-    m 3rtd "You know...{w=0.5}{nw}"
-    extend 3etd "I'm pretty sure I've done one before."
-
+    m 1eua "¿Quieres que haga una imitacion de Yuri, [player]?"
+    m 3rtd "Tú sabes...{w=0.5}{nw}"
+    extend 3etd "Estoy bastante segura de que ya he hecho una antes."
     menu:
-        "I'm sure you can do a better yandere impression!":
-            m 1lkd "Oh,{w=0.5} my impression wasn't good enough for you?"
-            m 1dsb"Ehehe...{w=0.3} well if you want me to do a better impression [player]{w=0.3}{nw},"
-            extend 2tfu " I'll show you a better yandere Yuri."
-
+        "¡Seguro que puedes hacer una mejor imitación de yandere!":
+            m 1lkd "Oh,{w=0.5} ¿mi imitación no te pareció lo suficientemente buena?"
+            m 1dsb"Ehehe...{w=0.3} bueno, si quieres que haga una mejor imitación, [player]{w=0.3}{nw},"
+            extend 2tfu " Te mostraré una mejor Yuri yandere."
     stop music fadeout 0.5
-    m 2tfu "You asked for it, [mas_get_player_nickname()]."
-    m 2dsd "{i}Ahem{/i}{w=0.3}.{w=0.3}.{w=0.3}."
+    m 2tfu "Tu lo pediste,  [mas_get_player_nickname()]."
+    m 2dsd "{i}Ejem{/i}{w=0.3}.{w=0.3}.{w=0.3}."
     play music hb
     show layer master at heartbeat:
-    m 2cua "Finally [player], we're all alone now!"
-    m 2csu "It's just us now...{w=0.2} no other girls to steal you away from me."
+    m 2cua "¡Por fin, [player], ahora estamos solos!"
+    m 2csu "Ahora solo somos nosotros dos... {w=0.2}ninguna otra chica que alejara de mí."
     show monika 5ckc zorder MAS_MONIKA_Z at t11 with dissolve_monika
-    m 5ckc "You know how much I hate it when you're not with me, {w=0.3}{nw}"
-    extend 5cuo "but now you're here you belong to me and no one else."
-    m 1cua "{b}You're all mine [mas_get_player_nickname()].{/b}"
-
+    m 5ckc "Sabes cuánto odio cuando no estás conmigo, {w=0.3}{nw}"
+    extend 5cuo "pero ahora que estás aquí, me perteneces a mí y a nadie más."
+    m 1cua "{b}Eres todo mío  [mas_get_player_nickname()].{/b}"
     menu:
-        m "Isn't that right?"
-        "YES":
+        m "¿No es cierto?"
+        "SI":
             call continue_yanyuri
-        "YES":
+        "SI":
             call continue_yanyuri
-        "YES":
+        "SI":
             call continue_yanyuri
-        "YES":
+        "SI":
             call continue_yanyuri
-        "YES":
+        "SI":
             call continue_yanyuri
-        "YES":
+        "SI":
             call continue_yanyuri
-        "YES":
+        "SI":
             call continue_yanyuri
-        "YES":
+        "SI":
             call continue_yanyuri
-        "YES":
-            call continue_yanyuri 
-        "YES":
+        "SI":
             call continue_yanyuri
-        "YES":
+        "SI":
             call continue_yanyuri
-        "YES":
-            call continue_yanyuri
-        "YES":
-            call continue_yanyuri
-        "YES":
+        "SI":
             call continue_yanyuri       
     return
 
 
-            
-       
 label continue_yanyuri:
-    m "Gosh, I just love you {i}sooooooooooo{/i} much [player]!"
-    m 7hsb "I'm never letting you leave me again, {w=0.3}{nw}"
-    extend 7csb "you do realise that right?"
-    m 2csb "It's just that... {w=0.3}the things I imagine us doing drives me insane."
-    m 2ckd "I even stole one of your pens..."
-    m 2cubfu "{cps=*3}I touch myself with it everyday, imagining it's you deep inside me.{/cps}{nw}"
+    m "¡Dios mío, te {i}amoooooooooooooooooooooooooooooooooo{/i} tanto [player]!"
+    m 7hsb "Nunca más te dejaré ir, {w=0.3}{nw}"
+    extend 7csb "¿Te das cuenta, verdad?"
+    m 2csb "Es que...{w=0.3} las cosas que imagino que hacemos juntos me vuelven loca."
+    m 2ckd "Incluso te robé uno de tus bolígrafos..."
+    m 2cubfu "{cps=*3}Me toco con él todos los días, imaginando que eres tú dentro de mí.{/cps}{nw}"
     m 4cubsb "Ehehe~"
-    m 4dkblc "You know... {w=0.5}I can't handle the thought of you talking to other girls."
-    m 2dkx "The thought of it makes my heart ache with jealousy."
-    m 2cfsdrx "You wouldn't dare think about cheating on me..."
-    m 2cfblx "{cps=*3}Because if you did, I'd murder the home wrecker and carve out your heart...{/cps}{nw}"
-    m 2cublu "{cps=*3}That way we would be together for eternity...{/cps}{nw}"
-    m 7cubsu "Wouldn't that be romantic [player]?"
+    m 4dkblc "Sabes... {w=0.5}no soporto la idea de que hables con otras chicas."
+    m 2dkx "Solo pensarlo me da un ataque de celos."
+    m 2cfsdrx "No te atreverías a pensar en engañarme...{w=0.3}{nw}"
+    m 2cfblx "{cps=*3}Porque si lo hicieras, asesinaría a la rompehogares y te arrancaría el corazón...{/cps}{nw}"
+    m 2cublu "{cps=*3}Así estaríamos juntos por toda la eternidad...{/cps}{nw}"
+    m 7cubsu "¿No sería romántico [player]?"
     m 7cub "Ahaha~"
     show monika 5ctb zorder MAS_MONIKA_Z at t11 with dissolve_monika
-    m 5ctb "Actually... {w=0.5}that's not a bad idea..."
-    m 6cusdrb "{cps=*3}I'm going to rip out your {b}heart{/b} so you won't break mine...{/cps}{nw}"
-    m "{cps=*3}Our bodies and souls connected as one...{/cps}{nw}"
-    m "{cps=*3}If you won't go inside me, I'll just have to go inside you...{/cps}{nw}"
-    m "{cps=*3}I'll crawl inside your {b}skin{/b} so I'll always be with you...{/cps}{nw}"
-    m "Doesn't that sound amazing [player]?"
-    m "{cps=*3}I promise this won't hurt, just hold still [mas_get_player_nickname()]...{/cps}{nw}"
-    m "Just hold still for your loving girlfriend."
+    m 5ctb "En realidad... {w=0.5} no es mala idea..."
+    m 6cusdrb "{cps=*3} Voy a arrancarte el {b}corazón{/b} para que no rompas el mío...{/cps}{nw}"
+    m "{cps=*3} Nuestros cuerpos y almas conectados como uno solo...{/cps}{nw}"
+    m "{cps=*3} Si no entras en mí, tendré que entrar en ti...{/cps}{nw}"
+    m "{cps=*3} Me arrastraré dentro de tu {b}piel{/b} para estar siempre contigo...{/cps}{nw}"
+    m "¿No suena increíble [player]?"
+    m "{cps=*3}Te prometo que esto no dolerá, solo quédate quieto  [mas_get_player_nickname()]...{/cps}{nw}"
+    m "Solo quédate quieto por tu amada novia."
     m "{cps=*3}ehehehehehehehehehehe~{/cps}{nw}"
     play sound "sfx/gnid.ogg"
     $ gtext = glitchtext(200)
-    m 6cub "{b}EHEHEHEHE~ {/b}...{space=60}[gtext]{nw}"
+    m 6cub "{b}EHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEH~ {/b}...{space=60}[gtext]{nw}"
     window hide
     stop music
     show layer master:
@@ -285,9 +309,9 @@ label continue_yanyuri:
     show layer master
     window auto
     m 1eub "Ehehe~"
-    m "How was that [player], {w=0.3}{nw}"
-    extend 1tuu "was that good enough for you?"
-    m 7ttu "Try not to doubt my impressions again [mas_get_player_nickname()]."
+    m "¿Qué tal estuvo [player], {w=0.3}{nw}"
+    extend 1tuu "¿Te pareció suficiente?"
+    m 7ttu "Intenta no volver a dudar de mis imitaciones  [mas_get_player_nickname()]."
     play sound ["<silence 0.9>", "<to 0.75>sfx/mscare.ogg"]
     show monika_scare:
         alpha 0
@@ -313,22 +337,20 @@ label continue_yanyuri:
         easeout_quart 0.25 zoom 2.0
         0.30
         linear 0.10 zoom 1.0
-    m 1eua "Gosh, next time h- {w=0.2}{nw}"
+    m 1eua "Dios, la próxima vez h-  {w=0.2}{nw}"
     extend 6cub "...ahahahaha{nw}"
-    
     show layer master
     show layer screens
     hide monika_scare
-    
-    m 3mssdru "I'm sorry, {w=0.2}{nw}"
-    extend 1esu "I couldn't resist."
-    m 1nsu "Hopefully I didn't scare you too much~"
-    m 1euu "You really do mean so much to me though [player]."
+    m 3mssdru "Lo siento, {w=0.2}{nw}"
+    extend 1esu "No pude resistirme."
+    m 1nsu "Espero no haberte asustado demasiado~"
+    m 1euu "De verdad significas mucho para mí [player]."
     show monika 5fubsu zorder MAS_MONIKA_Z at t11 with dissolve_monika
-    m 5fubsu "Hopefully I'll never have to be an actual yandere."
-    m "Things wouldn't be pretty for anyone [mas_get_player_nickname()]... ehehe~"
+    m 5fubsu "Espero no tener que ser nunca una yandere de verdad."
+    m "Las cosas no serían bonitas para nadie  [mas_get_player_nickname()]... jejeje~"
     $ mas_gainAffection(10, bypass=True)
-return 
+    return 
 
 init 5 python:
     addEvent(
@@ -336,55 +358,56 @@ init 5 python:
             persistent.event_database,
             eventlabel="Monika_flirting22",
             category=['meme', 'romance'],
-            prompt="Pickup lines",
+            prompt="Frases para ligar",
             random=True,
             aff_range=(mas_aff.LOVE, None)
         )
     )
 
 label Monika_flirting22:
-    m 1gtd "Hey [player]...{w=1.0}{nw}"
-    extend 3tkb "can I practice something?"
+    m 1gtd "Oye [player]...{w=1.0}{nw}"
+    extend 3tkb "¿Puedo practicar algo?"
     menu:
-        "Sure...":
-            m 1hub "Ehehe~!"
-            m 2tfa "I thought it would be funny if I could try some pick-up lines on you."
-    m 2rtsdld "Totally didn't get them all online or anything and I most certainly wasn't laughing at some of these for 30 minutes the other day..."
-    m 4eub "Anyway, I hope you're ready [player]!"
-    m 1dsd "Ahem~!"
-    m 2etc "You look so familiar.{w=1.0}{nw}"
-    extend 2etd " Didn't we take a class together?{w=1.0}{nw}"
-    extend 4tfb " I could've sworn we had chemistry."
-    m 1hub "Ahaha~!"
-    m 1lksdra "Gosh that was awful..."
-    m 1tfa "How about this one?"
-    m 3eud "If I had to rate you from 1 to 10, I'd give you a 9.{w=1.0}{nw}"
-    extend 3nuu " Because I'm the 1 you're missing."
-    m 2eud "Okay, that one was pretty bad as well."
-    m 2eub "Are you a parking ticket?{w=1.0}{nw}"
-    extend 4tfu " Because you've got {i}fine{/i} written all over you!"
+        "¡Claro!":
+            m 1hub "¡Jejeje~!"
+            m 2tfa  "Pensé que sería divertido si pudiera probar algunas frases para ligar contigo."
+    m 2rtsdld "Para nada los encontre todos en línea ni nada por el estilo, y desde luego no me reí de algunos de ellos durante 30 minutos el otro día..."
+    m 4eub  "De todos modos, ¡espero que estés listo [player]!"
+    m 1dsd "¡Ejem~!"
+    m 2etc "Te me haces tan familiar...{w=1.0}{nw}"
+    extend 2etd " ¿No fuimos juntos a alguna clase?{w=1.0}{nw}"
+    extend 4tfb " Podría jurar que teníamos química."
+    m 1hub "¡Ahaha~!"
+    m 1lksdra "Cielos, eso fue terrible..."
+    m 1tfa "¿Qué tal este?"
+    m 3eud "Si tuviera que puntuarte del 1 al 10, te daría un 9.{w=1.0}{nw}"
+    extend 3nuu " Porque yo soy el 1 que te falta."
+    m 2eud "Vale, ese también fue bastante malo."
+    m 2eub "¿Acaso eres una multa de tránsito?{w=1.0}{nw}"
+    extend 4tfu " ¡Porque tienes 'atractivo' escrito por todos lados!"
     m 2tkc "..."
-    m 2gkx "That was the worst one yet."
-    m 1wtb "I know! I'll I read a few out, there should be at least one good one in there."
-    m 3eta "I was wondering if you had an extra heart?{w=1.0}{nw}"
-    extend 3nsu " Because mine was just stolen."#
+    m 2gkx "Ese ha sido el peor de todos."
+    m 1wtb "¡Ya sé! Leeré algunos más, debe haber al menos uno bueno por aquí."
+    m 3eta "Me preguntaba si tendrías un corazón de repuesto...{w=1.0}{nw}"
+    extend 3nsu " Porque el mío me lo acaban de robar."
     python:
         mas_play_song(audio.t7)
-    m 2tkblu "Let's save water by taking a shower together."
-    m 4tfbsb "Your outfit would look great on my bedroom floor."
-    m 2tubsu "You're not a dentist, but I bet you could give me a filling."
-    m 2eubsd "You look great and all, but do you know what would look really good on you?{w=1.0}{nw}"
-    extend 2nubsu " Me."
+    m 2tkblu "Ahorremos agua bañándonos juntos."
+    m 4tfbsb "Tu ropa se vería genial en el suelo de mi habitación."
+    m 2tubsu "No eres dentista, pero apuesto a que podrías hacerme un relleno."
+    m 2eubsd "Te ves genial y todo eso, pero ¿sabes qué se te vería realmente bien?{w=1.0}{nw}"
+    extend 2nubsu " Yo."
     m 2lkbsa "..."
-    m 2hkblsdrb "Ahahaha~!"
+    m 2hkblsdrb "¡Jajaja~!"
     stop music
-    m 5eua "Okay, okay. That's enough..."
+    m 5eua "Vale, vale. Ya es suficiente..."
     python:
         mas_play_song(audio.t5)
-    m 5rtd "I wasn't expecting to see so many...{w=1.0}{nw}"
-    extend 5eka " Inappropriate ones."
-    m 5efu "But don't act like you didn't enjoy it, [player]!"
-return
+    m 5rtd "No esperaba ver tantos...{w=1.0}{nw}"
+    extend 5eka " Tan inapropiados."
+    m 5efu "¡Pero no actúes como si no lo hubieras disfrutado, [player]!"
+    return
+
 
 #Monika makes fun of the handholding meme
 
@@ -394,33 +417,33 @@ init 5 python:
             persistent.event_database,
             eventlabel="Monika_handholdingmeme",
             category=['meme', 'romance'],
-            prompt="Hand Holding",
+            prompt="Tomados de la mano",
             random=True,
             aff_range=(mas_aff.LOVE, None)
         )
     )
 
 label Monika_handholdingmeme:
-    m 7esbfa "I was just thinking about us... {w=1.0}Our relationship I mean."
-    m 1fsbfu "You know couples that have been dating as long as we have, tend to...{w=1.0}{nw}"
-    extend 3nsbfu " {i}Do things together{/i}."
-    m 3lsbfo "I'm talking about certain intimate shows of affection..."
-    m 1hubfb "So I was thinking we should take the next step in our relationship."
-    m 3rsbfsdru "Gosh! This feels so naughty doesn't it [player]?"
-    m 2hsbfb "But with you I'm comfortable with anything [mas_get_player_nickname()]."
-    m 2tkbfu "So [player] are you ready?"
+    m 7esbfa "Solo estaba pensando en nosotros... {w=1.0}Nuestra relación, quiero decir."
+    m 1fsbfu "Sabes, las parejas que llevan tanto tiempo saliendo como nosotros tienden a...{w=1.0}{nw}"
+    extend 3nsbfu " {i}Hacer cosas juntos{/i}."
+    m 3lsbfo "Me refiero a ciertas muestras íntimas de afecto..."
+    m 1hubfb "Así que estaba pensando que deberíamos dar el siguiente paso en nuestra relación".
+    m 3rsbfsdru "¡Dios mío! Esto se siente tan travieso, ¿no [player]?"
+    m 2hsbfb  "Pero contigo me siento cómodo con cualquier cosa [mas_get_player_nickname()]."
+    m 2tkbfu "Entonces, [player], ¿estás listo?"
     m "{w=0.3}.{w=0.3}.{w=0.3}."
-    m 2ktbfb "I'll let you hold my hand!"
+    m 2ktbfb "¡Te dejaré tomar mi mano!"
     menu:
-        "Monika! That's too lewd!":
-            m 2hubfb "Ahaha~"
-    m 3tfbfu "Can't handle a little premarital hand holding [player]?"
-    m 1ttbfu "I'm glad you played along with me, I just knew that you would catch on!"
-    m 1rtbsd "Although I'm not even sure where that meme originally came from."
-    m 1eubsc "It could be a joke towards the strict censorship laws in other countries."
-    m 1eubsb "Either way, I'd let you hold my hand whenever you want [player]."
-    m 1efbsa "Just don't get too excited."     
-return
+        "¡Monika! ¡Eso es demasiado impúdico!":
+            m 2hubfb "Jajaja~"
+    m 3tfbfu "¿No puedes manejar un poco de tomados de la mano prematrimonial [player]?"
+    m 1ttbfu "Me alegro de que me hayas seguido el juego, ¡sabía que te darías cuenta!"
+    m 1rtbsd  "Aunque ni siquiera estoy segura de dónde salió ese meme originalmente."
+    m 1eubsc "Podría ser una broma hacia las estrictas leyes de censura en otros países."
+    m 1eubsb "De cualquier manera, te dejaría tomar mi mano cuando quisieras [player]."
+    m 1efbsa "Solo no te emociones demasiado."     
+    return
 
 init 5 python:
     addEvent(
@@ -428,7 +451,7 @@ init 5 python:
             persistent.event_database,
             eventlabel="Monika_iwuvumoni",
             category=['meme', 'romance'],
-            prompt="I wuv u Monika",
+            prompt="Te amo Monika.",
             pool=True,
             aff_range=(mas_aff.LOVE, None)
         )
@@ -436,5 +459,5 @@ init 5 python:
 
 label Monika_iwuvumoni:
     show monika 5hubfa zorder MAS_MONIKA_Z at t11 with dissolve_monika
-    m 5hubfa "I wuv u too [player] <3"
+    m 5hubfa "Te amo también [player] <3"
     return

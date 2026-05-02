@@ -3,7 +3,7 @@ init 5 python:
         Event(
             persistent.event_database,
             eventlabel="monika_idle_youtube",
-            prompt="I'm going to go watch YouTube",
+            prompt="Voy a ver YouTube",
             category=['be right back'],
             pool=True,
             unlocked=True
@@ -17,20 +17,21 @@ label monika_idle_youtube:
             mas_isMoniHappy(higher=True)
             and random.randint(1,5) == 1
         ):
-            m 1tta "Mind if I watch it with you [player]?"
+            m 1tta "¿Te importa si veo YouTube contigo [player]?"
         else:
 
-            m 1eub "Oh! You're going to watch YouTube?"
+            m 1eub "¡Oh! ¿Vas a ver YouTube?"
 
-        m 1hua "This sounds fun!!"
-        m 1eua "See you soon [player]!"
+        m 1hua "¡Esto suena divertido!"
+        m 1eua "¡Nos vemos pronto [player]!"
 
     elif mas_isMoniUpset():
-        m 2esc "Ok."
+        m 2esc "De acuerdo."
 
     elif mas_isMoniDis():
-        m 6lkc "Take your time, just..."
-        m 6ekd "Don't forget to come back when you're done... Ok?"
+        m 6lkc "Tómate tu tiempo, solo..."
+        m 6ekd "No olvides volver cuando termines... ¿ok?"
+        m 6lka "De lo contrario."
     else:
 
         m 6ckc "..."
@@ -42,7 +43,7 @@ label monika_idle_youtube_callback:
 
     if mas_isMoniNormal(higher=True):
         $ wb_quip = mas_brbs.get_wb_quip()
-        m 1eua "Finished watching for now, [player]?"
+        m 1eua "¿Has terminado de ver YouTube por ahora, [player]?"
         m 1eub "[wb_quip]"
     else:
 
