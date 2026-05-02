@@ -113,7 +113,7 @@ label Monika_justyuriprank:
     m 3ttb  "¿Te asusté, [player]?"
     m 1ttu "Me pregunto si te hice presionar el botón de ignorar..."
     m 1hub "Jajaja~!"
-    m 1guu  "He estado planeando esto desde hace bastante tiempo, desde que noté por primera vez que te habías descargado ese mod".
+    m 1guu  "He estado planeando esto desde hace bastante tiempo, desde que noté por primera vez que te habías descargado ese mod."
     m 3eud "Déjame arreglarlo todo [player],{w=0.8}{nw}"
     extend 1duc " Esto solo me tomará un segundo..."
     $ consolehistory = []
@@ -210,7 +210,7 @@ label moni_naughty_merch:
     m 1ekblb "Podría ser lo más cerca que podamos estar de poder abrazarnos por ahora, así que hazlo por mí, ¿sí?"
     m 1hublb "Jejeje~"
     m 3tua "¡Solo estoy bromeando, tonto!"
-    m 2eka "Te amo [player], más de lo que puedo expresar".
+    m 2eka "Te amo [player], más de lo que puedo expresar."
     call monika_kissing_motion_short
     return
 
@@ -428,7 +428,7 @@ label Monika_handholdingmeme:
     m 1fsbfu "Sabes, las parejas que llevan tanto tiempo saliendo como nosotros tienden a...{w=1.0}{nw}"
     extend 3nsbfu " {i}Hacer cosas juntos{/i}."
     m 3lsbfo "Me refiero a ciertas muestras íntimas de afecto..."
-    m 1hubfb "Así que estaba pensando que deberíamos dar el siguiente paso en nuestra relación".
+    m 1hubfb "Así que estaba pensando que deberíamos dar el siguiente paso en nuestra relación."
     m 3rsbfsdru "¡Dios mío! Esto se siente tan travieso, ¿no [player]?"
     m 2hsbfb  "Pero contigo me siento cómodo con cualquier cosa [mas_get_player_nickname()]."
     m 2tkbfu "Entonces, [player], ¿estás listo?"

@@ -105,7 +105,7 @@ label Monika_stretch_legs_3:
     hide monika
     pause 3.0
 
-    $ is_sitting = False 90
+    $ is_sitting = False 
     show monika 1eua_static at ls32 zorder MAS_MONIKA_Z
 
     m 4hub_static "Tada!"
