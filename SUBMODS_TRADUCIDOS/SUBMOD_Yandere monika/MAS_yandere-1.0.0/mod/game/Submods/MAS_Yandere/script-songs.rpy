@@ -4,9 +4,10 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_superpsycholove",
-            category=["Yandere"],
+            category=[mas_songs.TYPE_SHORT],
             prompt="Super Psycho Love",
             aff_range=(mas_aff.NORMAL, None),
+            unlocked=True,
             random=True,
             pool=True
         ),
@@ -36,9 +37,10 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_thehorrorofourlove",
-            category=["Yandere"],
+            category=[mas_songs.TYPE_SHORT],
             prompt="The Horror of Our Love",
             aff_range=(mas_aff.NORMAL, None),
+            unlocked=True,
             random=True,
             pool=True
         ),
@@ -78,9 +80,10 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_smokeandmirrors",
-            category=["Yandere"],
+            category=[mas_songs.TYPE_SHORT],
             prompt="Smoke and Mirrors",
             aff_range=(mas_aff.NORMAL, None),
+            unlocked=True,
             random=True,
             pool=True
         ),
@@ -106,9 +109,10 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_youremine",
-            category=["Yandere"],
+            category=[mas_songs.TYPE_SHORT],
             prompt="You're Mine",
             aff_range=(mas_aff.NORMAL, None),
+            unlocked=True,
             random=True,
             pool=True
         ),
@@ -139,9 +143,10 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_youbelongtome",
-            category=["Yandere"],
+            category=[mas_songs.TYPE_SHORT],
             prompt="You Belong to Me",
             aff_range=(mas_aff.NORMAL, None),
+            unlocked=True,
             random=True,
             pool=True
         ),
@@ -175,9 +180,10 @@ init 5 python:
         Event(
             persistent._mas_songs_database,
             eventlabel="yaMod_song_themusicofthenight",
-            category=["Yandere"],
+            category=[mas_songs.TYPE_SHORT],
             prompt="The Music Of The Night",
             aff_range=(mas_aff.NORMAL, None),
+            unlocked=True,
             random=True,
             pool=True
         ),

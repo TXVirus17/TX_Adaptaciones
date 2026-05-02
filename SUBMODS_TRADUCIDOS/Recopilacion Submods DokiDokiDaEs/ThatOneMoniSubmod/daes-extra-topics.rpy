@@ -299,7 +299,7 @@ label continue_yanyuri:
     m "{cps=*3}ehehehehehehehehehehe~{/cps}{nw}"
     play sound "sfx/gnid.ogg"
     $ gtext = glitchtext(200)
-    m 6cub "{b}EHEHEHEHEHEHEHE~...{space=60}[gtext]{/b}{nw}"
+    m 6cub "{b}EHEHEHEHEHEHEHE~...[gtext]{/b}{nw}"
     window hide
     stop music
     show layer master:
@@ -338,7 +338,7 @@ label continue_yanyuri:
         0.30
         linear 0.10 zoom 1.0
     m 1eua "Dios, la próxima vez h-  {w=0.2}{nw}"
-    extend 6cub "{b}...aHAHAHAHAHAHAHAHHAAHAHAHAHAHAHAHAHAHHAHHAHAAHHAHAHAHAHAHHAHAHAHAHAHAHAAHHAAHAHAHAH{/b}{nw}"
+    extend 6cub " ...ahahahahahaha{nw}"
     show layer master
     show layer screens
     hide monika_scare
