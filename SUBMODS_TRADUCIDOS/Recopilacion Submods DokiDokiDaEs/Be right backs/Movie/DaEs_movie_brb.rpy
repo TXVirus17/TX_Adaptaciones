@@ -4,7 +4,7 @@ init 5 python:
             persistent.event_database,
             eventlabel="monika_idle_movie",
             prompt="¿Quieres ver una película?",
-            category=['be right back'],
+            category=['Vuelvo enseguida'],
             pool=True,
             unlocked=True
         ),
@@ -20,7 +20,7 @@ label monika_idle_movie:
             m 1tta "¡Oh, qué emocionante  [player]!"
         else:
 
-            m 1eub "I'm looking forward to seeing what you've picked [player]!"
+            m 1eub "Tengo muchas ganas de ver lo que has elegido. [player]!"
 
         m 1hua "¿Qué género tienes en mente?"
         m 3hub "De cualquier manera, estoy segura de que será divertido ver cualquier cosa contigo,{w=0.5}{nw} "

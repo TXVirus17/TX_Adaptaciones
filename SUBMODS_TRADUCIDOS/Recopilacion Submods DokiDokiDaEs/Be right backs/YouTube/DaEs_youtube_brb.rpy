@@ -4,7 +4,7 @@ init 5 python:
             persistent.event_database,
             eventlabel="monika_idle_youtube",
             prompt="Voy a ver YouTube",
-            category=['be right back'],
+            category=['Vuelvo enseguida'],
             pool=True,
             unlocked=True
         ),

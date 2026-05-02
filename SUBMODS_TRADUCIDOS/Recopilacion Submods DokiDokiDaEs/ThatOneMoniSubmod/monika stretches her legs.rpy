@@ -88,7 +88,7 @@ label Monika_stretch_legs_3:
             _("Timing perfecto... Estaba pensando lo mismo."),
             _("¿Quieres tomar un poco de aire fresco?"),
             _("¡Incluso podríamos hacer algunos ejercicios rápidos!"),
-            _("¡Ve a buscar agua también... es una orden! Jeje <3)"),
+            _("¡Ve a buscar agua también... es una orden! Jeje <3"),
             _("¡Qué bieeeeen se siente!"),
             _("¡Nada mejor que un buen estiramiento!")
         ]

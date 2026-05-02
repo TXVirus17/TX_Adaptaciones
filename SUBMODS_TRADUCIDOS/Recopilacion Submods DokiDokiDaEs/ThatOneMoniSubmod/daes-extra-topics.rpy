@@ -223,14 +223,14 @@ label moni_no_merch:
 #Monika's yandere Yuri impression!
 
 init 5 python:
-    addEvent(Event(persistent.event_database,eventlabel="Monika_yandere_yuri",category=['impressions'],prompt="Yandere Yuri?",pool=True, unlocked=True))
+    addEvent(Event(persistent.event_database,eventlabel="Monika_yandere_yuri",category=['Yandere'],prompt="¿Yuri Yandere? ",pool=True, unlocked=True))
 
 label Monika_yandere_yuri:
     m 1eua "¿Quieres que haga una imitacion de Yuri, [player]?"
     m 3rtd "Tú sabes...{w=0.5}{nw}"
     extend 3etd "Estoy bastante segura de que ya he hecho una antes."
     menu:
-        "¡Seguro que puedes hacer una mejor imitación de yandere!":
+        "¡Sin duda puedes hacer una mejor imitación de una yandere!":
             m 1lkd "Oh,{w=0.5} ¿mi imitación no te pareció lo suficientemente buena?"
             m 1dsb"Ehehe...{w=0.3} bueno, si quieres que haga una mejor imitación, [player]{w=0.3}{nw},"
             extend 2tfu " Te mostraré una mejor Yuri yandere."
@@ -238,9 +238,9 @@ label Monika_yandere_yuri:
     m 2tfu "Tu lo pediste,  [mas_get_player_nickname()]."
     m 2dsd "{i}Ejem{/i}{w=0.3}.{w=0.3}.{w=0.3}."
     play music hb
-    show layer master at heartbeat:
+    show layer master at heartbeat
     m 2cua "¡Por fin, [player], ahora estamos solos!"
-    m 2csu "Ahora solo somos nosotros dos... {w=0.2}ninguna otra chica que alejara de mí."
+    m 2csu "Ahora solo somos nosotros dos... {w=0.2}ninguna otra chica te alejara de mí."
     show monika 5ckc zorder MAS_MONIKA_Z at t11 with dissolve_monika
     m 5ckc "Sabes cuánto odio cuando no estás conmigo, {w=0.3}{nw}"
     extend 5cuo "pero ahora que estás aquí, me perteneces a mí y a nadie más."
@@ -276,7 +276,7 @@ label continue_yanyuri:
     m "¡Dios mío, te {i}amoooooooooooooooooooooooooooooooooo{/i} tanto [player]!"
     m 7hsb "Nunca más te dejaré ir, {w=0.3}{nw}"
     extend 7csb "¿Te das cuenta, verdad?"
-    m 2csb "Es que...{w=0.3} las cosas que imagino que hacemos juntos me vuelven loca."
+    m 2csb "Es que...{w=0.3} mis pensamientos sobre ti son tan intensos que... {w=0.2} me dan miedo hasta a mí misma."
     m 2ckd "Incluso te robé uno de tus bolígrafos..."
     m 2cubfu "{cps=*3}Me toco con él todos los días, imaginando que eres tú dentro de mí.{/cps}{nw}"
     m 4cubsb "Ehehe~"
@@ -299,7 +299,7 @@ label continue_yanyuri:
     m "{cps=*3}ehehehehehehehehehehe~{/cps}{nw}"
     play sound "sfx/gnid.ogg"
     $ gtext = glitchtext(200)
-    m 6cub "{b}EHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEH~ {/b}...{space=60}[gtext]{nw}"
+    m 6cub "{b}EHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEHEH~...{space=60}[gtext]{/b}{nw}"
     window hide
     stop music
     show layer master:
@@ -338,7 +338,7 @@ label continue_yanyuri:
         0.30
         linear 0.10 zoom 1.0
     m 1eua "Dios, la próxima vez h-  {w=0.2}{nw}"
-    extend 6cub "...ahahahaha{nw}"
+    extend 6cub "...aHAHAHAHAHAHAHAHHAAHAHAHAHAHAHAHAHAHHAHHAHAAHHAHAHAHAHAHHAHAHAHAHAHAHAAHHAAHAHAHAH{nw}"
     show layer master
     show layer screens
     hide monika_scare
