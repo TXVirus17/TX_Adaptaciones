@@ -3,27 +3,30 @@
 Esta es una traducción al español del submod original para **Monika After Story**. 
 
 ## 📝 Descripción
-Te permite pedirle un beso a Monika en cualquier momento a través de un botón en la pantalla y tiene diálogos especiales.
+-¡Este submod que añade un botón Extra+, además de más contenido!
 
 
 
 ## ⭐ Este mod contiene 
-- Un nuevo boton "Kiss"
-- Dialogos Nuevos
-
+- 🎮 Juega a nuevos minijuegos: Disfruta de nuevos juegos con Monika para pasar el tiempo.
+- 🥰 Toca a Monika: Desbloquea una nueva y adorable interacción para tocar a Monika en la nariz.
+- 📅 Salgan a citas: Lleva a Monika a citas especiales fuera de la sala espacial.
+- ➕ Explora las nuevas incorporaciones: descubre secretos, nuevos diálogos y otras pequeñas sorpresas.
 ---
 
 ## 👥 Créditos y Atribución
 
-* **Autor Original:** [u/KiwiKrieger08(Reddit)]
-* **Link del mod original:** [https://www.reddit.com/r/MASFandom/comments/1pa1srd/kissing_button_ˊˋ/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button]
+* **Autor Original:** [https://www.reddit.com/user/UnderstandingAny7135/submitted/](u/UnderstandingAny7135(Reddit))
+* **Link del mod original:** [https://github.com/zer0fixer/MAS-Extraplus]
 * **Traducción al Español:** TX_Virus (TXVirus17)
 
 ---
 
+---
+
 ## 🚀 Instalación
-1. Descarga el contenido de la carpeta `Kiss Button`.
-2. Pégalo en `directorio_de_tu_juego/game/Submods/`.
+1. Descarga el contenido de la carpeta `Extraplus`.
+2. Péga en las carpetas correspondientes.(Visita el Github del creador original para una instalacion completa de este submod.)
 3. ¡Disfruta de tu submod con Monika! 💚
 
 ---

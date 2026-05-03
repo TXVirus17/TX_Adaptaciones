@@ -35,12 +35,9 @@ Este proyecto se distribuye bajo la licencia **CC BY-NC-ND 4.0**.
 ---
 
 ## ⚠️ Nota de Licencia
-Este trabajo es una **obra derivada autorizada para fines de traducción y adaptacion a el entorno**. No se permite el uso comercial de este material ni la creación de nuevas obras derivadas que alteren la historia original, de acuerdo con los términos de la licencia del autor.
+Este trabajo es una **obra derivada autorizada para fines de traducción**. No se permite el uso comercial de este material ni la creación de nuevas obras derivadas que alteren la historia original, de acuerdo con los términos de la licencia del autor.
 
-## 🗒️ Cambios que se hicieron 
-- Para mantener una experiencia comoda para el jugador se agrego un menu para que este pueda seleccionar las canciones en dado caso no les aparesca o que el menu de seleccion de canciones no funcione (el menu se encuentra dentro del apartado "Yandere") siempre manteniendo los requisitos para desbloquear cada conversacion y 
-
-- Las traducciones de las canciones contienen tanto texto en ingles como en español para no perder la escencia de esta
+>Por si las canciones no aparecen (o no pueden acceder a las canciones cortas) se agregara el script "tx-song-selector.rpy" para poder seleccionar la cancion de esta misma lista, ojo **Instalar este complemento es opcional.** si no deseas instalarlo no hay problema, este script se agrego para poder respetar la licencia **CC BY-NC-ND 4.0**
 ---
 
 ## 🚀 Instalación
