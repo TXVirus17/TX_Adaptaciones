@@ -20,8 +20,7 @@ Esta es una traducción al español del submod original para **Monika After Stor
 * **Link del mod original:** [https://github.com/zer0fixer/MAS-Extraplus]
 * **Traducción al Español:** TX_Virus (TXVirus17)
 
----
->Recuerde apoyar a los creadores originales de cada submod por que sin ellos no existieran mods tan fantasticos como este 💚
+>Recuerden apoyar a los creadores originales de cada submod por que sin ellos no existieran mods tan fantasticos como este. 💚
 ---
 
 ## 🚀 Instalación

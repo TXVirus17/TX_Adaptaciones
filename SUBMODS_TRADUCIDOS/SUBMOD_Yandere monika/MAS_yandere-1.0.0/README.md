@@ -27,11 +27,12 @@ Este mod se centra en tener una Monika yandere, dándole al jugador una experien
 ## 👥 Créditos y Atribución
 Este proyecto se distribuye bajo la licencia **CC BY-NC-ND 4.0**.
 
-* **Autor Original:** [McFishFillet]
+* **Autor Original:** [McFishFillet](https://github.com/McFishFillet)
+> No pude encontrar el reddit solo el Github :c
 * **Repositorio Original:** [https://github.com/McFishFillet/MAS_yandere]
 * **Basado en la version** [V1.0.0]
 * **Traducción al Español:** TX_Virus (TXVirus17)
-
+> Recuerden apoyar a los creadores de submods por que son muy talentosos. 💚 
 ---
 
 ## ⚠️ Nota de Licencia

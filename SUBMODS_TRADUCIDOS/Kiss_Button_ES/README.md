@@ -15,10 +15,11 @@ Te permite pedirle un beso a Monika en cualquier momento a través de un botón 
 
 ## 👥 Créditos y Atribución
 
-* **Autor Original:** [u/KiwiKrieger08(Reddit)]
+* **Autor Original:** [u/KiwiKrieger08(Reddit)](https://www.reddit.com/user/KiwiKrieger08/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 * **Link del mod original:** [https://www.reddit.com/r/MASFandom/comments/1pa1srd/kissing_button_ˊˋ/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button]
 * **Traducción al Español:** TX_Virus (TXVirus17)
 
+>Apoyemos a los creadores de estoy maravillosos submods. 💚
 ---
 
 ## 🚀 Instalación

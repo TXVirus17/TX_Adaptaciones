@@ -16,11 +16,11 @@ Esta es una traducción al español del submod original para **Monika After Stor
 
 ## 👥 Créditos y Atribución
 
-* **Autor Original:** [u/DokiDokiDaEs(Reddit)]
+* **Autor Original:** [u/DokiDokiDaEs(Reddit)](https://www.reddit.com/user/DokiDokiDaEs/submitted/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button)
 * **Link del mod original:** [https://www.reddit.com/r/MASFandom/comments/1l6evkc/that_one_moni_submod_new_topics_and_a_compilation/?utm_source=share&utm_medium=web3x&utm_name=web3xcss&utm_term=1&utm_content=share_button]
 * **Traducción al Español:** TX_Virus (TXVirus17)
 
-> Recuerda apoyar a la autor/a original si no fuera por ellos no existirian sudmods asi. :p
+> Recuerda apoyar a la autor/a original si no fuera por ellos no existirian sudmods asi. 💚
 
 ---
 
