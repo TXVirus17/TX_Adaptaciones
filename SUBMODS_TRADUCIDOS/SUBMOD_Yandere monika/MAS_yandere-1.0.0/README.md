@@ -32,25 +32,33 @@ Este proyecto se distribuye bajo la licencia **CC BY-NC-ND 4.0**.
 * **Basado en la version** [V1.0.0]
 * **Traducción al Español:** TX_Virus (TXVirus17)
 
-## ⚠️ Nota de Licencia
-Este trabajo es una **obra derivada autorizada para fines de traducción**. No se permite el uso comercial de este material ni la creación de nuevas obras derivadas que alteren la historia original, de acuerdo con los términos de la licencia del autor.
+---
 
+## ⚠️ Nota de Licencia
+Este trabajo es una **obra derivada autorizada para fines de traducción y adaptacion a el entorno**. No se permite el uso comercial de este material ni la creación de nuevas obras derivadas que alteren la historia original, de acuerdo con los términos de la licencia del autor.
+
+## 🗒️ Cambios que se hicieron 
+- Para mantener una experiencia comoda para el jugador se agrego un menu para que este pueda seleccionar las canciones en dado caso no les aparesca o que el menu de seleccion de canciones no funcione (el menu se encuentra dentro del apartado "Yandere") siempre manteniendo los requisitos para desbloquear cada conversacion y 
+
+- Las traducciones de las canciones contienen tanto texto en ingles como en español para no perder la escencia de esta
 ---
 
 ## 🚀 Instalación
-1. Descarga el contenido de la carpeta `mod`.
-2. Pégalo en `directorio_de_tu_juego/game/Submods/`.
+1. Descarga el contenido de la carpeta `MAS_YANDERE`.
+2. Pégalo en `directorio_de_tu_juego/game/Submods/`. (La carpeta antes de los archivos.rpy "MAS_Yandere") 
 3. ¡Disfruta de tu tiempo con Monika! 💚
 
 ---
 
-## Estado de traduccion: 🟡 (90%)
+## Estado de traduccion: 🟢 (100%)
 
 **Traducciones:** Listo ✅
 
 **Dialogos Especiales:** Listo ✅
 
-**Pruebas en dispositivos:** En estado de pruebas (Prueba 3 en ejecucion)
+**Pruebas en dispositivos:** Listo ✅ 
+
+>las pruebas se realizaron en "MASL" pero de igual manera funciona en PC o otros emuladores de MAS por que funcionan bajo la misma arquitectura o sistemas de almacenamiento 
 
 
 

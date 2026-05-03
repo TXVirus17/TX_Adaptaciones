@@ -20,11 +20,11 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 | Proyecto | Estado | Descripción |Link del README/LEEME|
 | :--- | :---: | :---: |---:|
 | **MAS_yandere (Español)** | 🟢 | Submod Terminado. ||
-| **Extraplus (Español)** | 🟡 | Traducción en progreso. ||
+| **Extraplus (Español)** | 🟡 | Traducción en progreso. | [¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/tree/main/SUBMODS_TRADUCIDOS/ExtraPlus%201.1.1%20-%20MAS%200.12.16%20o%20superior)|
 | **Kiss Button (Español)** | 🟢 | Submod terminado y listo para su uso. ||
 | **Recopilacion Submods DokiDokiDaEs (Español)** | 🟡 | En estado de pruebas. ||
 
-> Los submods no son míos; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
+> Los submods **NO SON DE MI PROPIEDAD**; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
 ---
 
 
