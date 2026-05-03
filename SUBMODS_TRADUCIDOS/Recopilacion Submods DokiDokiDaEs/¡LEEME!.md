@@ -31,4 +31,4 @@ Esta es una traducción al español del submod original para **Monika After Stor
 
 ---
 
-## Estado de traduccion: 🟡
+## Estado de traduccion: 🟢
