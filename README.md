@@ -19,10 +19,10 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 ## 🚀 Proyectos Actuales
 | Proyecto | Estado | Descripción |Link del README/LEEME|
 | :--- | :---: | :---: |---:|
-| **MAS_yandere (Español)** | 🟢 | Submod Terminado. ||
+| **MAS_yandere (Español)** | 🟢 | Submod Terminado. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/tree/main/SUBMODS_TRADUCIDOS/SUBMOD_Yandere%20monika/MAS_yandere-1.0.0)|
 | **Extraplus (Español)** | 🟡 | Traducción en progreso. | [¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/tree/main/SUBMODS_TRADUCIDOS/ExtraPlus%201.1.1%20-%20MAS%200.12.16%20o%20superior)|
-| **Kiss Button (Español)** | 🟢 | Submod terminado y listo para su uso. ||
-| **Recopilacion Submods DokiDokiDaEs (Español)** | 🟡 | En estado de pruebas. ||
+| **Kiss Button (Español)** | 🟢 | Submod terminado y listo para su uso. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Kiss_Button_ES/README.md)|
+| **Recopilacion Submods DokiDokiDaEs (Español)** | 🟡 | En estado de pruebas. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Recopilacion%20Submods%20DokiDokiDaEs/%C2%A1LEEME!.md)|
 
 > Los submods **NO SON DE MI PROPIEDAD**; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
 ---
