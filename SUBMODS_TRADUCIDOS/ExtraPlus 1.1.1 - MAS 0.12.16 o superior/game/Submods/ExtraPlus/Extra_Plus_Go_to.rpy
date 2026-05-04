@@ -554,7 +554,7 @@ label extra_talk_without:
     m 3hub "¡TU! "
     extend 3hub "¡Jejeje~!"
     m 1eka "Me pongo muy triste cada día que pasamos separados,{w=0.3} [player]."
-    m "You ¡Tú le das alegría a mis días!"
+    m "¡Tú le das alegría a mis días!"
     m 1ltc "Pero pensando en otra cosa,{w=0.3} hmmm..."
     m 3wud "¡Oh!{w=0.3} No podría pasar un solo día sin algo en lo que escribir,{w=0.3} ¡sin duda!"
     m 3rub "Me he acostumbrado demasiado a escribir mis pensamientos en un diario o en forma de poema cada vez que mi mente se satura de ideas."
