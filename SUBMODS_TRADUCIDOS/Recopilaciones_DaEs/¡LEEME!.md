@@ -25,8 +25,8 @@ Esta es una traducción al español del submod original para **Monika After Stor
 ---
 
 ## 🚀 Instalación
-1. Descarga el contenido de la carpeta `ThatOneMoniSubmod` (coloca directamente esa carpeta).
-2. Pégalo en `directorio_de_tu_juego/game/Submods/`. (Ojo si no se instala correctamente puede dar un error.)
+1. Descarga el contenido de la carpeta  `Recopilaciones_DaEs` te apareceran las carpetas `ThatOneMoniSubmod` y `Berightbacks`.
+2. Pégalo en `directorio_de_tu_juego/game/Submods/`.
 3. ¡Disfruta de tu submod con Monika! 💚
 
 ---
