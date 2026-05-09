@@ -23,6 +23,7 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 | **Extraplus (Español)** | 🟡 | Traducción en progreso. | [¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/ExtraPlus%201.1.1%20-%20MAS%200.12.16%20o%20superior/README.md)|
 | **Kiss Button (Español)** | 🟢 | Submod terminado y listo para su uso. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Kiss_Button_ES/README.md)|
 | **Recopilacion Submods DokiDokiDaEs (Español)** | 🟢 | ¡Listo!. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Recopilacion%20Submods%20DokiDokiDaEs/%C2%A1LEEME!.md)|
+| **The Bed Mod! (Español)** | 🔴 | Preparando. |[¡Leelo aqui!]()|
 
 > Los submods **NO SON DE MI PROPIEDAD**; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
 ---
