@@ -57,5 +57,7 @@ https://drive.google.com/drive/folders/1QnbpOBEQZEOwVVfq6bTOEGQNP-3Efl3f?usp=dri
 ---
 ## ¿Alguna traduccion te dio un error o alguna sugerencia para nuevos submods? 💡💾
  
- ¡Ponte en contacto conmigo! trabajare en un formulario para que puedas enviar sugerencias, errores (tanto en el codigo como en la ortografia) y posibles futuros submods. Todavia esta en desarrollo este apartado asi que tengan paciencia 
+ ¡Ponte en contacto conmigo! trabajare en un formulario para que puedas enviar sugerencias, errores (tanto en el codigo como en la ortografia) y posibles futuros submods. 
+
+ [<H2>¡Toca aqui!</H2>](https://forms.gle/py5vWmyF82FfvWBm6) 
 
