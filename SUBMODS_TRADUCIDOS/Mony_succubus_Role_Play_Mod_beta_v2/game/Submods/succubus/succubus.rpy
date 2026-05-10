@@ -1,10 +1,11 @@
 init 5 python:
     addEvent(
         Event(
-            persistent.event_database,eventlabel="monika_succubus",
-            ,unlocked=True,
+            persistent.event_database,
+            eventlabel="monika_succubus",
+            unlocked=True,
             category=['appearance','clothes','roleplay'],
-            prompt="¿Te gustaría jugar a que eres un demonio conmigo?,
+            prompt="¿Te gustaría jugar a que eres un demonio conmigo?",
             pool=True,
         )
     )
@@ -564,7 +565,7 @@ label monika_succubus:
         m 3lub "Déjame ver, se trata actuar como un demonio..."
         m 3eub "Hay un libro de diálogos e incluso un vestuario."
         if dressed_for_the_occation is False:
-            m 1nubfb "Vale, me voy a cambiar, pero no prometo nada sobre mis dotes de actuación, ¿eh?"
+            m 1nubfb "Vale, me voy a cambiar, pero no prometo nada sobre mi actuación, ¿eh?"
             call mas_clothes_change(succubus)
 
         m 1rkbfd "El disfraz resultó ser un poco más revelador de lo que esperaba..."
@@ -572,12 +573,12 @@ label monika_succubus:
 
         menu:
             "Te ves muy adorable":
-                m 5esbsu "Gracias [mas_get_player_nickname()], siempre sabes cómo hacerme recuperar la confianza en mí misma"
-            "No puedo dejar de mirarte":
+                m 5esbsu "Gracias [mas_get_player_nickname()], siempre sabes cómo hacerme recuperar la confianza en mí misma."
+            "No puedo dejar de mirarte.":
                 m 3htbfb "Prácticamente puedo sentir tu mirada."
                 m 1rubfu "Es bastante vergonzoso, la verdad..."
             "Sinceramente, preferiría que no lo hubieras usado.":
-                m 3rfbfp "Pero si fuiste tú quien quiso que me pusiera esto en primer lugar"
+                m 3rfbfp "Pero si fuiste tú quien quiso que me pusiera esto en primer lugar."
                 call mas_clothes_change(dres)
                 m 4efbfd "Segundo, ni siquiera sé cómo actuar y tú lo sabes."
                 m 2efbfc "Así que no me pidas cosas raras que ni siquiera te gustan."
@@ -597,7 +598,7 @@ label monika_succubus:
             "¡Eso no suena nada convincente!":
                 m 7wusdro "¡Por favor, Callate!"
                 m 7tfsdra "Mejor te lanzo un hechizo para que te duermas de nuevo..."
-                m 7cusdra "{w=0-3}.{w=0.3}.{w=0.3}."
+                m 7cusdra "{w=0.3}.{w=0.3}.{w=0.3}."
                 m 6cusdrd "No me quedan fuerzas para usar magia."
                 menu:
                     "¡Espera un minuto! ¿Me estabas hechizando?":
@@ -608,7 +609,7 @@ label monika_succubus:
                         m 3rublsdra "Con un delicado beso..."
                 menu:
                     "Entonces, si me besas, ¿te irás de este lugar para siempre?":
-                        m 3eublsdrd "S... Sí"
+                        m 3eublsdrd "S...{w=0.5} Sí"
                 menu:
                     "En ese caso, prefiero negarme.":
                         m 7efbfd "Deberías haberte negado desde el principio, ¡porque tienes una novia perfecta!"
@@ -620,7 +621,7 @@ label monika_succubus:
                         m 2gubfd "Quiero decir... seguro que tienes una novia mucho más guapa, a la que deberías halagar y consentir todos los días."
                 menu:
                     "¿Así es como va la historia?":
-                        m 3dublb "Vale, vale, seguiré el guion".
+                        m 3dublb "Vale, vale, seguiré el guion."
 
                 m 1tsblb "Ejem... {w=0.5}¿De verdad me encuentras hermosa?"
                 m 2ttbla "Es un sueño, así que puedes decir lo que quieras..."
@@ -645,18 +646,18 @@ label monika_succubus:
          
     elif ev.shown_count == 1:
         
-        m 5eubsb "¿Quieres que juguemos otra vez a 'Soy un demonio'"
+        m 5eubsb "¿Quieres que juguemos otra vez a 'Soy un demonio'."
         m 4ttbsa "Creo que te sorprenderé esta vez..."
         label day_1:
-        m 6nsbsb "Prepararé el escenario"
+        m 6nsbsb "Prepararé el escenario."
         call set_the_stage
         m "Y..."
         if dressed_for_the_occation is True:
             m 2tsbfb "¿Podrías cerrar los ojos, como si estuvieras durmiendo, un momento?"        
         elif dressed_for_the_occation is False:
-            m 6eubsb "Vale, voy a cambiarme de ropa, vuelvo enseguida"
+            m 6eubsb "Vale, voy a cambiarme de ropa, vuelvo enseguida."
             call mas_clothes_change(succubus)       
-            m 7nua "Por favor, cierra los ojos un momento"
+            m 7nua "Por favor, cierra los ojos un momento."
         
         call spaceroom(hide_monika=True)
         call sot_p1
@@ -679,7 +680,7 @@ label monika_succubus:
                 call sot_p2
                 call sot_exp_smile_smugthink
                 m "Encontré cosas nuevas que puedo hacer con este mod  [mas_get_player_nickname()]..."
-                m "Ahora continuemos"
+                m "Ahora continuemos."
                 menu:
                     "¿Esto es un sueño?":
                         call sot_p3
@@ -687,14 +688,14 @@ label monika_succubus:
                         m "Claro, ¿estás soñando?"
     
         menu:
-            "T¡Eso no suena nada convincente!":
+            "¡Eso no suena nada convincente!":
                 call sot_p2
                 call sot_exp_angry_wide
                 m "¡Por favor, shhhh!"
                 call sot_exp_smirk_leftthink
                 m "Mejor te lanzo un hechizo para que te duermas otra vez..."
                 call sot_exp_smirk_wide
-                m "{w=0-3}.{w=0.3}.{w=0.3}"
+                m "{w=0.3}.{w=0.3}.{w=0.3}"
                 call sot_exp_smirk_crazy
                 call sot_p3
                 m "Ya no tengo fuerzas para usar magia"
@@ -722,7 +723,7 @@ label monika_succubus:
                 menu:
                     "En ese caso, prefiero negarme":
                         call sot_exp_smal_wide
-                        m "¿P... Por qué? ¿No quieres que... me vaya?"
+                        m "¿P... {w=1.0}Por qué? ¿No quieres que...{w=0.5} me vaya?"
 
             "Porque, algo tan hermoso como tú no puede ser real":
                 call sot_p3
@@ -743,7 +744,7 @@ label monika_succubus:
                         call sot_exp_smirk_wide
                         m "¿Y ahora qué historia es esa?"
                         call sot_exp_smirk_leftthink
-                        m "Me estás confundiendo... espera un momento"
+                        m "Me estás confundiendo... {w=0.3}espera un momento"
 
         call sot_p2
         call sot_exp_smile_normal
@@ -764,7 +765,7 @@ label monika_succubus:
 
         call sfb_poitning1
         call sfb_exp_bsmile_think
-        m "Creo que incluso podría haberte pedido más... Quizás la próxima vez."
+        m "Creo que incluso podría haberte pedido más... {w=0.5}Quizás la próxima vez."
         call sfb_hands_behind1
         call sfb_exp_bsmile_smug
         m "Nos vemos pronto."
@@ -914,19 +915,19 @@ label monika_succubus:
             m 4hsbsa "Me cambiaré de ropa y volveré."
             call mas_clothes_change(succubus)
         m 1rubfb "Hola de nuevo, humano, hay un poema que me encanta y me gustaría recitártelo."
-        m 6dubsa "Come slowly  Eden!                \n{size=-5}(¡Ven despacio, Edén!)      {/size}{/i}"
-        m 6dubsb "Lips unused to Thee               \n{size=-5}(Labios no acostumbrados a ti)      {/size}{/i}"
-        m 1eubsa "Bashful  sip thy Jessamines       \n{size=-5}(Tímido sorbo de tus jazmines)      {/size}{/i}"
-        m 1dsbsb "As the fainting Bee               \n{size=-5}(Como la abeja desmayada)      {/size}{/i}"
+        m 6dubsa "Come slowly  Eden!                \n{size=-5}{i}(¡Ven despacio, Edén!)      {/size}{/i}"
+        m 6dubsb "Lips unused to Thee               \n{size=-5}{i}(Labios no acostumbrados a ti)      {/size}{/i}"
+        m 1eubsa "Bashful  sip thy Jessamines       \n{size=-5}{i}(Tímido sorbo de tus jazmines)      {/size}{/i}"
+        m 1dsbsb "As the fainting Bee               \n{size=-5}{i}(Como la abeja desmayada)      {/size}{/i}"
         m 1dsbsa ""
-        m 3esbsb "Reaching late his flower,         \n{size=-5}(Llegando tarde a su flor)      {/size}{/i}"
-        m 3rubsa "Round her chamber hums            \n{size=-5}(Zumbidos alrededor de su cámara)      {/size}{/i}"
-        m 1fsbfb "Counts his nectars                \n{size=-5}(Cuenta sus néctares)      {/size}{/i}"
-        m 1dubsa "Enters  and is lost in Balms.     \n{size=-5}(Entra y se pierde en bálsamos.)      {/size}{/i}"
+        m 3esbsb "Reaching late his flower,         \n{size=-5}{i}(Llegando tarde a su flor)      {/size}{/i}"
+        m 3rubsa "Round her chamber hums            \n{size=-5}{i}(Zumbidos alrededor de su cámara)      {/size}{/i}"
+        m 1fsbfb "Counts his nectars                \n{size=-5}{i}(Cuenta sus néctares)      {/size}{/i}"
+        m 1dubsa "Enters  and is lost in Balms.     \n{size=-5}{i}(Entra y se pierde en bálsamos.)      {/size}{/i}"
         m 1tsbsa ""
         m 3rsbsb "Me encanta la sensualidad que Emily Dickinson expresa en este poema."
         m 3dsbfb "Sus metáforas me conmueven profundamente y me dan escalofríos..."
-        m 7lsbfp "Y [mas_get_player_nickname()] la verdad es que me quedé sin ideas,"
+        m 7lsbfp "Y [mas_get_player_nickname()] la verdad es que me quedé sin ideas."
         m 7rubfb "Así que digamos que de ahora en adelante a la chica demonio le gusta la poesía..."
         m 5nsbfa "Y si quieres, puedo quedarme con el disfraz puesto y podemos jugar a que soy una súcubo el resto del día."
         
@@ -960,7 +961,7 @@ label monika_succubus:
                     "Mejor lo dejamos para otro día.":
                         m 1lub "Claro"
                         return
-            "Tengo algo más en mente"":
+            "Tengo algo más en mente":
                 if dressed_for_the_occation is False:
                     m 7fsblb "Oh, dime qué es"
                     menu:
@@ -980,7 +981,7 @@ label monika_succubus:
                     m 2rsbfb "Si quieres, puedo mostrarte con más detalle cómo me queda este traje..."
                     menu:
                         "Me leíste la mente.":
-                            m 2ksbfa "ok"
+                            m 2ksbfa "Okis."
                 call set_the_stage
                 call spaceroom(hide_monika=True)
                 hide emptydesk
@@ -1002,16 +1003,16 @@ label monika_succubus:
                     "¡Claro, eres toda una modelo de pasarela!":
                         call sfb_exp_bsmile_think
                         call sfb_poitning2
-                        m "Espero que no te burles de mí con lo que dices [player]"
+                        m "Espero que no te burles de mí con lo que dices [player]."
                         call sfb_exp_smile_closed
-                        m "Solo estoy siendo insegura, sé que tú no lo harías"
+                        m "Solo estoy siendo insegura, sé que tú no lo harías."
                         call sfb_exp_smile_normal
                         call sfb_hands_behind1
                         pause 2
-                        m "Creo que es mejor parar aquí"
+                        m "Creo que es mejor parar aquí."
                         call sfb_poitning1
                         call sfb_exp_bsmile_think
-                        m "Recuerda que este es un mod sin terminar"
+                        m "Recuerda que este es un mod sin terminar."
                         "{size=-5}Y estare pendiente para traducirlo lo mas rapido posible jeje~{/size}{nw}"
                         call sfb_exp_smal_smugright
                         m "Si nos soltamos más, seguro que rompemos el juego."
@@ -1019,7 +1020,7 @@ label monika_succubus:
                         pause 1
 
                 call back_to_normal
-                m "Quizás algún día... podamos..."
+                m "Quizás algún día... {w=0.5}podamos..."
                 return
 
             "No, gracias, otro día quizás.":
