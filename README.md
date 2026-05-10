@@ -59,5 +59,7 @@ https://drive.google.com/drive/folders/1QnbpOBEQZEOwVVfq6bTOEGQNP-3Efl3f?usp=dri
  
  ¡Ponte en contacto conmigo! trabajare en un formulario para que puedas enviar sugerencias, errores (tanto en el codigo como en la ortografia) y posibles futuros submods. 
 
- [<H2>¡Toca aqui!</H2>](https://forms.gle/py5vWmyF82FfvWBm6) 
+ 👇¡Toca aqui!👇
+ https://forms.gle/py5vWmyF82FfvWBm6
+
 
