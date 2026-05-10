@@ -450,7 +450,7 @@ label monika_succubus:
 
     if mas_isMoniAff(lower=True):
         m 1lub "¿Conseguiste un nuevo mod [player]?"
-        m 3lub "Déjame ver de qué se trata actuar como un demonio."
+        m 3lub "Déjame ver, se trata actuar como un demonio."
         m 3eub "Hay un libro de diálogos e incluso un disfraz..."
         m 2rsbfsdlu "Lo siento  [player], pero no me sentiría cómoda haciendo esto."
         m 1lsbfsdlc "Es demasiado vergonzoso..."
@@ -463,7 +463,7 @@ label monika_succubus:
         $ ev = mas_getEV("monika_succubusnokiss")
         if ev.shown_count == 0:
             m 1lub "¿Conseguiste un nuevo Submod [player]?"
-            m 3lub "Déjame ver qué se trata de actuar como un demonio..."
+            m 3lub "Veamos, se trata de actuar como un demonio..."
             m 3eub "Hay un libro de diálogos..."
             m 7rubfc "Pero el guion dice que debo darte un... {w=0.5}beso."
             m 2rubfd "Para serte sincero, no me siento cómoda con eso..."
@@ -641,12 +641,12 @@ label monika_succubus:
         call monika_kissing_motion_short
         m 2esblb "Hasta pronto."
         call mas_clothes_change(dres)
-        m 1hsblb "Y... ¡Zas!, esta historia ha terminado."
+        m 1hsblb "Y...{w=0.5} ¡Colorín colorado!, esta historia ha terminado."
         m 1lsbla "Supongo que podríamos intentar esto en otra ocasión."
          
     elif ev.shown_count == 1:
         
-        m 5eubsb "¿Quieres que juguemos otra vez a 'Soy un demonio'."
+        m 5eubsb "¿Quieres que juguemos otra vez a 'Soy una demonio'."
         m 4ttbsa "Creo que te sorprenderé esta vez..."
         label day_1:
         m 6nsbsb "Prepararé el escenario."
@@ -893,7 +893,7 @@ label monika_succubus:
         m "Causan el efecto contrario..."
         call sot_p3
         call sot_exp_smile_smugthink
-        m "Así que tal vez... d{w=0.3}eberías tener cuidado.."
+        m "Así que tal vez... {dw=0.3}deberías tener cuidado.."
         call sot_p2
         call sot_exp_bsmile_smug
         m "Jugar con una súcubo es como bailar al borde de un precipicio..."
@@ -941,7 +941,7 @@ label monika_succubus:
 
     else:
         m 2lubfc "[mas_get_player_nickname()], aún no he preparado nada para este mod."
-        m 7esbfb "Pero, si quieres, podemos repetir algunos de los scripts que ya usamos."
+        m 7esbfb "Pero, si quieres, podemos repetir algunos de los guiones que ya usamos."
         menu:
             "¡Claro!":
                 m 7lsbfa "Vale, ¿cuál usamos?"
@@ -981,7 +981,7 @@ label monika_succubus:
                     m 2rsbfb "Si quieres, puedo mostrarte con más detalle cómo me queda este traje..."
                     menu:
                         "Me leíste la mente.":
-                            m 2ksbfa "Okis."
+                            m 2ksbfa "Okis,jejeje~"
                 call set_the_stage
                 call spaceroom(hide_monika=True)
                 hide emptydesk

@@ -22,7 +22,7 @@
         "succubus_roleplay":true
     },
     "select_info": {
-        "display_name": "succubus costume",
+        "display_name": "Disfraz de súcubo",
         "thumb": "mi-fan-arts-succubus",
         "group": "clothes",
         "visible_when_locked": true,
@@ -33,7 +33,7 @@
             "As the fainting bee."
         ],
         "select_dlg": [
-            "What fantasies are you planning?"
+            "¿Qué fantasías estás planeando?"
         ]
     },
     "pose_arms": {
