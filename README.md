@@ -23,13 +23,13 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 
 | Proyecto | Estado | Descripción |Link del README/LEEME|
 | :--- | :---: | :---: |---:|
-| **MAS_yandere (Español)** | 🟢 | ¡Listo!. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/SUBMOD_Yandere%20monika/MAS_yandere-1.0.0/README.md)|
-| **Extraplus (Español)** | 🟡 | Traducción en progreso. | [¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/ExtraPlus%201.1.1%20-%20MAS%200.12.16%20o%20superior/README.md)|
-| **Kiss Button (Español)** | 🟢 | ¡Listo!. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Kiss_Button_ES/README.md)|
-| **Recopilacion Submods DokiDokiDaEs (Español)** | 🟢 | ¡Listo!. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Recopilacion%20Submods%20DokiDokiDaEs/%C2%A1LEEME!.md)|
-| **The Bed Mod! ¨Room¨(Español)** | 🟡 | En pruebas. |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Spooks_s%20Bed%20V1/README.md)|
-| **Mony succubus Role Play Mod beta v2 (Español)** | 🟡 | En Pruebas. |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Mony_succubus_Role_Play_Mod_beta_v2/README.md)|
-| **¿Keeper of Reality Act II? (Español)** | ???| ???. |[¡...!]()|
+| **MAS_yandere (Español)** | 🟢 | ¡Listo!. |[Este mod se centra en tener una Monika yandere, dándole al jugador una experiencia de una relación tóxica como se ve en animes de este estilo.](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/SUBMOD_Yandere%20monika/MAS_yandere-1.0.0/README.md)|
+| **Extraplus (Español)** | 🟡 | Este submod que añade un botón Extra+, además de más contenido! | [¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/ExtraPlus%201.1.1%20-%20MAS%200.12.16%20o%20superior/README.md)|
+| **Kiss Button (Español)** | 🟢 | Te permite pedirle un beso a Monika en cualquier momento a través de un botón en la pantalla y tiene diálogos especiales. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Kiss_Button_ES/README.md)|
+| **Recopilacion Submods DokiDokiDaEs (Español)** | 🟢 | ¡Una recopilación de submods de DaEs! |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Recopilacion%20Submods%20DokiDokiDaEs/%C2%A1LEEME!.md)|
+| **The Bed Mod! ¨Room¨(Español)** | 🟢 | Este es un cuarto en el cual te puedes acurrucar con monika. |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Spooks_s%20Bed%20V1/README.md)|
+| **Mony succubus Role Play Mod beta v2 (Español)** | 🟢 | Este submod te permite hacer un roleplay (o una actuacion por así decirlo) con monika planteandola a ella como una súcubo. |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Mony_succubus_Role_Play_Mod_beta_v2/README.md)|
+| **¿Keeper of Reality Act II? (Español)** | ???| ???. |...|
 
 > Los submods **NO SON DE MI PROPIEDAD**; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
 ---

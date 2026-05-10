@@ -4,7 +4,7 @@ Esta es una traducción al español del submod original para **Monika After Stor
 
 ## 📝 Descripción
 
-Este es un cuarto en el cual te puedes acurrucar con monika
+Este es un cuarto en el cual te puedes acurrucar con monika.
 
 
 ## ⭐ Este mod contiene 
