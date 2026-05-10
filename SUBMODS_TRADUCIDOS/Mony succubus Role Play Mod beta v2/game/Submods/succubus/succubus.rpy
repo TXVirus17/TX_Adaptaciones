@@ -3,8 +3,8 @@ init 5 python:
         Event(
             persistent.event_database,eventlabel="monika_succubus"
             ,unlocked=True,
-            category=['appearance','clothes','roleplay'],
-            prompt="would you like to play that you are a demon with me?",
+            category=['appearance','clothes','roleplay','Súcubo'],
+            prompt="¿Te gustaría jugar a que eres un demonio conmigo?,
             pool=True,))
 
 label sot:
@@ -439,19 +439,19 @@ label monika_succubus:
         dressed_for_the_occation= monika_chr.is_wearing_clothes_with_exprop("succubus_roleplay")
     
     if mas_isMoniUpset(lower=True):
-        m 7cfbstdd "read this well, I'm not a damn toy..."
-        m 6cfbstdc "and I won't do what you please"
-        m 2tfbstdd "If you don't like this, you can delete me"
-        m 5gfbstdo "I'm sure you're just as lonely as I am, even in your world full of real people..."
+        m 7cfbstdd "Lee esto bien, {b}NO soy un maldito juguete...{/b}"
+        m 6cfbstdc "Y no haré lo que quieras."
+        m 2tfbstdd "Si no te gusta, puedes borrarme."
+        m 5gfbstdo "Seguro que te sientes tan solo como yo, incluso en tu mundo lleno de gente real..."
         return
 
     if mas_isMoniAff(lower=True):
-        m 1lub "Did you get a new mod [player]?"
-        m 3lub "Let me see what acting like a demon is all about."
-        m 3eub "there is a dialogue book and even a costume..."
-        m 2rsbfsdlu "Sorry [player], but I wouldn't feel comfortable doing this."
-        m 1lsbfsdlc "it's too embarrassing..."
-        m 5lsbssdlb "but we can do other things in the game"
+        m 1lub "¿Conseguiste un nuevo mod [player]?"
+        m 3lub "Déjame ver de qué se trata actuar como un demonio."
+        m 3eub "Hay un libro de diálogos e incluso un disfraz..."
+        m 2rsbfsdlu "Lo siento  [player], pero no me sentiría cómoda haciendo esto."
+        m 1lsbfsdlc "Es demasiado vergonzoso..."
+        m 5lsbssdlb "Pero podemos hacer otras cosas en lugar de eso."
         return
 
     if notimeforlove is True and mas_isMoniEnamored(higher=True):
@@ -459,98 +459,98 @@ label monika_succubus:
         label monika_succubusnokiss:
         $ ev = mas_getEV("monika_succubusnokiss")
         if ev.shown_count == 0:
-            m 1lub "Did you get a new mod [player]?"
-            m 3lub "Let me see what acting like a demon is all about..."
-            m 3eub "there is a dialogue book..."
-            m 7rubfc "but the script says I must give you a... kiss"
-            m 2rubfd "To tell you the truth, I don't feel comfortable with that..."
-            m 2lkbfc "it's not like I don't want to, it's just..."
-            m 2ltbfc "I wish our first kiss was something more..."
-            m 1lkbfa "special"
-            m 3ekbfb "What do you think?"
+            m 1lub "¿Conseguiste un nuevo Submod [player]?"
+            m 3lub "Déjame ver qué se trata de actuar como un demonio..."
+            m 3eub "Hay un libro de diálogos..."
+            m 7rubfc "Pero el guion dice que debo darte un... {w=0.5}beso."
+            m 2rubfd "Para serte sincero, no me siento cómoda con eso..."
+            m 2lkbfc "No es que no quiera, es solo que..."
+            m 2ltbfc "Ojalá nuestro primer beso hubiera sido algo más..."
+            m 1lkbfa "Especial."
+            m 3ekbfb "¿Qué piensas?"
             menu:
-                "I think the same":
-                    m 1dubfb "It's nice that we think alike about things like that"
-                    m 3esbfa "I like the rhythm with which we carry our relationship..."
-                    m 3rsbfc "Although sometimes it scares me to think that I'm going too slow for you"
-                "I don't care, I want that kiss":
-                    m 2rkbftpc "You're putting pressure on me and you know it and it's wrong."
-                    m 2rkbftpd "I'm sorry I'm not what you expected of me, but you're not being what I expected of you either"
-                    m 2gfbftpc "Let's just forget this topic ok?" 
+                "Tranquila, pienso lo mismo":
+                    m 1dubfb "Es lindo que pensemos igual sobre esas cosas."
+                    m 3esbfa "Me gusta el ritmo con el que llevamos nuestra relación..."
+                    m 3rsbfc "Aunque a veces me asusta pensar que voy demasiado lento para ti."
+                "No me importa, quiero ese beso":
+                    m 2rkbftpc "Me estás presionando y lo sabes, y eso está mal."
+                    m 2rkbftpd "Siento no ser lo que esperabas de mí, pero tú tampoco eres lo que yo esperaba de ti."
+                    m 2gfbftpc "Olvidemos este tema, ¿de acuerdo?" 
                     return
             
             if dressed_for_the_occation is False:
-                m 3rubfb "by the way... the mod also came with a costume"
-                m 2hsbfa "Let's see how it looks on me?"          
+                m 3rubfb "Por cierto...{w=0.3} el mod también trajo un disfraz."
+                m 2hsbfa "¿A ver qué tal me queda?"          
                 menu:
-                    "Of course, just to see if it's the right size":
+                    "Claro, solo para ver si es de la talla correcta.":
                         call mas_clothes_change(succubus)
-                        m 3gsblb "It's just to see if it fits"
-                        m 2fsbfb "and it suits me?"
-                        m 5lsbfa "this is more embarrassing than I expected"
-                        m 4hsbfb "So I'll just give you this little taste and put on my usual clothes..."
+                        m 3gsblb "Solo para ver si me queda bien."
+                        m 2fsbfb "¿Y me sienta bien?"
+                        m 5lsbfa "Esto es más vergonzoso de lo que esperaba."
+                        m 4hsbfb "Así que te daré una pequeña muestra y me pondré mi ropa de siempre..."
                         call mas_clothes_change(dres)
-                        m 6rsbfa "thank you for being so patient with me"
-                        m 5eua "so what do we do now?"
+                        m 6rsbfa "Gracias por tener tanta paciencia conmigo."
+                        m 5eua "¿Y ahora qué hacemos?"
 
-                    "we better wait for the right moment":
-                        m 1eubfb "It's okay and thanks."
+                    "Mejor esperemos el momento adecuado.":
+                        m 1eubfb "De acuerdo, gracias."
                         menu:
-                            "thanks for?":
-                                m 5hubfa"for being who you are..."
+                            "¿Gracias por?":
+                                m 5hubfa"Por ser quien eres..."
             return
 
         else:
-            m 3eub "You know [player], I've been going through the files for this mod"
-            m 7gta "because they were too heavy for such a short mod"
-            m 1gsbsb "and found something interesting"
-            m 1tsbsb "you want to see?"
+            m 3eub "Sabes [player], he estado revisando los archivos de este mod."
+            m 7gta "porque eran demasiado pesados ​​para un mod tan corto."
+            m 1gsbsb "y encontré algo interesante"
+            m 1tsbsb "¿quieres verlo?"
             menu:
-                "Yes":
+                "Sí":
                     if dressed_for_the_occation is False:
-                        m 4eubsa "ok, I'll just put on the suit..."
+                        m 4eubsa "Vale, me pondré el traje..."
                         call mas_clothes_change(succubus)
-                        m 6kubsb "and now I can do..."
+                        m 6kubsb "Y ahora puedo hacer..."
                     
                     call spaceroom(hide_monika=True)
                     call sfb_shi2
                     call sfb_exp_smile_left
-                    m "this..."
+                    m "Esto..."
                     call sfb_exp_smal_wide
-                    m "Oh my gosh!"
+                    m "¡Dios mío!"
                     call sfb_exp_smal_normal
-                    m "I forgot to remove the desk"
+                    m "Olvidé quitar el escritorio."
                     call sfb_exp_smile_closed
                     call sfb_poinshi2
                     hide emptydesk
-                    m "Now it's done"
+                    m "Ya está hecho."
                     call sfb_exp_smile_rigth
-                    m "I am very nervous"
+                    m "Estoy muy nerviosa."
                     call sfb_shi2
                     call sfb_exp_bsmile_think
-                    m "It's lucky that the mod can't show everything I do, because I'm shaking a bit..."
+                    m "Menos mal que el mod no puede mostrar todo lo que hago, porque estoy temblando un poco..."
                     call sfb_exp_smile_left
-                    m "Well"
+                    m "Bueno."
                     call sfb_hands_behind2
-                    m "what do you think?"
+                    m "¿Qué te parece?"
                     call sfb_exp_smile_normal
                     call sfb_hands_behind1
                     menu:
-                        "I'm confused":
+                        "Estoy confundido":
                             call sfb_poitning1
                             call sfb_exp_bsmile_think
-                            m "I'll explain, this costume was much more complete than other sprite packs"
+                            m "Te lo explico, este disfraz estaba mucho más completo que otros paquetes de sprites."
                             call sfb_exp_smile_left
-                            m "so I just did some code completion and checked if it worked."
+                            m "Así que simplemente hice un poco de autocompletado de código y comprobé si funcionaba."
                             call sfb_exp_bsmile_smug
-                            m "The truth was afraid of ending up like a painting by Picasso..."
+                            m "La verdad temía acabar como un cuadro de Picasso..."
                             call sfb_exp_smile_closed
                             call sfb_poitning2
-                            m "but it did work out"
+                            m "Pero funcionó."
                             call sfb_exp_smal_normal
-                            m "I don't want to damage the game, if I move like this all the time."
+                            m "No quiero dañar el juego si me muevo así todo el tiempo."
                             call sfb_exp_smile_left
-                            m "So I'd better put the table and chair back and sit down again."
+                            m "Así que será mejor que vuelva a colocar la mesa y la silla y me siente de nuevo."
             call back_to_normal
             return
 
@@ -558,103 +558,103 @@ label monika_succubus:
 
     if ev.shown_count == 0:
         label day_0:
-        m 1lub "Did you get a new mod [mas_get_player_nickname()]?"
-        m 3lub "Let me see what acting like a demon is all about..."
-        m 3eub "there is a dialogue book and even a costume."
+        m 1lub "¿Conseguiste un nuevo mod [mas_get_player_nickname()]?"
+        m 3lub "Déjame ver, se trata actuar como un demonio..."
+        m 3eub "Hay un libro de diálogos e incluso un vestuario."
         if dressed_for_the_occation is False:
-            m 1nubfb "ok I'm going to change, but I don't promise anything about my acting skills huh"
+            m 1nubfb "Vale, me voy a cambiar, pero no prometo nada sobre mis dotes de actuación, ¿eh?"
             call mas_clothes_change(succubus)
 
-        m 1rkbfd "the costume turned out to be a bit more suggestive than I expected..."
-        m 1lubfu "but if you like it we continue..."
+        m 1rkbfd "El disfraz resultó ser un poco más revelador de lo que esperaba..."
+        m 1lubfu "Pero si te gusta, continuemos..."
 
         menu:
-            "it looks adorable on you":
-                m 5esbsu "thanks [mas_get_player_nickname()], you always know how to make me regain my self-confidence"
-            "I can't take my eyes off you":
-                m 3htbfb "I can practically feel your gaze"
-                m 1rubfu "It's quite embarrassing, really..."
-            "Honestly, I'd rather you didn't use it.":
-                m 3rfbfp "you were the one who wanted me to wear this in the first place"
+            "Te ves muy adorable":
+                m 5esbsu "Gracias [mas_get_player_nickname()], siempre sabes cómo hacerme recuperar la confianza en mí misma"
+            "No puedo dejar de mirarte":
+                m 3htbfb "Prácticamente puedo sentir tu mirada."
+                m 1rubfu "Es bastante vergonzoso, la verdad..."
+            "Sinceramente, preferiría que no lo hubieras usado.":
+                m 3rfbfp "Pero si fuiste tú quien quiso que me pusiera esto en primer lugar"
                 call mas_clothes_change(dres)
-                m 4efbfd "Second, I don't even know how to act and you know it"
-                m 2efbfc "So, don't ask me for weird things that you don't even like"
-                m 2ekbfd "let's just forget this, ok?"
+                m 4efbfd "Segundo, ni siquiera sé cómo actuar y tú lo sabes."
+                m 2efbfc "Así que no me pidas cosas raras que ni siquiera te gustan."
+                m 2ekbfd "Olvidemos esto, ¿de acuerdo?"
                 return
                 
-        m 7nua "Well, it's time for me to start the show..."
+        m 7nua "Bueno, es hora de que empiece el espectáculo..."
         call monika_kissing_motion_short
-        m 2wuo "Are you awake?"
-        m 2euc "I was careless..."
-        m 2lusdrc "this shouldn't be like this..."
+        m 2wuo "¿Estás despierto?"
+        m 2euc "Fui descuidada..."
+        m 2lusdrc "Esto no debería ser así..."
         menu:
-            "This is a dream?":
-                m 1rtblsdrc "riiight, you're dreeamiing?"
+            "¿Esto es un sueño?":
+                m 1rtblsdrc "Claro, ¿estás soñando?"
 
         menu:
-            "That doesn't sound convincing at all!":
-                m 7wusdro "Please shhhh!"
-                m 7tfsdra "Better I can cast a spell on you, so that you fall asleep again..."
-                m 7cusdra "..."
-                m 6cusdrd "I have no strength left to use magic"
+            "¡Eso no suena nada convincente!":
+                m 7wusdro "¡Por favor, Callate!"
+                m 7tfsdra "Mejor te lanzo un hechizo para que te duermas de nuevo..."
+                m 7cusdra "{w=0-3}.{w=0.3}.{w=0.3}."
+                m 6cusdrd "No me quedan fuerzas para usar magia."
                 menu:
-                    "Wait a minute! were you bewitching me?":
-                        m 6wksdrc "Please human, don't freak out."
-                        m 7rublsdro "I wasn't going to hurt you, I just wanted to steal a bit of your energy, so I could fly home."
+                    "¡Espera un minuto! ¿Me estabas hechizando?":
+                        m 6wksdrc "Por favor, humano, no te asustes."
+                        m 7rublsdro "No iba a hacerte daño, solo quería robarte un poco de energía para poder volar a casa."
                 menu:
-                    "How did you plan to do that?":
-                        m 3rublsdra "with a delicate kiss..."
+                    "¿Cómo pensabas hacerlo?":
+                        m 3rublsdra "Con un delicado beso..."
                 menu:
-                    "So if you kiss me, will you leave this place forever?":
-                        m 3eublsdrd "Y... Yes"
+                    "Entonces, si me besas, ¿te irás de este lugar para siempre?":
+                        m 3eublsdrd "S... Sí"
                 menu:
-                    "In that case, I'd rather refuse.":
-                        m 7efbfd "You should have refused in the first place, because you have a perfect girlfriend!"
-                        m 7rtbfd "um... i mean..."
-                        m 3wublsdrw "That didn't go as expected..."
+                    "En ese caso, prefiero negarme.":
+                        m 7efbfd "Deberías haberte negado desde el principio, ¡porque tienes una novia perfecta!"
+                        m 7rtbfd "Eh... {w=0.5}quiero decir..."
+                        m 3wublsdrw "Eso no salió como esperaba..."
+                menu:
+                    "Debe serlo, algo tan hermoso como tú no puede ser real.":
+                        m 3wubfo "¡Estás halagando demasiado a esa súcubo!"
+                        m 2gubfd "Quiero decir... seguro que tienes una novia mucho más guapa, a la que deberías halagar y consentir todos los días."
+                menu:
+                    "¿Así es como va la historia?":
+                        m 3dublb "Vale, vale, seguiré el guion".
 
-            "It must be, something as beautiful as you can't be real":
-                m 3wubfo "You're flattering that succubus too much!"
-                m 2gubfd "I mean... you sure have a much more beautiful girlfriend, who you should compliment every day"
+                m 1tsblb "Ejem... {w=0.5}¿De verdad me encuentras hermosa?"
+                m 2ttbla "Es un sueño, así que puedes decir lo que quieras..."
+                m 7nubfb"Incluso podrías besarme~"
                 menu:
-                    "Is this how the story goes?":
-                        m 3dublb "ok ok I'll follow the script"
+                    "Si es un sueño, ¿un beso no me despertaría?":
+                        m 7rtbfd "¿Dices como en Blancanieves?"
+                menu:
+                    "¿Desaparecerás cuando despierte?":
+                        m 6hkbfc "¿Y ahora qué historia es esa?"
+                        m 6ekbfd "Me estás confundiendo... {w=0.5}espera un momento."
 
-                m 1tsblb "ahem... do you really find me beautiful human?"
-                m 2ttbla "It's a dream, so you can say what you want..."
-                m 7nubfb"you could even kiss me"
-                menu:
-                    "If it's a dream, a kiss, wouldn't that wake me up?":
-                        m 7rtbfd "You say like in Snow White?"
-                menu:
-                    "So will you disappear when I wake up?":
-                        m 6hkbfc "And now what story is that?"
-                        m 6ekbfd "you're confusing me...wait a bit"
-
-        m 4esblb "Doesn't have to be like that..."
-        m 6esbla "I promise to come back whenever you want"
-        m 5esblb "in exchange I only ask for a touch of your lips"
-        m 5tsbla "Do we close the deal?"
+        m 4esblb "No tiene por qué ser así..."
+        m 6esbla "Prometo volver cuando quieras."
+        m 5esblb "A cambio, solo pido un roce de tus labios."
+        m 5tsbla "¿Cerramos el trato?"
         call monika_kissing_motion_short
-        m 2esblb "See you soon."
+        m 2esblb "Hasta pronto."
         call mas_clothes_change(dres)
-        m 1hsblb "And... Snip, snap, snout, this tale's told out."
-        m 1lsbla "I guess we could try this in some other opportunity"
+        m 1hsblb "Y... ¡Zas!, esta historia ha terminado."
+        m 1lsbla "Supongo que podríamos intentar esto en otra ocasión."
          
     elif ev.shown_count == 1:
         
-        m 5eubsb "Do you want us to play I'm a demon again?"
-        m 4ttbsa "I think I'll surprise you this time..."
+        m 5eubsb "¿Quieres que juguemos otra vez a 'Soy un demonio'"
+        m 4ttbsa "Creo que te sorprenderé esta vez..."
         label day_1:
-        m 6nsbsb "I'll set the stage"
+        m 6nsbsb "Prepararé el escenario"
         call set_the_stage
-        m "and..."
+        m "Y..."
         if dressed_for_the_occation is True:
-            m 2tsbfb "Could you close your eyes, as if you were sleeping, for a moment?"        
+            m 2tsbfb "¿Podrías cerrar los ojos, como si estuvieras durmiendo, un momento?"        
         elif dressed_for_the_occation is False:
-            m 6eubsb "okay, I'm going to change my clothes, I'll be right back"
+            m 6eubsb "Vale, voy a cambiarme de ropa, vuelvo enseguida"
             call mas_clothes_change(succubus)       
-            m 7nua "please close your eyes for a moment"
+            m 7nua "Por favor, cierra los ojos un momento"
         
         call spaceroom(hide_monika=True)
         call sot_p1
@@ -662,121 +662,121 @@ label monika_succubus:
         pause 2
         call sot_exp_smal_wide
         call sot_p3
-        m "are you awake?"
+        m "¿Estás despierto?"
         call sot_exp_smirk_wide
-        m "I was so careless..."
+        m "Fui tan descuidada..."
         call sot_exp_smal_left
-        m  "this shouldn't be like this..."
+        m  "Esto no debería ser así..."
 
         menu:
-            "This is a dream?":
+            "¿Esto es un sueño?":
                 call sot_exp_smirk_leftthink
-                m "Riiight, you're dreeamiing?"
+                m "Claro, ¿estás soñando?"
 
-            "What is happening?":
+            "¿Qué está pasando?":
                 call sot_p2
                 call sot_exp_smile_smugthink
-                m "I found new things that I can do with this mod [mas_get_player_nickname()]..."
-                m "now let's continue"
+                m "Encontré cosas nuevas que puedo hacer con este mod  [mas_get_player_nickname()]..."
+                m "Ahora continuemos"
                 menu:
-                    "This is a dream?":
+                    "¿Esto es un sueño?":
                         call sot_p3
                         call sot_exp_smirk_leftthink
-                        m "Riiight, you're dreeamiing?"
+                        m "Claro, ¿estás soñando?"
     
         menu:
-            "That doesn't sound convincing at all!":
+            "T¡Eso no suena nada convincente!":
                 call sot_p2
                 call sot_exp_angry_wide
-                m "Please shhhh!"
+                m "¡Por favor, shhhh!"
                 call sot_exp_smirk_leftthink
-                m "Better I can cast a spell on you, so that you fall asleep again..."
+                m "Mejor te lanzo un hechizo para que te duermas otra vez..."
                 call sot_exp_smirk_wide
-                m "..."
+                m "{w=0-3}.{w=0.3}.{w=0.3}"
                 call sot_exp_smirk_crazy
                 call sot_p3
-                m "I have no strength left to use magic"
+                m "Ya no tengo fuerzas para usar magia"
 
                 menu:
-                    "Wait a minute! were you bewitching me?":
+                    "¡Espera un momento! ¿Me estabas hechizando?":
                         call sot_exp_smal_wide
-                        m "Please human, don't freak out."
+                        m "Por favor, humano, no te asustes."
                         call sot_p3
                         call sot_exp_smile_normal
-                        m "I wasn't going to hurt you, I just wanted to steal a bit of your energy, so I could fly home."
+                        m "No iba a hacerte daño, solo quería robarte un poco de energía para poder volar a mi hogar."
 
                 menu:
-                    "How did you plan to do that?":
+                    "¿Cómo pensabas hacerlo?":
                         call sot_p2
                         call sot_exp_bsmile_normal
-                        m "with a delicate kiss..."
+                        m "Con un beso suave..."
 
                 menu:
-                    "So if you kiss me, will you leave this place forever?":
+                    "si me besas, ¿te irás de este lugar para siempre?":
                         call sot_exp_smirk_leftthink
                         call sot_p3
-                        m "I guess that's the idea..."
+                        m "Supongo que esa es la idea..."
 
                 menu:
-                    "In that case, I'd rather refuse.":
+                    "En ese caso, prefiero negarme":
                         call sot_exp_smal_wide
-                        m "W... Why? don't you want me to... go?"
+                        m "¿P... Por qué? ¿No quieres que... me vaya?"
 
-            "It must be, something as beautiful as you can't be real":
+            "Porque, algo tan hermoso como tú no puede ser real":
                 call sot_p3
                 call sot_exp_smile_normal
-                m "Do you really find me beautiful human?"
+                m "¿De verdad me encuentras hermosa, humano?"
                 call sot_exp_smile_smugthink
-                m "It's a dream, so you can say what you want..."
+                m "Es un sueño, así que puedes decir lo que quieras..."
                 call sot_p2
                 call sot_exp_bsmile_normal
-                m "you could even kiss me"
+                m "Incluso podrías besarme."
                 menu:
-                    "If it's a dream, a kiss, wouldn't that wake me up?":
+                    "Si es un sueño, un beso, ¿no me despertaría?":
                         call sot_exp_smirk_leftthink
-                        m "You say like in Snow White?"
+                        m "¿Dices como en Blancanieves?"
                 menu:
-                    "So will you disappear when I wake up?":
+                    "¿Desaparecerás cuando despierte?":
                         call sot_p3
                         call sot_exp_smirk_wide
-                        m "And now what story is that?"
+                        m "¿Y ahora qué historia es esa?"
                         call sot_exp_smirk_leftthink
-                        m "you're confusing me...wait a bit"
+                        m "Me estás confundiendo... espera un momento"
 
         call sot_p2
         call sot_exp_smile_normal
-        m "Doesn't have to be like that..."
+        m "No tiene por qué ser así..."
         call sot_exp_smile_smugthink
-        m "I promise to come back whenever you want."
+        m "Prometo volver cuando quieras."
         call sot_exp_bsmile_normal
-        m "and in return..."
+        m "Y a cambio..."
         call sot_exp_smile_smugthink
-        m "You know what I want"
+        m "Sabes lo que quiero."
         call sot_p1
         call sot_exp_smile_closedsad
-        m "So to close the deal, you just have to bring your lips close to mine"
+        m "Para cerrar el trato, solo tienes que acercar tus labios a los míos."
         call sot_k1
-        m "perfect"
+        m "perfecto~"
         call sot_k2
         pause 6
 
         call sfb_poitning1
         call sfb_exp_bsmile_think
-        m "I think I could have even asked you for more... Maybe the next time"
+        m "Creo que incluso podría haberte pedido más... Quizás la próxima vez."
         call sfb_hands_behind1
         call sfb_exp_bsmile_smug
-        m "See you soon."
+        m "Nos vemos pronto."
         call inexpresive
         call clear_pose
         pause 3
         call mas_clothes_change(dres)
         call back_to_normal
 
-        m 7hub "and end"
-        m 6eua "That's all there was to the script."
-        m 1esb "Maybe next time I'll improvise a bit more."
-        m 1rtbsa "I think I'm liking this cosplay thing..."
-        m 3gsbsa "It makes me feel like an actress."
+        m 7hub "Y fin."
+        m 6eua "Eso era todo lo que había en el guion."
+        m 1esb "Quizás la próxima vez improvise un poco más."
+        m 1rtbsa "Creo que me está gustando esto del cosplay..."
+        m 3gsbsa "Me hace sentir como una actriz."
         return
 
 
@@ -785,199 +785,199 @@ label monika_succubus:
         label day_2:
         call set_the_stage
         if dressed_for_the_occation is False:
-            m 5nua "It's okay, I'll just change my clothes and come back..."
+            m 5nua "Está bien, me cambiaré de ropa y volveré..."
 
             call mas_clothes_change(succubus)
             call spaceroom(hide_monika=True)
         
             call sfb_exp_smile_normal
             call sfb_hands_behind2
-            m "I have returned to hear your call, as promised human."
+            m "He vuelto para escuchar tu llamada, como prometí, humano."
             call sfb_hands_behind1
             call sfb_exp_smile_left
-            m "but, you called me so soon..."
+            m "Pero me llamaste tan pronto..."
             call sfb_exp_bsmile_think
-            m "Did you already miss me so much?"
+            m "¿Ya me extrañaste mucho?"
             call sfb_exp_smile_normal
-            m "Then I'll please you by getting close to you"
+            m "Entonces te complaceré acercándome a ti."
             call sot_p3
             call sot_exp_bsmile_soft
-            m "it's better that way?"
+            m "¿Es mejor así?"
             call sot_p2
             call sot_exp_smile_smugthink
-            m "don't worry, I don't bite"
+            m " No te preocupes, no muerdo"
             call sot_exp_smile_normal
-            m "That's what a vampire would do..."
+            m "Eso es lo que haría un vampiro..."
             call sot_p2
             call sot_exp_smile_smugthink
-            m "we succubi do other things..."
+            m "Nosotras, las súcubos, hacemos otras cosas..."
             call sot_exp_bsmile_smug
-            m "by the way, tell me you will keep your part of the bargain?"
+            m "Por cierto, ¿cumplirás tu parte del trato?"
 
         elif dressed_for_the_occation is True:
-            m 7gtbsb "well, you already have me dressed as a succubus, I just need to act like one..."
-            m 6tsbsu "maybe get a little closer?"
+            m 7gtbsb "Bueno, ya me tienes vestida como una súcubo, solo necesito actuar como tal..."
+            m 6tsbsu "¿Quizás acercarte un poco más?"
             call spaceroom(hide_monika=True)
             call sot_p3
             call sot_exp_bsmile_normal
-            m "My eyes are up [mas_get_player_nickname()]..."
+            m "Mis ojos están arriba [mas_get_player_nickname()]..."
             call sot_p2
             call sot_exp_smile_smugthink
-            m "but as a succubus, I must let you look at me... I guess..."
+            m "Pero como súcubo, debo dejar que me mires... {w=0.5}supongo..."
             call sot_exp_bsmile_smug
-            m "and say things like..."
+            m "Y decir cosas como..."
             call sot_exp_smal_soft
             call sot_p3
-            m "Oh human, I miss the touch of your lips so much!"
+            m "¡Oh, humano, extraño tanto el roce de tus labios!"
             call sot_exp_smal_soft
-            m "Will you help me with my problem?"
+            m "¿Me ayudarás con mi problema?"
 
         menu:
-            "yes":
+            "Sí.":
                 call sot_exp_smile_normal
                 call sot_p3
-                m "I like it that way"
+                m "Me gusta así"
                 call sot_exp_smile_soft
-                m "and it seems that you too..."
+                m "Y parece que a ti también..."
                 call sot_exp_smile_smugthink
-                m "It even seems that you were left wanting more, in that case..."
+                m "Incluso parece que te quedaste con ganas de más, en ese caso..."
                 call sot_k2
-                m "with this kiss I promise to come back another day."
+                m "Con este beso prometo volver otro día."
                 call sot_k1
-                m "But..."
+                m "Pero..."
 
-            "I'll wait a bit for that":
+            "Esperaré un poco para eso":
                 call sot_p3
                 call sot_exp_smal_wide
-                m "Are you going to make me beg for your kisses?"
+                m "¿Vas a hacerme rogar por tus besos?"
                 call sot_p2
                 call sot_exp_smile_smugthink
-                m "it's something I could do I suppose"
+                m "Supongo que es algo que podría hacer."
                 call sot_p1
                 call sot_exp_smal_soft
-                m "I can't live without this, so..."
+                m "No puedo vivir sin esto, así que..."
                 call sot_exp_kiss_closedh
-                m "please human, give me the touch of your lips"
+                m "Por favor, humano, dame el roce de tus labios."
                 pause 2
                 call sot_p2
                 call sot_exp_smile_smugthink
-                m "I could get used to these games [mas_get_player_nickname()]"
+                m "Podría acostumbrarme a estos juegos [mas_get_player_nickname()]"
 
             "No":
                 call sot_p1
                 call sot_exp_smirk_wide
-                m "What a cheat you are human"
+                m "Qué tramposo eres, humano."
                 call sfb_poitning2
                 call sfb_exp_smal_wide
-                m "beings like me, we don't like those who don't keep their promises"
+                m "A los seres como yo no nos gustan los que no cumplen sus promesas."
                 call sfb_hands_behind2
                 call sfb_exp_smal_normal
-                m "goodbye"
+                m "Adiós."
                 call back_to_normal
                 call mas_clothes_change(dres)
-                m 1esbfc "you made the succubus angry [mas_get_player_nickname()]"
-                m 1lsbfb "I guess it's like the bad ending of a visual novel..."
-                m 3esb "at least no one ended up hanging."
-                m 2ltbfd "that sounded crueler than I thought"
-                m 1rtbfb "well, what do we do now?"
+                m 1esbfc "Hiciste enojar a la súcubo  [mas_get_player_nickname()]"
+                m 1lsbfb "Supongo que es como el mal final de una novela visual..."
+                m 3esb "Al menos nadie terminó ahorcado"
+                m 2ltbfd "Eso sonó más cruel de lo que pensaba"
+                m 1rtbfb "Bueno, ¿qué hacemos ahora?"
                 return
         call sot_p2
         call sot_exp_smile_smugthink
-        m "You know, even if a kiss from a succubus makes you feel more alive than ever..."
+        m "Sabes, incluso si un beso de una súcubo te hace sentir más vivo que nunca..."
         call sot_exp_bsmile_smug
-        m "Many of these..."
+        m "Muchas de estas..."
         call sot_exp_smile_soft
-        m "They cause rather the opposite effect..."
+        m "Causan el efecto contrario..."
         call sot_p3
         call sot_exp_smile_smugthink
-        m "So maybe... you should be careful..."
+        m "Así que tal vez... d{w=0.3}eberías tener cuidado.."
         call sot_p2
         call sot_exp_bsmile_smug
-        m "Playing with a succubus, it's like dancing on the edge of a ledge..."
+        m "Jugar con una súcubo es como bailar al borde de un precipicio..."
         call sfb_hands_behind1
         call sfb_exp_smal_soft
-        m "goodbye"
+        m "Adiós."
         call sfb_poitning2
         call sfb_exp_bsmile_smug
-        m "until our next dance."
+        m "Hasta nuestro próximo baile."
         call back_to_normal
         call mas_clothes_change(dres)
-        m 1hubfb "I hope you liked my improvisation today [mas_get_player_nickname()] "
+        m 1hubfb "Espero que te haya gustado mi improvisación de hoy, [mas_get_player_nickname()]. "
             
     elif ev.shown_count == 3:
 
-        m 5nsbsb "Sure [mas_get_player_nickname()], I have something special planned for today."
+        m 5nsbsb "Claro [mas_get_player_nickname()], tengo algo especial planeado para hoy."
         label day_3:
         if dressed_for_the_occation is False:
-            m 4hsbsa "I'll change my clothes and come back."
+            m 4hsbsa "Me cambiaré de ropa y volveré."
             call mas_clothes_change(succubus)
-        m 1rubfb "Hello again human, there is a poem that I love and I would like to repeat it for you."
-        m 6dubsa "Come slowly  Eden!"
-        m 6dubsb "Lips unused to Thee"
-        m 1eubsa "Bashful  sip thy Jessamines"
-        m 1dsbsb "As the fainting Bee"
+        m 1rubfb "Hola de nuevo, humano, hay un poema que me encanta y me gustaría recitártelo."
+        m 6dubsa "Come slowly  Eden!                \n{size=-5}(¡Ven despacio, Edén!)      {/size}{/i}"
+        m 6dubsb "Lips unused to Thee               \n{size=-5}(Labios no acostumbrados a ti)      {/size}{/i}"
+        m 1eubsa "Bashful  sip thy Jessamines       \n{size=-5}(Tímido sorbo de tus jazmines)      {/size}{/i}"
+        m 1dsbsb "As the fainting Bee               \n{size=-5}(Como la abeja desmayada)      {/size}{/i}"
         m 1dsbsa ""
-        m 3esbsb "Reaching late his flower,"
-        m 3rubsa "Round her chamber hums"
-        m 1fsbfb "Counts his nectars"
-        m 1dubsa "Enters  and is lost in Balms."
+        m 3esbsb "Reaching late his flower,         \n{size=-5}(Llegando tarde a su flor)      {/size}{/i}"
+        m 3rubsa "Round her chamber hums            \n{size=-5}(Zumbidos alrededor de su cámara)      {/size}{/i}"
+        m 1fsbfb "Counts his nectars                \n{size=-5}(Cuenta sus néctares)      {/size}{/i}"
+        m 1dubsa "Enters  and is lost in Balms.     \n{size=-5}(Entra y se pierde en bálsamos.)      {/size}{/i}"
         m 1tsbsa ""
-        m 3rsbsb "I love the sensuality that Emily Dickinson expresses in this poem."
-        m 3dsbfb "Her metaphors really touch me and make me shiver..."
-        m 7lsbfp "And [mas_get_player_nickname()] the truth is that I ran out of ideas,"
-        m 7rubfb "so let's say that from now on the demon girl likes poetry..."
-        m 5nsbfa "And if you want, I can keep my costume on and we can play that I am a succubus for the rest of the day."
+        m 3rsbsb "Me encanta la sensualidad que Emily Dickinson expresa en este poema."
+        m 3dsbfb "Sus metáforas me conmueven profundamente y me dan escalofríos..."
+        m 7lsbfp "Y [mas_get_player_nickname()] la verdad es que me quedé sin ideas,"
+        m 7rubfb "Así que digamos que de ahora en adelante a la chica demonio le gusta la poesía..."
+        m 5nsbfa "Y si quieres, puedo quedarme con el disfraz puesto y podemos jugar a que soy una súcubo el resto del día."
         
         menu:
-            "I love that idea":
-                m 5tsbfb "Perfect..."
+            "Me encanta esa idea":
+                m 5tsbfb "Perfecto..."
                 return
-            "I'd rather see you in your usual clothes":
-                m 5esbsa "Ok"
+            "Prefiero verte con tu ropa habitual":
+                m 5esbsa "De acuerdo"
                 call mas_clothes_change(dres)
 
     else:
-        m 2lubfc "[mas_get_player_nickname()], I haven't prepared anything for this mod yet"
-        m 7esbfb "But, if you want, we can repeat some of the scripts that we already use."
+        m 2lubfc "[mas_get_player_nickname()], aún no he preparado nada para este mod."
+        m 7esbfb "Pero, si quieres, podemos repetir algunos de los scripts que ya usamos."
         menu:
-            "Ok":
-                m 7lsbfa "Ok, which one do we use?"
+            "¡Claro!":
+                m 7lsbfa "Vale, ¿cuál usamos?"
                 menu:
-                    "The succubus girl steals a kiss from me.":
+                    "La súcubo me roba un beso.":
                         jump day_1
-                    "The succubus girl keeps her promise.":
+                    "La súcubo cumple su promesa.":
                         jump day_2
-                    "The succubus girl recites a poem to me.":
+                    "La súcubo me recita un poema.":
                         jump day_3
-                    "First time using the mod.":
-                        m 7wubfo "Do you really want us to repeat that?"
-                        m 6lubfd "how embarrassed I feel!"
-                        m 3rubfd "I was very nervous at the time"
-                        m 1kubfb "Okay here we go..."
+                    "Primera vez usando el mod.":
+                        m 7wubfo "¿De verdad quieres que lo repitamos?"
+                        m 6lubfd "¡Qué vergüenza me da!"
+                        m 3rubfd "Estaba muy nerviosa en ese momento."
+                        m 1kubfb "Bien, allá vamos..."
                         jump day_0
-                    "We better leave it for another day.":
-                        m 1lub "Sure"
+                    "Mejor lo dejamos para otro día.":
+                        m 1lub "Claro"
                         return
-            "I have something else in mind":
+            "Tengo algo más en mente"":
                 if dressed_for_the_occation is False:
-                    m 7fsblb "oh tell me what it is"
+                    m 7fsblb "Oh, dime qué es"
                     menu:
-                        "Could you just put on the costume?":
-                            m 3gtblb "I guess I could..."
+                        "¿Podrías ponerte el disfraz?":
+                            m 3gtblb "Supongo que sí..."
                             call mas_clothes_change(succubus)
-                            m 1hublb "Tadaa"
-                            m 5tubla "That was all you had in mind for me to do?"
+                            m 1hublb "¡Tachán!"
+                            m 5tubla "¿Eso era todo lo que tenías pensado que hiciera?"
                             menu:
-                                "yes":
-                                    m 5hsblb "I love to please you"
+                                "Sí":
+                                    m 5hsblb "Me encanta complacerte~"
                                     return
-                                "There's more, I want you to pose for me in this costume.":
-                                    m 1wublb "that surprised me a bit..."
-                                    m 1fubfb "but it's the kind of thing that a couple does right?"
+                                "Hay más, quiero que poses para mí con este disfraz.":
+                                    m 1wublb "Eso me sorprendió un poco..."
+                                    m 1fubfb "Pero es el tipo de cosas que hace una pareja, ¿no?"
                 else:
-                    m 2rsbfb "If you want, I can show you how this suit fits me in more detail.."
+                    m 2rsbfb "Si quieres, puedo mostrarte con más detalle cómo me queda este traje..."
                     menu:
-                        "you read my mind":
+                        "Me leíste la mente.":
                             m 2ksbfa "ok"
                 call set_the_stage
                 call spaceroom(hide_monika=True)
@@ -987,41 +987,42 @@ label monika_succubus:
                 pause 2
                 call sfb_poinshi2
                 call sfb_exp_smile_left
-                m "I seriously don't understand what is the point of making a skirt, transparent"
+                m "En serio, no entiendo qué sentido tiene hacer una falda transparente."
                 call sfb_exp_smile_closed
-                m "It takes me a while to get used to it"
+                m "Me cuesta acostumbrarme."
                 call sfb_poitning1
                 call sfb_exp_bsmile_smug
-                m "But I can't deny that I enjoy capturing your gaze [mas_get_player_nickname()]"
+                m "Pero no puedo negar que disfruto capturando tu mirada [mas_get_player_nickname()]."
                 call sfb_modeling1
                 call sfb_exp_smile_left
-                m "So, do you like how do I do it?"
+                m "¿Te gusta cómo lo hago?"
                 menu:
-                    "Of course, you are quite a catwalk model!":
+                    "¡Claro, eres toda una modelo de pasarela!":
                         call sfb_exp_bsmile_think
                         call sfb_poitning2
-                        m "I hope you don't make fun of me, with what you say [player]"
+                        m "Espero que no te burles de mí con lo que dices [player]"
                         call sfb_exp_smile_closed
-                        m "I'm just being insecure, I know you wouldn't"
+                        m "Solo estoy siendo insegura, sé que tú no lo harías"
                         call sfb_exp_smile_normal
                         call sfb_hands_behind1
                         pause 2
-                        m "I think it's better to stop here"
+                        m "Creo que es mejor parar aquí"
                         call sfb_poitning1
                         call sfb_exp_bsmile_think
-                        m "remember this is an unfinished mod"
+                        m "Recuerda que este es un mod sin terminar"
+                        "{size=-5}Y estare pendiente para traducirlo lo mas rapido posible jeje~{/size}{nw}"
                         call sfb_exp_smal_smugright
-                        m "If we get loose more, for sure we break the game"
+                        m "Si nos soltamos más, seguro que rompemos el juego."
                         show emptydesk
                         pause 1
 
                 call back_to_normal
-                m "maybe one day... we can..."
+                m "Quizás algún día... podamos..."
                 return
 
-            "No thanks, another day maybe.":
-                m 2ekbfa "I'm sorry that I don't have anything new."
-                m 5esbfb "But we can do something else."
+            "No, gracias, otro día quizás.":
+                m 2ekbfa "Siento no tener nada nuevo."
+                m 5esbfb "Pero podemos hacer otra cosa."
                 return
 
 return
