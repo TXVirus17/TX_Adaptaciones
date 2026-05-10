@@ -1,9 +1,9 @@
 init 5 python:
     addEvent(
         Event(
-            persistent.event_database,eventlabel="monika_succubus"
+            persistent.event_database,eventlabel="monika_succubus",
             ,unlocked=True,
-            category=['appearance','clothes','roleplay','Súcubo'],
+            category=['appearance','clothes','roleplay'],
             prompt="¿Te gustaría jugar a que eres un demonio conmigo?,
             pool=True,
         )
