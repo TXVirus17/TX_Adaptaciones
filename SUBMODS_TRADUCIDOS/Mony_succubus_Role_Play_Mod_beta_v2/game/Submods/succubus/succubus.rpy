@@ -5,7 +5,9 @@ init 5 python:
             ,unlocked=True,
             category=['appearance','clothes','roleplay','Súcubo'],
             prompt="¿Te gustaría jugar a que eres un demonio conmigo?,
-            pool=True,))
+            pool=True,
+        )
+    )
 
 label sot:
     image sot_p1 = "Submods/succubus/sot/sot_p1.png"
