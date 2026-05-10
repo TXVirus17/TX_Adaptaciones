@@ -2,6 +2,7 @@
 
 <p align="center"><img src="https://github.com/TXVirus17/TX_Adaptaciones/blob/main/iconos/Captura%20desde%202026-05-10%2002-46-52.png?raw=true" width="900"></p>
 
+>Logo temporal por que se ve muy simple XD
 # ¡Hola! Soy TX_Virus 👋
 
 Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES) y entusiasta de la personalización de software.
@@ -17,14 +18,17 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 ---
 
 ## 🚀 Proyectos Actuales
+
+**Todos los submods son probados en MASL** por lo que deberia de funcionar bien en cualquier plataforma (o en la mayoria). 
+
 | Proyecto | Estado | Descripción |Link del README/LEEME|
 | :--- | :---: | :---: |---:|
 | **MAS_yandere (Español)** | 🟢 | ¡Listo!. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/SUBMOD_Yandere%20monika/MAS_yandere-1.0.0/README.md)|
 | **Extraplus (Español)** | 🟡 | Traducción en progreso. | [¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/ExtraPlus%201.1.1%20-%20MAS%200.12.16%20o%20superior/README.md)|
 | **Kiss Button (Español)** | 🟢 | ¡Listo!. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Kiss_Button_ES/README.md)|
 | **Recopilacion Submods DokiDokiDaEs (Español)** | 🟢 | ¡Listo!. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Recopilacion%20Submods%20DokiDokiDaEs/%C2%A1LEEME!.md)|
-| **The Bed Mod! ¨Room¨(Español)** | 🟡 | En pruebas. |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/tree/main/SUBMODS_TRADUCIDOS/Spooks_s%20Bed%20V1)|
-| **Mony succubus Role Play Mod beta v2 (Español)** | 🟡 | En Pruebas. |[¡Leelo aqui!]()|
+| **The Bed Mod! ¨Room¨(Español)** | 🟡 | En pruebas. |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Spooks_s%20Bed%20V1/README.md)|
+| **Mony succubus Role Play Mod beta v2 (Español)** | 🟡 | En Pruebas. |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Mony_succubus_Role_Play_Mod_beta_v2/README.md)|
 | **¿Keeper of Reality Act II? (Español)** | ???| ???. |[¡...!]()|
 
 > Los submods **NO SON DE MI PROPIEDAD**; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
