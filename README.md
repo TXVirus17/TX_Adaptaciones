@@ -1,6 +1,6 @@
 
 
-<p align="center"><img src="https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/iconos/8e4dac945ef601620894eff6748c1715(1).gif?raw=true" width="900"></p>
+<p align="center"><img src="https://github.com/TXVirus17/TX_Adaptaciones/blob/main/iconos/Captura%20desde%202026-05-10%2002-46-52.png?raw=true" width="900"></p>
 
 # ¡Hola! Soy TX_Virus 👋
 
@@ -23,7 +23,7 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 | **Extraplus (Español)** | 🟡 | Traducción en progreso. | [¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/ExtraPlus%201.1.1%20-%20MAS%200.12.16%20o%20superior/README.md)|
 | **Kiss Button (Español)** | 🟢 | ¡Listo!. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Kiss_Button_ES/README.md)|
 | **Recopilacion Submods DokiDokiDaEs (Español)** | 🟢 | ¡Listo!. |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Recopilacion%20Submods%20DokiDokiDaEs/%C2%A1LEEME!.md)|
-| **The Bed Mod! ¨Room¨(Español)** | 🟡 | En pruebas. |[¡Leelo aqui!]()|
+| **The Bed Mod! ¨Room¨(Español)** | 🟡 | En pruebas. |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/tree/main/SUBMODS_TRADUCIDOS/Spooks_s%20Bed%20V1)|
 | **Mony succubus Role Play Mod beta v2 (Español)** | 🟡 | En Pruebas. |[¡Leelo aqui!]()|
 | **¿Keeper of Reality Act II? (Español)** | ???| ???. |[¡...!]()|
 
