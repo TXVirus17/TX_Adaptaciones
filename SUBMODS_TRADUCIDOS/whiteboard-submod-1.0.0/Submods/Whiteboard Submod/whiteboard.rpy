@@ -575,6 +575,9 @@ style fom_whiteboard_button_text_dark is generic_button_text_dark:
 
 screen fom_whiteboard_screen(whiteboard):
     # Show a random tip unless disabled in settings
+    
+    default mb_open = False
+    
     if persistent._fom_whiteboard_show_tips:
         on "show" action Function(_fom_whiteboard.show_random_tip)
 
@@ -606,6 +609,8 @@ screen fom_whiteboard_screen(whiteboard):
                 textbutton _("Reiniciar") action Function(whiteboard.wipe)
                 textbutton _("Guardar") action Function(whiteboard.save_as_png)
                 textbutton _("Cerrar") action Return()
+    
+    use fom_whiteboard_mobile_toolbar(whiteboard)
 
 screen fom_whiteboard_palette(whiteboard):
     grid 4 2:
@@ -670,6 +675,7 @@ screen fom_whiteboard_toolbox(whiteboard):
     default brush_pencil = whiteboard.brush
     default brush_fill = _fom_whiteboard.Fill()
     default brush_wipe = _fom_whiteboard.Wipe()
+   
 
     grid 2 2:
         spacing 10
@@ -683,7 +689,7 @@ screen fom_whiteboard_tool_button(whiteboard, tool, icon_path):
         sensitive whiteboard.brush != tool
         action SetField(whiteboard, "brush", tool)
         xysize (40, 40)
-        use fom_whiteboard_mobile_controls(whiteboard)
+        
 
 screen fom_whiteboard_color_picker(whiteboard, picker):
     key "ctrl_K_v" action [Function(picker.from_clipboard, whiteboard), Hide("fom_whiteboard_color_picker")]

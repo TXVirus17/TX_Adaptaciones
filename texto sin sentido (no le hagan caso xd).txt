@@ -1,0 +1,3 @@
+textbutton _("[-]") action SetField(whitevoard, "brush_size", max (1, whiteboard.brush_size))
+        textbutton _("[+]") action SetField(whiteboard, "brush_size" min(100, whiteboard.brush_size))
+        textbutton _("Pegar color") action [Function(picker.from_clipboard, whiteboard), Hie("fom_whiteboard_color_picker")]
