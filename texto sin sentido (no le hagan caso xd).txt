@@ -1,0 +1,5 @@
+ textbutton ("X Cerrar" if mb_open else "Port"):
+                    action ToggleLocalVariable("mb_open")
+                    style "fom_whiteboard_button_dark"
+
+                if mb_open:

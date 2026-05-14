@@ -15,8 +15,8 @@ screen fom_whiteboard_settings_pane():
             style_prefix "check"
             box_wrap False
 
-            textbutton _("Show random tips"):
+            textbutton _("Mostrar consejos random."):
                 selected persistent._fom_whiteboard_show_tips
                 action ToggleField(persistent, "_fom_whiteboard_show_tips")
-                hovered SetField(tooltip, "value", _("Choose whether to display random tips when using the whiteboard."))
+                hovered SetField(tooltip, "value", _("Elige si deseas mostrar consejos (y cosas random) aleatorios al usar la pizarra."))
                 unhovered SetField(tooltip, "value", tooltip.default)

@@ -20,7 +20,7 @@ init 4 python in _fom_whiteboard:
     IM_UI_WHITEBOARD = os.path.join(store.config.gamedir, assets_dir, "ui_whiteboard_frame.png")
 
     IM_CANVAS_SAVED_DIR = store.config.renpy_base
-    IM_CANVAS_SAVED_NAME_FORMAT = "whiteboard{0:04}.png"
+    IM_CANVAS_SAVED_NAME_FORMAT = "Pizarra_{0:04}.png"
 
     # NOTE: do not use 'os.path' here, RenPy hates Windows backslashes
     IM_ICON_MARKER = assets_dir + "/icon_tool_marker.png"
@@ -334,7 +334,12 @@ init 4 python in _fom_whiteboard:
 
             filepath = os.path.abspath(filepath)
             pygame.image.save(temp_surf, filepath)
-            renpy.notify(_("Pizarra blanca guardada como {0}.").format(filepath))
+            
+            if renpy.android:
+                renpy.notify(_("Pizarra guardada en: Files >").format(filename))
+
+            else:
+                renpy.notify(_("Pizarra blanca guardada como {0}.").format(filepath))
 
         def dispose(self):
             """
@@ -494,10 +499,10 @@ init 4 python in _fom_whiteboard:
 
             if color is not None:
                 color_hex = "".join("{:02x}".format(c) for c in color)
-                renpy.notify(_("Set color from clipboard: {color=" + color_hex + "}" + s + "{/color}"))
+                renpy.notify(_("Establecer color desde el portapapeles: {color=" + color_hex + "}" + s + "{/color}"))
                 whiteboard.brush.color = color
             else:
-                renpy.notify(_("Unknown color format: {0}").format(s[:16]))
+                renpy.notify(_("Formato de color desconocido: {0}").format(s[:16]))
 
         def reset(self):
             self.selected = None
@@ -539,13 +544,27 @@ init 4 python in _fom_whiteboard:
 # Random tips displayed on whiteboard show
 
 init 4 python in _fom_whiteboard:
-    UI_NOTIFY_TIPS = [
-        _("Utiliza la rueda del ratón para ajustar el tamaño del pincel"),
-        _("Si estas en PC, puedes pegar un color mediante su código hexadecimal pulsando Ctrl+V con el selector de color abierto."),
-        _("Pulsa Ctrl+Z o Ctrl+Y para deshacer o rehacer tus últimas acciones (Si estas en pc)."),
-        _("Puedes desactivar estos consejos en la sección Submod de Pizarra Blanca del menú Submods"),
-        _("¡Diviertete mucho dibujando!")
-    ]
+    
+    
+    if renpy.android: 
+        UI_NOTIFY_TIPS = [
+            _("¡Diviertete mucho dibujando!"),
+            _("Si usas android tendras acceso al apartado ¨Port¨"),
+            _("¡Seguro puedes dibujar algo muy Profesional!"),
+            _("Puedes desactivar estos consejos en la sección Submod de Pizarra Blanca del menú Submods"),
+            _("P.D: Yo no pude hacer bien ni un muñeco de palitos XD"),
+            _("P.D: Siempre por la sintaxis o mi pesima ortografia la riego 0.0")
+        ]
+    else:    
+        UI_NOTIFY_TIPS = [
+            _("Utiliza la rueda del ratón para ajustar el tamaño del pincel"),
+            _("Puedes pegar un color mediante su código hexadecimal pulsando Ctrl+V con el selector de color abierto."),
+            _("Pulsa Ctrl+Z o Ctrl+Y para deshacer o rehacer tus últimas acciones."),
+            _("Puedes desactivar estos consejos en la sección Submod de Pizarra Blanca del menú Submods"),
+            _("P.D: Yo no pude hacer bien ni un muñeco de palitos XD"),
+            _("P.D: Siempre por la sintaxis o mi pesima ortografia la riego 0.0")
+        ]
+    
 
     def show_random_tip():
         tip = renpy.random.choice(UI_NOTIFY_TIPS)
@@ -609,8 +628,8 @@ screen fom_whiteboard_screen(whiteboard):
                 textbutton _("Reiniciar") action Function(whiteboard.wipe)
                 textbutton _("Guardar") action Function(whiteboard.save_as_png)
                 textbutton _("Cerrar") action Return()
-    
-    use fom_whiteboard_mobile_toolbar(whiteboard)
+    #BOTON AÑADIDO
+    use fom_whiteboard_mobile_toolbar(whiteboard, mb_open)
 
 screen fom_whiteboard_palette(whiteboard):
     grid 4 2:
