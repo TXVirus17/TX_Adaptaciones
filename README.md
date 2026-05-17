@@ -29,7 +29,8 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 | **Recopilacion Submods DokiDokiDaEs (Español)** | 🟢 | <small>¡Una recopilación de submods de DaEs!</small> |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Recopilacion%20Submods%20DokiDokiDaEs/%C2%A1LEEME!.md)|
 | **The Bed Mod! ¨Room¨(Español)** | 🟢 |<small> Este es un cuarto en el cual te puedes acurrucar con monika. </small>|[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Spooks_s%20Bed%20V1/README.md)|
 | **Mony succubus Role Play Mod beta v2 (Español)** | 🟢 |<small> Este submod te permite hacer un roleplay (o una actuacion por así decirlo) con monika planteandola a ella como una súcubo.</small> |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Mony_succubus_Role_Play_Mod_beta_v2/README.md)|
-| **whiteboard-submod-1.0.0(Español)** | 🟢 |<small> ¡Añade una pizarra (virtual) para que puedas dibujar!</small> |[¡Leelo aqui!]()|
+| **whiteboard-submod-1.0.0(Español)** | 🟢 |<small> ¡Añade una pizarra (virtual) para que puedas dibujar!</small> |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/whiteboard-submod-1.0.0/README.md)|
+| **Selector City(Español)** | 🟢 |<small> Incluye los scripts necesarios para poder personalizar mas a detalle a tu monika como tatuajes, gorros, accesorios para mesa, etc.</small> |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/MJ-MAS-selector-city-1.0.3/README.md)|
 | **¿Keeper of Reality Act II? (Español)** | ???| ???. |...|
 
 > Los submods **NO SON DE MI PROPIEDAD**; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
