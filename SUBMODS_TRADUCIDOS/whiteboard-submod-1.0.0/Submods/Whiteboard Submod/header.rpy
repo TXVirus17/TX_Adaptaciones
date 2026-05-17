@@ -5,7 +5,7 @@ init -990 python:
     store.mas_submod_utils.Submod(
         author="Friends of Monika",
         name="Whiteboard Submod",
-        description=_("¡Añade una pizarra (virtual) para que puedas dibujar!"),
+        description=_("¡Añade una pizarra (virtual) para que puedas dibujar!\n(Traducido por TX_Virus)"),
         version="1.0.0",
         settings_pane="fom_whiteboard_settings_pane"
     )
