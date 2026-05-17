@@ -1,8 +1,4 @@
-## ⭐ Este mod contiene 
-- Una nueva Room el dormitorio
----
 
----
 ## 👥 Créditos y Atribución
 
 * **Autor Original:** [Friends of Monika (github)](https://github.com/Friends-of-Monika)
@@ -13,9 +9,9 @@
 
 ## 🚀 Instalación
 1. Descarga el contenido de la carpeta `.zip` .
-2. Pégalo en `directorio_de_tu_juego/game` siguiendo las carpetas correspondientes 
+2. Pégalo en `directorio_de_tu_juego/game` siguiendo las carpetas correspondientes
 > Si usas MASL o PC pega directamente la carpeta`game` y deja que se mezclen si no puedes poner las carpetas manualmente.
-3. ¡Disfruta de tu submod con Monika! 💚## ⭐ Este mod contiene 
+3. ¡Disfruta de tu submod con Monika! 💚## ⭐ Este mod contiene
 - Una pizara para que puedas dibujar ¡El limite es tu imaginación!
 ---
 ## 🗒️ Modificaciones hechas
@@ -34,6 +30,6 @@
 
 ## 🚀 Instalación
 1. Descarga el contenido de la carpeta `.zip` .
-2. Pégalo en `directorio_de_tu_juego/game` siguiendo las carpetas correspondientes 
+2. Pégalo en `directorio_de_tu_juego/game` siguiendo las carpetas correspondientes
 > Si usas MASL o PC pega directamente la carpeta`game` y deja que se mezclen, sino puedes poner las carpetas manualmente.
 3. ¡Disfruta de tu submod con Monika! 💚
