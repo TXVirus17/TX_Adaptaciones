@@ -40,4 +40,4 @@ label mj_ring_acs_select:
     call mas_selector_sidebar_select_acs(use_acs, mailbox=mailbox, select_map=sel_map, add_remover=True) #add_remover is for a 'None' option, basically
 
     if not _return:
-        m 1eka "Ah, está bien".
+        m 1eka "Ah, está bien"

@@ -44,4 +44,4 @@ label mj_mask_select:
 
     #Dialogue if you canceled out
     if not _return:
-        m 1eka "Ah, está bien".
+        m 1eka "Ah, está bien"
