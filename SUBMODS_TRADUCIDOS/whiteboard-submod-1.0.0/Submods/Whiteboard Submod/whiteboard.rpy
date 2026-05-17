@@ -336,7 +336,7 @@ init 4 python in _fom_whiteboard:
             pygame.image.save(temp_surf, filepath)
             
             if renpy.android:
-                renpy.notify(_("Puedes encontrar la pizrra en Files >P ictures o directamente en Files").format(filename))
+                renpy.notify(_("Puedes encontrar la pizrra en Files > Pictures o directamente en Files").format(filename))
 
             else:
                 renpy.notify(_("Pizarra blanca guardada como {0}.").format(filepath))
