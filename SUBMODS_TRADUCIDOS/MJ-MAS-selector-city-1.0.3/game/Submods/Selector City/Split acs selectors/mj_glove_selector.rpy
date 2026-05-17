@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["glove_acs"] = {
         "_ev": "mj_glove_acs_select",
         "_min-items": 1,
-        "change": "Can you wear different gloves?",
-        "wear": "Can you wear a pair of gloves?",
+        "change": " ¿Puedes usar guantes diferentes?",
+        "wear": "¿Puedes usar un par de guantes?",
     }
 
 #init -9 python in mas_selspr:
@@ -35,7 +35,7 @@ label mj_glove_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="glove_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What kind of gloves should I wear?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué tipo de guantes debería usar?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

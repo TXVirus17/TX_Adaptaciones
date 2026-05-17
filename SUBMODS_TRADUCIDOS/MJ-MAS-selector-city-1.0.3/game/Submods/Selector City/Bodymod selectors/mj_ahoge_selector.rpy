@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["ahoge_acs"] = {
         "_ev": "mj_ahoge_acs_select",
         "_min-items": 1,
-        "change": "Can you change your ahoge?",
-        "wear": "Can you make an ahoge in your hair?",
+        "change": "¿Puedes cambiar tu ahoge?",
+        "wear": "¿Puedes hacer un ahoge en tu cabello?",
     }
 
 
@@ -33,7 +33,7 @@ label mj_ahoge_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="ahoge_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What kind of ahoge do you want me to wear?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué tipo de ahoge quieres que me ponga?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

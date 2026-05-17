@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["nailpolish_acs"] = {
         "_ev": "mj_nailpolish_acs_select",
         "_min-items": 1,
-        "change": "Can you change your nailpolish?",
-        "wear": "Can you wear some nailpolish?",
+        "change": " ¿Puedes cambiar tu esmalte de uñas?",
+        "wear": "¿Puedes usar un poco de esmalte de uñas?",
     }
 
 
@@ -33,7 +33,7 @@ label mj_nailpolish_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="nailpolish_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What kind of nailpolish do you want me to have?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué tipo de esmalte de uñas quieres que tenga?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

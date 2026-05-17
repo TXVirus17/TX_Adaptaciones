@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["ltable_acs"] = {
         "_ev": "gt_ltable_acs_select",
         "_min-items": 1,
-        "change": "Can you put something else on the left side of your desk?",
-        "wear": "Can you put something on the left side of your desk?",
+        "change": "¿Puedes poner algo más en el lado izquierdo de tu escritorio?",
+        "wear": "¿Puedes poner algo en el lado izquierdo de tu escritorio?",
     }
 
 
@@ -32,7 +32,7 @@ label gt_ltable_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="ltable_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What would you like me to put out on my desk?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué quieres que ponga en el lado izquierdo del escritorio?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

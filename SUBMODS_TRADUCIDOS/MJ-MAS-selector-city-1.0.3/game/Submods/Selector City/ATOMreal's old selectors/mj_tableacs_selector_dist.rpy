@@ -9,8 +9,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["table_acs"] = {
         "_ev": "mj_table_acs_select",
         "_min-items": 1,
-        "change": "Can you put something else on your desk?",
-        "wear": "Can you put something on your desk?",
+        "change": "¿Puedes poner algo más en tu escritorio?",
+        "wear": "¿Puedes poner algo en tu escritorio?",
     }
 
 #keeping this here incase MAS devs ever try bring the need for this back
@@ -39,7 +39,7 @@ label mj_table_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="table_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What would you want me to put on the desk?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué quieres que me ponga en el escritorio?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

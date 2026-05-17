@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["pin_acs"] = {
         "_ev": "mj_pin_acs_select",
         "_min-items": 1,
-        "change": "Can you wear a different pin?",
-        "wear": "Can you wear a pin?",
+        "change": " ¿Puedes usar un pin diferente?",
+        "wear": "¿Puedes usar un pin?",
     }
 
 #selector data
@@ -31,7 +31,7 @@ label mj_pin_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="pin_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What kind of pin should I wear?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué tipo de pin debería usar?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

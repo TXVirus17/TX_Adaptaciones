@@ -35,7 +35,7 @@ label mj_mask_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="mask")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("Which mask would you like me to wear?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué máscara quieres que me ponga?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

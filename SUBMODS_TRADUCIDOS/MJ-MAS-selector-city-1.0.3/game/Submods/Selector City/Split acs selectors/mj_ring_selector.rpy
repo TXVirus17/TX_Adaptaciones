@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["sb_ring_acs"] = {
         "_ev": "mj_ring_acs_select",
         "_min-items": 1,
-        "change": "Can you wear a different ring?",
-        "wear": "Can you wear a ring?",
+        "change": "¿Puedes usar un anillo diferente?",
+        "wear": "¿Puedes usar un anillo?",
     }
 
 
@@ -32,7 +32,7 @@ label mj_ring_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="sb_ring_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What ring should I wear?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué anillo debería usar?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

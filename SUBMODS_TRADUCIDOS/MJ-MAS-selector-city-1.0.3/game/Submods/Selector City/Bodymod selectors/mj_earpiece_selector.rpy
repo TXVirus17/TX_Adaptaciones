@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["ear_acs"] = {
         "_ev": "mj_ear_acs_select",
         "_min-items": 1,
-        "change": "Can you change your ear piece?",
-        "wear": "Can you wear an ear piece?",
+        "change": "¿Puedes cambiar el auricular?",
+        "wear": "¿Puedes usar un accesorio para el oído?",
     }
 
 #init -9 python in mas_selspr:
@@ -35,7 +35,7 @@ label mj_ear_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="ear_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What kind of ear piece do you want me to wear?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué tipo de accesorio para el oído quieres que me ponga?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

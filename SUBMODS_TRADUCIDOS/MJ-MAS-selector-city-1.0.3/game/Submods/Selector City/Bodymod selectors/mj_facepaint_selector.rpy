@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["facepaint_acs"] = {
         "_ev": "mj_facepaint_acs_select",
         "_min-items": 1,
-        "change": "Can you put on some different face-paint?",
-        "wear": "Can you put on some face-paint?",
+        "change": "¿Puedes ponerte un maquillaje diferente?",
+        "wear": "¿Puedes ponerte un maquillaje?",
     }
 
 #init -9 python in mas_selspr:
@@ -35,7 +35,7 @@ label mj_facepaint_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="facepaint_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What kind of face-paint should I wear?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué tipo de maquillaje quieres que me ponga?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

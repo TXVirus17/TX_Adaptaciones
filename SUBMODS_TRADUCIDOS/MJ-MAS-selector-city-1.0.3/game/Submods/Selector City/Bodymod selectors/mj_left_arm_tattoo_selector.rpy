@@ -7,8 +7,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["larmtattoo_acs"] = {
         "_ev": "mj_larmtattoo_acs_select",
         "_min-items": 1,
-        "change": "Can you change your tattoo on your left arm?",
-        "wear": "Can you put a tattoo on your left arm?",
+        "change": "¿Puedes cambiar tu tatuaje en el brazo izquierdo?",
+        "wear": "¿Puedes ponerte un tatuaje en el brazo izquierdo?",
     }
 
 
@@ -33,7 +33,7 @@ label mj_larmtattoo_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="larmtattoo_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What tattoo would you like me to have?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué tatuaje quieres que me ponga en el brazo izquierdo?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

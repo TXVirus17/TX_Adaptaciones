@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["backpiece_acs"] = {
         "_ev": "mj_backpiece_acs_select",
         "_min-items": 1,
-        "change": "Can you wear a different backpiece?",
-        "wear": "Can you wear a backpiece?",
+        "change": "¿Puedes usar un objeto diferente en la espalda?",
+        "wear": "¿Puedes usar un objeto en la espalda?",
     }
 
 
@@ -32,7 +32,7 @@ label mj_backpiece_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="backpiece_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What backpiece should I wear?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué objeto de espalda quieres que me ponga?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

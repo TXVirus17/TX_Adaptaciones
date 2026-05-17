@@ -6,8 +6,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["cushion_acs"] = {
         "_ev": "mj__cushion_acs_select",
         "_min-items": 1,
-        "change": "Do you want to rest your arms on a different cushion?",
-        "wear": "Do you want to rest your arms on a cushion?",
+        "change": "¿Quieres apoyar los brazos en otro cojín?",
+        "wear": "¿Quieres descansar los brazos en un cojín?",
     }
 
 #init -9 python in mas_selspr:
@@ -35,7 +35,7 @@ label mj__cushion_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="cushion_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What cushion should I use?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿En qué cojín quieres  que descansen mis brazos?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"
