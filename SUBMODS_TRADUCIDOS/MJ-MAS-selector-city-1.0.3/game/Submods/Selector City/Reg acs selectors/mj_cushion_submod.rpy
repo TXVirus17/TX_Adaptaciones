@@ -35,7 +35,7 @@ label mj__cushion_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="cushion_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿En qué cojín quieres  que descansen mis brazos?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿En qué cojín quieres que descansen mis brazos?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"
