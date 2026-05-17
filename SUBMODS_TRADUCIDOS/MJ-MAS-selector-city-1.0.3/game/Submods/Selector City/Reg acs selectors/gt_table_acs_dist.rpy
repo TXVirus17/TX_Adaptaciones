@@ -50,8 +50,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["rtable_acs"] = {
         "_ev": "gt_rtable_acs_select",
         "_min-items": 1,
-        "change": "Can you put something else on the right side of your desk?",
-        "wear": "Can you put something on the right side of your desk?",
+        "change": "¿Puedes poner algo más en el lado derecho de tu escritorio?",
+        "wear": "¿Puedes poner algo en el lado derecho de tu escritorio?",
     }
 
 
@@ -76,7 +76,7 @@ label gt_rtable_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="rtable_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What would you like me to put on my desk?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué quieres que ponga en el lado derecho del escritorio?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"
@@ -94,8 +94,8 @@ init -99 python in mas_selspr:
     PROMPT_MAP["flowers_acs"] = {
         "_ev": "gt_flowers_acs_select",
         "_min-items": 1,
-        "change": "Can you put out a different set of flowers?",
-        "wear": "Can you put some flowers on your desk?",
+        "change": "¿Puedes poner un conjunto diferente de flores?",
+        "wear": "¿Puedes poner algunas flores en tu escritorio?",
     }
 
 
@@ -120,7 +120,7 @@ label gt_flowers_acs_select:
     python:
         use_acs = store.mas_selspr.filter_acs(True, group="flowers_acs")
 
-        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("What flowers would you like me to put out on the desk?")
+        mailbox = store.mas_selspr.MASSelectableSpriteMailbox("¿Qué flores te gustaría que pusiera en el escritorio?")
         sel_map = {}
 
     m 1eua "¡Claro, [player]!"

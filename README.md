@@ -29,6 +29,7 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 | **Recopilacion Submods DokiDokiDaEs (Español)** | 🟢 | <small>¡Una recopilación de submods de DaEs!</small> |[¡Leelo aqui!](https://github.com/TXVirus17/Traducciones_submods_MAS/blob/main/SUBMODS_TRADUCIDOS/Recopilacion%20Submods%20DokiDokiDaEs/%C2%A1LEEME!.md)|
 | **The Bed Mod! ¨Room¨(Español)** | 🟢 |<small> Este es un cuarto en el cual te puedes acurrucar con monika. </small>|[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Spooks_s%20Bed%20V1/README.md)|
 | **Mony succubus Role Play Mod beta v2 (Español)** | 🟢 |<small> Este submod te permite hacer un roleplay (o una actuacion por así decirlo) con monika planteandola a ella como una súcubo.</small> |[¡Leelo aqui!](https://github.com/TXVirus17/TX_Adaptaciones/blob/main/SUBMODS_TRADUCIDOS/Mony_succubus_Role_Play_Mod_beta_v2/README.md)|
+| **whiteboard-submod-1.0.0(Español)** | 🟢 |<small> ¡Añade una pizarra (virtual) para que puedas dibujar!</small> |[¡Leelo aqui!]()|
 | **¿Keeper of Reality Act II? (Español)** | ???| ???. |...|
 
 > Los submods **NO SON DE MI PROPIEDAD**; por ende, siempre les daré créditos a todo creador junto con la publicación de donde conseguí cada submod. Puede encontrar los créditos dentro de cada archivo README.md 💚 
@@ -53,7 +54,11 @@ Estudiante de **Ingeniería en Sistemas** en la Universidad de El Salvador (UES)
 
 https://drive.google.com/drive/folders/1QnbpOBEQZEOwVVfq6bTOEGQNP-3Efl3f?usp=drive_link
 
+- Puedes encontar tambien las traducciones y la de compañeros mios dentro de la pagina de Submods de Traduction Club (Que muchas gracias por dejarme apoyarlos).
 
+https://traduction-club.live/mas-extras/
+
+>Proximamente un nuevo tipo de mods pero shhhhh xd
 ---
 ## ¿Alguna traduccion te dio un error o alguna sugerencia para nuevos submods? 💡💾
  
