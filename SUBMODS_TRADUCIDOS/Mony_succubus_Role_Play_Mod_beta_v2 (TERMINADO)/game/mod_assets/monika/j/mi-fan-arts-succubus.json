@@ -1,0 +1,78 @@
+{
+    "__author": "mi_fan_arts",
+    "version": 3,
+    "type": 2,
+    "name": "mi-fan-arts-succubus",
+    "img_sit": "mi-fan-arts-succubus",
+    "pose_map": {
+        "mpm_type": 0,
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true,
+        "p5": true,
+        "p6": true,
+        "p7": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "costume": "o31",
+        "cosplay": true,
+        "lingerie": true,
+        "succubus_roleplay":true
+    },
+    "select_info": {
+        "display_name": "Disfraz de súcubo",
+        "thumb": "mi-fan-arts-succubus",
+        "group": "clothes",
+        "visible_when_locked": true,
+        "hover_dlg": [
+            "Come slowly Eden Lips",
+            "unused to thee",
+            "Bashful sip thy jasmines",
+            "As the fainting bee."
+        ],
+        "select_dlg": [
+            "¿Qué fantasías estás planeando?"
+        ]
+    },
+    "pose_arms": {
+        "crossed": {
+            "tag": "crossed",
+            "layers": "5^10"
+        },
+        "left-down": {
+            "tag": "down",
+            "layers": "0"
+        },
+        "left-rest": {
+            "tag": "rest",
+            "layers": "10"
+        },
+        "right-down": {
+            "tag": "down",
+            "layers": "0"
+        },
+        "right-point": {
+            "tag": "point",
+            "layers": "0"
+        },
+        "right-restpoint": {
+            "tag": "restpoint",
+            "layers": "10"
+        },
+        "steepling": {
+            "tag": "steepling",
+            "layers": "10"
+        },
+        "def|left-def": {
+            "tag": "def",
+            "layers": "10"
+        },
+        "def|right-def": {
+            "tag": "def",
+            "layers": "5^10"
+        }
+    },
+    "giftname": "succubus_cosplay"
+}
