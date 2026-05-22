@@ -3,6 +3,7 @@
 #===========================================================================================
 
 # Submod created by ZeroFixer(u/UnderstandingAny7135), this submod is made for MAS brothers/sisters.
+# Traduccion por TX_Virus (TX_ADAPTACIONES), quien se encargó de traducir todo el mod al español.
 # Shoutout to u/my-otter-self at reddit, who proofread the whole mod.
 # Source Code: https://github.com/zer0fixer/MAS-Extraplus
 
@@ -11,7 +12,7 @@ init -990 python in mas_submod_utils:
     Submod(
         author="ZeroFixer",
         name="Extra Plus",
-        description="Expand your time with Monika with new minigames, dates, and interactions.",
+        description="¡Un submod que añade un botón Extra+, además de más contenido y nuevas interacciones!{size=-5}(traduccion por TX_Virus).{/size}",
         version="1.4.2",
         settings_pane="_extra_plus_submod_settings"
     )
@@ -36,122 +37,123 @@ init -989 python:
 # Random dialogue pools for menus and Chibika's easter egg gift reactions.
 init 20 python in ep_dialogues:
     _minigames = [
-        _("Which one should we play, [player]?"),
-        _("Up for a challenge? Ehehe~"),
-        _("I'd love to play with you~"),
-        _("What are we playing today?"),
-        _("Let's have some fun!"),
-        _("Time to show me your skills!"),
-        _("Ready to lose? Just kidding!"),
-        _("Let's see how good you really are!"),
-        _("Which game are you in the mood for?"),
-        _("Shall we play a game?"),
-        _("I'm feeling lucky today, [player]~"),
-        _("Are you ready?"),
-        _("Let's see if you can beat me!"),
-        _("Time for a little friendly competition!"),
-        _("I'm up for anything, as long as it's with you."),
+        _("¿A cuál deberíamos jugar, [player]?"),
+        _("¿Te animas a un desafío? Jeje~"),
+        _("Me encantaría jugar contigo~"),
+        _("¿A qué jugamos hoy?"),
+        _("¡Vamos a divertirnos"),
+        _("¡Es hora de que me muestres tus habilidades"),
+        _("¿Listo para perder? ¡Es broma!"),
+        _("¡Veamos qué tan bueno eres en realidad!"),
+        _("¿Qué juego te apetece?"),
+        _("¿Jugamos?"),
+        _("Hoy me siento con suerte [player]~"),
+        _("¿Estás listo?"),
+        _("¡Vamos a ver si puedes vencerme!"),
+        _("¡Es hora de una pequeña competencia amistosa!"),
+        _("Estoy dispuesta a todo, siempre que sea contigo."),
     ]
     _dates = [
-        _("I can't wait to see where you're taking me!"),
-        _("Where are we going today? I'm excited!"),
-        _("I love spending quality time with you."),
-        _("Let's make some wonderful memories today."),
-        _("I just know we'll have a great time."),
-        _("As long as I'm with you, anywhere is perfect."),
-        _("I'm happy to follow your lead, [player]."),
-        _("Let's do something romantic!"),
-        _("I'm the luckiest girl to have you as my date~"),
-        _("I can't wait to make more memories with you."),
-        _("I'm up for whatever you want to do!"),
-        _("Let's make this a date to remember."),
-        _("I have a feeling today is going to be amazing!"),
-        _("It doesn't matter where we go, as long as we're together."),
-        _("Let's have an unforgettable time, [player]!")
+        _("¡No puedo esperar a ver a dónde me llevas!"),
+        _("¿Adónde vamos hoy? ¡Estoy emocionada!"),
+        _("Me encanta pasar tiempo de calidad contigo."),
+        _("Creemos recuerdos maravillosos hoy"),
+        _("Sé que lo pasaremos genial."),
+        _("Mientras esté contigo, cualquier lugar es perfecto."),
+        _("Estoy feliz de poder ir contigo, [player]."),
+        _("¡Hagamos algo romántico!"),
+        _("Soy la chica más afortunada por tenerte como mi pareja~"),
+        _("No puedo esperar a crear más recuerdos contigo."),
+        _("¡Estoy dispuesta a lo que quieras hacer!"),
+        _("Hagamos de esta una cita para recordar."),
+        _("¡Tengo la sensación de que hoy va a ser increíble!"),
+        _("rNo importa adónde vayamos, con tal de que estemos juntos."),
+        _("¡Pasemos un tiempo inolvidable, [player]!")
     ]
 
     # Dictionary of special gift names and Chibika's reactions
     # Format: { "gift_name": ("message", "doki_icon") }
+    # Formato: { "nombre_del_regalo": ("mensaje", "icono_doki") }
     # doki_icon options: "darling" (Monika), "cupcake" (Natsuki), "cinnamon" (Sayori), "teacup" (Yuri)
     chibis_gift = {
         # === DDLC Characters ===
-        "monika": (_("That's me! Well, the big me~"), "darling"),
-        "sayori": (_("Cinnamon bun! She's so sweet~"), "cinnamon"),
-        "natsuki": (_("Cupcake queen! Don't tell her I said that..."), "cupcake"),
-        "yuri": (_("Ah, the tea lover~ Very elegant!"), "teacup"),
-        "mc": (_("The protagonist! ...Kind of boring though."), "darling"),
+        "monika": (_("¡Esa soy yo! Bueno, la versión grande de mí~"), "darling"),
+        "sayori": (_("¡Bollito de canela! ¡Es tan dulce~"), "canela"), "cinnamon"),
+        "natsuki": (_("¡La reina de los cupcakes! No le digas que dije eso..."), "cupcake"),
+        "yuri": (_("¡Ah, la amante del té~ ¡Muy elegante!"), "teacup"),
+        "mc": (_("¡El protagonista! ...Aunque un poco aburrido."), "darling"),
         
         # === DDLC Memes & References ===
-        "just_monika": (_("Just Monika. Just Monika. Just Monika~"), "darling"),
-        "justmonika": (_("Just Monika. Just Monika. Just Monika~"), "darling"),
-        "deletethis": (_("Hey! Don't even think about it!"), "darling"),
-        "delete": (_("STOP! That word is forbidden here!"), "darling"),
-        "buffsuki": (_("She's not THAT strong... right?"), "cupcake"),
-        "cupcake": (_("Did someone say cupcakes?!"), "cupcake"),
-        "poem": (_("Roses are red, violets are blue..."), "darling"),
-        "cookie": (_("Ooh! Is it for Sayori?"), "cinnamon"),
-        "rope": (_("...Let's not talk about that."), "cinnamon"),
-        "knife": (_("Put that away, please..."), "teacup"),
-        "tea": (_("A refined choice~ Yuri would approve!"), "teacup"),
-        "manga": (_("Manga IS literature! ...Right?"), "cupcake"),
-        "literature": (_("Welcome to the Literature Club!"), "darling"),
-        "reality": (_("What even IS reality anymore?"), "darling"),
-        "epiphany": (_("File deleted successfully... Just kidding!"), "darling"),
-        "space": (_("The endless void... it's actually cozy here!"), "darling"),
-        "classroom": (_("Ah, the old classroom~ Memories..."), "darling"),
+        "just_monika": (_("Solo Monika. Solo Monika. Solo Monika~"), "darling"),
+        "justmonika": (_("Solo Monika. Solo Monika. Solo Monika~"), "darling"),
+        "deletethis": (_("¡Oye! ¡Ni se te ocurra!"), "darling"),
+        "delete": (_("¡ALTO! ¡Esa palabra está prohibida aquí!"), "darling"),
+        "buffsuki": (_("No es TAN fuerte... ¿verdad?"), "cupcake"),
+        "cupcake": (_("¡¿Alguien dijo pastelitos?!"), "cupcake"),
+        "poem": (_("Las rosas son rojas, las violetas son azules..."), "darling"),
+        "cookie": (_("¡Oh! ¿Es para Sayori?"), "cinnamon"),
+        "rope": (_("...No hablemos de eso."), "cinnamon"),
+        "knife": (_("Guarda eso, por favor..."), "teacup"),
+        "tea": (_("¡Una elección refinada! ¡Yuri lo aprobaría!"), "teacup"),
+        "manga": (_("¡El manga ES literatura! ...¿Verdad?"), "cupcake"),
+        "literature": (_("¡Bienvenido al Club de Literatura!"), "darling"),
+        "reality": (_("¿Qué es la realidad hoy en día?"), "darling"),
+        "epiphany": (_("Archivo eliminado correctamente... ¡Es broma!"), "darling"),
+        "space": (_("El vacío infinito... ¡Aquí se está muy a gusto!"), "darling"),
+        "classroom": (_("Ah, la vieja aula~ Recuerdos..."), "darling"),
         "piano": (_("Your Reality~ La la la~"), "darling"),
         
         # === MAS References ===
-        "mas": (_("Monika After Story! That's where I live~"), "darling"),
-        "affection": (_("You want MORE affection?! Greedy~"), "darling"),
-        "coffee": (_("Mmm, delicious! Perfect for late nights~"), "darling"),
-        "hotchocolate": (_("Warm and cozy~ Just like you!"), "darling"),
-        "roses": (_("How romantic! For [m_name], right?"), "darling"),
-        "fudge": (_("Sweet treat! I approve~"), "darling"),
+        "mas": (_("¡Monika After Story! Ahí es donde vivo~"), "darling"),
+        "affection": (_("¿Quieres MÁS afecto? ¡Que codicioso~"), "darling"),
+        "coffee": (_("¡Mmm, delicioso! Perfecto para las noches tardías~"), "darling"),
+        "hotchocolate": (_("¡Cálido y acogedor~ ¡Tal como tú!"), "darling"),
+        "roses": (_("¡Qué romántico! ¿Para [m_name], verdad?"), "darling"),
+        "fudge": (_("¡Dulce! ¡Me enccanta~"), "darling"),
         
         # === Player Interactions ===
-        "love": (_("Aww! That's so sweet of you~"), "darling"),
-        "heart": (_("My heart goes doki doki too!"), "darling"),
-        "hug": (_("*tiny hug* There you go!"), "darling"),
-        "kiss": (_("*blushes* F-for [m_name], right?!"), "darling"),
-        "boop": (_("Boop! Hehe~"), "darling"),
-        "headpat": (_("Pat pat~ Good [player]!"), "darling"),
+        "love": (_("¡Awww! ¡Qué dulce eres!~"), "darling"),
+        "heart": (_("¡Mi corazón también late con fuerza!"), "darling"),
+        "hug": (_("*pequeño abrazo* ¡Ahí tienes!"), "darling"),
+        "kiss": (_("*se sonroja* ¡P-para [m_name], ¿verdad?"), "darling"),
+        "boop": (_("¡Boop! Jeje~"), "darling"),
+        "headpat": (_("¡Puf, puf~ ¡Bien hecho, [player]!"), "darling"),#Pendiente de traducción 
         
         # === Funny/Random ===
-        "chibika": (_("That's ME! I'm famous!"), "darling"),
-        "chibi": (_("Smol but mighty!"), "darling"),
-        "debug": (_("Beep boop. Debug mode activated... NOT!"), "darling"),
-        "test": (_("Testing 1, 2, 3... It works!"), "darling"),
-        "hello": (_("Hello there!"), "darling"),
-        "world": (_("Hello World! Classic programmer stuff."), "darling"),
-        "secret": (_("Shh! You found a secret!"), "darling"),
-        "easteregg": (_("You found me! Good job, detective~"), "darling"),
-        "easter_egg": (_("You found me! Good job, detective~"), "darling"),
-        "doki": (_("Doki Doki! My heart is racing~"), "darling"),
+        "chibika": (_("¡Esa soy yo! ¡Soy famosa!"), "darling"),
+        "chibi": (_("¡Pequeña pero poderosa!"), "darling"),
+        "debug": (_("Beep boop. Modo de depuración activado... ¡NO!"), "darling"),
+        "test": (_("Probando 1, 2, 3... ¡Funciona!"), "darling"),
+        "hello": (_("¡Hola!"), "darling"),
+        "world": (_("¡Hola mundo! Cosas clásicas de programador."), "darling"),
+        "secret": (_("¡Shh! ¡Encontraste un secreto!"), "darling"),
+        "easteregg": (_("¡Encontraste a [player]! Buen trabajo, detective~"), "darling"),
+        "easter_egg": (_("¡Encontraste a [player]! Buen trabajo, detective~"), "darling"),
+        "doki": (_("Doki Doki! Mi corazón late rápido~"), "darling"),
         "dokidoki": (_("DOKI DOKI DOKI DOKI!"), "darling"),
-        "player": (_("Hey, that's you! ...Or is it?"), "darling"),
-        "dan": (_("Dan Salvato! The creator!"), "darling"),
-        "salvato": (_("Thanks for making DDLC, Dan!"), "darling"),
-        "python": (_("Sssss... I mean, great language!"), "darling"),
-        "renpy": (_("The engine that makes this possible!"), "darling"),
-        "code": (_("01001000 01101001! ...I don't actually speak binary."), "darling"),
-        "night": (_("Night mode activated! ...Just kidding."), "darling"),
-        "sleep": (_("Zzz... Wake me up when you're done~"), "darling"),
-        "dream": (_("Sweet dreams are made of this~"), "darling"),
-        "cat": (_("Meow! Cats are cute~"), "darling"),
-        "dog": (_("Woof! Dogs are loyal~"), "darling"),
-        "pizza": (_("Yum! Save a slice for me!"), "cupcake"),
-        "chocolate": (_("CHOCOLATE! My weakness!"), "darling"),
-        "candy": (_("Sweet! But don't eat too much~"), "darling"),
-        "flower": (_("Pretty! Flowers make everything better~"), "darling"),
-        "star": (_("Twinkle twinkle little star~"), "darling"),
-        "moon": (_("To the moon and back!"), "darling"),
-        "sun": (_("Bright and warm! Like your smile~"), "darling"),
-        "rainbow": (_("All the colors! So pretty~"), "darling"),
-        "music": (_("La la la~ I love music!"), "darling"),
-        "game": (_("Let's play! I'm ready~"), "darling"),
-        "win": (_("Victory! You're the champion!"), "darling"),
-        "gift": (_("A gift... for making gifts? How meta."), "darling"),
+        "player": (_("¡Oye, eres tú! ...¿O no?"), "darling"),
+        "dan": (_("¡Dan Salvato! ¡El creador!"), "darling"),
+        "salvato": (_("¡Gracias por crear DDLC, Dan!"), "darling"),
+        "python": (_("Sssss... ¡Quiero decir, un gran lenguaje!"), "darling"),
+        "renpy": (_("T¡El motor que hace esto posible"), "darling"),
+        "code": (_("¡01001000 01101001! ...En realidad no hablo binario."), "darling"),
+        "night": (_("¡Modo nocturno activado! ...Es broma."), "darling"),
+        "sleep": (_("Zzz... Despiértame cuando termines~"), "darling"),
+        "dream": (_("De esto están hechos los dulces sueños~"), "darling"),
+        "cat": (_("¡Miau! Los gatos son lindos~"), "darling"),
+        "dog": (_("¡Guau! Los perros son leales~"), "darling"),
+        "pizza": (_("¡Qué rico! ¡Guárdame un trozo!"), "cupcake"),
+        "chocolate": (_("¡CHOCOLATE! ¡Mi debilidad!"), "darling"),
+        "candy": (_("¡Qué dulce! Pero no comas demasiado~"), "darling"),
+        "flower": (_("¡Qué bonita! Las flores lo mejoran todo~"), "darling"),
+        "star": (_("Brilla, brilla, estrellita~"), "darling"),
+        "moon": (_("¡Hasta la luna y más allá!"), "darling"),
+        "sun": (_("Brillante y cálido! Como tu sonrisa~"), "darling"),
+        "rainbow": (_("¡Todos los colores! Qué bonito~"), "darling"),
+        "music": (_("La la la~ ¡Me encanta la música!"), "darling"),
+        "game": (_("¡A jugar! Estoy lista~"), "darling"),
+        "win": (_("¡Victoria! ¡Eres el campeón!"), "darling"),
+        "gift": (_("¿Un regalo... por hacer regalos? Qué curioso."), "darling"),
     }
 
 init -10 python in ep_interactions:
@@ -935,9 +937,9 @@ screen extraplus_interactions():
         ypos 210
 
         use extra_close_button()
-        textbutton _("Dates") action Jump("extraplus_walk") sensitive (store.ep_affection.getCurrentAffection() >= 0)
-        textbutton _("Games") action Jump("extraplus_minigames") sensitive (store.ep_affection.getCurrentAffection() >= 30)
-        textbutton _("Tools") action Jump("extraplus_tools")
+        textbutton _("Cita") action Jump("extraplus_walk") sensitive (store.ep_affection.getCurrentAffection() >= 0)
+        textbutton _("Juegos") action Jump("extraplus_minigames") sensitive (store.ep_affection.getCurrentAffection() >= 30)
+        textbutton _("Adicional") action Jump("extraplus_tools")
         textbutton _("Boop") action Jump("show_boop_screen") sensitive (store.ep_affection.getCurrentAffection() >= 100)
 
 # # Custom input screen with paste-from-clipboard functionality
@@ -1041,7 +1043,7 @@ screen extra_close_button(jump_action="close_extraplus"):
     key "X" action Jump(jump_action)
 
     vbox:
-        textbutton _("Close") action Jump(jump_action)
+        textbutton _("Cerrar") action Jump(jump_action)
 
 #=== Chibis ===
 screen doki_chibi_idle():
@@ -1102,7 +1104,7 @@ screen sticker_customization():
         ypos 90
 
         use extra_close_button("close_dev_extraplus")
-        textbutton _("Back") action Jump("extraplus_tools")
+        textbutton _("Atrás") action Jump("extraplus_tools")
 
     frame:
         xalign 0.5
@@ -1130,7 +1132,7 @@ screen sticker_customization():
                 vbox:
                     label _("Toggle Visibility:")
                     # null height 10
-                    textbutton _("Show/Hide") action Function(store.ep_chibis.add_remv_chibi)
+                    textbutton _("Aparacer/Esconder") action Function(store.ep_chibis.add_remv_chibi)
 
             null height 10
 
@@ -1142,10 +1144,10 @@ screen sticker_customization():
                 vbox:
                     label _("Outfits:")
                     # null height 30
-                    textbutton _("Select") action Jump("doki_change_appe")
+                    textbutton _("Seleccionar") action Jump("doki_change_appe")
                 vbox:
-                    label _("Accessories:")
-                    textbutton _("Select") action Jump("chibi_accessories_menu")
+                    label _("Accessorios:")
+                    textbutton _("Seleccionar") action Jump("chibi_accessories_menu")
 
             null height 10
 
@@ -1169,7 +1171,7 @@ screen gen_accessories_twopane_screen():
         ypos 90
 
         use extra_close_button("close_dev_extraplus")
-        textbutton _("Back") action Jump("extra_chibi_main")
+        textbutton _("Atrás") action Jump("extra_chibi_main")
 
     # Main content area without a visible frame, like the timeline
     hbox:
@@ -1185,15 +1187,15 @@ screen gen_accessories_twopane_screen():
                 style "check_label"
                 xalign 0.5
             
-            textbutton _("Head"):
+            textbutton _("Cabeza"):
                 style "twopane_scrollable_menu_special_button"
                 action Function(store.ep_chibis.set_accessory_category, "primary")
             
-            textbutton _("Others"):
+            textbutton _("Otros"):
                 style "twopane_scrollable_menu_special_button"
                 action Function(store.ep_chibis.set_accessory_category, "secondary")
 
-            textbutton _("Background"):
+            textbutton _("Fondo"):
                 style "twopane_scrollable_menu_special_button"
                 action Function(store.ep_chibis.set_accessory_category, "background")
 
@@ -1273,7 +1275,7 @@ screen extra_custom_zoom():
         area (0, 0, 1280, 720)
         background Solid("#0000007F")
 
-        textbutton _("Close"):
+        textbutton _("Cerrar"):
             area (60, store.ep_button.zoom_close_ypos, 120, 35)
             style "hkb_button"
             selected False
@@ -1285,7 +1287,7 @@ screen extra_custom_zoom():
             vbox:
                 spacing 2
                 # resets the zoom value back to default
-                textbutton _("Base"):
+                textbutton _("Reiniciar"):
                     style "mas_adjustable_button"
                     selected False
                     xsize 72 ysize 35 xalign 0.3
@@ -1374,7 +1376,7 @@ screen boop_revamped():
         ypos 90
 
         use extra_close_button("close_boop_screen")
-        textbutton _("Back") action Jump("return_boop_screen")
+        textbutton _("Atrás") action Jump("return_boop_screen")
 
 screen boop_capture_overlay(label_boop):
     zorder 49  # Below the UI buttons (which are at zorder 51)
@@ -1453,7 +1455,7 @@ screen extra_dating_loop(ask, label_boop, boop_enable=False):
         yanchor 1.0
         ypos store.ep_dates.ypos
         
-        textbutton _("Talk"):
+        textbutton _("Charla"):
             style "hkb_button"
             action Jump(ask)
 
@@ -1516,10 +1518,10 @@ screen maxwell_april_fools():
         yanchor 1.0
         ypos 210
 
-        textbutton _("Close") action NullAction() sensitive False
-        textbutton _("Dates") action NullAction() sensitive False
-        textbutton _("Games") action NullAction() sensitive False
-        textbutton _("Tools") action NullAction() sensitive False
+        textbutton _("Cerrar") action NullAction() sensitive False
+        textbutton _("Fechas") action NullAction() sensitive False
+        textbutton _("Juegos") action NullAction() sensitive False
+        textbutton _("Adicional") action NullAction() sensitive False
         textbutton _("Boop") action NullAction() sensitive False
 
     on "show" action Play("maxwellcat", sfx_maxwell_theme)
@@ -1542,7 +1544,7 @@ screen extraplus_stats_screen():
         ypos 90
 
         use extra_close_button()
-        textbutton _("Back") action Jump("extraplus_tools")
+        textbutton _("Atrás") action Jump("extraplus_tools")
 
     frame:
         style_prefix "check"
@@ -1554,7 +1556,7 @@ screen extraplus_stats_screen():
 
         has vbox:
             spacing 25
-            label _("Your Time with [m_name]"):
+            label _("Tu tiempo con [m_name]"):
                 xalign 0.5
             vbox:
                 xfill True
