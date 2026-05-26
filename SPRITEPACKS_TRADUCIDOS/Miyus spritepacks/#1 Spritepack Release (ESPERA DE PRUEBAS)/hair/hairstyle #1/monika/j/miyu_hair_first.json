@@ -1,0 +1,23 @@
+{
+    "__author": "Miyu",
+    "version": 3,
+    "type": 1,
+    "name": "miyu_first",
+    "img_sit": "miyu_first",
+    "pose_map": {
+        "mpm_type": 0,
+        "default": true,
+        "use_reg_for_l": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "ribbon": true,
+        "twintails": true
+    },
+    "select_info": {
+        "display_name": "Pelo corto",
+        "thumb": "miyu_first",
+        "group": "hair"
+    },
+    "unlock": true
+}

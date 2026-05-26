@@ -1,0 +1,59 @@
+{
+    "__author": "Miyu",
+
+    "version": 3,
+
+    "type": 0,
+
+    "name": "miyu_hairclip_obow",
+
+    "img_sit": "miyu_hairclip_obow",
+
+    "pose_map": {
+
+        "default": "0",
+
+        "l_default": "5"
+
+    },
+
+    "rec_layer": 1,
+
+    "acs_type": "left-hair-clip",
+
+    "mux_type": [
+
+        "left-hair-clip"
+
+    ],
+
+    "stay_on_start": true,
+
+    "ex_props": {
+
+        "left-hair-strand-eye-level": true
+
+    },
+
+    "select_info": {
+
+        "display_name": "Gran lazo naranja",
+
+        "thumb": "miyu_obow",
+
+        "group": "left-hair-clip",
+
+        "select_dlg": [
+
+            "Me encanta esta horquilla.",
+
+            "¡Esta horquilla es adorable!",
+
+            "¡Bonito!"
+        ]
+
+    },
+
+    "giftname": "obowclip"
+
+}

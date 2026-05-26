@@ -1,0 +1,59 @@
+{
+    "__author": "Miyu",
+
+    "version": 3,
+
+    "type": 0,
+
+    "name": "miyu_hairclip_bbow",
+
+    "img_sit": "miyu_hairclip_bbow",
+
+    "pose_map": {
+
+        "default": "0",
+
+        "l_default": "5"
+
+    },
+
+    "rec_layer": 1,
+
+    "acs_type": "left-hair-clip",
+
+    "mux_type": [
+
+        "left-hair-clip"
+
+    ],
+
+    "stay_on_start": true,
+
+    "ex_props": {
+
+        "left-hair-strand-eye-level": true
+
+    },
+
+    "select_info": {
+
+        "display_name": "Gran clip negro",
+
+        "thumb": "miyu_bbow",
+
+        "group": "left-hair-clip",
+
+        "select_dlg": [
+
+            "¡Me encanta este clip!",
+
+            "¡Este clip es adorable!",
+
+            "¡Lindo!"
+        ]
+
+    },
+
+    "giftname": "bbowclip"
+
+}

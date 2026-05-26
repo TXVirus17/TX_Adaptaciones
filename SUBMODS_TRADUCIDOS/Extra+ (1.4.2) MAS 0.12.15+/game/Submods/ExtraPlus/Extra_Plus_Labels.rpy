@@ -382,9 +382,9 @@ label extraplus_walk:
     python:
         ep_tools.walk_menu = [
             (_("Cafe"), "go_to_cafe"),
-            (_("Restaurant"), "go_to_restaurant"),
-            (_("Library"), "go_to_library"),
-            (_("Pool (Soon)"), "generic_date_dev"),
+            (_("Restaurante"), "go_to_restaurant"),
+            (_("Libraria"), "go_to_library"),
+            (_("Piscina (Soon)"), "generic_date_dev"),
             (_("Arcade (Soon)"), "generic_date_dev")
         ]
 
@@ -398,10 +398,10 @@ label extraplus_minigames:
     show monika idle at t21
     python:
         ep_tools.minigames_menu = [
-            (_("Shell Game"), "minigame_sg"),
-            (_("Rock Paper Scissors"), "minigame_rps"),
-            (_("Tic Tac Toe"), "minigame_ttt"),
-            (_("Blackjack (21)"), "blackjack_start")
+            (_("Encuentra la pelotita"), "minigame_sg"),
+            (_("Piedra, papel o tijeras"), "minigame_rps"),
+            (_("Tres en raya"), "minigame_ttt"),
+            (_("veintiuno"), "blackjack_start")
         ]
         
         m_talk = renpy.substitute(renpy.random.choice(ep_dialogues._minigames))
@@ -419,16 +419,16 @@ label extraplus_tools:
         
         # Base menu items (always available)
         ep_tools.tools_menu = [
-            (_("View [m_name]'s Affection"), "extra_aff_log"),
-            (_("Your MAS Journey"), "extra_show_stats"),
-            (_("Their story together"), "extra_show_timeline"),
-            (_("Create a gift for [m_name]"), "plus_make_gift")
+            (_("Mira el afecto de [m_name]"), "extra_aff_log"),
+            (_("Tu viaje en MAS"), "extra_show_stats"),
+            (_("Su historia juntos"), "extra_show_timeline"),
+            (_("Crea un regalo para [m_name]"), "plus_make_gift")
         ]
         
         # Add items that require affection >= 30
         if current_aff >= 30:
             ep_tools.tools_menu.append((_("Change the window's title"), "extra_window_title"))
-            ep_tools.tools_menu.append((_("Hi, [player]!"), "extra_chibi_main"))
+            ep_tools.tools_menu.append((_("¡Holi, [player]!"), "extra_chibi_main"))
 
         # Build bottom items
         items = []

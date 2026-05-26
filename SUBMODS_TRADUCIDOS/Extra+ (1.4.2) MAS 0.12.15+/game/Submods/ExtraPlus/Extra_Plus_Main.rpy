@@ -78,7 +78,7 @@ init 20 python in ep_dialogues:
     chibis_gift = {
         # === DDLC Characters ===
         "monika": (_("¡Esa soy yo! Bueno, la versión grande de mí~"), "darling"),
-        "sayori": (_("¡Bollito de canela! ¡Es tan dulce~"), "canela"), "cinnamon"),
+        "sayori": (_("¡Bollito de canela! ¡Es tan dulce~"), "cinnamon"),
         "natsuki": (_("¡La reina de los cupcakes! No le digas que dije eso..."), "cupcake"),
         "yuri": (_("¡Ah, la amante del té~ ¡Muy elegante!"), "teacup"),
         "mc": (_("¡El protagonista! ...Aunque un poco aburrido."), "darling"),
@@ -1117,26 +1117,26 @@ screen sticker_customization():
             xalign 0.5
             style_prefix "check"
 
-            label _("Chibi Options"):
+            label _("Opciones Chibi"):
                 xalign 0.45
 
             hbox:
                 spacing 20
                 vbox:
-                    label _("Draggable Chibi:")
+                    label _("Chibi arrastrable:")
                     # null height 30
                     textbutton _("[persistent.enable_drag_chibika]") action ToggleField(persistent, "enable_drag_chibika")
                 vbox:
-                    label _("Always on screen:")
+                    label _("Siempre en pantalla:")
                     textbutton _("[persistent.hi_chibika]") action ToggleField(persistent, "hi_chibika")
                 vbox:
-                    label _("Toggle Visibility:")
+                    label _("Mostrar/ocultar:")
                     # null height 10
                     textbutton _("Aparacer/Esconder") action Function(store.ep_chibis.add_remv_chibi)
 
             null height 10
 
-            label _("Dress Up!"):
+            label _("¡Disfrazar!"):
                 xalign 0.45
 
             hbox:
@@ -1183,7 +1183,7 @@ screen gen_accessories_twopane_screen():
         vbox:
             spacing 15
             
-            label _("Categories"):
+            label _("Categorias"):
                 style "check_label"
                 xalign 0.5
             
@@ -1560,7 +1560,7 @@ screen extraplus_stats_screen():
                 xalign 0.5
             vbox:
                 xfill True
-                text _("Current Visit")
+                text _("Tiempo de visita actual")
                 add DynamicDisplayable(store.ep_tools.getCurrSessionD) yalign 0.5
 
             vbox:
@@ -1594,7 +1594,7 @@ screen extra_quick_gifts_screen(filters):
         yanchor 1.0
         ypos 90
         use extra_close_button()
-        textbutton _("Back") action Jump("plus_pending_gifts")
+        textbutton _("Atrás") action Jump("plus_pending_gifts")
     
     frame:
         style_prefix "check"
@@ -1609,9 +1609,9 @@ screen extra_quick_gifts_screen(filters):
             xfill True
             spacing 15
             xsize 450
-            label _("Quick Gift Creator")
+            label _("Creador rápido de regalos")
             
-            text _("Create multiple gifts at once by filtering:"):
+            text _("Crea varios regalos a la vez aplicando filtros:"):
                 size 18
             
             null height 10
@@ -1620,7 +1620,7 @@ screen extra_quick_gifts_screen(filters):
             vbox:
                 xfill True
                 spacing 5
-                text _("Gift Type:") size 16
+                text _("Tipo de regalo:") size 16
                 viewport:
                     xfill True
                     ysize 40
@@ -1645,7 +1645,7 @@ screen extra_quick_gifts_screen(filters):
                 vbox:
                     xfill True
                     spacing 5
-                    text _("Author:") size 16
+                    text _("Autor:") size 16
                     viewport:
                         xfill True
                         ysize 40
@@ -1653,7 +1653,7 @@ screen extra_quick_gifts_screen(filters):
                         mousewheel "horizontal"
                         hbox:
                             spacing 8
-                            textbutton _("All"):
+                            textbutton _("Todos"):
                                 action SetScreenVariable("EP_selected_prefix", None)
                                 style "check_button"
                                 selected EP_selected_prefix is None
@@ -1668,7 +1668,7 @@ screen extra_quick_gifts_screen(filters):
             # Action buttons
             hbox:
                 spacing 20                
-                textbutton _("Create {} Gifts").format(EP_preview_count):
+                textbutton _("Regalos creados {} ").format(EP_preview_count):
                     style "confirm_button"
                     sensitive EP_preview_count > 0
                     action [
@@ -1727,7 +1727,7 @@ screen extra_timeline_screen():
         ypos 90
 
         use extra_close_button()
-        textbutton _("Back") action Jump("extraplus_tools")
+        textbutton _("Atrás") action Jump("extraplus_tools")
 
     # --- Main Panel (Center) ---
     frame:
@@ -1744,7 +1744,7 @@ screen extra_timeline_screen():
             hbox:
                 style_prefix "check"
                 xalign 0.5
-                label _("Our History Together")
+                label _("Nuestra Historia Juntos")
 
             # --- Viewport and Scrollbar ---
             fixed:
@@ -1762,7 +1762,7 @@ screen extra_timeline_screen():
                         spacing 10 # Space between cards
                         
                         if not EP_timeline_data:
-                            text _("Our story is just beginning..."):
+                            text _("Nuestra historia acaba de empezar..."):
                                 xalign 0.5
                                 yalign 0.5 # This will center it in the available space
 
@@ -1801,7 +1801,7 @@ screen extra_timeline_screen():
                                     null height 1
 
                                     # --- Date ---
-                                    text _("Date: [date_str]"):
+                                    text _("Fecha: [date_str]"):
                                         size 16
                                         italic True
                                         xalign 1.0
@@ -1875,7 +1875,7 @@ screen extra_fridge_magnets():
         yanchor 1.0
         ypos 90
         use extra_close_button("extra_fridge_quit")
-        textbutton _("Clean") action Function(EP_fridge_manager.clean_magnets)
+        textbutton _("Limpiar") action Function(EP_fridge_manager.clean_magnets)
 
 # Animation for coffee popup - fade in with slide up
 transform coffee_popup_show:
@@ -1907,7 +1907,7 @@ screen extra_coffee_info():
             xalign 0.5
             
             # Title - uses gui.text_color for theme compatibility
-            text _("Coffee Stock"):
+            text _("Cantidad de café"):
                 size 20
                 xalign 0.5
                 color gui.text_color
@@ -1981,19 +1981,19 @@ screen _extra_plus_submod_settings():
         xfill True
         xmaximum 1000
 
-        textbutton _("{b}Smart button text{/b}"):
+        textbutton _("{b}Texto del botón inteligente{/b}"):
             action ToggleField(persistent, "_ep_dynamic_button_text")
             hovered tooltip.Action("Changes button text based on mood or events.")
 
-        textbutton _("{b}New restaurant style{/b}"):
+        textbutton _("{b}Nuevo estilo de restaurante{/b}"):
             action ToggleField(persistent, "_ep_restaurant_variant")
             hovered tooltip.Action("Uses the redesigned restaurant background.")
 
-        textbutton _("{b}Verify installation{/b}"):
+        textbutton _("{b}Verificar la instalación{/b}"):
             action Function(store.ep_files.run_asset_linter)
             hovered tooltip.Action("Creates a report of missing submod files.")
 
-        textbutton _("{b}Remove old files{/b}"):
+        textbutton _("{b}Eliminar archivos antiguos{/b}"):
             action Function(store.ep_files.cleanup_old_files)
             hovered tooltip.Action("Removes outdated files from previous versions.")
 

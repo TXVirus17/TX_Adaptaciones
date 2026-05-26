@@ -1,0 +1,59 @@
+{
+    "__author": "Miyu",
+
+    "version": 3,
+
+    "type": 0,
+
+    "name": "miyu_hairclip_rchbow",
+
+    "img_sit": "miyu_hairclip_rchbow",
+
+    "pose_map": {
+
+        "default": "0",
+
+        "l_default": "5"
+
+    },
+
+    "rec_layer": 1,
+
+    "acs_type": "left-hair-clip",
+
+    "mux_type": [
+
+        "left-hair-clip"
+
+    ],
+
+    "stay_on_start": true,
+
+    "ex_props": {
+
+        "left-hair-strand-eye-level": true
+
+    },
+
+    "select_info": {
+
+        "display_name": "Red Checkered Bow",
+
+        "thumb": "miyu_rchbow",
+
+        "group": "left-hair-clip",
+
+        "select_dlg": [
+
+            "I love this hairclip.",
+
+            "This hairclip is adorable!",
+
+            "Cute!"
+        ]
+
+    },
+
+    "giftname": "redchbow"
+
+}

@@ -1,0 +1,27 @@
+{
+    "__author": "Miyu",
+    "version": 3,
+    "type": 2,
+    "name": "miyu_black_corset",
+    "img_sit": "miyu_black_corset",
+    "pose_map": {
+        "mpm_type": 0,
+        "default": true,
+        "use_reg_for_l": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "bare-shoulders": true
+    },
+    "select_info": {
+        "display_name": "Corsé negro",
+        "thumb": "miyu_black_corset",
+        "group": "clothes",
+        "select_dlg": [
+            "¿Qué tal me veo?",
+            "¡Mis ojos están aquí!"
+        ]
+    },
+    "giftname": "blackcorset",
+    "pose_arms": {}
+}

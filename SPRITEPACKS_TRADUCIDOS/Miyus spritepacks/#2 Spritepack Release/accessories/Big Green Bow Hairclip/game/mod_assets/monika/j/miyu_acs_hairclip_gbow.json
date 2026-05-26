@@ -1,0 +1,59 @@
+{
+    "__author": "Miyu",
+
+    "version": 3,
+
+    "type": 0,
+
+    "name": "miyu_hairclip_gbow",
+
+    "img_sit": "miyu_hairclip_gbow",
+
+    "pose_map": {
+
+        "default": "0",
+
+        "l_default": "5"
+
+    },
+
+    "rec_layer": 1,
+
+    "acs_type": "left-hair-clip",
+
+    "mux_type": [
+
+        "left-hair-clip"
+
+    ],
+
+    "stay_on_start": true,
+
+    "ex_props": {
+
+        "left-hair-strand-eye-level": true
+
+    },
+
+    "select_info": {
+
+        "display_name": "Big Green Bow",
+
+        "thumb": "miyu_gbow",
+
+        "group": "left-hair-clip",
+
+        "select_dlg": [
+
+            "I love this hairclip.",
+
+            "This hairclip is adorable!",
+
+            "Cute!"
+        ]
+
+    },
+
+    "giftname": "gbowclip"
+
+}

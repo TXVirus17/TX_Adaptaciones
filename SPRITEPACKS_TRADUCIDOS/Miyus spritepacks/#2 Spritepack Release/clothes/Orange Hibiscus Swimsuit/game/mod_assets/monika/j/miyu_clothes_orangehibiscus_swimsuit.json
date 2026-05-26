@@ -1,0 +1,27 @@
+{
+    "__author": "Miyu",
+    "version": 3,
+    "type": 2,
+    "name": "miyu_orangehibiscus_swimsuit",
+    "img_sit": "miyu_orangehibiscus_swimsuit",
+    "pose_map": {
+        "mpm_type": 0,
+        "default": true,
+        "use_reg_for_l": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "bare-shoulders": true
+    },
+    "select_info": {
+        "display_name": "Bañador naranja con estampado de hibisco",
+        "thumb": "miyu_orangehibiscus_swimsuit",
+        "group": "clothes",
+        "select_dlg": [
+            "¡Perfecto!",
+            "¡Lindo!"
+        ]
+    },
+    "giftname": "hibiscusorangeswimsuit",
+    "pose_arms": {}
+}
