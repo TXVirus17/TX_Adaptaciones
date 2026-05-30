@@ -1,5 +1,5 @@
 #===========================================================================================
-# MINIGAME#3
+# MINIGAME#3(EN REVISIÓN): ROCK PAPER SCISSORS
 #===========================================================================================
 #====Rock Paper Scissors
 default persistent.psr_result_game = [False, False, False] #Player, Monika and Tie. Quit [FFF]
@@ -31,7 +31,7 @@ screen RPS_mg():
         xpos 0.86
         yanchor 1.0
         ypos 0.950
-        textbutton _("Quit") style "hkb_button" action Jump("rps_quit")
+        textbutton _("Salir") style "hkb_button" action Jump("rps_quit")
 
 init python in ep_rps:
     import store
@@ -145,28 +145,28 @@ label minigame_rps:
 
     # Very first time playing
     if not renpy.seen_label("checkpoint_minigame_rps") and not renpy.seen_label("rps_quit"):
-        m 1hua "Rock, Paper, Scissors, [player]! Ready to try your luck?"
-        m 1eua "It's a simple game of chance, but sometimes those are the most fun."
-        m 1eub "Let's see who fate favors today. Good luck!"
+        m 1hua "¡Piedra, papel o tijera, [player]! ¿Listo para probar suerte?"
+        m 1eua "Veamos a quién favorece el destino hoy. ¡Buena suerte!"
+        m 1eub "¡Veamos a quién favorece el destino hoy! ¡Buena suerte!"
 
 label checkpoint_minigame_rps:
     if renpy.seen_label("rps_quit"):
         # If the player won the last game
         if persistent.psr_result_game[0]:
-            m 3eub "Ready for a rematch, [player]? I've been thinking about my strategy. Ehehe~"
-            m 3hua "I won't make it so easy for you to win this time!"
+            m 3eub "¿Listo para la revancha, [player]? He estado pensando en mi estrategia. Jejeje~"
+            m 3hua "¡Esta vez no te lo pondré tan fácil!"
         # If Monika won the last game
         elif persistent.psr_result_game[1]:
-            m 1hub "So, are you ready to challenge the champion again?"
-            m 1hua "I hope you're ready! I plan on keeping my winning streak."
+            m 1hub "¿Estás listo para desafiar al campeón de nuevo?"
+            m 1hua "¡Espero que estés listo! Tengo planeado mantener mi racha de victorias."
         # If the last game was a tie
         elif persistent.psr_result_game[2]:
-            m 1eua "Let's play again! We have to break that tie from last time."
-            m 1tua "It feels like we're perfectly in sync. Let's see if that's still true!"
+            m 1eua "¡Juguemos otra vez! Tenemos que romper ese empate de la última vez."
+            m 1tua "Parece que estamos perfectamente sincronizados. ¡Veamos si eso todavía es cierto!"
         # Default greeting for subsequent plays
         else:
-            m 1hua "Ready for another round of Rock, Paper, Scissors, [player]?"
-            m 1eua "It's always nice to relax with a simple game."
+            m 1hua "¿Listo para otra ronda de Piedra, Papel o Tijera, [player]?"
+            m 1eua "Siempre es bueno relajarse con un juego simple."
 
     hide extra_card_back
     hide extra_rock
@@ -216,7 +216,7 @@ label rps_loop:
         show extra_scissors:
             yoffset -20
 
-    m 1eub "Rock,{w=0.3} Paper,{w=0.3} Scissors{w=0.3}!{nw}"
+    m 1eub "Piedra,{w=0.3} Papel,{w=0.3} Tijera{w=0.3}!{nw}"
     hide monika_card_back with dissolve
 
     # Show Monika's choice
@@ -228,41 +228,41 @@ label rps_loop:
     if monika_choice.value == player_choice.value:
         # Tie
         if player_choice.value == 1: # Rock
-            m 3hub "Rock against rock! Ahaha~"
-            m 1hua "It's a tie."
+            m 3hub "¡Piedra contra piedra! ¡Jajaja!"
+            m 1hua "Es un empate."
         elif player_choice.value == 2: # Paper
-            m 1eub "We both chose paper!"
-            m 1tua "We're tied! You should stop reading my mind, [mas_get_player_nickname()]~"
-            m 1hub "Ahahahaha~"
+            m 1eub "¡Elegimos papel!"
+            m 1tua "¡Estamos empatados! Deberías dejar de leer mi mente, [mas_get_player_nickname()]~"
+            m 1hub "Jajaja~"
         elif player_choice.value == 3: # Scissors
-            m 2hkb "Two pairs of scissors make a tie, [player]!"
-            m 2hub "It's funny that we thought of the same thing, ehehehe~"
+            m 2hkb "¡Dos pares de tijeras hacen un empate, [player]!"
+            m 2hub "Es divertido que pensáramos en lo mismo, Jejeje~"
 
     elif player_choice.beats == monika_choice.value:
         # Player wins
         $ ep_rps.player_wins += 1
         if player_choice.value == 1: # Rock vs Scissors
-            m 1hksdrb "Rock breaks scissors."
-            m 1hua "You beat me, [player]!"
+            m 1hksdrb "¡Piedra rompe tijeras!"
+            m 1hua "Me venciste, [player]!"
         elif player_choice.value == 2: # Paper vs Rock
-            m 1lkb "Paper covers rock."
-            m 1lub "You win, [player]."
+            m 1lkb "¡Papel cubre piedra!"
+            m 1lub "Ganaste, [player]."
         elif player_choice.value == 3: # Scissors vs Paper
-            m 1hssdrb "Scissors cuts paper."
-            m 1eua "Victory is yours!"
+            m 1hssdrb "¡Tijeras cortan papel!"
+            m 1eua "¡La victoria es tuya!"
 
     else:
         # Monika wins
         $ ep_rps.moni_wins += 1
         if monika_choice.value == 1: # Rock vs Scissors (Player)
-            m 1mub "Say goodbye to your scissors, [player]~"
-            m "You couldn't beat me! Ahahaha~"
+            m 1mub "Adiós a tus tijeras, [player]~"
+            m 1mub "¡No pudiste vencerme! ¡Jajaja~!"
         elif monika_choice.value == 2: # Paper vs Rock (Player)
-            m 1dub "Paper covers rock."
-            m 1tub "So sorry [player], you lost this one!"
+            m 1dub "¡Papel cubre piedra!"
+            m 1tub "Lo siento [player], perdiste esta vez!"
         elif monika_choice.value == 3: # Scissors vs Paper (Player)
-            m 3eub "Scissors cuts paper."
-            m 3hua "Sorry [player], you lost."
+            m 3eub "¡Tijeras cortan papel!"
+            m 3hua "Lo siento, [player], perdiste."
 
     hide monika_choice_display
     show monika idle at t21
@@ -315,38 +315,38 @@ label rps_result:
     #Tie
     if ep_rps.moni_wins == ep_rps.player_wins:
         if ep_rps.moni_wins == 0 and ep_rps.player_wins == 0:
-            m 1etd "Don't you want to play?"
-            m 1eka "I thought you wanted to play with me for a while..."
-            m 3hua "But don't worry, I understand if you changed your mind."
-            m 3hub "I hope we can play another time!"
+            m 1etd "¿No quieres jugar?jnjm "
+            m 1eka "Pensé que querías jugar conmigo desde hace un rato..."
+            m 3hua "Pero no te preocupes, entiendo si cambias de opinión."
+            m 3hub "¡Espero que podamos jugar otra vez!"
             python:
                 ep_rps.moni_wins = 0
                 ep_rps.player_wins = 0
         else:
-            m 1sua "Wow, it's a tie."
-            m 1tua "It must be because we're so in sync!"
-            m 1hub "Ehehe~"
-            m 3hua "But we have to break the tie eventually, [player]."
-            m 3hub "We will see who wins next time, good luck!"
+            m 1sua "¡Vaya, empate!"
+            m 1tua "¡Debe ser porque estamos muy sincronizados!"
+            m 1hub "Jejeje~"
+            m 3hua "Pero tenemos que romper el empate tarde o temprano, [player]."
+            m 3hub "Ya veremos quién gana la próxima vez, ¡buena suerte!"
             $ persistent.psr_result_game[2] = True
 
     #Monika wins
     elif ep_rps.moni_wins > ep_rps.player_wins:
-        m 3eub "This time I won, [player]~"
-        m 3hub "You put up a good fight."
-        m 3eub "I guess I got lucky."
-        m 3eubsa "But don't feel bad, what matters most to me is that we both have fun."
-        m 1hub "I know you'll beat me next time, I believe in you!"
+        m 3eub "Esta vez gané, [player]~"
+        m 3hub "Diste una buena pelea."
+        m 3eub "Supongo que tuve suerte."
+        m 3eubsa "Pero no te preocupes, lo que más me importa es que ambos nos divirtamos."
+        m 1hub "Sé que me ganarás la próxima vez, ¡creo en ti!"
         $ persistent.psr_result_game[1] = True
 
     #Player wins
     elif ep_rps.moni_wins < ep_rps.player_wins:
-        m 1hub "You beat me [player], congratulations."
-        m 1hub "I'm proud of you~"
-        m 2tub "But be warned, next time I'll try to read your mind."
-        m 2hub "I might just win!"
-        m 2hua "So be careful when we play again."
-        m 2hua "Ehehe~"
+        m 1hub "Me ganaste, [player], ¡felicidades!"
+        m 1hub "Estoy orgullosa de ti~"
+        m 2tub "Pero ten cuidado, la próxima vez intentaré leer tu mente."
+        m 2hub "¡Puede que gane!"
+        m 2hua "Así que ten cuidado cuando juguemos otra vez."
+        m 2hua "Jejeje~"
         $ persistent.psr_result_game[0] = True
         
     python:

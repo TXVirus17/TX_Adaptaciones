@@ -1,5 +1,5 @@
 #===========================================================================================
-# SUBMOD
+# SUBMOD (ESTADO: PARCIALMENTE TERMINADO.)
 #===========================================================================================
 
 # Submod created by ZeroFixer(u/UnderstandingAny7135), this submod is made for MAS brothers/sisters.
@@ -12,7 +12,7 @@ init -990 python in mas_submod_utils:
     Submod(
         author="ZeroFixer",
         name="Extra Plus",
-        description="¡Un submod que añade un botón Extra+, además de más contenido y nuevas interacciones!{size=-5}(traduccion por TX_Virus).{/size}",
+    description="¡Un submod que añade un botón Extra+, además de más contenido y nuevas interacciones!{size=-5}\n(traduccion por TX_Virus).{/size}",
         version="1.4.2",
         settings_pane="_extra_plus_submod_settings"
     )
@@ -185,9 +185,9 @@ init -20 python in ep_tools:
 # Uses tuples (display_name, filename) for efficient memory usage.
 init 20 python in ep_files:
     _groceries_data = [
-        (_("Coffee"), "coffee"),
+        (_("café"), "café"),
         (_("Chocolates"), "chocolates"),
-        (_("Hot Chocolate"), "hotchocolate"),
+        (_("Chocolate caliente"), "hotchocolate"),
         (_("Cupcake"), "cupcake"),
         (_("Fudge"), "fudge"),
         (_("Candy"), "candy"),
@@ -1365,8 +1365,8 @@ screen boop_revamped():
         ypos 0.5
 
         if not store.EP_interaction_manager.ep_boop_war_active:
-            label _("Interactions\navailable:")
-            text _(" Cheeks\n Head\n Nose\n Ears\n Hands\n Shoulders"):
+            label _("Interacciones\ndisponibles:")
+            text _(" Mejillas\n Cabeza\n Nariz\n Orejas\n Manos\n Hombros"):
                 outlines [(2, "#808080", 0, 0)]
     
     vbox:

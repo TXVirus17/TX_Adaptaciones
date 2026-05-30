@@ -13,20 +13,20 @@ init -5 python in ep_bj:
     player_stand = False
     monika_stand = False
     game_quit = False
-    comment = _("Playing it safe? I see. Let's see if it pays off.")
+    comment = _("¿Jugando a lo seguro? Ya veo. ¡Ahora me toca a mí!")
     comments_list = [
-        _("Playing it safe? I see. My turn, then!"),
-        _("You're confident with your hand. Let's see if you're right."),
-        _("Alright, you're standing. Let's see how I measure up."),
-        _("Okay, locking in your score. Here I go!"),
-        _("Standing with that hand? You must be feeling lucky!"),
-        _("You think that's enough to beat me? We'll see about that! Ehehe~"),
-        _("Stopping there? You're either very brave or very smart. Time to find out which!"),
-        _("Putting the pressure on me, huh? I love a good challenge!"),
-        _("A strategic choice. You're setting the bar for me."),
-        _("Okay, you're holding. That gives me a target to aim for."),
-        _("Alright, you're all set. I hope you've got a good score!"),
-        _("You've made your move. Let's see what the deck has in store for me!")
+        _("¿Jugando a lo seguro? Ya veo. ¡Ahora me toca a mí!"),
+        _("Tienes confianza en tu mano. Veamos si tienes razón."),
+        _("Muy bien, te mantienes en pie. Veamos qué tal me va."),
+        _("Vale, confirmando tu puntuación. ¡Aquí voy!"),
+        _("¿Mantenerte con esa mano? ¡Debes sentirte con suerte!"),
+        _("¿Crees que eso es suficiente para vencerme? ¡Ya veremos! Jejeje~"),
+        _("¿Te detienes ahí? O eres muy valiente o muy inteligente. ¡Es hora de averiguarlo!"),
+        _("¿Me estás presionando, eh? ¡Me encantan los buenos desafíos!"),
+        _("Una elección estratégica. Me estás poniendo el listón muy alto."),
+        _("Vale, te mantienes en pie. Eso me da un objetivo al que apuntar. ¡Vamos a ver si puedo superarlo!"),
+        _("Muy bien, estás listo. ¡Espero que tengas una buena puntuación!"),
+        _("¡Ya hiciste tu jugada! ¡Veamos qué me depara el destino!")
     ]
 
     def getCardImage(suit, value):
@@ -151,17 +151,17 @@ screen blackjack_monika():
         xalign 0.5
         spacing 15
         if minigame_monika.total > 21:
-            label _("Busted!") xalign 0.5
+            label _("¡Descubierta!") xalign 0.5
         elif minigame_player.total > 21:
-            label _("Sorry~") xalign 0.5
+            label _("Lo siento~") xalign 0.5
         elif store.ep_bj.game_quit:
-            label _("End") xalign 0.5
+            label _("Fin") xalign 0.5
         elif store.ep_bj.current_turn == "monika":
-            label _("My Turn~") xalign 0.5
+            label _("Mi turno~") xalign 0.5
         elif not all(minigame_monika.revealed):
-            label _("Waiting...") xalign 0.5
+            label _("Esperando...") xalign 0.5
         else:
-            label _("Done") xalign 0.5
+            label _("Hecho") xalign 0.5
    
         hbox:
             spacing 10
@@ -181,18 +181,18 @@ screen blackjack_player():
         xalign 0.5
         spacing 15
         if minigame_player.total > 21:
-            label _("Busted!") xalign 0.5
+            label _("¡Descubierta!") xalign 0.5
         elif store.ep_bj.game_quit:
-            label _("End") xalign 0.5
+            label _("Fin") xalign 0.5
         elif store.ep_bj.current_turn == "player":
             if minigame_player.total >= 17 and minigame_player.total < 21:
-                label _("Careful!") xalign 0.5
+                label _("¡Cuidado!") xalign 0.5
             else:
-                label _("Your Turn") xalign 0.5
+                label _("Tu turno") xalign 0.5
         elif store.ep_bj.player_stand:
             label _("Standing") xalign 0.5
         else:
-            label _("Done") xalign 0.5
+            label _("Hecho") xalign 0.5
             
         hbox:
             spacing 10
@@ -212,45 +212,45 @@ screen blackjack_stats():
     vbox:
         xalign 0.950
         ypos 0.450
-        textbutton _("Hit"):
+        textbutton _("¡Robar!"):
             action If(store.ep_bj.current_turn == "player" and len(minigame_player.hand) < 5, Return("hit"))
-        textbutton _("Stand"):
+        textbutton _("¡Pasar!"):
             action If(store.ep_bj.current_turn == "player", Return("stand"))
-        textbutton _("Quit"):
+        textbutton _("¡Salir!"):
             action If(store.ep_bj.current_turn == "player", Return("quit"))
 
 label blackjack_start:
     show monika 1hub at t11
     if not renpy.seen_label("checkpoint_blackjack") and not renpy.seen_label("blackjack_results"):
-        m "Welcome to our Blackjack table, [player]!"
-        m 3eub "Ready to test your luck?"
-        m 3eub "Remember, the goal is to get as close to 21 as possible without going over."
-        m 3tua "Let's see if Lady Luck is on your side today. Have fun!"
+        m "¡Bienvenido a nuestra mesa de Blackjack, [player]!"
+        m 3eub "¿Listo para probar tu suerte?"
+        m 3eub "Recuerda, el objetivo es acercarse lo más posible a 21 sin pasarse."
+        m 3tua "Veamos si la Suerte está de tu lado hoy. ¡Que te diviertas!"
 
 label checkpoint_blackjack:
     if renpy.seen_label("blackjack_results"):
         # Previous game was a tie (both had at least one win and tied)
         if persistent.blackjack_win_game[2]:
-            m 2sfa "We're tied so far!"
-            m 2stb "Let's see who comes out on top this time, [player]."
-            m "Are you ready to break the tie?"
+            m 2sfa "¡Estamos empatados hasta ahora!"
+            m 2stb "Veamos quién sale vencedor esta vez, [player]."
+            m "¿Estás listo para romper el empate?"
         # Player won last session
         elif persistent.blackjack_win_game[0]:
-            m 5tub "You're the reigning champion, [player]!"
-            m 5tua "Let's see if you can keep your winning streak alive."
-            m "I'm going to give it my all this round!"
+            m 5tub "¡Eres el campeón reinante, [player]!"
+            m 5tua "Veamos si puedes mantener tu racha de victorias viva."
+            m "¡Voy a dar todo de mí en esta ronda!"
         # Monika won last session
         elif persistent.blackjack_win_game[1]:
-            m 1tub "I'm on a winning streak, but I know you'll try your best to take the crown, [player]!"
-            m 1eub "Let's see if you can beat me this time!"
+            m 1tub "Estoy en una racha de victorias, pero sé que harás lo posible por tomar la corona, [player]!"
+            m 1eub "Veamos si puedes vencerme esta vez!"
         # Didn't play last time (both were 0-0)
         elif persistent.blackjack_win_game == [False, False, False]:
-            m 1wub "We didn't get to play last time."
-            m 1hub "Let's start a new game now! I'm excited to see how you do."
+            m 1wub "No jugamos la última vez."
+            m 1hub "¡Empecemos un nuevo juego ahora! Estoy emocionada por ver cómo te va."
         # Default generic greeting
         else:
-            m 1eta "Back for more Blackjack, [player]?"
-            m "I'm always up for a game with you!"
+            m 1eta "¿De vuelta por más Blackjack, [player]?"
+            m "Siempre estoy dispuesta a jugar contigo!"
 
     scene bg desk_21 onlayer master zorder 0
     window hide
@@ -334,45 +334,45 @@ label blackjack_results:
     
     # Natural blackjack (21 with 2 cards) - highest priority
     if player_total == 21 and len(minigame_player.hand) == 2 and not (monika_total == 21 and len(minigame_monika.hand) == 2):
-        m "Blackjack! Wow, you've got a real talent for this, [player]!"
+        m "¡Veintiuno! ¡Guau, tienes un verdadero talento para esto, [player]!"
         $ ep_bj.player_wins += 1
     
     elif monika_total == 21 and len(minigame_monika.hand) == 2 and not (player_total == 21 and len(minigame_player.hand) == 2):
-        m "Blackjack!"
-        m "Looks like I got lucky this time. Ehehe~"
+        m "¡Veintiuno!"
+        m "Parece que tuve suerte esta vez. Ehehe~"
         $ ep_bj.monika_wins += 1
     
     # Both have natural blackjack
     elif player_total == 21 and len(minigame_player.hand) == 2 and monika_total == 21 and len(minigame_monika.hand) == 2:
-        m "We both got natural Blackjacks!"
-        m "That's a push, [player]. Amazing!"
+        m "¡Nosotros dos obtuvimos Veintiunos naturales!"
+        m "¡Fue un empate, [player]! ¡Increíble!"
     
     # If the player busts, they lose IMMEDIATELY (regardless of whether Monika also busts)
     elif player_total > 21:
-        m "Oh, you went over."
-        m "That's a tough break. Don't worry, it happens!"
+        m "¡Oh, te pasaste!"
+        m "¡Qué mala suerte! ¡No te preocupes, suele pasar!"
         $ ep_bj.monika_wins += 1
     
     # If Monika busts but the player doesn't, the player wins
     elif monika_total > 21:
-        m "Ah, I went over 21."
-        m "Looks like this round is yours. Well played!"
+        m "¡Ah, me pasé de 21!"
+        m "Parece que esta ronda es tuya. ¡Bien jugado!"
         $ ep_bj.player_wins += 1
     
     # Tie (same score without busting)
     elif player_total == monika_total:
-        m "It's a push!"
-        m "We have the exact same score. We really are in sync, aren't we?"
+        m "¡Es un empate!"
+        m "Tenemos la misma puntuación exacta. De verdad estamos en sincronía, ¿no?"
     
     # Normal comparison (both ≤ 21)
     else:
         if player_total > monika_total:
-            m "You win this round!"
-            m "Nice job staying cool under pressure."
+            m "¡Ganaste esta ronda!"
+            m "Buen trabajo manteniéndote tranquilo bajo presión."
             $ ep_bj.player_wins += 1
         else:
-            m "Looks like my hand was just a little bit better."
-            m "I win this one!"
+            m "Parece que mi mano fue un poco mejor."
+            m "¡Gano esta vez!"
             $ ep_bj.monika_wins += 1
     
     window hide
@@ -384,24 +384,24 @@ label BJ_quit_game:
     $ ep_bj.game_quit = True
     $ ep_bj.current_turn = "monika"
     if ep_bj.player_wins > ep_bj.monika_wins:
-        m "You finished ahead! I'm impressed, you're a natural at this."
-        m "Thanks for playing with me, I had a lot of fun."
-        m "Let's do this again soon!"
+        m "¡Tú terminaste por delante! ¡Estoy impresionada, eres un natural en esto!"
+        m "Gracias por jugar conmigo, ¡tuve mucho placer!"
+        m "¡Hagamos esto otra vez pronto!"
         $ persistent.blackjack_win_game[0] = True
     elif ep_bj.player_wins < ep_bj.monika_wins:
-        m "I ended up with more wins, but you put up a great fight!"
-        m "I'm sure you'll beat me next time."
-        m "Thanks for playing with me, [player]!"
+        m "¡Terminé con más victorias, pero pusiste una gran pelea!"
+        m "Estoy segura de que me vencerás la próxima vez."
+        m "Gracias por jugar conmigo, [player]!"
         $ persistent.blackjack_win_game[1] = True
     elif ep_bj.player_wins == ep_bj.monika_wins and ep_bj.player_wins > 0:
-        m "Wow, a perfect tie. It seems we're evenly matched!"
-        m "That was a lot of fun."
-        m "We'll have to play again sometime to find the true winner~"
+        m "Wow, un empate perfecto. ¡Parece que estamos equilibrados!"
+        m "¡Eso fue muy divertido!"
+        m "¡Tendremos que jugar de nuevo en otro momento para encontrar al verdadero ganador~!"
         $ persistent.blackjack_win_game[2] = True
     else:
-        m "Oh, are you leaving already?"
-        m "But I understand if you're not in the mood right now."
-        m "We can always play another time!"
+        m "¿Oh, ya te vas?"
+        m "Pero entiendo si no tienes ganas ahora mismo."
+        m "¡Siempre podemos jugar en otro momento!"
         $ persistent.blackjack_win_game = [False, False, False]
 
     $ enable_esc()

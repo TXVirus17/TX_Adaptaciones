@@ -1,5 +1,5 @@
 #===========================================================================================
-# MINIGAME#2
+# MINIGAME#2 (EN ESPERA DE PRUEBAS) - TIC-TAC-TOE
 #===========================================================================================
 #====Tic-Tac-Toe
 default persistent.ttt_result_game = [False, False, False] #Player, Monika and Tie. Quit [FFF]
@@ -184,12 +184,12 @@ screen ttt_score():
         xpos 0.05
         yanchor 2.0
         ypos 85
-        textbutton _("Quit"):
+        textbutton _("Salir"):
             style "hkb_button" 
             action If(store.ep_ttt.game.playerTurn, [Hide("minigame_ttt_scr"), Jump("minigame_ttt_quit")]) sensitive store.ep_ttt.game.playerTurn
-        textbutton _("I give up"):
+        textbutton _("Me rindo"):
             style "hkb_button" 
-            action If(store.ep_ttt.game.playerTurn, [SetField(store.ep_ttt.game, "playerTurn", False), SetField(store.ep_ttt.game, "state", -9), Function(store.ep_ttt.game.check_state)]) sensitive store.ep_ttt.game.playerTurn
+            action If(store.ep_ttt.game.playerTurn, [SetField(store.ep_ttt.game, "Turno de [player]", False), SetField(store.ep_ttt.game, "state", -9), Function(store.ep_ttt.game.check_state)]) sensitive store.ep_ttt.game.playerTurn
 
 screen minigame_ttt_grid():
     for i in range(2):
@@ -250,28 +250,28 @@ label minigame_ttt:
     pause 0.5
     # Very first time playing
     if not renpy.seen_label("checkpoint_minigame_ttt") and not renpy.seen_label("minigame_ttt_quit"):
-        m 1hua "Alright, [player]. Let's play some Tic-Tac-Toe!"
-        m 1eua "It's a classic for a reason. You can be X, and I'll be O."
-        m 1eub "It might seem simple, but it takes strategy to win against me. Good luck!"
+        m 1hua "¡Muy bien, [player]! ¡Juguemos al tres en raya!"
+        m 1eua "Es un clásico por algo. Tú puedes ser la X y yo la O."
+        m 1eub "Puede parecer sencillo, pero se necesita estrategia para ganarme. ¡Buena suerte!"
 
 label checkpoint_minigame_ttt:
     if renpy.seen_label("minigame_ttt_quit"):
         # If the player won the last game
         if persistent.ttt_result_game[0]:
-            m 3eub "Ready for a rematch, [player]? I've been refining my strategy. Ehehe~"
-            m 3hua "Don't think it'll be that easy to win again, though!"
+            m 3eub "¿Listo para la revancha, [player]? He estado perfeccionando mi estrategia. Jejeje~"
+            m 3hua "¡Aunque no creas que será tan fácil volver a ganar!"
         # If Monika won the last game
         elif persistent.ttt_result_game[1]:
-            m 1hub "So, are you ready to try and take the champion's title from me?"
-            m 1hua "I hope you're ready! I plan on defending my win streak."
+            m 1hub "Entonces, ¿estás listo para intentar arrebatarme el título de campeóna?"
+            m 1hua "¡Espero que estés listo! Planeo defender mi racha de victorias."
         # If the last game was a tie
         elif persistent.ttt_result_game[2]:
-            m 1eua "Let's play again! We have to break that tie from last time."
-            m 1tua "It feels like we're perfectly matched. Let's see if that's still true!"
+            m 1eua "¡Juguemos otra vez! Tenemos que romper ese empate de la última vez."
+            m 1tua "Parece que estamos perfectamente igualados. ¡Veamos si sigue siendo así!"
         # Default greeting for subsequent plays
         else:
-            m 1hua "Ready for another round of Tic-Tac-Toe, [player]?"
-            m 1eua "It's always nice to relax with a simple game."
+            m 1hua "¿Listo para otra ronda de Tres en Raya, [player]?"
+            m 1eua "Siempre es agradable relajarse con un juego sencillo."
     show monika idle at t21
     $ store.ep_button.hide_button()
     # Disable chibi dragging during minigame
@@ -303,45 +303,45 @@ label minigame_ttt_m_comment(id = 0):
         # Monika Wins
         $ ep_tools.random_outcome = renpy.random.randint(0, 2)
         if ep_tools.random_outcome == 0:
-            m 3hua "Well, I won this round."
-            m 3hub "Better luck next time, [player]!"
+            m 3hua "Bueno, gané esta ronda."
+            m 3hub "¡Mejor suerte la próxima vez, [player]!"
         elif ep_tools.random_outcome == 1:
-            m 1sub "Three in a row!"
-            m 1huu "Try again~"
+            m 1sub "¡Tres seguidas!"
+            m 1huu "¡Inténtalo de nuevo!"
         else:
-            m 4nub "Don't worry!"
-            m 4hua "I know you'll get me next time."
+            m 4nub "¡No te preocupes!"
+            m 4hua "Sé que me ganarás la próxima vez."
     
     elif id == 1:
         # Player Wins
         $ ep_tools.random_outcome = renpy.random.randint(0, 1)
         if ep_tools.random_outcome == 0:
-            m 1suo "Great job, [player], you win!"
-            m 1suo "Next time I'll try my best to win, so be prepared."
+            m 1suo "¡Buen trabajo, [player], has ganado!"
+            m 1suo "La próxima vez haré todo lo posible por ganar, así que prepárate."
         else:
-            m 1hub "Oh, you've won this one."
-            m 1eub "But I'll try to beat you next time, [mas_get_player_nickname()]!"
+            m 1hub "¡Oh, has ganado esta vez!."
+            m 1eub "¡Pero intentaré ganarte la próxima vez, [mas_get_player_nickname()]!"
     
     elif id == 2:
         # Tie
         $ ep_tools.random_outcome = renpy.random.randint(0, 1)
         if ep_tools.random_outcome == 0:
-            m 1lkb "Oh, it's a draw."
-            m 1eub "Let's try again, [mas_get_player_nickname()]!"
+            m 1lkb "¡Oh, es un empate!"
+            m 1eub "¡Intentemos de nuevo, [mas_get_player_nickname()]!"
         else:
-            m 3hua "A tie! Don't worry, [player]."
-            m 3hua "The plan is for us to have fun together~"
-            m 3hub "Good luck on the next one!"
+            m 3hua "¡Es un empate! No te preocupes, [player]."
+            m 3hua "El plan es que pasemos tiempo juntos disfrutando~"
+            m 3hub "¡Buena suerte en la siguiente!"
             
     else:
         # Reset / Give up
         if ep_ttt.game.score[0] == 0 and ep_ttt.game.score[1] == 0:
-            m 1ekd "Giving up on the first round? Are you sure?"
-            m 1eka "Alright, if you say so. I'll take the point for this one, then."
+            m 1ekd "¿Te rindes en la primera ronda? ¿Estás seguro?"
+            m 1eka "De acuerdo, si tú lo dices. Me quedo con el punto por esta, entonces."
         else:
-            m 1ekd "Oh, conceding this round, [player]?"
-            m 3ekd "Was it a tough spot?"
-            m 1eka "Okay, I'll mark this one as my win. Let's get ready for the next one!"
+            m 1ekd "Oh, ¿te rindes en esta ronda, [player]?"
+            m 3ekd "¿Fue una situación difícil?"
+            m 1eka "Vale, marcaré esta como mi victoria. ¡Preparémonos para la próxima!"
     return
 
 label minigame_ttt_quit:
@@ -354,27 +354,27 @@ label minigame_ttt_quit:
     # Tie (overall score)
     if ep_ttt.game.score[0] == ep_ttt.game.score[1]:
         if ep_ttt.game.score[0] == 0 and ep_ttt.game.score[1] == 0:
-            m 3esa "Oh, changed your mind?"
-            m 3lkb "I was looking forward to playing... but I understand."
-            m 1hua "We can always play another time!"
+            m 3esa "¿Oh, cambiaste de opinión?"
+            m 3lkb "Tenía muchas ganas de jugar... pero lo entiendo."
+            m 1hua "¡Siempre podemos jugar otra vez!"
         else:
-            m 1sua "Wow, we ended in a perfect tie!"
-            m 1tua "It's almost like our minds are in sync, ehehe~"
-            m 1hub "We'll have to play again sometime to find the true winner!"
+            m 1sua "¡Guau, terminamos en un empate perfecto!"
+            m 1tua "Es casi como si nuestras mentes estuvieran sincronizadas, jejeje~"
+            m 1hub "¡Tendremos que jugar otra vez para encontrar al verdadero ganador!"
             $ persistent.ttt_result_game[2] = True
 
     # Monika wins (overall score)
     elif ep_ttt.game.score[0] > ep_ttt.game.score[1]:
-        m 3hua "Looks like I take the win this time, [player]~"
-        m 3eubsa "You put up a great fight, though. The most important thing is that we had fun together."
-        m 1eub "I'm sure you'll beat me next time!"
+        m 3hua "Parece que gane esta vez, [player]~"
+        m 3eubsa "Pero diste una gran pelea. Lo más importante es que nos divertimos juntos."
+        m 1eub "¡Estoy seguro de que me ganarás la próxima vez!"
         $ persistent.ttt_result_game[1] = True
 
     # Player wins (overall score)
     elif ep_ttt.game.score[0] < ep_ttt.game.score[1]:
-        m 1hub "You won, [player]! Congratulations!"
-        m 1subsa "I knew you were a great strategist. I'm proud of you~"
-        m 3hua "I'll have to try even harder next time!"
+        m 1hub "¡Ganaste, [player]! ¡Felicitaciones!"
+        m 1subsa "Sabía que eras un gran estratega. Estoy orgullosa de ti~"
+        m 3hua "¡Tendré que intentarlo aún más duro la próxima vez!"
         $ persistent.ttt_result_game[0] = True
 
     $ ep_tools.seen_notification_games = False

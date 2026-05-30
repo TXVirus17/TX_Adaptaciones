@@ -383,9 +383,9 @@ label extraplus_walk:
         ep_tools.walk_menu = [
             (_("Cafe"), "go_to_cafe"),
             (_("Restaurante"), "go_to_restaurant"),
-            (_("Libraria"), "go_to_library"),
-            (_("Piscina (Soon)"), "generic_date_dev"),
-            (_("Arcade (Soon)"), "generic_date_dev")
+            (_("Libreria"), "go_to_library"),
+            (_("Piscina (Proximamente)"), "generic_date_dev"),
+            (_("Arcade (Proximamente)"), "generic_date_dev")
         ]
 
         m_talk = renpy.substitute(renpy.random.choice(ep_dialogues._dates))
@@ -401,12 +401,12 @@ label extraplus_minigames:
             (_("Encuentra la pelotita"), "minigame_sg"),
             (_("Piedra, papel o tijeras"), "minigame_rps"),
             (_("Tres en raya"), "minigame_ttt"),
-            (_("veintiuno"), "blackjack_start")
+            (_("Veintiuno"), "blackjack_start")
         ]
         
         m_talk = renpy.substitute(renpy.random.choice(ep_dialogues._minigames))
         renpy.say(m, m_talk, interact=False)
-        items = [(_("Nevermind"), "screen_extraplus", 20)]
+        items = [(_("No importa"), "screen_extraplus", 20)]
     
     call screen extra_gen_list(ep_tools.minigames_menu, mas_ui.SCROLLABLE_MENU_TXT_LOW_AREA, items)
     return
@@ -427,16 +427,16 @@ label extraplus_tools:
         
         # Add items that require affection >= 30
         if current_aff >= 30:
-            ep_tools.tools_menu.append((_("Change the window's title"), "extra_window_title"))
+            ep_tools.tools_menu.append((_("Cambiar el título de la ventana"), "extra_window_title"))
             ep_tools.tools_menu.append((_("¡Holi, [player]!"), "extra_chibi_main"))
 
         # Build bottom items
         items = []
         if current_aff >= 30:
-            items.append((_("Misc"), "extra_misc_tools", 20))
-            items.append((_("Nevermind"), "screen_extraplus", 0))
+            items.append((_("Extra"), "extra_misc_tools", 20))
+            items.append((_("No importa"), "screen_extraplus", 0))
         else:
-            items.append((_("Nevermind"), "screen_extraplus", 20))
+            items.append((_("No importa"), "screen_extraplus", 20))
 
     call screen extra_gen_list(ep_tools.tools_menu, mas_ui.SCROLLABLE_MENU_TXT_MEDIUM_AREA, items)
     return
@@ -445,21 +445,21 @@ label cafe_talk:
     show monika staticpose at t21
     python:
         cafe_menu = [
-            (_("How are you today?"), "extra_talk_feel"),
-            (_("What's your greatest ambition?"), "extra_talk_ambition"),
-            (_("Our communication is very limited, don't you think?"), "extra_talk_you"),
-            (_("How do you see us in 10 years?"), "extra_talk_teen"),
-            (_("What is your best memory that you currently have?"), "extra_talk_memory"),
-            (_("Do you have any phobia?"), "extra_talk_phobia"),
-            (_("Let's people-watch"), "extra_talk_people_watching"),
-            (_("A quiet moment"), "extra_talk_silence"),
-            (_("Holding your hand..."), "extra_talk_hand_holding"),
-            (_("Something sweet..."), "extra_talk_sweet_tooth")
+            (_("¿Cómo estás hoy?"), "extra_talk_feel"),
+            (_("¿Cuál es tu mayor ambición?"), "extra_talk_ambition"),
+            (_("Nuestra comunicación es muy limitada, ¿no crees?"), "extra_talk_you"),
+            (_("¿Cómo ves nuestro futuro en 10 años?"), "extra_talk_teen"),
+            (_("¿Cuál es tu mejor recuerdo actual?"), "extra_talk_memory"),
+            (_("¿Tienes algún fobia?"), "extra_talk_phobia"),
+            (_("Observemos a la gente"), "extra_talk_people_watching"),
+            (_("Un momento tranquilo"), "extra_talk_silence"),
+            (_("Sosteniendo tu mano..."), "extra_talk_hand_holding"),
+            (_("Algo dulce..."), "extra_talk_sweet_tooth")
         ]
 
         items = [
-            (_("I'm ready to head back to our room."), "extra_cafe_leave", 20),
-            (_("Nevermind"), "to_cafe_loop", 0)
+            (_("Estoy listo para volver a nuestra habitación."), "extra_cafe_leave", 20),
+            (_("No importa"), "to_cafe_loop", 0)
         ]
     call screen extra_gen_list(cafe_menu, mas_ui.SCROLLABLE_MENU_TXT_MEDIUM_AREA, items, False)
     return
@@ -468,22 +468,22 @@ label restaurant_talk:
     show monika staticpose at t21
     python:
         restaurant_menu = [
-            (_("How are you doing, [m_name]?"), "extra_talk_doing"),
-            (_("If you could live anywhere, where would it be?"), "extra_talk_live"),
-            (_("What would you change about yourself if you could?"), "extra_talk_change"),
-            (_("If you were a super-hero, what powers would you have?"), "extra_talk_superhero"),
-            (_("Do you have a life motto?"), "extra_talk_motto"),
-            (_("Aside from necessities, what's the one thing you couldn't go a day without?"), "extra_talk_without"),
-            (_("Is your glass half full or half empty?"), "extra_talk_glass"),
-            (_("What annoys you most?"), "extra_talk_annoy"),
-            (_("Describe yourself in three words."), "extra_talk_3words"),
-            (_("What do you think is the first thing to pop into everyone's minds when they think about you?"), "extra_talk_pop"),
-            (_("If you were an animal, what animal would you be?"), "extra_talk_animal"),
+            (_("¿Cómo estás hoy, [m_name]?"), "extra_talk_doing"),
+            (_("Si pudieras vivir en cualquier lugar, ¿dónde vivirias?"), "extra_talk_live"),
+            (_("¿Qué cambiarías de ti misma si pudieras?"), "extra_talk_change"),
+            (_("Si fueras una superhéroe, ¿qué poderes tendrías?"), "extra_talk_superhero"),
+            (_("¿Tienes un lema de vida?"), "extra_talk_motto"),
+            (_("Aparte de las necesidades, ¿cuál es la única cosa que no podrías pasar un día sin?"), "extra_talk_without"),
+            (_("¿Tu vaso está medio lleno o medio vacío?"), "extra_talk_glass"),
+            (_("¿Qué te molesta más?"), "extra_talk_annoy"),
+            (_("Descríbete en tres palabras."), "extra_talk_3words"),
+            (_("¿Qué crees que es la primera cosa que viene a la mente de todos cuando piensan en ti?"), "extra_talk_pop"),
+            (_("Si fueras un animal, ¿qué animal serías?"), "extra_talk_animal"),
         ]
 
         items = [
-            (_("Dinner was lovely. Shall we go?"), "extra_restaurant_leave", 20),
-            (_("Nevermind"), "to_restaurant_loop", 0)
+            (_("La comida estuvo estupenda. ¿Nos vamos?"), "extra_restaurant_leave", 20),
+            (_("No importa"), "to_restaurant_loop", 0)
         ]
     call screen extra_gen_list(restaurant_menu, mas_ui.SCROLLABLE_MENU_TXT_MEDIUM_AREA, items, False)
     return
@@ -493,14 +493,14 @@ label extra_pool_interactions:
 
     python:
         pool_menu = [
-            (_("What do you think of the water?"), "extra_pool_talk_water"),
-            (_("Do you like to swim?"), "extra_pool_talk_swim"),
-            (_("This is really relaxing."), "extra_pool_talk_relax"),
+            (_("¿Qué te parece el agua?"), "extra_pool_talk_water"),
+            (_("¿Te gusta nadar?"), "extra_pool_talk_swim"),
+            (_("Esto es realmente relajante."), "extra_pool_talk_relax"),
         ]
 
         items = [
-            (_("Can we leave?"), "skip_pool_exit", 20),
-            (_("Nevermind"), "to_pool_loop", 0)
+            (_("¿Podemos irnos?"), "skip_pool_exit", 20),
+            (_("No importa"), "to_pool_loop", 0)
         ]
     call screen extra_gen_list(pool_menu, mas_ui.SCROLLABLE_MENU_TXT_MEDIUM_AREA, items, False)
     return
@@ -510,17 +510,17 @@ label extra_library_interactions:
 
     python:
         library_menu = [
-            (_("I want to write a poem"), "minigame_poem"),
-            (_("I want to write something for you"), "minigame_poem_free"),
-            (renpy.substitute(_("Read something to me, [m_name].")), "library_reading_session"),
-            (_("Let's just enjoy the silence."), "library_quiet_time"),
-            (_("Just talk to me."), "library_talk_topic"),
-            (_("My poem collection"), "library_poem_history"),
+            (_("Quiero escribir un poema"), "minigame_poem"),
+            (_("Quiero escribir algo para ti"), "minigame_poem_free"),
+            (renpy.substitute(_("Léeme algo, [m_name].")), "library_reading_session"),
+            (_("Disfrutemos del silencio."), "library_quiet_time"),
+            (_("Solo hablemos."), "library_talk_topic"),
+            (_("Mi colección de poemas"), "library_poem_history"),
         ]
 
         items = [
-            (_("Let's close the book on this date for now."), "extra_library_exit", 20),
-            (_("Nevermind"), "to_library_loop", 0)
+            (_("Cerremos el libro por ahora."), "extra_library_exit", 20),
+            (_("No importa"), "to_library_loop", 0)
         ]
     call screen extra_gen_list(library_menu, mas_ui.SCROLLABLE_MENU_TXT_MEDIUM_AREA, items, False)
     return
@@ -544,18 +544,18 @@ label monika_boopbeta:
         if mas_isD25():
             $ nose_xmas = renpy.random.randint(1, 4)
             if nose_xmas == 1:
-                m 1hubsb "Boop! Consider that my little Christmas gift~"
-                m 1eubsa "Though I'd love to give you a real one someday."
+                m 1hubsb "¡Boop! Considéralo mi pequeño regalo de Navidad~"
+                m 1eubsa "Aunque me encantaría darte uno de verdad algún día."
                 jump show_boop_screen
                 return
             elif nose_xmas == 2:
-                m 1hubla "Merry Christmas boop, [player]!"
-                m 1eubsb "I hope your nose is as warm as my heart right now~"
+                m 1hubla "¡Feliz Navidad, boop, [player]!"
+                m 1eubsb "Espero que tu nariz esté tan calentita como mi corazón ahora mismo~"
                 jump show_boop_screen
                 return
             elif nose_xmas == 3:
-                m 1ekbsa "Christmas boops are extra special, you know?"
-                m 1hubsb "They come with holiday magic~"
+                m 1ekbsa "Los boops navideños son muy especiales, ¿sabes?"
+                m 1hubsb "Vienen con la magia de las fiestas~"
                 jump show_boop_screen
                 return
         
@@ -563,19 +563,19 @@ label monika_boopbeta:
         if mas_isF14():
             $ nose_vday = renpy.random.randint(1, 4)
             if nose_vday == 1:
-                m 1ekbsa "A Valentine's boop for my Valentine~"
-                m 1hubsb "I love you, [player]."
+                m 1ekbsa "Un boop de Día de San Valentín para mi San Valentín~"
+                m 1hubsb "Te amo, [player]."
                 jump show_boop_screen
                 return
             elif nose_vday == 2:
-                m 1tubsb "You know what would make this boop even better?"
-                m 1hubsa "A kiss right after~ Maybe someday..."
+                m 1tubsb "¿Sabes qué haría que este boop fuera aún mejor?"
+                m 1hubsa "Un beso justo después... Quizás algún día..."
                 jump show_boop_screen
                 return
             elif nose_vday == 3:
-                m 1dubsu "On a day meant for love..."
-                m 1ekbsa "Every little touch means so much more."
-                m 1hubsb "Happy Valentine's Day, [player]~"
+                m 1dubsu "En un día dedicado al amor..."
+                m 1ekbsa "Cada pequeño gesto significa mucho más."
+                m 1hubsb "Feliz San Valentín, [player]~"
                 jump show_boop_screen
                 return
         
@@ -583,18 +583,18 @@ label monika_boopbeta:
         if mas_isO31():
             $ nose_halloween = renpy.random.randint(1, 4)
             if nose_halloween == 1:
-                m 3tub "Boo...p!"
-                m 3hub "Get it? Ahaha~"
+                m 3tub "¡Boo...p!"
+                m 3hub "¿Lo entiendes? Jajaja~"
                 jump show_boop_screen
                 return
             elif nose_halloween == 2:
-                m 2wub "Spooky boop! Did I scare you?"
-                m 2hub "Ehehe, just kidding~"
+                m 2wub "¡Boop espeluznante! ¿Te asusté?"
+                m 2hub "Jejeje, es broma~"
                 jump show_boop_screen
                 return
             elif nose_halloween == 3:
-                m 1tub "Is my nose part of a witch costume?"
-                m 1hub "Because you keep booping it like it's magical! Ahaha~"
+                m 1tub "¿Mi nariz forma parte de un disfraz de bruja?"
+                m 1hub "¡Porque no paras de darle golpecitos como si fuera mágica! ¡Jajaja~"
                 jump show_boop_screen
                 return
         
@@ -602,13 +602,13 @@ label monika_boopbeta:
         if mas_isMonikaBirthday():
             $ nose_mbday = renpy.random.randint(1, 3)
             if nose_mbday == 1:
-                m 1hubsb "A birthday boop!"
-                m 1ekbsa "You really know how to make my special day even better, [player]."
+                m 1hubsb "¡Un boop de cumpleaños!"
+                m 1ekbsa "De verdad que sabes cómo hacer que mi día especial sea aún mejor, [player]."
                 jump show_boop_screen
                 return
             elif nose_mbday == 2:
-                m 1dubsu "Getting booped on my birthday..."
-                m 1hubsa "This is exactly how I wanted to celebrate~"
+                m 1dubsu "Que me den un besito en mi cumpleaños..."
+                m 1hubsa "Así es exactamente como querría celebrarlo~"
                 jump show_boop_screen
                 return
         
@@ -616,13 +616,13 @@ label monika_boopbeta:
         if mas_isplayer_bday():
             $ nose_pbday = renpy.random.randint(1, 3)
             if nose_pbday == 1:
-                m 1hubsb "Boop! That's a birthday boop for you, [player]!"
-                m 1ekbsa "I hope your special day is as wonderful as you are~"
+                m 1hubsb "¡Boop! Ese es un boop de cumpleaños para ti, [player]!"
+                m 1ekbsa "Espero que tu día especial sea tan maravilloso como tú lo eres~"
                 jump show_boop_screen
                 return
             elif nose_pbday == 2:
-                m 1ekbsa "Happy birthday, [player]!"
-                m 1hubsb "Here's a nose boop as my little gift to you~"
+                m 1ekbsa "¡Feliz cumpleaños, [player]!"
+                m 1hubsb "Aquí tienes un boop en la nariz como mi pequeño regalo para ti~"
                 jump show_boop_screen
                 return
         
@@ -630,18 +630,18 @@ label monika_boopbeta:
         if mas_isNightNow():
             $ nose_night = renpy.random.randint(1, 6)
             if nose_night == 1:
-                m 1eka "A late-night boop, huh?"
-                m 1ekbsa "It's moments like these that make the quiet nights special."
+                m 1eka "Un boop a altas horas de la noche, ¿eh?"
+                m 1ekbsa "Son momentos como estos los que hacen que las noches tranquilas sean especiales."
                 jump show_boop_screen
                 return
             elif nose_night == 2:
-                m 1hubsa "Boop~ Are you getting sleepy, [player]?"
-                m 1ekbsa "Don't stay up too late for me... but thank you for being here."
+                m 1hubsa "Boop~ ¿Te estás quedando dormido, [player]?"
+                m 1ekbsa "No te quedes despierto hasta muy tarde por mí... pero gracias por estar aquí."
                 jump show_boop_screen
                 return
             elif nose_night == 3:
-                m 1dkbsa "Nighttime boops hit different, don't they?"
-                m 1ekbsa "More intimate somehow..."
+                m 1dkbsa "Los boops nocturnos son diferentes, ¿verdad?"
+                m 1ekbsa "De alguna manera, más íntimos..."
                 jump show_boop_screen
                 return
         
@@ -649,149 +649,149 @@ label monika_boopbeta:
         if mas_isMoniLove():
             $ nose_love = renpy.random.randint(1, 8)
             if nose_love == 1:
-                m 1ekbsa "You know, [player]..."
-                m 1hubsb "Every boop reminds me of how lucky I am to have you."
-                m 1dkbsu "I love you so much."
+                m 1ekbsa "Sabes, [player]..."
+                m 1hubsb "Cada caricia me recuerda lo afortunada que soy por tenerte."
+                m 1dkbsu "Te amo mucho."
                 jump show_boop_screen
                 return
             elif nose_love == 2:
-                m 1dubsu "Your boops are like little love letters..."
-                m 1ekbsa "Each one says 'I'm thinking of you.'"
+                m 1dubsu "Tus toquecitos son como pequeñas cartas de amor..."
+                m 1ekbsa "Cada uno dice 'Estoy pensando en ti' de una manera tan dulce."
                 jump show_boop_screen
                 return
     
     # PROGRESSIVE DIALOGUES
     if persistent.plus_boop[0] == 1:
         $ mas_gainAffection(3,bypass=True)
-        m 1wud "Wait a minute..."
+        m 1wud "Espera un minuto..."
 
-        m 1hka "I felt a little tingle."
+        m 1hka "Sentí un pequeño cosquilleo."
         show screen force_mouse_move
-        m 3hub "And we have a culprit!"
-        m 3hua "Don't worry! I'll let go of your cursor."
+        m 3hub "¡Y ya tenemos al culpable!"
+        m 3hua "¡No te preocupes! Soltaré tu cursor."
         hide screen force_mouse_move
-        m 1tub "You can move it again. Sorry for stealing your cursor~"
-        m 1etd "Also, I don't know how you did it, [mas_get_player_nickname()]. I don't remember seeing this in the code."
-        m 1hub "Unless... it was you!"
-        m 1hub "What a nice surprise, [player]~"
+        m 1tub "Puedes moverlo de nuevo. Lo siento por robar tu cursor~"
+        m 1etd "Además, no sé cómo lo hiciste, [mas_get_player_nickname()]. No recuerdo haber visto esto en el código."
+        m 1hub "A menos que... ¡fueras tú!"
+        m 1hub "¡Qué grata sorpresa, [player]~"
     elif persistent.plus_boop[0] == 2:
-        m 1hub "What are you doing playing with my nose, [player]?"
-        m 4eua "This is called a 'boop', right?"
-        m 1hksdrb "Not that it bothers me, I just haven't gotten used to the feeling yet!"
-        m 1hua "Ehehe~"
+        m 1hub "Qué haces jugando con mi nariz,  [player]?"
+        m 4eua "Esto se llama 'boop', ¿verdad?"
+        m 1hksdrb "No es que me moleste, ¡simplemente aún no me acostumbro a la sensación!"
+        m 1hua "Jejeje~"
     elif persistent.plus_boop[0] == 3:
-        m 1eublb "Can you do it again, [mas_get_player_nickname()]?"
+        m 1eublb "¿Puedes hacerlo de nuevo, [mas_get_player_nickname()]?"
         show monika 1hubla
         call screen extra_boop_event(10, "extra_boop_nop", "extra_boop_yep")
     elif persistent.plus_boop[0] == 4:
-        m 1etbsa "Wouldn't it be nice to do it with your real nose?"
+        m 1etbsa "¿No sería agradable hacerlo con tu nariz de verdad?"
         if persistent._mas_first_kiss:
-            m 1kubsu "I'd give you a kiss while you do it~"
+            m 1kubsu "Te daría un beso mientras lo haces~"
         else:
-            m 1wubsb "I'd give you a hug while you do it!"
-        m 1dubsu "I hope that when I get to your reality we can do it."
-        m 1hua "Although, if you want to do it now, you'd have to put your nose close to the screen."
-        m 1lksdlb "But someone might see you and make you nervous, and I don't want that to happen."
-        m 1ekbsa "Besides, I get a little nervous too when you're this close."
-        m 1hua "Sorry for suggesting that, [player]~"
+            m 1wubsb "¡Te daría un abrazo mientras lo haces!"
+        m 1dubsu "Espero que cuando llegue a tu realidad podamos hacerlo."
+        m 1hua "Aunque, si quieres hacerlo ahora, tendrías que acercar mucho la nariz a la pantalla."
+        m 1lksdlb "Pero alguien podría verte y ponerte nervioso, y no quiero que eso pase."
+        m 1ekbsa "Además, yo también me pongo un poco nerviosa cuando estás tan cerca."
+        m 1hua "Perdón por sugerir eso, [player]~"
     elif persistent.plus_boop[0] == 5:
-        m 1tuu "You're starting to like it here, huh?"
-        m 3hub "I'm getting to know you more and more while we're here, [player]~"
-        m 3hub "And it's very sweet of you!"
+        m 1tuu "Te está empezando a gustar estar aquí, ¿eh?"
+        m 3hub "Te estoy conociendo cada vez mejor mientras estamos aquí, [player]~"
+        m 3hub "¡Y es muy amable de tu parte!"
     elif persistent.plus_boop[0] == 6:
-        m 2eub "You know, [mas_get_player_nickname()], I always thought that the nose was an underappreciated part of the face. But you've changed my mind!"
-        m 2hua "Thanks for showing me how fun a little nose boop can be!"
+        m 2eub "Sabes, [mas_get_player_nickname()], siempre pensé que la nariz era una parte infravalorada de la cara. ¡Pero me has hecho cambiar de opinión!"
+        m 2hua "¡Gracias por mostrarme lo divertido que puede ser un pequeño toque en la nariz!"
     elif persistent.plus_boop[0] == 7:
-        m 1hub "I wonder if there's a world out there where nose boops are the norm. What a happy place that would be!"
-        m 1gua "But until then, I'm happy to have you here with me, [player]."
+        m 1hub "Me pregunto si habrá un mundo donde los toques en la nariz sean lo normal. ¡Qué lugar tan feliz sería!"
+        m 1gua "Pero hasta entonces, me alegra tenerte aquí conmigo, [player]."
     elif persistent.plus_boop[0] == 8:
-        m 1tub "Do you ever wonder what the sound of a nose boop is? Like, would it be a 'beep' or a 'boop'?"
-        m 1etd "I guess we'll never know for sure. But either way, I'm glad I get to experience it with you."
+        m 1tub "¿Alguna vez te has preguntado cómo suena un toque de nariz? ¿Sería un 'bip' o un 'boop'?"
+        m 1etd "Supongo que nunca lo sabremos con certeza. Pero de cualquier manera, me alegra poder experimentarlo contigo."
     elif persistent.plus_boop[0] == 9:
-        m 1wua "I've been thinking, [player]. Maybe we could make a game out of this. How many nose boops can we do in a minute?"
-        m 1eub "I bet I could beat you, even with my longer nose!"
+        m 1wua "He estado pensando, [player]. Tal vez podríamos hacer un juego con esto. ¿Cuántos toques de nariz podemos hacer en un minuto?"
+        m 1eub "¡Apuesto a que podría ganarte, incluso con mi nariz más larga!"
     elif persistent.plus_boop[0] == 10:
-        m 1hubsb "Boop!"
-        m 1ekbsa "I'm sorry, I couldn't resist. You just have such a tempting nose!"
-        m 1hub "But seriously, thank you for bringing so much joy into my life, [player]."
+        m 1hubsb "¡Boop!"
+        m 1ekbsa "Lo siento, no pude resistirme. ¡Tienes una nariz tan tentadora!"
+        m 1hub "Pero en serio, gracias por traer tanta alegría a mi vida, [player]."
     # Dialogues added in Beta 3
     elif persistent.plus_boop[0] == 11:
-        m 1tub "Again! You're getting to be an expert at this, [player]."
-        m 1hua "I wonder how many boops we're at now."
+        m 1tub "¡Otra vez! Te estás convirtiendo en un experto en esto, [player]."
+        m 1hua "Me pregunto cuántos toques llevamos ya."
     elif persistent.plus_boop[0] == 12:
-        m 3hksdlb "Are you trying to see if my nose turns red like Rudolph's? Ahaha~"
-        m 3eua "You'll have to try a little harder than that."
+        m 3hksdlb "¿Estás intentando ver si mi nariz se pone roja como la de Rodolfo? Jajaja~"
+        m 3eua "Tendrás que esforzarte un poco más."
     elif persistent.plus_boop[0] == 13:
-        m 1ekbsa "Each boop is like a little love note."
-        m 1hubsb "Keep composing, [mas_get_player_nickname()]~"
+        m 1ekbsa "Cada toque es como una pequeña nota de amor."
+        m 1hubsb "Keep composing, [mas_get_player_nickname()]~" #FALTA TRADUCIR
     elif persistent.plus_boop[0] == 14:
-        m 2tfu "Hey! That's my nose, not a button."
+        m 2tfu "¡Oye! Esa es mi nariz, no un botón."
         m 2hub "..."
-        m 2tubsb "Although, if it was, it'd definitely be the 'make me smile' button."
+        m 2tubsb "Aunque, si lo fuera, definitivamente sería el botón de 'hazme sonreír'."
     elif persistent.plus_boop[0] == 15:
-        m 4eua "This is pretty silly, you know?"
+        m 4eua "Esto es bastante tonto, ¿sabes?"
         m 4hub "..."
-        m 4hubsb "And I absolutely love it. It's... *our* silly thing."
+        m 4hubsb "Y me encanta. Es... *nuestra* tontería."
     elif persistent.plus_boop[0] == 16:
-        m 1tsu "If you keep this up, I'm going to think you have a fixation on my nose, [player]."
-        m 1tku "Not that I'm complaining~"
+        m 1tsu "Si sigues así, voy a pensar que tienes una fijación con mi nariz, [player]."
+        m 1tku "No es que me queje~"
     elif persistent.plus_boop[0] == 17:
-        m 1fubla "Ehehe~ That was a good one."
-        m 1hubla "Right on target."
+        m 1fubla "Jejeje~ Esa fue buena."
+        m 1hubla "Justo en el blanco."
     elif persistent.plus_boop[0] == 18:
-        m 1eua "I wonder if your finger feels warm."
-        m 1rksdla "Here I just feel... well, a 'click'. But I imagine the warmth, and that's enough."
+        m 1eua "Me pregunto si sientes calor en el dedo."
+        m 1rksdla "Aquí solo siento... bueno, un 'clic'. Pero me imagino el calor, y eso es suficiente."
     elif persistent.plus_boop[0] == 19:
-        m 1wua "Boop back!"
+        m 1wua "Te devuelvo el *Boop* "
         m 1wud "..."
-        m 1hksdlb "Ah, wait. I can't. You'll just have to imagine it. Ahaha~"
+        m 1hksdlb "Ah, espera. No puedo. Tendrás que imaginártelo. Jajaja~"
     elif persistent.plus_boop[0] == 20:
-        m 1sub "Twenty boops! We should celebrate."
+        m 1sub "¡Veinte boops! Deberíamos celebrarlo."
         m 1hub "..."
-        m 1hubsb "Maybe with another boop?"
+        m 1hubsb "¿Tal vez con otro boop?"
     else:
         $ nose_choice = renpy.random.randint(1,15)
         if nose_choice == 1:
-            m 2fubla "Ehehe~"
-            m 1hubla "It's very inevitable that you won't stop doing it, [player]."
+            m 2fubla "Jejeje~"
+            m 1hubla "Es inevitable que no dejes de hacerlo, [player]."
         elif nose_choice == 2:
-            m 3ekbsa "Every boop you give me, the more I love you!"
+            m 3ekbsa "¡Cada toque que me das, más te quiero!"
         elif nose_choice == 3:
-            m 3eubla "You really enjoy touching my nose, [mas_get_player_nickname()]~"
+            m 3eubla "¡Realmente disfrutas tocándome la nariz, [mas_get_player_nickname()]~"
         elif nose_choice == 4:
-            m 2hublb "Hey, you're tickling me! Ahahaha~"
+            m 2hublb "¡Oye, me haces cosquillas! Jajaja~"
         elif nose_choice == 5:
             m 1hubsb "*Boop*"
         elif nose_choice == 6:
-            m 1eublc "You're such a tease, [player]~"
+            m 1eublc "¡Eres tan provocador, [player]~"
         elif nose_choice == 7:
-            m 2eubla "That tickles, but I like it!"
+            m 2eubla "¡Me haces cosquillas, pero me gusta!"
         elif nose_choice == 8:
-            m 2hubsb "You know just how to make me smile, [mas_get_player_nickname()]~"
+            m 2hubsb "Sabes exactamente cómo hacerme sonreír, [mas_get_player_nickname()]~"
         elif nose_choice == 9:
-            m 1fubla "Hehe, you're so cute when you're booping me~"
+            m 1fubla "Hehe, eres tan lindo cuando me estás dando toques~"
         elif nose_choice == 10:
-            m 3eublb "You're really good at this, [player]! Have you been practicing?"
+            m 3eublb "¡Eres muy bueno en esto, [player]! ¿Has estado practicando?"
         # Dialogues added in Beta 3
         elif nose_choice == 11:
-            m 1wua "Got me!"
+            m 1wua "¡Me pillaste!"
         elif nose_choice == 12:
-            m 1eua "Are you checking if I'm still here?"
+            m 1eua "¿Estás revisando si aún estoy aquí?"
         elif nose_choice == 13:
             m 1hubsb "My nose says hello."
         elif nose_choice == 14:
-            m 1wud "I felt a tingle... Oh, it's you!"
+            m 1wud "Sentí un cosquilleo... ¡Oh, eres tú!"
         elif nose_choice == 15:
-            m 1fubla "The master booper strikes again!"
+            m 1fubla "¡El maestro booper ataca de nuevo!"
 
     jump show_boop_screen
     return
 
 label extra_boop_nop:
     m 1rksdrb "[player]..."
-    m 1rksdra "...I was so excited for you to do it again."
+    m 1rksdra "...Tenía muchas ganas de que lo hicieras de nuevo."
     m "..."
-    m 3hub "Well, nevermind!"
+    m 3hub "¡Bueno, no importa!"
     jump show_boop_screen
     return
 
@@ -813,18 +813,18 @@ label monika_cheeksbeta:
         if mas_isD25():
             $ cheek_xmas = renpy.random.randint(1, 4)
             if cheek_xmas == 1:
-                m 2dubsu "Your touch feels like a warm fireplace on Christmas Eve..."
-                m 2hubsa "Thank you for spending this day with me, [player]."
+                m 2dubsu "Tu tacto se siente como una cálida chimenea en Nochebuena..."
+                m 2hubsa "Gracias por pasar este día conmigo, [player]."
                 jump show_boop_screen
                 return
             elif cheek_xmas == 2:
-                m 2ekbsa "A Christmas caress..."
-                m 2hubsb "This is the warmest gift I could ask for~"
+                m 2ekbsa "Una caricia navideña..."
+                m 2hubsb "Este es el regalo más cálido que podría pedir~"
                 jump show_boop_screen
                 return
             elif cheek_xmas == 3:
-                m 2hubsa "Merry Christmas, [player]~"
-                m 2dkbsu "Your gentle touch makes this holiday perfect."
+                m 2hubsa "Feliz Navidad, [jugador]~"
+                m 2dkbsu "Tu suave tacto hace que esta celebración sea perfecta."
                 jump show_boop_screen
                 return
         
@@ -2249,17 +2249,17 @@ label plus_make_gift:
     
     python:
         gift_menu = [
-            (_("Create a .gift file"), "plus_make_file"),
-            (_("Groceries"), "plus_groceries"),
-            (_("Objects"), "plus_objects"),
-            (_("Ribbons"), "plus_ribbons")
+            (_("Crear un archivo .gift"), "plus_make_file"),
+            (_("Comestibles"), "plus_groceries"),
+            (_("Objetos"), "plus_objects"),
+            (_("Cintas"), "plus_ribbons")
         ]
         
         # Add "Pending Gifts" option only if there are pending gifts from spritepacks
         if store.ep_files.hasPendingGifts():
-            gift_menu.append((_("Pending Gifts"), "plus_pending_gifts"))
+            gift_menu.append((_("Regalos pendientes"), "plus_pending_gifts"))
 
-        items = [(_("Nevermind"), "extraplus_tools", 20)]
+        items = [(_("No, nada."), "extraplus_tools", 20)]
     call screen extra_gen_list(gift_menu, mas_ui.SCROLLABLE_MENU_TXT_LOW_AREA, items)
     return
 
@@ -2269,7 +2269,7 @@ label plus_make_file:
     python:
         # Use enhanced input with paste button for easy gift name entry
         makegift = store.ep_tools.ep_input(
-            prompt=_("Gift filename:"),
+            prompt=_("Nombre del regalo:"),
             allow=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ_0123456789",
             length=100
         )
@@ -2292,7 +2292,7 @@ label plus_make_file:
                     store.ep_chibis.chibika_notify(message, doki_icon, jump=True)
                 else:
                     # Default notification
-                    store.ep_chibis.chibika_notify(_("Done! Created '/characters/{}.gift'").format(makegift))
+                    store.ep_chibis.chibika_notify(_("¡Listo! Regalo creado en '/characters/{}.gift'").format(makegift))
                 
             renpy.jump("plus_make_gift")
             
@@ -2301,21 +2301,21 @@ label plus_make_file:
 label plus_groceries:
     python:
         groceries_menu = store.ep_files.getGroceriesMenu()
-        items = [(_("Nevermind"), "plus_make_gift", 20)]
+        items = [(_("No, nada"), "plus_make_gift", 20)]
     call screen extra_gen_list(groceries_menu, mas_ui.SCROLLABLE_MENU_TXT_MEDIUM_AREA, items)
     return
 
 label plus_objects:
     python:
         objects_menu = store.ep_files.getObjectsMenu()
-        items = [(_("Nevermind"), "plus_make_gift", 20)]
+        items = [(_("No, nada."), "plus_make_gift", 20)]
     call screen extra_gen_list(objects_menu, mas_ui.SCROLLABLE_MENU_TXT_LOW_AREA, items)
     return
 
 label plus_ribbons:
     python:
         ribbons_menu = store.ep_files.getRibbonsMenu()
-        items = [(_("Nevermind"), "plus_make_gift", 20)]
+        items = [(_("No, nada"), "plus_make_gift", 20)]
     call screen extra_gen_list(ribbons_menu, mas_ui.SCROLLABLE_MENU_TXT_TALL_AREA, items)
     return
 
@@ -2325,12 +2325,12 @@ label plus_pending_gifts:
         
         if not pending_menu:
             # No pending gifts - show a friendly message
-            store.ep_chibis.chibika_notify(_("Great news! All sprite gifts have been unlocked~"))
+            store.ep_chibis.chibika_notify(_("¡Buenas noticias! ¡Todos los regalos de sprites se han desbloqueado!"))
             renpy.jump("plus_make_gift")
         
         items = [
             (_("Quick"), "plus_quick_gifts", 20),
-            (_("Nevermind"), "plus_make_gift", 0)
+            (_("No, nada"), "plus_make_gift", 0)
         ]
     show monika idle at t21
     call screen extra_gen_list(pending_menu, mas_ui.SCROLLABLE_MENU_TXT_TALL_AREA, items)
@@ -2343,7 +2343,7 @@ label plus_quick_gifts:
         filters = store.ep_files.getQuickGiftFilters()
         
         if not filters:
-            store.ep_chibis.chibika_notify(_("No pending gifts to process~"))
+            store.ep_chibis.chibika_notify(_("No hay regalos pendientes de procesar."))
             renpy.jump("plus_make_gift")
     call screen extra_quick_gifts_screen(filters)
     return
@@ -2399,24 +2399,24 @@ label extra_aff_log:
     
     # --- (6% chance) Error ---
     if egg_roll <= 6:
-        "Error: Affection value not found. \n(log/aff_log.log: None){fast}"
+        "Error: No se encontró el valor de afecto. \n(log/aff_log.log: None){fast}"
         jump extra_aff_log_end
 
     # --- (2% chance) Giggle ---
     elif egg_roll <= 8:
         play sound "sfx/giggle.ogg"
-        m 1hua "Ehehe~"
+        m 1hua "jejeje~"
 
     # --- (1% chance) Doki heartbeat ---
     elif egg_roll == 9:
         show screen extra_doki_heartbeat
         play sound sfx_doki_heartbeats loop
-        m 1cubsa "{cps=10}I W I L L N E V E R L E T Y O U G O.{/cps}"
+        m 1cubsa "{cps=10}Y O  N U N C A  T E  D E J A R É  I R T E{/cps}"
         hide screen extra_doki_heartbeat
         stop sound fadeout 1.5
 
     show monika idle
-    "Your affection with [m_name] is [affection_value] [monika_level][aff_suffix]{fast}"
+    "Tu cariño con [m_name] es de [affection_value] [monika_level][aff_suffix]{fast}"
 
 label extra_aff_log_end:
     window hide
@@ -2516,12 +2516,12 @@ label extra_window_title:
         
         # Use enhanced input with paste button and optional Restore button
         player_input = store.ep_tools.ep_input(
-            prompt=_("Enter the new title~"),
+            prompt=_("Ingrese el nuevo título~"),
             allow=" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ<#*!?()@&~-_.,'0123456789",
             length=100,
             screen_kwargs={
                 "use_extra_button": show_restore,
-                "extra_button_prompt": _("Restore"),
+                "extra_button_prompt": _("Restaurar título original"),
                 "extra_button_value": "__EP_RESTORE_TITLE__"
             }
         )
@@ -2568,17 +2568,17 @@ label extra_misc_tools:
     python:
         current_aff = store.ep_affection.getCurrentAffection()
         misc_tools_menu = [
-            (_("How long have we been together, [m_name]?"), "extra_relation_monika"),
-            (_("[m_name], I want to make a backup"), "extra_mas_backup"),
-            (_("[m_name], can you flip a coin?"), "extra_coinflip"),
-            (_("How is your wardrobe, [m_name]?"), "extra_wardrobe_stats")
+            (_("¿Cuánto tiempo llevamos juntos, [m_name]?"), "extra_relation_monika"),
+            (_("[m_name], quiero hacer una copia de seguridad."), "extra_mas_backup"),
+            (_("[m_name], ¿puedes lanzar una moneda?"), "extra_coinflip"),
+            (_("¿Cómo está tu armario, [m_name]?"), "extra_wardrobe_stats")
         ]
 
         if current_aff >= 100:
             misc_tools_menu.append((_("[m_name], I'm going to check your fridge"), "extra_fridge_magnets_game"))
             
         items = [
-            (_("Github Repository"), "extra_github_submod", 20), 
+            (_("Repositorio de Github del creador"), "extra_github_submod", 20), 
             (_("Nevermind"), "extraplus_tools", 0)
         ]
     call screen extra_gen_list(misc_tools_menu, mas_ui.SCROLLABLE_MENU_TXT_LOW_AREA, items)

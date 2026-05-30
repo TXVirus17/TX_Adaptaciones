@@ -45,7 +45,7 @@ screen shell_game_minigame():
         xpos 0.86
         yanchor 1.0
         ypos 0.950
-        textbutton _("Quit") action [Hide("shell_game_minigame"), Jump("shell_game_result")]
+        textbutton _("Salir") action [Hide("shell_game_minigame"), Jump("shell_game_result")]
 
 init -5 python in ep_sg:
     cup_skin = randomize_cup_skin()
@@ -63,32 +63,32 @@ init -5 python in ep_sg:
     cup_coordinates_real = [695, 925, 1155]
     #====Comments by moni on standard difficulties
     _compliments = [
-        _("Well done, [player]!"),
-        _("Impressive, keep it up!"),
-        _("You're doing great!"),
-        _("Fantastic eye, [player]!"),
-        _("Nice catch!"),
-        _("You're making progress!"),
-        _("Bravo, [player]!"),
-        _("Outstanding!"),
-        _("Way to go!"),
-        _("Nothing gets past you, huh?"),
-        _("You're doing fantastic!"),
-        _("You're doing amazing!"),
+        _("¡Bien hecho, [player]!"),
+        _("¡Impresionante, sigue así!"),
+        _("¡Lo estás haciendo genial!"),
+        _("¡Excelente ojo, [player]!"),
+        _("¡Buena atrapada!"),
+        _("¡Estás progresando!"),
+        _("¡Bravo, [player]!"),
+        _("¡Excepcional!"),
+        _("¡Muy bien!"),
+        _("¡Nada se te escapa, ¿eh?!"),
+        _("¡Lo estás haciendo fantástico!"),
+        _("¡Lo estás haciendo increíble!"),
     ]
     _failures = [
-        _("Oh, not that one~"),
-        _("That's not the one, [player]."),
-        _("Try again~"),
-        _("Don't let your eyes deceive you."),
-        _("Keep practicing, [player]!"),
-        _("You'll get it next time!"),
-        _("Better luck next round."),
-        _("Don't give up!"),
-        _("Almost!"),
-        _("That wasn't the right answer, but you're close."),
-        _("Sorry, [player], that's not it."),
-        _("Keep your eyes on the cup!")
+        _("¡Oh, esa no!"),
+        _("¡Esa no es, [player]!"),
+        _("¡Inténtalo de nuevo!"),
+        _("¡No te dejes engañar por tus ojos!"),
+        _("¡Sigue practicando, [player]!"),
+        _("¡Lo conseguirás la próxima vez!"),
+        _("¡Mejor suerte en la próxima ronda!"),
+        _("¡No te rindas!"),
+        _("¡Casi!"),
+        _("Esa no era la respuesta correcta, pero estás cerca."),
+        _("Lo siento, [player], esa no es."),
+        _("¡No pierdas de vista la pelotita!")
     ]
 
 label minigame_sg:
