@@ -165,6 +165,7 @@ init -5 python in ep_button:
             "is_d25":         [_("Joyful"), _("Our Xmas"), _("Gift"), _("Noel"), _("Holly")],
             "is_nye":         [_("New Year"), _("Cheers"), _("Toast"), _("Our Year"), _("The Eve")],
             
+            
             # Affection Levels
             # LOVE (1000+): Deep connection, devotion, eternal.
             "is_love":        [_("Forever"), _("Eternity"), _("Sunshine"), _("Beloved"), _("Darling"), _("Adored"), _("Precious"), _("My Soul"), _("TrueLove"), _("My Hero")],

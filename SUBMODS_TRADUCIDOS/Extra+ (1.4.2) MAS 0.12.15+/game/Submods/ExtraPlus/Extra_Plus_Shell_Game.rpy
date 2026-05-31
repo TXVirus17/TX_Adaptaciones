@@ -1,5 +1,5 @@
 #===========================================================================================
-# MINIGAME#1
+# MINIGAME#1 (PENDIENTE DE REVISION) SHELL GAME
 #===========================================================================================
 #====Shell Game
 default persistent.sg_max_score = 0
@@ -94,50 +94,50 @@ init -5 python in ep_sg:
 label minigame_sg:
     show monika 1eub at t11
     if not renpy.seen_label("checkpoint_minigame_sg") and not renpy.seen_label("shell_game_result"):
-        m 1etb "Do you want to play the Shell Game with me, [player]?"
-        m 1sua "It's a game of observation and focus. I think you'll like it!"
-        m 1eua "The rules are simple: I'll hide a ball under one of these cups and shuffle them around."
-        m 1hub "You just have to guess which cup the ball is under."
-        m 1eub "If you guess right, you score a point!"
+        m 1etb "¿Quieres jugar al Juego de encuentra la pelotita conmigo, [player]?"
+        m 1sua "Es un juego de observación y concentración. ¡Creo que te gustará!"
+        m 1eua "Las reglas son simples: esconderé una pelota debajo de uno de estos vasos y los moveré."
+        m 1hub "Solo tienes que adivinar bajo qué vaso está la pelota."
+        m 1eub "Si adivinas correctamente, anotas un punto!"
 
 label checkpoint_minigame_sg:
     if renpy.seen_label("shell_game_result"):
-        m 1eta "Do you want to play the Shell Game again, [player]?"
+        m 1eta "¿Quieres jugar al Juego de encuentra la pelotita otra vez, [player]?"
         if persistent.sg_max_score == 0:
-            m 1eka "By the way, I wanted to apologize..."
-            m 3lkb "I just realized there was a bug in my code that was preventing your high score from being saved correctly."
-            m 1hubsb "I've fixed it now, though! So from this point on, I'll be keeping track of your record."
-            m "Good luck setting a new high score!"
+            m 1eka "Por cierto, quería disculparme..."
+            m 3lkb "Acabo de darme cuenta de que había un error en mi código que estaba evitando que tu puntuación máxima se guardara correctamente."
+            m 1hubsb "¡Lo he arreglado ya! Así que a partir de ahora, estaré llevando un registro de tu récord."
+            m "¡Buena suerte estableciendo un nuevo récord!"
         else:
-            m 1sua "Great! Let's see if you can beat your record of [persistent.sg_max_score] correct answers in a row!"
+            m 1sua "¡Genial! ¡Veamos si puedes superar tu récord de [persistent.sg_max_score] respuestas correctas seguidas!"
 
-    m 1hua "Alright, what difficulty do you want to play on?{nw}"
+    m 1hua "De acuerdo, ¿en qué dificultad quieres jugar?{nw}"
     menu:
-        "Alright, what difficulty do you want to play on?{fast}"
-        "Easy":
-            m 1eua "Feeling like taking it easy, [player]?"
-            extend 1hua " Alright!"
+        "De acuerdo, ¿en qué dificultad quieres jugar?{fast}"
+        "Fácil":
+            m 1eua "¿Vas a jugar algo fácil, [player]?"
+            extend 1hua " ¡Bien!"
             python:
                 ep_sg.cup_speed = 0.85
                 ep_sg.difficulty = 1
                 ep_sg.target_shuffles = 4
         "Normal":
-            m 3eub "Want to start with a casual game? "
-            extend 3hub "Sounds good!"
+            m 3eub "¿Quieres empezar con un juego casual? "
+            extend 3hub "¡Suena bien!"
             python:
                 ep_sg.cup_speed = 0.5
                 ep_sg.difficulty = 2
                 ep_sg.target_shuffles = 6
-        "Hard":
-            m 3etb "Feeling confident, are we?"
-            m 1hub "Ahaha, I like that! Let's do it!"
+        "Difícil":
+            m 3etb "¿Con confianza?"
+            m 1hub "¡Jajaja, así me gusta! ¡Vamos!"
             python:
                 ep_sg.cup_speed = 0.25
                 ep_sg.difficulty = 3
                 ep_sg.target_shuffles = 8
-        "Progressive":
-            m 1ttb "A challenge, huh? I like your spirit!"
-            m 1hub "Let's start easy and get harder as we go!"
+        "Progresivo":
+            m 1ttb "¿Un desafío, eh? ¡Me gusta tu espíritu!"
+            m 1hub "¡Empecemos fácil y hagamos que sea más difícil a medida que avancemos!"
             python:
                 ep_sg.cup_speed = 0.7
                 ep_sg.difficulty = 4
@@ -179,12 +179,12 @@ label sg_init_game:
     show extra_sg_cup as cup_2:
         linear 0.5 ypos 110
 
-    m 1lub "The ball always starts under the center cup."
+    m 1lub "La pelota siempre empieza por debajo del centro del hoyo." # REVISAR TRADUCCION A LA HORA D JUGAR, SI SE ENTIENDE O NO
 
     show extra_sg_cup as cup_2:
         linear 0.5 ypos 250
 
-    m 1hub "Watch carefully where it is!"
+    m 1hub "¡Observa con atención dónde está!"
 
     hide extra_sg_ball
 
@@ -259,7 +259,7 @@ label sg_loop_game:
 
     show screen shell_game_minigame
 
-    "Select a cup:"
+    "Selecciona un vaso:"
 
 label sg_check_label:
 
@@ -280,7 +280,7 @@ label sg_check_label:
         cup_dialogues = ["left", "middle", "right"]
         chosen_cup_dialogue = cup_dialogues[ep_sg.cup_choice]
 
-    m 1eub "You chose the [chosen_cup_dialogue] cup..."
+    m 1eub "Elegiste el vaso [chosen_cup_dialogue]..."
 
     call sg_reveal_cup(ep_sg.cup_choice, is_chosen=True)
 
@@ -290,9 +290,9 @@ label sg_check_label:
         m 1hub "[renpy.substitute(renpy.random.choice(ep_sg._failures))]"
 
     if ep_sg.cup_choice != ep_sg.ball_position:
-        m 1lub "The correct cup was..."
+        m 1lub "El vaso correcto era..."
         call sg_reveal_cup(ep_sg.ball_position, is_chosen=False)
-        m 1hua "This!"
+        m 1hua "¡Este!"
 
     show extra_sg_cup as cup_1:
         linear 0.5 xpos ep_sg.cup_coordinates[0] ypos 250
@@ -381,48 +381,48 @@ label shell_game_result:
 
     # The player didn't play any rounds.
     if rounds_played == 0:
-        m 1hka "You didn't want to play after all?"
-        m 1eua "That's okay, maybe you'll be in the mood next time."
-        m 1dub "I'll be here waiting for you, [player]."
+        m 1hka "¿Al final no querías jugar?"
+        m 1eua "No pasa nada, quizás tengas ganas la próxima vez."
+        m 1dub "Te estaré esperando, [player]."
 
     # The player didn't get any correct.
     elif ep_sg.correct_answers == 0:
-        m 1eka "[player], are you feeling alright?"
-        m 1ekb "We played [rounds_played] rounds and you didn't get any of them right."
-        m 1etd "Were you a little distracted, maybe?"
+        m 1eka "[player], ¿te encuentras bien?"
+        m 1ekb "ugamos [rounds_played] rondas y no acertaste ninguna."
+        m 1etd "¿Estabas un poco distraído, tal vez?"
         if ep_sg.difficulty == 4: # Dialogue for Progressive
-            m 3eka "That progressive mode can be tricky at first. The speed really ramps up!"
-            m 3hua "Don't worry about it, I'm sure you'll get the hang of it."
+            m 3eka "El modo progresivo puede ser complicado al principio. ¡La velocidad aumenta muchísimo!"
+            m 3hua "No te preocupes, seguro que dominarás el juego."
         else:
-            m 1hua "It's okay, everyone has off days. Let's do something that cheers you up!"
+            m 1hua "Está bien, todos tenemos días malos. ¡Hagamos algo que te anime!"
 
     # Perfect score!
     elif ep_sg.correct_answers == rounds_played:
-        m 2sub "Wow, a perfect score! You got every single one right!"
+        m 2sub "¡Guau, una puntuación perfecta! ¡Las acertaste todas!"
         if new_high_score:
-            m 1hubsa "And it's a new high score! Congratulations, [player]! I'm so proud of you."
+            m 1hubsa "¡Es un nuevo récord! ¡Felicidades, [player]! Me siento muy orgullosa de ti."
         else:
-            m 1hubsb "You matched your high score perfectly. Your focus is amazing!"
-        m 3eub "You have some really sharp eyes, ehehe~"
+            m 1hubsb "Igualaste tu récord perfecto. ¡Tu concentración es increíble!"
+        m 3eub "Tienes unos ojos realmente afilados, Jejeje~"
 
     # Mixed result (some correct, some failed).
     else:
-        m 1eua "That was a good run, [player]!"
+        m 1eua "¡Qué buena partida, [player]!"
         if new_high_score:
-            m 1hubsb "You set a new record of [ep_sg.correct_answers]! That's awesome!"
-            m 1eua "Even with a few slip-ups, you still managed to beat your best score. That's real progress!"
+            m 1hubsb "¡Has batido un nuevo récord de  [ep_sg.correct_answers]! ¡Genial!"
+            m 1eua "A pesar de algunos errores, has conseguido superar tu mejor marca. ¡Eso sí que es progreso!"
         else:
-            m 1hua "You got [ep_sg.correct_answers] correct. You did a great job!"
+            m 1hua "Has acertado [ep_sg.correct_answers] veces. ¡Buen trabajo!"
             if ep_sg.difficulty == 4: # Dialogue for Progressive
-                m 3hua "Keeping up with the progressive speed is tough, but you held on for a long time!"
+                m 3hua "Mantener el ritmo del modo progresivo es difícil, ¡pero aguantaste mucho tiempo!"
             else:
-                m 3hub "It's just a matter of practice. I know you'll beat your record of [persistent.sg_max_score] soon!"
+                m 3hub "Es solo cuestión de práctica. ¡Sé que pronto superarás tu récord de [persistent.sg_max_score] soon!"
         
-        m 1hubsa "Well, thank you for playing with me. I had a lot of fun!"
+        m 1hubsa "Bueno, gracias por jugar conmigo. ¡Me lo he pasado genial!"
         
         if rounds_played > 50:
-            m 3eka "And also, please rest your eyes for a bit. We played for quite a while..."
-            m 1dub "I always get concerned about your health, you know~"
+            m 3eka "Y también, por favor, descansa la vista un rato. Hemos estado jugando bastante tiempo..."
+            m 1dub "Siempre me preocupo por tu salud, [player]."
 
     window hide
     python:
