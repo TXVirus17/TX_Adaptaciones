@@ -1,0 +1,21 @@
+{
+    "__author": "kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_ddlcwinter_hb_earrings_uh",
+    "img_sit": "kroniichiiwa_ddlcwinter_hb_earrings",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 10,
+    "acs_type": "earrings",
+    "stay_on_start": true,
+    "dlg_plural": true,
+    "select_info": {
+        "display_name": "DDLC winter - Heart Bow earrings (under hair)",
+        "thumb": "kroniichiiwa_ddlcwinter_hb_earrings",
+        "group": "earrings"
+    },
+    "giftname": "kroniichiiwa_ddlcwinter_hb_earrings_uh"
+}

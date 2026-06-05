@@ -1,0 +1,28 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "acs-kroniichiiwa_purepure_facepaint",
+    "img_sit": "kroniichiiwa_purepure_facepaint",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 4,
+    "acs_type": "facepaint_acs",
+    "mux_type": [
+        "facepaint"
+    ],
+    "stay_on_start": true,
+    "giftname": "purepure-facepaint",
+    "dlg_desc": "pure pure face paint",
+    "dlg_plural": false,
+    "select_info": {
+        "display_name": "pure pure face paint",
+        "thumb": "purepure-facepaint",
+        "group": "facepaint_acs",
+        "select_dlg": [
+            "blah blah blah blah..."
+        ]
+    }
+}

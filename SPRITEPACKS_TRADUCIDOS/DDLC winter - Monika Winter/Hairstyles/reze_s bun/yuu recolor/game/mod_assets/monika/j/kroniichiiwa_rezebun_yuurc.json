@@ -1,0 +1,28 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 1,
+    "name": "kroniichiiwa_rezebun_yuurc",
+    "img_sit": "kroniichiiwa_rezebun_yuurc",
+    "pose_map": {
+        "mpm_type": 0,
+        "default": true,
+        "use_reg_for_l": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "ribbon": true,
+        "halfup": true,
+        "day": true
+    },
+    "select_info": {
+        "display_name": "Reze's bun (Yuu recolor)",
+        "thumb": "kroniichiiwa_rezebun_yuurc",
+        "group": "hair",
+        "select_dlg": [
+            "I'll teach you! The things you don't know or can't do. I'll teach you everything.!",
+            "Hey, would you rather be a city mouse or a country mouse?"
+        ]
+    },
+    "unlock": true
+}

@@ -158,47 +158,47 @@ init -5 python in ep_button:
         # Data-driven approach for selecting button text. Max 8 chars.
         text_options = {
             # Special Days (highest priority)
-            "is_monika_bday": [_("My B-Day"), _("Her Day"), _("My Song"), _("My Day"), _("Moni!")],
-            "is_player_bday": [_("Your Day"), _("HBD!"), _("Ur Day"), _("My Gift"), _("The Best")],
-            "is_f14":         [_("Be Mine"), _("My Love"), _("Hearts"), _("XOXO"), _("Our Day")],
-            "is_o31":         [_("Spooky"), _("Boo!"), _("Tricks"), _("Treats"), _("Scary")],
-            "is_d25":         [_("Joyful"), _("Our Xmas"), _("Gift"), _("Noel"), _("Holly")],
-            "is_nye":         [_("New Year"), _("Cheers"), _("Toast"), _("Our Year"), _("The Eve")],
+            "is_monika_bday": [_("Mi cumpleaños"), _("Su día"), _("Mi canción"), _("Mi día"), _("¡Moni!")],
+            "is_player_bday": [_("Tu día"), _("¡Feliz cumpleaños!"), _("Mi regalo"), _("Mi regalo"), _("El mejor")],
+            "is_f14":         [_("Sé mío"), _("Mi amor"), _("Corazones"), _("XOXO"), _("Nuestro día")],
+            "is_o31":         [_("Espeluznante"), _("¡Bu!"), _("Trucos"), _("Dulces"), _("Aterrador")],
+            "is_d25":         [_("Alegre"), _("Nuestra Navidad"), _("Regalo"), _("Noel"), _("Acebo")],
+            "is_nye":         [_("Año Nuevo"), _("Salud"), _("Brindis"), _("Nuestro Año"), _("Nuestro Año Nuevo")],
             
             
             # Affection Levels
             # LOVE (1000+): Deep connection, devotion, eternal.
-            "is_love":        [_("Forever"), _("Eternity"), _("Sunshine"), _("Beloved"), _("Darling"), _("Adored"), _("Precious"), _("My Soul"), _("TrueLove"), _("My Hero")],
+            "is_love":        [_("Para siempre"), _("Eternidad"), _("Luz del sol"), _("Amado"), _("Cariño"), _("Adorado"), _("Precioso"), _("Mi alma"), _("Amor verdadero"), _("Mi héroe")],
             # ENAMORED (400-999): Intense romantic feelings, obsession.
-            "is_enamored":    [_("Dearest"), _("Only You"), _("My Dear"), _("In Love"), _("Kiss Me"), _("Hold Me"), _("Yours"), _("Passion"), _("Together"), _("Sweetie")],
+            "is_enamored":    [_("Queridísimo"), _("Solo tú"), _("Mi querido"), _("Enamorado"), _("Abrázame"), _("Tuyo"), _("Pasión"), _("Juntos"), _("Cariño")],
             # AFFECTIONATE (100-399): Warm, caring, sweet.
-            "is_aff":         [_("So Sweet"), _("Caring"), _("Warmth"), _("Our Time"), _("My Dear"), _("Cutie"), _("Closer"), _("Affection"), _("Hugs"), _("Gentle")],
+            "is_aff":         [_("Tan dulce"), _("Cariñoso"), _("Calidez"), _("Nuestro tiempo"), _("Mi querido"), _("Cutie"), _("Closer"), _("Affection"), _("Hugs"), _("Gentle")],
             # HAPPY (30-99): Cheerful, upbeat, positive.
-            "is_happy":       [_("Smile"), _("Glad"), _("Hehe~"), _("Happy"), _("Cheerful"), _("Yay!"), _("Joy!"), _("Fun!"), _("Radiant"), _("Good Day")],
+            "is_happy":       [_("Sonrisa"), _("Contento"), _("Hehe~"), _("Feliz"), _("Alegre"), _("¡Yay!"), _("¡Alegría!"), _("¡Diversión!"), _("Radiante"), _("Buen día")],
             # NORMAL (-29 to 29): Casual, attentive, waiting.
-            "is_normal":      [_("Hey You"), _("Just Me"), _("Us Two"), _("Thinking"), _("My Poet"), _("Listen"), _("Guess?"), _("It's You"), _("Hello"), _("Hi There")],
+            "is_normal":      [_("Hola tú"), _("Solo yo"), _("Nosotros dos"), _("Pensando"), _("Mi poeta"), _("Escucha"), _("¿Adivina?"), _("Es tú"), _("Hola"), _("Hola ahí")],
             # UPSET (-30 to -99): Annoyed, bored, slight coldness.
-            "is_upset":       [_("Really?"), _("Sigh..."), _("Bored..."), _("Hmph."), _("Okay..."), _("Unsure"), _("Waiting"), _("Why?"), _("..."), _("Tired")],
+            "is_upset":       [_("¿En serio?"), _("Suspiro..."), _("Aburrido..."), _("Hmph."), _("Vale..."), _("Inseguro"), _("Esperando"), _("¿Por qué?"), _("..."), _("Cansado")],
             # DISTRESSED (-100 to ...): Hurt, sad, feeling ignored.
-            "is_distressed":  [_("No Love?"), _("Forgot?"), _("Alone..."), _("Please.."), _("Sadness"), _("You..."), _("Scared"), _("Sorry"), _("Empty"), _("Hurts")],
-            # BROKEN (Low Affection): Glitchy, despondent, hopeless.
-            "is_broken":      [_("Help..."), _("Error"), _("Null"), _("Void"), _("Gone..."), _("Zero"), _("End..."), _("Pain"), _("Why..."), _("Stop")],
+            "is_distressed":  [_("¿Sin amor?"), _("¿Olvidaste?"), _("Solo..."), _("Por favor..."), _("Tristeza"), _("Tú..."), _("Asustado"), _("Lo siento"), _("Vacío"), _("Duele")],
+            # BROKEN (Low Affection): Glitchy, despondent, hopeless.}
+            "is_broken":      [_("Ayuda..."), _("Error"), _("Nulo"), _("Vacío"), _("Se fue..."), _("Cero"), _("Fin..."), _("Dolor"), _("Por qué..."), _("Para")],
         }
         
         # Night-specific additions (Max 8 chars)
         night_additions = {
             # Romantic nights
-            "is_love":        [_("My Moon"), _("Stars"), _("Night <3"), _("Dreaming"), _("My Star")],
-            "is_enamored":    [_("Moonlit"), _("Gazing"), _("Us nite"), _("Resting"), _("Warmth")],
+            "is_love":        [_("Mi Luna"), _("Estrellas"), _("Noche <3"), _("Soñando"), _("Mi Estrella")],
+            "is_enamored":    [_("Luz de Luna"), _("Mirando"), _("Noche de Nosotros"), _("Descansando"), _("Calidez")],
             # Happy/Affectionate nights
-            "is_aff":         [_("Tonight"), _("Calm"), _("Peaceful"), _("Restful"), _("Lovely")],
-            "is_happy":       [_("Dreams"), _("GoodNite"), _("Sleepy?"), _("Cozy"), _("Bedtime")],
+            "is_aff":         [_("Esta noche"), _("Calma"), _("Paz"), _("Descanso"), _("Encantador")],
+            "is_happy":       [_("Sueños"), _("Buenas noches"), _("Sleepy?"), _("Cozy"), _("Bedtime")],
             # Neutral/Bad nights
-            "is_normal":      [_("Sparks"), _("Sleepy"), _("Quiet"), _("Dark..."), _("Late...")],
-            "is_upset":       [_("Cold..."), _("Alone?"), _("No Sleep"), _("Shadows"), _("Cloudy")],
+            "is_normal":      [_("Chispas"), _("Sueño"), _("Tranquilo"), _("Oscuridad..."), _("Tarde...")],
+            "is_upset":       [_("Frío..."), _("¿Solo?"), _("Sin dormir"), _("Sombras"), _("Nublado")],
             # Terrible nights
-            "is_distressed":  [_("Awake..."), _("Lonely"), _("So Dark"), _("Tears..."), _("Cold")],
-            "is_broken":      [_("Darkness"), _("Void"), _("Error"), _("Endless"), _("Nothing")],
+            "is_distressed":  [_("Despierto..."), _("Solitario"), _("Tan oscuro"), _("Lágrimas..."), _("Frío")],
+            "is_broken":      [_("Oscuridad"), _("Vacío"), _("Error"), _("Sin fin"), _("Nada")],
         }
 
         # Find the first matching condition
@@ -2752,3 +2752,4 @@ init -14 python in ep_interactions:
 
         def _zone_zoom(self, zoom_level):
             self._cz_man.zoom_to(zoom_level)
+ 

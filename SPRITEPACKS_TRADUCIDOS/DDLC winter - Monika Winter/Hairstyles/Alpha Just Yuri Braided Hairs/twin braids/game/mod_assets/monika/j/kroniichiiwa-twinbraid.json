@@ -1,0 +1,25 @@
+{
+    "ex_props": {
+        "day": true
+    }, 
+    "img_sit": "kroniichiiwa-twinbraid", 
+    "name": "kroniichiiwa-twinbraid", 
+    "pose_map": {
+        "default": true, 
+        "mpm_type": 0, 
+        "use_reg_for_l": true
+    }, 
+    "select_info": {
+        "display_name": "Twin Braids Edited", 
+        "group": "hair", 
+        "thumb": "kroniichiiwa_twinbraid",
+        "select_dlg": [
+            "Just what I was thinking!",
+            "Do you like my braids, [player]?"
+        ]
+    }, 
+    "stay_on_start": true, 
+    "type": 1, 
+    "unlock": true, 
+    "version": 3
+}

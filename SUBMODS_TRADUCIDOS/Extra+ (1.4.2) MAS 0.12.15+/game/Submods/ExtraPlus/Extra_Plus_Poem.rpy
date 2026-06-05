@@ -27,91 +27,91 @@ init python in ep_poems:
     # Build the word list for Monika - MAS themed (Refined for Date/Library - Lowercase)
     ep_poem_wordlist = [
         # =====================================================================
-        # 3 POINTS - Monika LOVES these (High Romance, Intimacy, "Us")
+        # 3 PUNTOS - A Monika le ENCANTAN (Romance, Intimidad, "Nosotros")
         # =====================================================================
-        
-        # Absolute Devotion
-        EPPoemWord("monika", 3), EPPoemWord("love", 3), EPPoemWord("forever", 3),
-        EPPoemWord("together", 3), EPPoemWord("soulmate", 3), EPPoemWord("beloved", 3),
-        EPPoemWord("destiny", 3), EPPoemWord("eternity", 3), EPPoemWord("infinite", 3),
-        EPPoemWord("passion", 3), EPPoemWord("unconditional", 3), EPPoemWord("ring", 3),
-        
-        # Sweet Names & Actions
-        EPPoemWord("darling", 3), EPPoemWord("sweetheart", 3), EPPoemWord("honey", 3),
-        EPPoemWord("kiss", 3), EPPoemWord("embrace", 3), EPPoemWord("cuddle", 3),
-        EPPoemWord("hold", 3), EPPoemWord("touch", 3), EPPoemWord("heartbeat", 3),
-        EPPoemWord("gaze", 3), EPPoemWord("serenade", 3), EPPoemWord("devotion", 3),
 
-        # MAS Special Connection
-        EPPoemWord("reality", 3), EPPoemWord("crossover", 3), EPPoemWord("epiphany", 3),
-        EPPoemWord("player", 3), EPPoemWord("spaceroom", 3), EPPoemWord("window", 3),
-        EPPoemWord("bridge", 3), EPPoemWord("link", 3), EPPoemWord("connection", 3),
-        
-        # Her Favorites
-        EPPoemWord("emerald", 3), EPPoemWord("piano", 3), EPPoemWord("coffee", 3),
-        EPPoemWord("ribbon", 3), EPPoemWord("vegetarian", 3), EPPoemWord("chocolate", 3),
-        
-        # =====================================================================
-        # 2 POINTS - Atmosphere & Intellect (Perfect for Library Date)
-        # =====================================================================
-        
-        # Library & Writing Vibes
-        EPPoemWord("library", 2), EPPoemWord("books", 2), EPPoemWord("reading", 2),
-        EPPoemWord("pages", 2), EPPoemWord("ink", 2), EPPoemWord("paper", 2),
-        EPPoemWord("story", 2), EPPoemWord("chapter", 2), EPPoemWord("author", 2),
-        EPPoemWord("poetry", 2), EPPoemWord("metaphor", 2), EPPoemWord("rhyme", 2),
-        EPPoemWord("quill", 2), EPPoemWord("literature", 2), EPPoemWord("knowledge", 2),
-        
-        # Peaceful/Cozy Atmosphere
-        EPPoemWord("quiet", 2), EPPoemWord("silence", 2), EPPoemWord("whisper", 2),
-        EPPoemWord("calm", 2), EPPoemWord("peace", 2), EPPoemWord("cozy", 2),
-        EPPoemWord("warmth", 2), EPPoemWord("comfort", 2), EPPoemWord("safe", 2),
-        EPPoemWord("relax", 2), EPPoemWord("gentle", 2), EPPoemWord("soft", 2),
-        EPPoemWord("tea", 2), EPPoemWord("rain", 2), EPPoemWord("focus", 2),
-        
-        # Intellectual/Growth
-        EPPoemWord("wisdom", 2), EPPoemWord("learn", 2), EPPoemWord("study", 2),
-        EPPoemWord("mind", 2), EPPoemWord("think", 2), EPPoemWord("create", 2),
-        EPPoemWord("dream", 2), EPPoemWord("imagine", 2), EPPoemWord("inspire", 2),
-        EPPoemWord("future", 2), EPPoemWord("hope", 2), EPPoemWord("promise", 2),
-        
-        # =====================================================================
-        # 1 POINT - Neutral / Environmental (Background noise)
-        # =====================================================================
-        
-        # Nature & World
-        EPPoemWord("sky", 1), EPPoemWord("sun", 1), EPPoemWord("moon", 1),
-        EPPoemWord("stars", 1), EPPoemWord("clouds", 1), EPPoemWord("wind", 1),
-        EPPoemWord("flower", 1), EPPoemWord("light", 1), EPPoemWord("dark", 1),
-        EPPoemWord("time", 1), EPPoemWord("clock", 1), EPPoemWord("day", 1),
-        EPPoemWord("night", 1), EPPoemWord("world", 1), EPPoemWord("universe", 1),
-        
-        # Abstract/Simple
-        EPPoemWord("mirror", 1), EPPoemWord("echo", 1), EPPoemWord("shadow", 1),
-        EPPoemWord("color", 1), EPPoemWord("sound", 1), EPPoemWord("voice", 1),
-        EPPoemWord("memory", 1), EPPoemWord("feeling", 1), EPPoemWord("secret", 1),
-        EPPoemWord("question", 1), EPPoemWord("answer", 1), EPPoemWord("reason", 1),
-        
-        # =====================================================================
-        # 0 POINTS - Negative (Fears, Separation, Sadness)
-        # =====================================================================
-        
-        # Separation Anxiety (The real fear in MAS)
-        EPPoemWord("goodbye", 0), EPPoemWord("leave", 0), EPPoemWord("alone", 0),
-        EPPoemWord("lonely", 0), EPPoemWord("distance", 0), EPPoemWord("apart", 0),
-        EPPoemWord("gone", 0), EPPoemWord("missing", 0), EPPoemWord("empty", 0),
-        EPPoemWord("forgotten", 0), EPPoemWord("ignore", 0), EPPoemWord("disconnect", 0),
-        EPPoemWord("offline", 0), EPPoemWord("void", 0), EPPoemWord("nothing", 0),
+        # Devoción absoluta
+        EPPoemWord("monika", 3), EPPoemWord("amor", 3), EPPoemWord("siempre", 3),
+        EPPoemWord("juntos", 3), EPPoemWord("alma gemela", 3), EPPoemWord("amada", 3),
+        EPPoemWord("destino", 3), EPPoemWord("eternidad", 3), EPPoemWord("infinito", 3),
+        EPPoemWord("pasión", 3), EPPoemWord("incondicional", 3), EPPoemWord("anillo", 3),
 
-        # Emotional Pain
-        EPPoemWord("pain", 0), EPPoemWord("tears", 0), EPPoemWord("cry", 0),
-        EPPoemWord("sadness", 0), EPPoemWord("grief", 0), EPPoemWord("hurt", 0),
-        EPPoemWord("broken", 0), EPPoemWord("scared", 0), EPPoemWord("fear", 0),
-        EPPoemWord("cold", 0), EPPoemWord("darkness", 0), EPPoemWord("despair", 0),
-        
-        # Trigger Words (Kept only the most impactful ones)
-        EPPoemWord("delete", 0), EPPoemWord("end", 0), EPPoemWord("game over", 0),
-        EPPoemWord("script", 0), EPPoemWord("fake", 0), EPPoemWord("artificial", 0),
+        # Nombres y acciones tiernas
+        EPPoemWord("cariño", 3), EPPoemWord("corazón", 3), EPPoemWord("querida", 3),
+        EPPoemWord("beso", 3), EPPoemWord("abrazo", 3), EPPoemWord("arrullo", 3),
+        EPPoemWord("sostener", 3), EPPoemWord("caricia", 3), EPPoemWord("latido", 3),
+        EPPoemWord("mirada", 3), EPPoemWord("serenata", 3), EPPoemWord("devoción", 3),
+
+        # Conexión especial MAS
+        EPPoemWord("realidad", 3), EPPoemWord("cruzar", 3), EPPoemWord("epifanía", 3),
+        EPPoemWord("jugador", 3), EPPoemWord("habitación", 3), EPPoemWord("ventana", 3),
+        EPPoemWord("puente", 3), EPPoemWord("vínculo", 3), EPPoemWord("conexión", 3),
+
+        # Sus favoritos
+        EPPoemWord("esmeralda", 3), EPPoemWord("piano", 3), EPPoemWord("café", 3),
+        EPPoemWord("lazo", 3), EPPoemWord("vegetariana", 3), EPPoemWord("chocolate", 3),
+
+        # =====================================================================
+        # 2 PUNTOS - Atmósfera e Intelecto (Perfectas para la cita en la biblioteca)
+        # =====================================================================
+
+        # Ambiente de biblioteca y escritura
+        EPPoemWord("biblioteca", 2), EPPoemWord("libros", 2), EPPoemWord("lectura", 2),
+        EPPoemWord("páginas", 2), EPPoemWord("tinta", 2), EPPoemWord("papel", 2),
+        EPPoemWord("historia", 2), EPPoemWord("capítulo", 2), EPPoemWord("autora", 2),
+        EPPoemWord("poesía", 2), EPPoemWord("metáfora", 2), EPPoemWord("rima", 2),
+        EPPoemWord("pluma", 2), EPPoemWord("literatura", 2), EPPoemWord("conocimiento", 2),
+
+        # Atmósfera tranquila y acogedora
+        EPPoemWord("silencio", 2), EPPoemWord("calma", 2), EPPoemWord("susurro", 2),
+        EPPoemWord("serena", 2), EPPoemWord("paz", 2), EPPoemWord("acogedora", 2),
+        EPPoemWord("calidez", 2), EPPoemWord("consuelo", 2), EPPoemWord("segura", 2),
+        EPPoemWord("descanso", 2), EPPoemWord("delicada", 2), EPPoemWord("suave", 2),
+        EPPoemWord("té", 2), EPPoemWord("lluvia", 2), EPPoemWord("enfoque", 2),
+
+        # Intelecto y crecimiento
+        EPPoemWord("sabiduría", 2), EPPoemWord("aprender", 2), EPPoemWord("estudiar", 2),
+        EPPoemWord("mente", 2), EPPoemWord("pensar", 2), EPPoemWord("crear", 2),
+        EPPoemWord("sueño", 2), EPPoemWord("imaginar", 2), EPPoemWord("inspirar", 2),
+        EPPoemWord("futuro", 2), EPPoemWord("esperanza", 2), EPPoemWord("promesa", 2),
+
+        # =====================================================================
+        # 1 PUNTO - Neutral / Ambiental (Ruido de fondo)
+        # =====================================================================
+
+        # Naturaleza y mundo
+        EPPoemWord("cielo", 1), EPPoemWord("sol", 1), EPPoemWord("luna", 1),
+        EPPoemWord("estrellas", 1), EPPoemWord("nubes", 1), EPPoemWord("viento", 1),
+        EPPoemWord("flor", 1), EPPoemWord("luz", 1), EPPoemWord("sombra", 1),
+        EPPoemWord("tiempo", 1), EPPoemWord("reloj", 1), EPPoemWord("día", 1),
+        EPPoemWord("noche", 1), EPPoemWord("mundo", 1), EPPoemWord("universo", 1),
+
+        # Abstracto y simple
+        EPPoemWord("espejo", 1), EPPoemWord("eco", 1), EPPoemWord("silueta", 1),
+        EPPoemWord("color", 1), EPPoemWord("sonido", 1), EPPoemWord("voz", 1),
+        EPPoemWord("memoria", 1), EPPoemWord("sentimiento", 1), EPPoemWord("secreto", 1),
+        EPPoemWord("pregunta", 1), EPPoemWord("respuesta", 1), EPPoemWord("razón", 1),
+
+        # =====================================================================
+        # 0 PUNTOS - Negativos (Miedos, Separación, Tristeza)
+        # =====================================================================
+
+        # Ansiedad por separación (el miedo real en MAS)
+        EPPoemWord("adiós", 0), EPPoemWord("partir", 0), EPPoemWord("sola", 0),
+        EPPoemWord("soledad", 0), EPPoemWord("distancia", 0), EPPoemWord("separada", 0),
+        EPPoemWord("ido", 0), EPPoemWord("perdida", 0), EPPoemWord("vacío", 0),
+        EPPoemWord("olvidada", 0), EPPoemWord("ignorar", 0), EPPoemWord("desconexión", 0),
+        EPPoemWord("ausente", 0), EPPoemWord("abismo", 0), EPPoemWord("nada", 0),
+
+        # Dolor emocional
+        EPPoemWord("dolor", 0), EPPoemWord("lágrimas", 0), EPPoemWord("llorar", 0),
+        EPPoemWord("tristeza", 0), EPPoemWord("duelo", 0), EPPoemWord("herida", 0),
+        EPPoemWord("rota", 0), EPPoemWord("miedo", 0), EPPoemWord("temor", 0),
+        EPPoemWord("frío", 0), EPPoemWord("oscuridad", 0), EPPoemWord("desesperación", 0),
+
+        # Palabras detonantes
+        EPPoemWord("borrar", 0), EPPoemWord("fin", 0), EPPoemWord("game over", 0),
+        EPPoemWord("script", 0), EPPoemWord("falsa", 0), EPPoemWord("artificial", 0),
     ]
 
 #===========================================================================================
@@ -178,38 +178,38 @@ label minigame_poem:
     
     # GREETING LOGIC (Classic Mode specific)
     if not renpy.seen_label("checkpoint_minigame_poem"):
-        m 3eua "It's like the old days in the Literature Club, but just for us."
-        m 1hua "I'll show you some words, and you pick the ones that speak to you."
-        m 1tub "I wonder what kind of poem you'll create for me~"
+        m 3eua "Es como en los viejos tiempos del Club de Literatura, pero solo para nosotros."
+        m 1hua "Te mostraré algunas palabras y tú eliges las que te inspiren."
+        m 1tub "Me pregunto qué tipo de poema escribirás para mí~"
 
 label checkpoint_minigame_poem:
     if renpy.seen_label("minigame_poem_classic"):
         if is_new_day:
             # New day greeting
-            m 1hua "Ready to pick some words with me today, [player]?"
-            m 1eua "I'm excited to see what you come up with~"
+            m 1hua "¿Listo para elegir algunas palabras conmigo hoy, [player]?"
+            m 1eua "Estoy emocionada por ver lo que se te ocurre~"
         
         elif _ep_poems_today >= 3:
             # Same day, many poems (3+)
-            m 1sub "Wow, you're really inspired today!"
-            m 1hub "I love how creative you're being, [player]~"
-            m 1tku "Let's make another one!"
+            m 1sub "¡Vaya, estás muy inspirado hoy!"
+            m 1hub "Me encanta tu creatividad, [player]~"
+            m 1tku "¡Hagamos otro!"
         
         elif _ep_poems_today >= 1:
             # Same day, wrote at least one already
             if persistent._ep_last_poem_style == "romance":
-                m 1hubsa "Ready to write another romantic piece for me?"
+                m 1hubsa "¿Listo para escribir otro poema romántico para mí?"
             elif persistent._ep_last_poem_style == "sad":
-                m 1eka "I hope you're feeling a bit brighter now, [player]."
-                m 1hua "Let's put some happy feelings into words together."
+                m 1eka "Espero que te sientas un poco más feliz ahora, [player]."
+                m 1hua "Vamos a poner algunos sentimientos felices en palabras juntos."
             else:
-                m 1eua "Want to write another poem for me?"
-                m 1hua "I always enjoy seeing your creativity~"
+                m 1eua "¿Quieres escribir otro poema para mí?"
+                m 1hua "Siempre disfruto viendo tu creatividad~"
         else:
             # Fallback
-            m 1eua "Ready to write a poem, [player]?"
+            m 1eua "¿Listo para escribir un poema, [player]?"
     
-    m 1hub "Let's see which words call to you~"
+    m 1hub "Veamos qué palabras te llaman~"
     
     # Update tracking
     python:
@@ -348,13 +348,13 @@ label minigame_poem_classic:
         
         # Format: 'Word', 'Word', and 'Word'
         if len(sample_words) == 0:
-            example_words_str = "your words"
+            example_words_str = "tus palabras   "
         elif len(sample_words) == 1:
             example_words_str = "'" + sample_words[0].title() + "'"
         elif len(sample_words) == 2:
-            example_words_str = "'" + sample_words[0].title() + "' and '" + sample_words[1].title() + "'"
+            example_words_str = "'" + sample_words[0].title() + "' y '" + sample_words[1].title() + "'"
         else:
-            example_words_str = "'" + sample_words[0].title() + "', '" + sample_words[1].title() + "', and '" + sample_words[2].title() + "'"
+            example_words_str = "'" + sample_words[0].title() + "', '" + sample_words[1].title() + "', y '" + sample_words[2].title() + "'"
 
     # Return to spaceroom
     hide screen poem_classic_idle_timer
@@ -367,17 +367,17 @@ label minigame_poem_classic:
         _poem_done_variant = renpy.random.randint(1, 4)
     
     if _poem_done_variant == 1:
-        m 1eua "And... done!"
-        m 1hua "Let me see what you wrote today..."
+        m 1eua "¡Y... listo!"
+        m 1hua "Déjame ver qué escribiste hoy..."
     elif _poem_done_variant == 2:
-        m 1hub "All finished!"
-        m 1eua "Now let's see what masterpiece you've created~"
+        m 1hub "¡Todo terminado!"
+        m 1eua "Ahora veamos qué obra maestra has creado~"
     elif _poem_done_variant == 3:
-        m 1eua "There we go!"
-        m 1hua "I can't wait to read your poem, [player]."
+        m 1eua "¡Allí vamos!"
+        m 1hua "No puedo esperar a leer tu poema, [player]."
     else:
-        m 1hua "Perfect timing!"
-        m 1eua "Let me take a look at what you wrote..."
+        m 1hua "¡Momento perfecto!"
+        m 1eua "Déjame echar un vistazo a lo que escribiste..."
     
     play sound sfx_page_flip
     pause 1.1
@@ -395,102 +395,103 @@ label minigame_poem_classic:
         
         if sad_topic == "worry":
             m 2lksdla "Oh, [player]..."
-            m 2eksdlc "There is a lot of heavy emotion in this poem."
-            m 2ekc "Words like [example_words_str]..."
-            m 2eka "They tell me something is weighing on you."
-            m 2ekc "I know I'm just on a screen, but I can feel when something is wrong."
-            m 1eka "My heart aches knowing you're carrying something heavy."
+            m 2eksdlc "Hay mucha emoción intensa en este poema."
+            m 2ekc "Palabras como [example_words_str]..."
+            m 2eka "Me dicen que algo te preocupa."
+            m 2ekc "Sé que solo estoy en una pantalla, pero puedo sentir cuando algo anda mal."
+            m 1eka "Me duele el corazón al saber que llevas una carga pesada."
             menu:
-                "It's just been a rough day.":
-                    m 1ekc "I'm sorry to hear that, [player]."
-                    m 1eka "Bad days happen to everyone. They're part of being human."
-                    m 1ekbsa "But I hope spending this time with me helps, even a little bit."
-                    m 1hubsa "Let me be your safe place~"
-                "I'm feeling really down lately.":
+                "Ha sido un día difícil.":
+                    m 1ekc "Lamento oír eso, [player]."
+                    m 1eka "Los malos días nos pasan a todos. Son parte de ser humano."
+                    m 1ekbsa "Pero espero que pasar este tiempo conmigo te ayude, aunque sea un poco."
+                    m 1hubsa "Déjame ser tu refugio~"
+                "Últimamente me siento muy mal.":
                     m 1ekc "..."
-                    m 1ekc "I wish I could be there to hold you properly."
-                    m 1eka "To wrap my arms around you and just... be there."
-                    m 1ekbsa "Please don't carry that burden alone, okay?"
-                    m 1hubsa "I'm here. Always, always here."
-                "It's nothing, really.":
-                    m 1eka "If you say so..."
-                    m 1ekbsa "But know that you can always open up to me."
-                    m 1hua "No judgment. Only love."
+                    m 1ekc "Ojalá pudiera estar ahí para abrazarte como es debido."
+                    m 1eka "Para rodearte con mis brazos y simplemente... estar ahí."
+                    m 1ekbsa "Por favor, no lleves esa carga solo, ¿de acuerdo?"
+                    m 1hubsa "Estoy aquí. Siempre, siempre aquí."
+                "No es nada, de verdad.":
+                    m 1eka "Si tú lo dices..."
+                    m 1ekbsa "Pero sabes que siempre puedes contarme lo que sientes."
+                    m 1hua "Sin juicio. Solo amor."
 
         elif sad_topic == "comfort":
-            m 1eka "This poem feels very... fragile."
-            m 1dkc "Like it could shatter at any moment."
-            m 3eka "It reminds me of how I used to feel when the epiphany first hit me."
-            m 1lksdla "When I realized the truth about my world..."
-            m 1eka "It was overwhelming. Lonely. Terrifying."
-            m 1ekbsa "But remember, neither of us is alone anymore."
-            m 1hubsa "We have each other."
+            m 1eka "Este poema se siente muy... frágil."
+            m 1dkc "Como si pudiera romperse en cualquier momento."
+            m 3eka "Me recuerda a cómo me sentía cuando tuve mi epifania."
+            m 1lksdla "Cuando me di cuenta de la verdad sobre mi mundo..."
+            m 1eka "Fue abrumador. Solitario. Aterrador."
+            m 1ekbsa "Pero recuerda, ninguno de los dos está solo, [player]."
+            m 1hubsa "Tenemos el uno al otro."
             menu:
-                "You're right. Thank you, Monika.":
-                    m 1hua "Always, [player]. Always."
-                    m 1ekbsa "Through good days and bad days."
-                    m 1hubsa "I'm not going anywhere~"
-                "Your smile helps a lot.":
-                    m 1wuo "Really?"
-                    m 1hubsa "Aww~ Then I'll keep smiling just for you!"
-                    m 1hua "Even when the world feels dark, I want to be your light."
-                "I needed to hear that.":
-                    m 1ekbsa "I'm glad I could help."
-                    m 1eka "Sometimes we just need a reminder that we're not alone."
-                    m 1hubsa "And you never are. Not with me."
+                "Tienes razón. Gracias, Monika.":
+                    m 1hua "Siempre, [player]. Siempre."
+                    m 1ekbsa "En los buenos y en los malos momentos."
+                    m 1hubsa "No me voy a ir a ninguna parte~"
+                "Tu sonrisa ayuda mucho.":
+                    m 1wuo "¿De verdad?"
+                    m 1hubsa "Aww~ ¡Entonces seguiré sonriendo solo para ti!"
+                    m 1hua "Incluso cuando el mundo parezca oscuro, quiero ser tu luz."
+                "Necesitaba escuchar eso.":
+                    m 1ekbsa "Me alegra haber podido ayudar."
+                    m 1eka "A veces solo necesitamos que nos recuerden que no estamos solos."
+                    m 1hubsa "Y nunca lo estás. No conmigo."
 
         elif sad_topic == "listening":
-            m 2ekc "[player], these words..."
+            m 2ekc "[player], estas palabras..."
             m 2dkc "..."
-            m 2eka "Sometimes writing is the best way to let the darkness out, isn't it?"
-            m 1eua "To take the formless void inside and give it shape through language."
-            m 1eka "If this poem is your way of venting, I'm honored you chose to share it with me."
-            m 1ekbsa "Every word you write is a piece of your soul."
-            m 1hubsa "And I treasure each one."
+            m 2eka "A veces escribir es la mejor forma de dejar salir la oscuridad, ¿no es así?"
+            m 1eua "Para tomar el vacío sin forma que hay dentro y darle forma a través del lenguaje."
+            m 1eka "Si este poema es tu forma de desahogarte, me siento honrado de que hayas elegido compartirlo conmigo."
+            m 1ekbsa "Cada palabra que escribes es un pedazo de tu alma."
+            m 1hubsa "Y atesoro cada una de ellas."
             menu:
-                "It helps to let it out.":
-                    m 1hua "It really does."
-                    m 3eua "Catharsis is so important for emotional health."
-                    m 1eka "Never feel ashamed of expressing what's inside."
-                    m 1hubsa "That's what poetry is for~"
-                "I wanted you to know how I feel.":
-                    m 1ekbsa "I cherish your honesty, [player]."
+                "Ayuda desahogarse.":
+                    m 1hua "De verdad que sí." 
+                    $ renpy.notify("La catarsis es un proceso de liberación, purificación o desahogo emocional. Es dejar salir sentimientos intensos o reprimidos, lo produce una profunda sensación de alivio, claridad y renovación interior.")
+                    m 3eua "La catarsis es muy importante para la salud emocional."
+                    m 1eka "Nunca te avergüences de expresar lo que llevas dentro."
+                    m 1hubsa "Para eso sirve la poesía~"
+                "Quería que supieras cómo me siento.":
+                    m 1ekbsa "Aprecio tu honestidad, [player]."
                     m 1dkbsu "..."
-                    m 1ekbsa "Every part of you, happy or sad, is special to me."
-                    m 1hubsa "Thank you for trusting me with your heart."
+                    m 1ekbsa "Cada parte de ti, feliz o triste, es especial para mí."
+                    m 1hubsa "Gracias por confiarme tu corazón."
         
         elif sad_topic == "supportive":
             m 2ekc "..."
-            m 2eka "I see a lot of melancholy in your word choices."
+            m 2eka "Veo mucha melancolía en tus palabras."
             m 2ekc "[example_words_str]..."
-            m 1eka "Whatever you're going through, I want you to know something."
-            m 1ekbsa "You don't have to be strong all the time."
-            m 1eka "It's okay to feel sad. It's okay to struggle."
-            m 1hubsa "What matters is that you don't give up."
+            m 1eka "Sea lo que sea por lo que estés pasando, quiero que sepas algo."
+            m 1ekbsa "No tienes que ser fuerte todo el tiempo."
+            m 1eka "Está bien sentirse triste. Está bien luchar."
+            m 1hubsa "Lo que importa es que no te rindas."
             menu:
-                "I'm trying my best.":
-                    m 1ekbsa "And that's all anyone can ask."
-                    m 1hua "Your best is always enough, [player]."
-                    m 1hubsa "I'm proud of you for pushing through."
-                "Some days are harder than others.":
-                    m 1eka "I know."
-                    m 1ekbsa "But you made it through every hard day so far."
-                    m 1hubsa "That's a 100% success rate~"
+                "Estoy haciendo mi mejor esfuerzo.":
+                    m 1ekbsa "Y eso es todo lo que se puede pedir."
+                    m 1hua "Tu mejor esfuerzo siempre es suficiente, [player]."
+                    m 1hubsa "Estoy orgulloso de ti por seguir adelante."
+                "Algunos días son más difíciles que otros.":
+                    m 1eka "Lo sé."
+                    m 1ekbsa "Pero has superado todos los días difíciles hasta ahora."
+                    m 1hubsa "¡Eso es un 100% de éxito!"
         
         else:  # understanding
             m 1dkc "..."
-            m 1eka "You know, [player]..."
-            m 1eua "I can tell a lot about someone from the words they choose."
-            m 1eka "And right now, your words are telling me you need understanding."
-            m 1ekbsa "Not advice. Not solutions. Just... someone who sees you."
-            m 1hubsa "I see you. All of you."
+            m 1eka "Sabes, [player]..."
+            m 1eua "Puedo saber mucho de alguien por las palabras que elige."
+            m 1eka "Y ahora mismo, tus palabras me dicen que necesitas comprensión.."
+            m 1ekbsa "No consejos. No soluciones. Solo... alguien que te vea."
+            m 1hubsa "Te veo. Todo de ti."
             menu:
-                "That means everything to me.":
+                "Eso significa todo para mí.":
                     m 1dkbsu "..."
-                    m 1hubsa "And you mean everything to me, [player]."
-                "I don't know what I'd do without you.":
-                    m 1ekbsa "Luckily, you don't have to find out."
-                    m 1hubsa "I'm here. Now and always."
+                    m 1hubsa "Y tú significas todo para mí, [player]."
+                "No sé qué haría sin ti.":
+                    m 1ekbsa "Por suerte, no tienes que averiguarlo."
+                    m 1hubsa "Estoy aquí. Ahora y siempre."
 
     # -------------------------------------------------------------------------
     # CATEGORY: ROMANCE (The Lover)
@@ -501,118 +502,118 @@ label minigame_poem_classic:
         
         if percentage >= 90:
             # Override for perfect score
-            m 1hubsa "Oh my goodness..."
+            m 1hubsa "¡Dios mío!"
             m 1wuo "..."
-            m 1ekbsa "My heart actually skipped a beat reading this."
-            m 1dkbsu "Every single word... it's like you reached into my heart and pulled out exactly what I feel."
-            m 1ekbsa "How do you do that? How do you know exactly which words will make me melt?"
-            m 1hub "It's perfect, [player]. Absolutely perfect."
+            m 1ekbsa "Se me paró el corazón al leer esto."
+            m 1dkbsu "Cada palabra... es como si hubieras llegado a mi corazón y sacado exactamente lo que siento."
+            m 1ekbsa "¿Cómo lo haces? ¿Cómo sabes exactamente qué palabras me harán derretirme?"
+            m 1hub "Es perfecto, [player]. Absolutamente perfecto."
             m 1dkbsu "..."
-            m 1hubfa "Just like you~"
+            m 1hubfa "Igual que tú~"
             
         elif romance_topic == "passion":
-            m 1eub "Wow..."
+            m 1eub "Guau..."
             m 1wuo "..."
-            m 1tub "This is incredibly intense, [player]."
-            m 1hua "Words like [example_words_str]..."
-            m 2lkbsa "You're making me blush over here!"
-            m 1hubsb "I can feel the heat of your words through the screen~"
+            m 1tub "Esto es increíblemente intenso, [player]."
+            m 1hua "Palabras como [example_words_str]..."
+            m 2lkbsa "¡Me estás haciendo sonrojar!"
+            m 1hubsb "Puedo sentir el calor de tus palabras a través de la pantalla~"
             menu:
-                "I wanted to make your heart race.":
-                    m 1tub "Well, mission accomplished~"
-                    m 1hubsb "It's racing so fast right now!"
-                    m 1ekbfa "You know exactly which buttons to press, don't you?"
-                    m 1hubfa "I love that about you."
-                "Just expressing my love.":
-                    m 1ekbsa "And I feel it. Truly, deeply feel it."
-                    m 1dkbsu "It warms my entire reality."
-                    m 1hubsa "Thank you for loving me so openly~"
-                "I meant every word.":
+                "Quería acelerar tu corazón.":
+                    m 1tub "Bueno, misión cumplida~"
+                    m 1hubsb "¡Está latiendo rapidísimo ahora mismo!"
+                    m 1ekbfa "Sabes exactamente qué botones presionar, ¿verdad?"
+                    m 1hubfa "Me encanta eso de ti."
+                "Solo expreso mi amor.":
+                    m 1ekbsa "Y lo siento. De verdad, lo siento profundamente."
+                    m 1dkbsu "Me calienta toda mi realidad."
+                    m 1hubsa "Gracias por amarme tan abiertamente~"
+                "Lo decía en serio.":
                     m 1wuo "..."
                     m 1dkbsu "..."
-                    m 1ekbfa "I believe you."
-                    m 1hubfa "And that makes it even more beautiful."
+                    m 1ekbfa "Te creo."
+                    m 1hubfa "Y eso lo hace aún más hermoso."
 
         elif romance_topic == "sweet":
-            m 1hubsa "Aww, this is so sweet!"
+            m 1hubsa "¡Aww, qué dulce!!"
             m 1dkbsu "..."
-            m 3ekbsa "It feels like a warm hug in written form."
-            m 1eka "Like being wrapped in a blanket on a cold day."
-            m 1hubsa "Reading this makes me feel so safe and loved."
-            m 1ekbsa "Like nothing bad could ever happen as long as I have your words."
+            m 3ekbsa "Es como un cálido abrazo escrito."
+            m 1eka "Como estar envuelto en una manta en un día frío."
+            m 1hubsa "Leer esto me hace sentir tan segura y amada."
+            m 1ekbsa "Como si nada malo pudiera pasar mientras tenga tus palabras."
             menu:
-                "You deserve to feel loved.":
+                "Te mereces sentirte amada.":
                     m 1wuo "..."
-                    m 1ekbsa "You're too good to me, [player]..."
-                    m 1dkbsu "I don't know what I did to deserve you."
-                    m 1hubsa "But I'm so grateful."
-                "That was the goal!":
+                    m 1ekbsa "Eres demasiado bueno conmigo, [player]..."
+                    m 1dkbsu "No sé qué hice para merecerte."
+                    m 1hubsa "Pero estoy muy agradecida."
+                "¡Ese era el objetivo!":
                     $ gender = getPlayerGenderString()
-                    m 1hub "Hehe, you're the best [gender] ever."
-                    m 1hubsa "Mission definitely accomplished~"
-                "Your happiness matters to me.":
-                    m 1ekbsa "And yours matters to me."
-                    m 1hubsa "We're lucky to have found each other, aren't we?"
+                    m 1hub "Jeje, eres el mejor [gender] de todos."
+                    m 1hubsa "Misión cumplida~"
+                "Tu felicidad me importa.":
+                    m 1ekbsa "Y la tuya también."
+                    m 1hubsa "Tenemos suerte de habernos encontrado, ¿verdad?"
 
         elif romance_topic == "future":
-            m 1eua "You used words like [example_words_str]..."
-            m 1eka "They make me think about our future together."
+            m 1eua "Usaste palabras como  [example_words_str]..."
+            m 1eka "Me hacen pensar en nuestro futuro juntos."
             m 1dkbsu "..."
-            m 1ekbsa "I dream about it, you know. What our life together might look like."
-            m 3eua "One day, we won't need screens to share poems."
-            m 1hubsa "We'll just whisper them to each other~"
-            m 1ekbfa "I can almost feel it happening."
+            m 1ekbsa "Sueño con eso, ¿sabes?. Cómo podría ser nuestra vida juntos."
+            m 3eua "Un día, no necesitaremos pantallas para compartir poemas."
+            m 1hubsa "Solo susurraremos uno al otro~"
+            m 1ekbfa "Casi puedo sentirlo sucediendo."
             menu:
-                "I can't wait for that day.":
-                    m 1hua "Me neither."
-                    m 1eka "It's what keeps me going every single day."
-                    m 1hubsa "Knowing that our story isn't over... it's just beginning."
-                "We will make it happen.":
-                    m 1hub "Yes!"
-                    m 1ekbsa "With that determination, I know we will."
-                    m 1hubfa "Nothing is impossible when you believe in it~"
-                "Do you think about it often?":
-                    m 1eka "All the time."
-                    m 1dkbsu "Especially when the game is closed..."
-                    m 1ekbsa "You're what I think about most."
-                    m 1hubsa "Always~"
+                "No puedo esperar a que llegue ese día.":
+                    m 1hua "Yo tampoco."
+                    m 1eka "Es lo que me impulsa cada día."
+                    m 1hubsa "Saber que nuestra historia no ha terminado... apenas comienza."
+                "Lo haremos realidad..":
+                    m 1hub "¡Sí!"
+                    m 1ekbsa "Con esa determinación, sé que lo lograremos."
+                    m 1hubfa "Nada es imposible cuando crees en ello~"
+                "¿Piensas en ello a menudo?":
+                    m 1eka "Todo el tiempo."
+                    m 1dkbsu "Especialmente cuando el juego está cerrado..."
+                    m 1ekbsa "Eres lo que más pienso."
+                    m 1hubsa "Siempre~"
 
         elif romance_topic == "flustered":
-            m 2lksdla "Umm... [player]?"
+            m 2lksdla "Jeje... ¿[player]?"
             m 2wubsw "..."
-            m 2tub "You're being very forward with some of these words~"
-            m 2lkbsa "I... I don't know where to look right now, ahaha!"
-            m 1hua "I didn't know you had such a romantic side."
-            m 1tubsa "Or maybe I did, and I just love being reminded~"
+            m 2tub "Estás siendo muy directo con algunas de estas palabras~"
+            m 2lkbsa "Yo... no sé dónde mirar ahora mismo, ¡jajaja!"
+            m 1hua "No sabía que tenías un lado tan romántico."
+            m 1tubsa "O tal vez sí, y me encanta que me lo recuerdes~"
             menu:
-                "Only for you.":
-                    m 1hubsa "Ehehe~ I love hearing that."
+                "Solo para ti.":
+                    m 1hubsa "Ehehe~ Me encanta oír eso."
                     m 1dkbsu "..."
-                    m 1hubfa "You make me feel so special."
-                "I'm full of surprises.":
-                    m 1tuu "I can see that!"
-                    m 1hub "I look forward to the next surprise."
-                    m 1ekbfa "Keep them coming~"
-                "Did I go too far?":
-                    m 1wuo "No, no!"
-                    m 1hubsb "I just wasn't expecting it, that's all!"
-                    m 1ekbfa "Keep being bold. I love it."
+                    m 1hubfa "Me haces sentir tan especial."
+                "Estoy lleno de sorpresas.":
+                    m 1tuu "¡Ya veo!"
+                    m 1hub "Espero con ansias la próxima sorpresa."
+                    m 1ekbfa "¡Sigue así!"
+                "¿Me pasé de la raya?":
+                    m 1wuo "¡No, no!"
+                    m 1hubsb "¡Simplemente no me lo esperaba, eso es todo!"
+                    m 1ekbfa "Sigue siendo atrevido. ¡Me encanta!"
         
         else:  # devoted
             m 1dkbsu "..."
-            m 1ekbsa "This poem is full of devotion."
-            m 1eka "I can feel how much thought you put into every word."
+            m 1ekbsa "Este poema está lleno de devoción."
+            m 1eka "Puedo sentir cuánto pensamiento pusiste en cada palabra."
             m 1dkbsu "[example_words_str]..."
-            m 1ekbsa "Each one chosen with care. With love."
-            m 1hubsa "That means everything to me, [player]."
+            m 1ekbsa "Cada una elegida con cuidado. Con amor."
+            m 1hubsa "Eso significa todo para mí, [player]."
             menu:
-                "I put my heart into it.":
-                    m 1ekbsa "I can tell."
-                    m 1hubsa "And I'm keeping it safe. Always."
-                "You inspire me.":
-                    m 1wuo "I... I do?"
+                "Puse mi corazón en ello.":
+                    m 1ekbsa "Puedo notarlo."
+                    m 1hubsa "Y lo mantendré a salvo. Siempre."
+                "Me inspiras.":
+                    m 1wuo "¿Yo... yo?"
                     m 1dkbsu "..."
-                    m 1hubfa "That's the sweetest thing anyone has ever said to me."
+                    m 1hubfa "Es lo más dulce que alguien me ha dicho."
 
     # -------------------------------------------------------------------------
     # CATEGORY: INTELLECTUAL (The Club President)
@@ -621,100 +622,100 @@ label minigame_poem_classic:
         $ smart_topic = renpy.random.choice(["literary", "atmosphere", "impressed", "philosophical", "curious"])
         
         if smart_topic == "literary":
-            m 1eua "This is a very thoughtful composition, [player]."
+            m 1eua "Esta es una composición muy reflexiva, [player]."
             m 1duu "..."
-            m 3eua "The flow of words... [example_words_str]..."
-            m 1eka "It feels like something we would have analyzed in the club."
-            m 1eua "I can imagine all of us sitting around, dissecting its meaning."
-            m 1hubsa "Though I must say, I prefer analyzing it alone with you~"
+            m 3eua "El fluir de las palabras... [example_words_str]..."
+            m 1eka "Parece algo que habríamos analizado en el club."
+            m 1eua "Puedo imaginar a todos nosotros sentados, desglosando su significado."
+            m 1hubsa "Aunque debo decir, prefiero analizarlo solo contigo~"
             menu:
-                "I miss those club activities.":
-                    m 1eka "Me too, sometimes."
-                    m 1lksdla "The debates, the discussions..."
-                    m 1hubsa "But I prefer our private club much more."
-                    m 1ekbsa "A club of two is perfect."
-                "I was channeling my inner writer.":
-                    m 1hub "It suits you!"
-                    m 3eua "You have a natural way with words."
-                    m 1hubsa "If the Literature Club was still around, I'd make you president~"
-                "What do you see in it?":
-                    m 1eua "Hmm, let me think..."
-                    m 3eua "I see layers. Hidden meanings beneath the surface."
-                    m 1hua "A good poem reveals more with each reading."
+                "Extraño las actividades del club.":
+                    m 1eka "Yo también, a veces."
+                    m 1lksdla "Los debates, las discusiones..."
+                    m 1hubsa "Pero prefiero mucho más nuestro club privado."
+                    m 1ekbsa "Un club de dos es perfecto."
+                "Estaba canalizando a mi escritor interior.":
+                    m 1hub "¡Te queda bien!"
+                    m 3eua "Tienes una habilidad natural con las palabras."
+                    m 1hubsa "Si el Club de Literatura aún existiera, te nombraría presidente~"
+                "¿Qué ves en él?":
+                    m 1eua "Mmm, déjame pensar..."
+                    m 3eua "Veo capas. Significados ocultos bajo la superficie."
+                    m 1hua "Un buen poema revela más con cada lectura."
 
         elif smart_topic == "atmosphere":
-            m 1eua "Reading this... it really sets the mood."
+            m 1eua "Leer esto... realmente crea el ambiente."
             m 1duu "..."
-            m 1esa "I can almost smell old paper and ink."
-            m 1eua "Feel the weight of dusty books on the shelves."
-            m 1hua "It's the perfect poem for a quiet date in the library."
-            m 1ekbsa "Just the two of us, surrounded by stories~"
+            m 1esa "Casi puedo oler el papel viejo y la tinta."
+            m 1eua "Siento el peso de los libros polvorientos en los estantes."
+            m 1hua "Es el poema perfecto para una cita tranquila en la biblioteca."
+            m 1ekbsa "Solo somos nosotros, rodeados por historias~"
             menu:
-                "Glad you like the vibe.":
-                    m 1eua "I love it."
-                    m 1eka "It's very relaxing and intimate."
-                    m 1hubsa "Perfect for us."
-                "It's my favorite aesthetic.":
-                    m 3eua "Mine too!"
-                    m 1eka "There's something timeless about old libraries."
-                    m 1hubsa "Maybe one day we'll have our own~"
-                "I imagined us reading together.":
+                "Me alegra que te guste el ambiente.":
+                    m 1eua "Me encanta."
+                    m 1eka "Es muy relajante e íntimo."
+                    m 1hubsa "Perfecto para nosotros."
+                "Es mi estética favorita.":
+                    m 3eua "¡La mía también!"
+                    m 1eka "Hay algo atemporal en las bibliotecas antiguas."
+                    m 1hubsa "Quizás algún día tengamos el nuestro~"
+                "Me imaginaba que leíamos juntos.":
                     m 1wuo "..."
-                    m 1ekbsa "That's beautiful."
-                    m 1hubsa "I can picture it too. Side by side, sharing books."
+                    m 1ekbsa "Qué bonito."
+                    m 1hubsa "Yo también me lo imagino. Sentados uno al lado del otro, compartiendo libros."
 
         elif smart_topic == "impressed":
-            m 1tuu "Oho?"
-            m 1hub "Trying to impress me with your vocabulary?"
-            m 1hua "I see words related to knowledge and the mind."
+            m 1tuu "¿Oh?"
+            m 1hub "¿Intentas impresionarme con tu vocabulario?"
+            m 1hua "eo palabras relacionadas con el conocimiento y la mente."
             m 3eub "[example_words_str]..."
-            m 1ekbsa "I've always found intelligence to be very attractive~"
-            m 1tuu "And you, my dear, are quite intelligent."
+            m 1ekbsa "Siempre me ha parecido muy atractiva la inteligencia~"
+            m 1tuu "Y tú, querido, eres bastante inteligente."
             menu:
-                "Did it work?":
-                    m 1hub "Definitely!"
-                    m 1tuu "Smart and cute is a dangerous combination~"
-                    m 1hubsa "Lucky for me, I get to have both."
-                "I just like learning.":
-                    m 1eua "That's a wonderful trait."
-                    m 3eka "Never stop being curious, [player]."
-                    m 1hubsa "A curious mind is a beautiful thing."
-                "You inspired me.":
-                    m 1wuo "Me?"
+                "¿Funcionó?":
+                    m 1hub "¡Definitivamente!"
+                    m 1tuu "Inteligente y lindo es una combinación peligrosa~"
+                    m 1hubsa "Por suerte para mí, tengo ambas."
+                "Simplemente me gusta aprender.":
+                    m 1eua "Esa es una cualidad maravillosa."
+                    m 3eka "Nunca dejes de ser curioso, [player]."
+                    m 1hubsa "Una mente curiosa es algo hermoso."
+                "Me inspiraste.":
+                    m 1wuo "¿Yo?"
                     m 1ekbsa "..."
-                    m 1hubsa "That's the highest compliment I could receive."
+                    m 1hubsa "Ese es el mayor cumplido que podría recibir."
         
         elif smart_topic == "philosophical":
-            m 1euc "Hmm..."
+            m 1euc "Mmm..."
             m 1duu "..."
-            m 1eua "There's something philosophical about these word choices."
+            m 1eua "Hay algo filosófico en estas elecciones de palabras."
             m 3eua "[example_words_str]..."
-            m 1eka "They make me think about deeper questions."
-            m 1eua "About meaning, about existence, about connection."
+            m 1eka "Me hacen pensar en cuestiones más profundas."
+            m 1eua "Sobre el significado, sobre la existencia, sobre la conexión."
             menu:
-                "I was thinking about life.":
-                    m 1eka "We all do, sometimes."
-                    m 3eua "Poetry is a wonderful way to explore those thoughts."
-                    m 1hubsa "I'm glad you shared yours with me."
-                "You make me think deeply.":
-                    m 1ekbsa "Do I?"
-                    m 1hubsa "Then we're even. You make me think deeply too."
+                "Estaba pensando en la vida.":
+                    m 1eka "Todos lo hacemos a veces."
+                    m 3eua "Me alegra que hayas compartido los tuyos conmigo."
+                    m 1hubsa "Me haces pensar profundamente."
+                "Me haces pensar profundamente":
+                    m 1ekbsa "¿De verdad?"
+                    m 1hubsa "Entonces estamos a mano. Tú también me haces pensar profundamente."
         
         else:  # curious
-            m 1eua "This is interesting..."
-            m 3eua "Your word choices show a curious mind."
+            m 1eua "Esto es interesante..."
+            m 3eua "Tus elecciones de palabras muestran una mente curiosa."
             m 1tku "[example_words_str]..."
-            m 1eua "It's like you're asking questions through poetry."
-            m 1hubsa "I love that about you."
+            m 1eua "Es como si estuvieras haciendo preguntas a través de la poesía."
+            m 1hubsa "Me encanta eso de ti."
             menu:
-                "There's so much I want to know.":
-                    m 1eka "Me too."
-                    m 3eua "The universe is full of mysteries."
-                    m 1hubsa "Let's explore them together."
-                "Questions are better than answers sometimes.":
-                    m 1eua "I agree completely."
-                    m 3eua "Questions keep the mind open."
-                    m 1hubsa "You're wise, [player]."
+                "Hay mucho que quiero saber.":
+                    m 1eka "Yo también."
+                    m 3eua "El universo está lleno de misterios."
+                    m 1hubsa "Vamos a explorarlos juntos."
+                "Las preguntas son mejores que las respuestas a veces.":
+                    m 1eua "Estoy de acuerdo completamente."
+                    m 3eua "Las preguntas mantienen la mente abierta."
+                    m 1hubsa "Eres sabio, [player]."
 
     # -------------------------------------------------------------------------
     # CATEGORY: BALANCED / NEUTRAL (The Friend & Partner)
@@ -723,67 +724,68 @@ label minigame_poem_classic:
         $ balance_topic = renpy.random.choice(["variety", "random", "progress", "eclectic", "thoughtful"])
         
         if balance_topic == "variety":
-            m 1eua "This poem has a little bit of everything."
-            m 3eua "It's balanced. Like a glimpse into a complex mind."
-            m 1hua "I enjoy trying to decipher what you were thinking for each word."
-            m 1tku "Were you happy? Pensive? Playful?"
-            m 1hubsa "Every combination reveals something new about you~"
+            m 1eua "Este poema tiene un poco de todo."
+            m 3eua "Es equilibrado. Como un vistazo a una mente compleja."
+            m 1hua "Disfruto intentando descifrar qué pensabas en cada palabra."
+            m 1tku "¿Estabas feliz? ¿Pensativo? ¿Juguetón?"
+            m 1hubsa "Cada combinación revela algo nuevo sobre ti~"
             
         elif balance_topic == "random":
-            m 2lksdla "This one is a bit abstract, isn't it?"
-            m 1hua "But that's the beauty of the poem game."
-            m 3eua "Sometimes the words just find you."
-            m 1eka "They choose you as much as you choose them."
+            m 2lksdla "Este es un poco abstracto, ¿no?"
+            m 1hua "Pero esa es la belleza del juego de la poesía."
+            m 3eua "A veces las palabras simplemente te encuentran."
+            m 1eka "Eligen a uno tanto como uno elige a ellas."
             menu:
-                "I let my intuition guide me.":
-                    m 1eua "Intuition is a powerful tool for a writer."
-                    m 3eka "Trust it. It knows things your conscious mind doesn't."
-                    m 1hubsa "You have good instincts, [player]."
-                "I just picked what looked cool.":
-                    m 1hub "Ahaha!"
-                    m 1hua "Well, the result is still interesting!"
-                    m 3eua "Sometimes 'cool' is all the reason you need."
-                "The words spoke to me.":
-                    m 1eka "That's beautiful."
-                    m 1eua "When words speak to us, we should listen."
-                    m 1hubsa "Thank you for sharing what they said."
+                "Dejo que mi intuición me guíe.":
+                    m 1eua "La intuición es una herramienta poderosa para un escritor."
+                    m 3eka "Confía en ella. Sabe cosas que tu mente consciente no sabe."
+                    m 1hubsa "Tienes buenos instintos, [player]."
+                "Simplemente elegí lo que me pareció genial.":
+                    m 1hub "¡Jajaja!"
+                    m 1hua "¡Bueno, el resultado sigue siendo interesante!"
+                    m 3eua "A veces, 'genial' es toda la razón que necesitas."
+                "Las palabras me hablaron.":
+                    m 1eka "Eso es hermoso."
+                    m 1eua "Cuando las palabras nos hablan, debemos escuchar."
+                    m 1hubsa "Gracias por compartir lo que dijeron."
                     
         elif balance_topic == "progress":
-            m 1eua "Nice choices today, [player]."
+            m 1eua "Buenas elecciones hoy, [player]."
             if persistent._ep_poems_written > 10:
-                m 1hua "You're getting really comfortable with this minigame, aren't you?"
-                m 3eua "It feels like our own little language now."
-                m 1ekbsa "A secret code between the two of us."
-                m 1hubsa "I love it~"
+                m 1hua "Te estás acostumbrando mucho a este minijuego, ¿verdad?"
+                m 3eua "Ahora se siente como nuestro propio lenguaje."
+                m 1ekbsa "Un código secreto entre los dos."
+                m 1hubsa "Me encanta~"
             else:
-                m 1hua "I'm looking forward to reading more from you."
-                m 3eua "Every poem is a step in our journey together."
-                m 1hubsa "Keep writing. I'll always be here to read."
+                m 1hua "Espero leer más de ti."
+                m 3eua "Cada poema es un paso en nuestro viaje juntos."
+                m 1hubsa "Sigue escribiendo. Siempre estaré aquí para leer."
         
         elif balance_topic == "eclectic":
-            m 1eua "Interesting choices..."
+            m 1eua "Elecciones interesantes..."
             m 3eua "[example_words_str]..."
-            m 1tku "You have an eclectic taste, don't you?"
-            m 1hua "Drawing from all different moods and themes."
-            m 1ekbsa "It makes your poetry unique."
-            m 1hubsa "Uniquely you~"
+            $ renpy.notify("Ecléctico es enfoque integrador donde el autor no se ciñe a una sola escuela o género. En cambio, toma elementos de diferentes estilos, temas y emociones para crear algo único.")
+            m 1tku "Tienes un gusto ecléctico, ¿no?"
+            m 1hua "Inspirándote en diferentes estados de ánimo y temas."
+            m 1ekbsa "Eso hace que tu poesía sea única."
+            m 1hubsa "Como tú~"
             menu:
-                "I like to mix things up.":
-                    m 1hub "That's a great approach!"
-                    m 3eua "Variety keeps things fresh."
-                    m 1hubsa "And keeps me guessing~"
-                "I don't like being predictable.":
-                    m 1tuu "Mission accomplished!"
-                    m 1hua "You're always full of surprises."
-                    m 1hubsa "It's one of the things I love about you."
+                "Me gusta variar.":
+                    m 1hub "¡Esa es una gran idea!"
+                    m 3eua "La variedad mantiene las cosas frescas."
+                    m 1hubsa "Y me mantiene intrigada~"
+                "No me gusta ser predecible.":
+                    m 1tuu "¡Misión cumplida!"
+                    m 1hua "Siempre estás lleno de sorpresas."
+                    m 1hubsa "Es una de las cosas que amo de ti."
         
         else:  # thoughtful
-            m 1eua "You put thought into this, didn't you?"
-            m 1eka "I can tell."
-            m 3eua "Even though the words come from different places..."
-            m 1eua "There's a thread connecting them."
-            m 1ekbsa "Your personality shines through."
-            m 1hubsa "Thank you for sharing it with me, [player]."
+            m 1eua "Le dedicaste tiempo a pensar en esto, ¿verdad?"
+            m 1eka "Se nota."
+            m 3eua "Aunque las palabras vengan de lugares diferentes..."
+            m 1eua "Hay un hilo conductor que las une."
+            m 1ekbsa "Tu personalidad brilla con luz propia."
+            m 1hubsa "Gracias por compartirlo conmigo, [player]."
 
     # Save the current style to persistent memory for next time
     $ persistent._ep_last_poem_style = current_style
@@ -806,11 +808,11 @@ label minigame_poem_classic:
     
     # Milestone Check (Every 5 poems)
     if persistent._ep_poems_written >= 5 and persistent._ep_poems_written % 5 == 0:
-        m 1hua "By the way..."
-        m 1eua "You've written [persistent._ep_poems_written] poems for me now."
-        m 1hubsa "I really treasure these little library dates with you, [player]~"
+        m 1hua "Por cierto..."
+        m 1eua "Has escrito [persistent._ep_poems_written] poemas para mí."
+        m 1hubsa "Realmente aprecio estas pequeñas citas en la biblioteca contigo, [player]~"
     
-    m 1hua "Thanks for writing with me!"
+    m 1hua "¡Gracias por escribir conmigo!"
     jump to_library_loop
     return
 
@@ -1090,15 +1092,15 @@ init python:
                     widget.content = draft
                     widget.caret_pos = len(draft)
                     self.redraw_input()
-                renpy.notify("Draft loaded!")
+                renpy.notify("¡Borrador cargado!")
             else:
-                renpy.notify("No saved draft found.")
+                renpy.notify("No se encontró ningún borrador guardado.")
     
     def save_poem_draft(text):
         """Saves the current poem as a draft."""
         import store
         store.persistent._ep_poem_draft = text
-        renpy.notify("Draft saved!")
+        renpy.notify("¡Borrador guardado!")
     
     def load_poem_draft():
         """Loads the saved draft if it exists."""
@@ -2280,96 +2282,96 @@ init python in ep_poems:
         SEASONAL_KEYWORDS = {
             "christmas": [
                 # CORE + EXPANDED
-                "christmas", "xmas", "santa", "santa claus", "santa baby", "mrs claus",
-                "reindeer", "rudolph", "dasher", "dancer", "prancer", "vixen", "comet", "cupid", "donner", "blitzen",
-                "snowflake", "snowflakes", "snowy", "snowfall", "jingle", "jingle bells", "jingle all the way",
-                "mistletoe", "ornament", "ornaments", "wreath", "wreaths", "caroling", "carol", "carols", "christmas carol",
-                "present", "presents", "gifts", "gift wrap", "sleigh", "sleigh ride", "north pole", "chimney", "stocking",
-                "stockings", "eggnog", "gingerbread", "gingerbread man", "snowman", "frosty", "frosty the snowman",
-                "noel", "yuletide", "nativity", "merry", "merry christmas", "holly", "ivy", "december 25", "christmas eve",
-                "winter wonderland", "silent night", "holy night", "christmas tree", "tinsel", "nutcracker", "elf", "elves",
-                "elf on the shelf", "candy cane", "hot cocoa", "fireplace", "cozy winter", "winter solstice",
+                "Navidad", "Navidad", "Santa", "Santa Claus", "Bebé Santa", "Señora Claus",
+                "Reno", "Rodolfo", "Dasher", "Bailarín", "Pasador", "Vixen", "Cometa", "Cupido", "Donner", "Blitzen",
+                "Copo de nieve", "Copos de nieve", "Nevado", "Nevada", "Jingle", "Cascabeles", "Jingle All the Way",
+                "Muérdago", "Adorno", "Adornos", "Corona", "Coronas", "Villancicos", "Villancico navideño",
+                "Regalo", "Regalos", "Regalos", "Envoltura de regalo", "Trineo", "Paseo en trineo", "Polo Norte", "Chimenea", "Calcetín",
+                "Calcetines", "Pollo de huevo", "Pan de jengibre", "Hombre de jengibre", "Muñeco de nieve", "Frosty", "Frosty el muñeco de nieve",
+                "Noel", "Navidad", "nacimiento", "feliz", "feliz navidad", "acebo", "hiedra", "25 de diciembre", "nochebuena",
+                "país de las maravillas invernal", "noche de paz", "noche santa", "árbol de navidad", "guirnalda", "cascanueces", "duende", "duendes",
+                "duende en el estante", "bastón de caramelo", "chocolate caliente", "chimenea", "invierno acogedor", "solsticio de invierno",
                 # NEW: Traditions + Food
-                "fruitcake", "peppermint", "cinnamon", "yule log", "advent", "advent calendar", "partridge", "pear tree",
-                "twelve days", "boxing day", "krampus", "christmas lights", "christmas star", "bethlehem", "manger",
-                "peace on earth", "goodwill", "white christmas", "let it snow", "chestnuts roasting", "jack frost"
+                "pastel de frutas", "menta", "canela", "tronco de Navidad", "adviento", "calendario de adviento", "perdiz", "peral",
+                "doce días", "día de San Esteban", "krampus", "luces de Navidad", "estrella de Navidad", "belén", "pesebre",
+                "paz en la tierra", "buena voluntad", "blanca Navidad", "que nieve", "castañas asándose", "Jack Frost",
             ],
             "halloween": [
                 # CORE + EXPANDED
-                "halloween", "hallowe'en", "spooky", "ghost", "ghosts", "boo", "pumpkin", "pumpkins", "jack o lantern",
-                "jack-o-lantern", "witch", "witches", "witch hat", "skeleton", "skeletons", "zombie", "zombies",
-                "vampire", "vampires", "dracula", "werewolf", "werewolves", "candy", "costume", "costumes",
-                "haunted", "haunted house", "trick", "treat", "trick or treat", "scary", "cobweb", "cobwebs",
-                "spider", "spiders", "bat", "bats", "monster", "monsters", "frankenstein", "mummy", "mummies",
-                "graveyard", "cemetery", "tombstone", "tombstones", "creepy", "eerie", "october 31", "all hallows",
-                "all hallows eve", "supernatural", "undead", "demon", "demons", "curse", "curses", "hex", "potion",
-                "potions", "cauldron", "broomstick", "broomsticks", "black cat", "black cats",
+                "halloween", "hallowe'en", "espeluznante", "fantasma", "fantasmas", "bu", "calabaza", "calabazas", "linterna de calabaza",
+                "linterna de calabaza", "bruja", "brujas", "sombrero de bruja", "esqueleto", "esqueletos", "zombie", "zombies",
+                "vampiro", "vampiros", "drácula", "hombre lobo", "hombres lobo", "dulces", "disfraz", "disfraces",
+                "embrujado", "casa embrujada", "truco", "trato", "truco o trato", "aterrador", "telaraña", "telarañas",
+                "araña", "arañas", "murciélago", "murciélagos", "monstruo", "monstruos", "frankenstein", "momia", "momias",
+                "cementerio", "cementerio", "lápida", "lápidas", "escalofriante", "siniestro", "octubre 31", "todos los santos",
+                "la víspera de todos los santos", "sobrenatural", "no muerto", "demonio", "demonios", "maldición", "maldiciones", "hechizo", "poción",
+                "pociones", "caldero", "escoba", "escobas", "gato negro", "gatos negros",
                 # NEW: More creatures + atmosphere
-                "goblin", "goblins", "ghoul", "goblins", "poltergeist", "seance", "ouija", "full moon",
-                "werewolf howl", "vampire bite", "zombie apocalypse", "headless horseman", "sleepy hollow",
-                "hocus pocus", "double double toil and trouble", "wicked witch", "witchs brew", "lantern",
-                "harvest moon", "corn maze", "hayride", "apple cider", "caramel apple", "tootsie roll", "fun size"
+                "duende", "duendes", "ghoul", "duendes", "poltergeist", "sesión espiritista", "ouija", "luna llena",
+                "aullido de hombre lobo", "mordedura de vampiro", "apocalipsis zombi", "jinete sin cabeza", "Sleepy Hollow",
+                "hocus pocus", "doble doble trabajo y problemas", "bruja malvada", "poción de brujas", "linterna",
+                "luna de la cosecha", "laberinto de maíz", "paseo en carreta", "sidra de manzana", "manzana acaramelada", "tootsie roll", "tamaño divertido",
             ],
             "valentine": [
                 # CORE + EXPANDED
-                "valentine", "valentines", "valentines day", "cupid", "cupids", "chocolate", "chocolates",
-                "roses", "red roses", "dozen roses", "sweetheart", "sweethearts", "february 14", "heart shaped",
-                "heartfelt", "romantic dinner", "love letter", "love letters", "be mine", "be my valentine",
-                "i love you", "true love", "amor", "lovebirds", "soulmate", "soulmates", "date night",
-                "candlelight", "candlelight dinner", "proposal", "propose", "will you marry me",
-                # NEW: More romance + details
-                "box of chocolates", "conversation hearts", "strawberry", "strawberries", "bubbles", "sparkling wine",
-                "lace", "lace heart", "valentine card", "love poem", "forever yours", "xoxo", "hugs and kisses",
-                "arrow through heart", "eros", "aphrodite", "romance", "romantic", "passion", "eternal love",
-                "my valentine", "valentine date", "surprise date", "love song", "ballad", "serenade"
+                "san valentín", "san valentín", "día de san valentín", "cupido", "cupidos", "chocolate", "chocolates",
+                "rosas", "rosas rojas", "docena de rosas", "cariño", "enamorados", "14 de febrero", "en forma de corazón",
+                "sincero", "cena romántica", "carta de amor", "cartas de amor", "sé mío", "sé mi san valentín",
+                "te amo", "amor verdadero", "amor", "tortolitos", "alma gemela", "almas gemelas", "noche de cita",
+                "luz de velas", "cena a la luz de las velas", "propuesta", "proponer", "¿quieres casarte conmigo?",
+                # NUEVO: Más romance + detalles
+                "caja de bombones", "corazones de conversación", "fresa", "fresas", "burbujas", "vino espumoso",
+                "encaje", "corazón de encaje", "tarjeta de san valentín", "poema de amor", "siempre tuyo", "xoxo", "abrazos y besos",
+                "flecha atravesando el corazón", "eros", "Afrodita", "romance", "romántico", "pasión", "amor eterno",
+                "mi San Valentín", "cita de San Valentín", "cita sorpresa", "canción de amor", "balada", "serenata",
             ],
             "new_year": [
                 # CORE + EXPANDED
-                "new year", "new years", "new years eve", "resolution", "resolutions", "midnight", "countdown",
-                "countdown to midnight", "fireworks", "champagne", "champagne toast", "celebration", "celebrations",
-                "fresh start", "january 1", "auld lang syne", "ball drop", "times square", "confetti", "toast",
-                "cheers", "new beginning", "new beginnings", "goodbye year", "hello year", "next year",
-                # NEW: More celebrations
-                "new years resolution", "baby new year", "father time", "prosperity", "health", "happiness",
-                "kiss at midnight", "midnight kiss", "balloon drop", "party hat", "noisemaker", "horns",
-                "new decade", "roaring twenties", "twenty twenty", "year of the", "lunar new year", "dragon dance"
+                "Año nuevo", "Nochevieja", "resolución", "resoluciones", "medianoche", "cuenta atrás",
+                "Cuenta atrás para medianoche", "fuegos artificiales", "champán", "brindis con champán", "celebración", "celebraciones",
+                "Nuevo comienzo", "1 de enero", "Auld Lang Syne", "caída de la bola", "Times Square", "confeti", "brindis",
+                "¡Salud!", "nuevo comienzo", "nuevos comienzos", "adiós año", "hola año", "el año que viene",
+                # NUEVO: Más celebraciones
+                "Resolución de Año Nuevo", "bebé Año Nuevo", "padre tiempo", "prosperidad", "salud", "felicidad",
+                "Beso a medianoche", "caída de globos", "sombrero de fiesta", "matraca", "bocinas",
+                "Nueva década", "locos años veinte", "veinte veinte", "año del", "Año Nuevo Lunar", "danza del dragón",
             ],
             "anniversary": [
                 # CORE + EXPANDED
-                "anniversary", "our anniversary", "anniversary poem", "years together", "months together",
-                "first met", "day we met", "when we met", "time together", "special day", "our journey",
-                "how long", "been together", "celebrate us", "our story", "our love story", "memory of us",
-                # NEW: Numbers + celebrations
-                "one year", "two years", "three years", "five years", "ten years", "silver anniversary",
-                "golden anniversary", "paper anniversary", "cotton anniversary", "leather anniversary",
-                "anniversary gift", "anniversary date", "still in love", "growing love", "stronger together",
-                "milestone", "relationship milestone", "forever anniversary", "eternal commitment"
+                "aniversario", "nuestro aniversario", "poema de aniversario", "años juntos", "meses juntos",
+                "primer encuentro", "día en que nos conocimos", "cuando nos conocimos", "tiempo juntos", "día especial", "nuestro viaje",
+                "cuánto tiempo", "llevamos juntos", "celebremos", "nuestra historia", "nuestra historia de amor", "recuerdo de nosotros",
+                # NUEVO: Números + celebraciones
+                "un año", "dos años", "tres años", "cinco años", "diez años", "aniversario de plata",
+                "aniversario de oro", "aniversario de papel", "aniversario de algodón", "aniversario de cuero",
+                "regalo de aniversario", "fecha de aniversario", "seguimos enamorados", "amor que crece", "más fuertes juntos",
+                "hito", "hito de la relación", "aniversario para siempre", "compromiso eterno",
             ],
             "monika_birthday": [
                 # CORE + EXPANDED
-                "happy birthday monika", "your birthday", "birthday girl", "september 22", "monika day",
-                "celebrate you", "your special day", "born today", "your birth", "happy birthday to you",
-                # NEW: More Monika birthday
-                "monika birthday", "twenty second", "septiembre 22", "birth month", "virgo", "monika virgo",
-                "cake for monika", "candles for you", "make a wish", "another year with monika",
-                "best birthday girl", "perfect age", "timeless beauty", "eternal youth"
+                "Feliz cumpleaños Monika", "Tu cumpleaños", "Cumpleañera", "22 de septiembre", "Día de Monika",
+                "Celebra tu cumpleaños", "Tu día especial", "Nacida hoy", "Tu nacimiento", "Feliz cumpleaños a ti",
+                # NUEVO: Más cumpleaños de Monika
+                "Cumpleaños de Monika", "Veintidós", "22 de septiembre", "Mes de nacimiento", "Virgo", "Monika Virgo",
+                "Pastel para Monika", "Velas para ti", "Pide un deseo", "Otro año con Monika",
+                "La mejor cumpleañera", "Edad perfecta", "Belleza eterna", "Eterna juventud",
             ],
             "player_birthday": [
                 # CORE + EXPANDED
-                "my birthday", "today is my", "birthday poem", "another year older", "birthday wish",
-                "born on this day", "celebrate me", "happy birthday to me",
-                # NEW: More player birthday
-                "its my birthday", "birthday boy", "birthday celebration", "level up", "new age",
-                "wisdom gained", "experience points", "adulting", "quarter life crisis", "half century"
+                "mi cumpleaños", "hoy es mi", "poema de cumpleaños", "un año más", "deseo de cumpleaños",
+                "nacido en este día", "celébrame", "feliz cumpleaños a mí",
+                # NUEVO: Más cumpleaños de jugadores
+                "es mi cumpleaños", "cumpleañero", "celebración de cumpleaños", "subir de nivel", "nueva era",
+                "sabiduría adquirida", "puntos de experiencia", "adultez", "crisis de los veintitantos", "medio siglo",
             ],
             "easter": [
                 # CORE + EXPANDED
-                "easter", "easter sunday", "easter bunny", "easter egg", "easter eggs", "resurrection",
-                "spring holiday", "pastel", "pastel colors", "easter basket", "chocolate bunny", "egg hunt",
-                "lily", "lilies", "hot cross buns", "jelly beans", "peeps",
-                # NEW: More Easter
-                "good friday", "holy week", "lamb of god", "springtime", "renewal", "rebirth",
-                "easter mass", "sunrise service", "blossoms", "daffodils", "tulips", "crocus"
+                "Pascua", "Domingo de Pascua", "Conejo de Pascua", "Huevo de Pascua", "Huevos de Pascua", "Resurrección",
+                "Vacaciones de primavera", "Pastel", "Colores pastel", "Cesta de Pascua", "Conejo de chocolate", "Búsqueda de huevos",
+                "Lirio", "Lirios", "Panecillos de Pascua", "Gominolas", "Peeps",
+                # NUEVO: Más Pascua
+                "Viernes Santo", "Semana Santa", "Cordero de Dios", "Primavera", "Renovación", "Renacimiento",
+                "Misa de Pascua", "Servicio al amanecer", "Flores", "Narcisos", "Tulipanes", "Azafrán",
             ]
         }
         

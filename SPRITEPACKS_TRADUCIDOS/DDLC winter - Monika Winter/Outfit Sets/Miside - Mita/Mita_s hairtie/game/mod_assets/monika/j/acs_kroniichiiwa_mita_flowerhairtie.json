@@ -1,0 +1,22 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_mita_flowerhairtie",
+    "img_sit": "kroniichiiwa_mita_flowerhairtie",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 3,
+    "acs_type": "ribbon",
+    "stay_on_start": true,
+    "dlg_desc": "flower hairtie",
+    "dlg_plural": false,
+    "select_info": {
+        "display_name": "mita's flower hairtie",
+        "thumb": "kroniichiiwa_mita_flowerhairtie",
+        "group": "ribbon"
+    },
+    "giftname": "mita-flowerhairtie"
+}

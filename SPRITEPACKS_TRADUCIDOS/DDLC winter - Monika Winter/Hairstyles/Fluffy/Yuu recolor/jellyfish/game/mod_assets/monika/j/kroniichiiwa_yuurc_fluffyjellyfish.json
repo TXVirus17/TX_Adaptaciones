@@ -1,0 +1,26 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 1,
+    "name": "kroniichiiwa_yuurc_fluffyjellyfish",
+    "img_sit": "kroniichiiwa_yuurc_fluffyjellyfish",
+    "pose_map": {
+        "mpm_type": 0,
+        "default": true,
+        "use_reg_for_l": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "ribbon": true,
+	"day": true
+    },
+    "select_info": {
+        "display_name": "Fluffy - jellyfish (Yuu recolor)",
+        "thumb": "kroniichiiwa_yuurc_fluffyjellyfish",
+        "group": "hair",
+        "select_dlg": [
+            "cute!"
+        ]
+    },
+    "unlock": true
+}

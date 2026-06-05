@@ -1,0 +1,24 @@
+{
+    "__author": "Kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_sleepmaskblacklaceclosedeyes",
+    "img_sit": "kroniichiiwa_sleepmaskblacklaceclosedeyes",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 1,
+    "stay_on_start": true,
+    "dlg_desc": "Mask",
+    "dlg_plural": false,
+    "select_info": {
+        "display_name": "Sleeping Mask(lace closed eyes)",
+        "thumb": "kroniichiiwa_sleepmaskblacklaceclosedeyes",
+        "group": "mask",
+        "select_dlg": [
+            ""
+        ]
+    },
+    "giftname": "kroniichiiwa_sleepmaskblacklaceclosedeyes"
+}

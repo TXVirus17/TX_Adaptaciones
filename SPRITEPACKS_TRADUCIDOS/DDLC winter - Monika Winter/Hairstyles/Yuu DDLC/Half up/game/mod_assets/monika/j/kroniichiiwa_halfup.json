@@ -1,0 +1,27 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 1,
+    "name": "kroniichiiwa_halfup",
+    "img_sit": "kroniichiiwa_halfup",
+    "pose_map": {
+        "mpm_type": 0,
+        "default": true,
+        "use_reg_for_l": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "ribbon": true,
+        "halfup": true,
+        "day": true
+    },
+    "select_info": {
+        "display_name": "Yuu styled - Halfup",
+        "thumb": "kroniichiiwa_halfup",
+        "group": "hair",
+        "select_dlg": [
+            "cute!"
+        ]
+    },
+    "unlock": true
+}

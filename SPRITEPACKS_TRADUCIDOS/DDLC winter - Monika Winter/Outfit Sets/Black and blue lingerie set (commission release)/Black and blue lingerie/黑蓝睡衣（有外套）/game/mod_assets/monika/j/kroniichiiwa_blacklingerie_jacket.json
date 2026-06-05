@@ -1,0 +1,68 @@
+{
+    "__author": "Kroniichiiwa",
+    "version": 3,
+    "type": 2,
+    "name": "kroniichiiwa_blacklingerie_jacket",
+    "img_sit": "kroniichiiwa_blacklingerie_jacket",
+    "pose_map": {
+        "mpm_type": 0,
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true,
+        "p5": true,
+        "p6": true,
+        "p7": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+    },
+    "select_info": {
+        "display_name": "Black lingerie (with pajamas)",
+        "thumb": "kroniichiiwa_blacklingerie_jacket",
+        "group": "clothes",
+        "visible_when_locked": true,
+        "select_dlg": [
+            " "
+        ]
+    },
+    "giftname": "kroniichiiwa_blacklingerie_jacket",
+    "pose_arms": {
+        "crossed": {
+            "tag": "crossed",
+            "layers": "5^10"
+        },
+        "left-down": {
+            "tag": "down",
+            "layers": "0"
+        },
+        "left-rest": {
+            "tag": "rest",
+            "layers": "10"
+        },
+        "right-down": {
+            "tag": "down",
+            "layers": "0"
+        },
+        "right-point": {
+            "tag": "point",
+            "layers": "0"
+        },
+        "right-restpoint": {
+            "tag": "restpoint",
+            "layers": "10"
+        },
+        "steepling": {
+            "tag": "steepling",
+            "layers": "10"
+        },
+        "def|left-def": {
+            "tag": "def",
+            "layers": "10"
+        },
+        "def|right-def": {
+            "tag": "def",
+            "layers": "5^10"
+        }
+    }
+}

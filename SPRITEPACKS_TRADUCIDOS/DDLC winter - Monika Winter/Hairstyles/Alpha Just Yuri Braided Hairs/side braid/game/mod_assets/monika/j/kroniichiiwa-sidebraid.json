@@ -1,0 +1,25 @@
+{
+    "ex_props": {
+        "day": true
+    }, 
+    "img_sit": "kroniichiiwa_sidebraid_edit", 
+    "name": "kroniichiiwa_sidebraid_edit", 
+    "pose_map": {
+        "default": true, 
+        "mpm_type": 0, 
+        "use_reg_for_l": true
+    }, 
+    "select_info": {
+        "display_name": "Side Braid Edited",
+        "group": "hair", 
+        "thumb": "kroniichiiwa_sidebraid_edit",
+        "select_dlg": [
+            "Cute!",
+            "I love it, [player]!"
+        ]
+    }, 
+    "stay_on_start": true, 
+    "type": 1, 
+    "unlock": true, 
+    "version": 3
+}

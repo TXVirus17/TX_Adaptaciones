@@ -1,0 +1,29 @@
+{
+    "__author": "Kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_cushion_black",
+    "img_sit": "kroniichiiwa_cushion_black",
+    "pose_map": {
+        "default": "0",
+        "l_default": "0"
+    },
+    "rec_layer": 11,
+    "priority": 1,
+    "acs_type": "cushion_acs",
+    "stay_on_start": true,
+    "keep_on_desk": true,
+    "select_info": {
+        "display_name": "Cushion (black)",
+        "thumb": "kroniichiiwa_cushion_black",
+        "group": "cushion_acs",
+        "select_dlg": [
+            ""
+        ]
+    },
+    "dlg_desc": "cushion",
+    "dlg_plural": false,
+    "giftname": "kroniichiiwa_cushion_black"
+}
+
+

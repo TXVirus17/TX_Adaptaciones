@@ -1,0 +1,26 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 1,
+    "name": "kroniichiiwa_mita_pigtails",
+    "img_sit": "kroniichiiwa_mita_pigtails",
+    "pose_map": {
+        "mpm_type": 0,
+        "default": true,
+        "use_reg_for_l": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "ribbon": true,
+	"day": true
+    },
+    "select_info": {
+        "display_name": "Mita's pigtails",
+        "thumb": "kroniichiiwa_mita_pigtails",
+        "group": "hair",
+        "select_dlg": [
+            "Please, stay with me-- always and forever.."
+        ]
+    },
+    "unlock": true
+}

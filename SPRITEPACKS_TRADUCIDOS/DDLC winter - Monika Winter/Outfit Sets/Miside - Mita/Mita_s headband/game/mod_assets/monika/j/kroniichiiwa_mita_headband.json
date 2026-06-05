@@ -1,0 +1,28 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_mita_headband",
+    "img_sit": "kroniichiiwa_mita_headband",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 1,
+    "acs_type": "headpiece_acs",
+    "mux_type": [
+        "headpiece_acs"
+    ],
+    "stay_on_start": true,
+    "giftname": "mita-headband",
+    "dlg_desc": "headband",
+    "dlg_plural": false,
+    "select_info": {
+        "display_name": "mita headband",
+        "thumb": "kroniichiiwa_mita_headband",
+        "group": "headpiece_acs",
+        "select_dlg": [
+            "Please, stay with me-- always and forever.."
+        ]
+    }
+}

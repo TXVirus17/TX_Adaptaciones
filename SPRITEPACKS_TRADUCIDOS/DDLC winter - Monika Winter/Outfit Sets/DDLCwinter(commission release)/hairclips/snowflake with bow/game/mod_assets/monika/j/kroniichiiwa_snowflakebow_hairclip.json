@@ -1,0 +1,29 @@
+{
+    "__author": "kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_snowflakebow_hairclip",
+    "img_sit": "kroniichiiwa_snowflakebow_hairclip",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 5,
+    "acs_type": "left-hair-clip",
+    "mux_type": [
+        "left-hair-clip"
+    ],
+    "stay_on_start": true,
+    "ex_props": {
+        "left-hair-strand-eye-level": true
+    },
+    "select_info": {
+        "display_name": "DDLC Winter - 雪花蝴蝶结发夹",
+        "thumb": "kroniichiiwa_snowflakebow_hairclip",
+        "group": "left-hair-clip",
+        "select_dlg": [
+            "Cute!"
+        ]
+    },
+    "giftname": "kroniichiiwa_snowflakebow_hairclip"
+}

@@ -1,0 +1,24 @@
+{
+    "__author": "Kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_sleepmaskblacklace",
+    "img_sit": "kroniichiiwa_sleepmaskblacklace",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 1,
+    "stay_on_start": true,
+    "dlg_desc": "眼罩",
+    "dlg_plural": false,
+    "select_info": {
+        "display_name": "眼罩（黑色蕾丝）",
+        "thumb": "kroniichiiwa_sleepmaskblacklace",
+        "group": "mask",
+        "select_dlg": [
+            ""
+        ]
+    },
+    "giftname": "kroniichiiwa_sleepmaskblacklace"
+}

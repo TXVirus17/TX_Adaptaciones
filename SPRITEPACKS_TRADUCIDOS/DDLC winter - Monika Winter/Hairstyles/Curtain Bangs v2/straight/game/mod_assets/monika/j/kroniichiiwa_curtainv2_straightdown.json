@@ -1,0 +1,27 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 1,
+    "name": "kroniichiiwa_curtainv2_straightdown",
+    "img_sit": "kroniichiiwa_curtainv2_straightdown",
+    "pose_map": {
+        "mpm_type": 0,
+        "default": true,
+        "use_reg_for_l": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "ribbon": true,
+        "halfup": "true",
+	"day": true
+    },
+    "select_info": {
+        "display_name": "Curtain bangs v2 - straight down",
+        "thumb": "kroniichiiwa_curtainv2_straightdown",
+        "group": "hair",
+        "select_dlg": [
+            "cute!"
+        ]
+    },
+    "unlock": true
+}

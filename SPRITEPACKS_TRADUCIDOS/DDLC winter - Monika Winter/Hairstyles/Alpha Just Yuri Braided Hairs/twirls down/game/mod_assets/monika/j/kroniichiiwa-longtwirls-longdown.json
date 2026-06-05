@@ -1,0 +1,25 @@
+{
+    "ex_props": {
+        "day": true
+    }, 
+    "img_sit": "longtwirls_long_down", 
+    "name": "longtwirls_long_down", 
+    "pose_map": {
+        "default": true, 
+        "mpm_type": 0, 
+        "use_reg_for_l": true
+    }, 
+    "select_info": {
+        "display_name": "Long Twirls Edited", 
+        "group": "hair", 
+        "thumb": "kroniichiiwa_longtwirls_long_down",
+        "select_dlg": [
+            "It feels nice to let my hair down.",
+            "Do you like my twirls, [player]?"
+        ]
+    }, 
+    "stay_on_start": true, 
+    "type": 1, 
+    "unlock": true, 
+    "version": 3
+}

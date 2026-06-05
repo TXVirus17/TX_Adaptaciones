@@ -1,0 +1,29 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_pearlhairclip",
+    "img_sit": "kroniichiiwa_pearlhairclip",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 5,
+    "acs_type": "left-hair-clip",
+    "mux_type": [
+        "left-hair-clip"
+    ],
+    "stay_on_start": true,
+    "ex_props": {
+        "left-hair-strand-eye-level": true
+    },
+    "select_info": {
+        "display_name": "Pearl hairclips",
+        "thumb": "kroniichiiwa_pearlhairclip",
+        "group": "left-hair-clip",
+        "select_dlg": [
+            "cute!"
+        ]
+    },
+    "giftname": "kroniichiiwa_pearlhairclip"
+}

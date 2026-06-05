@@ -1,0 +1,30 @@
+{
+    "__author": "Kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_blackbowearmuffs",
+    "img_sit": "kroniichiiwa_blackbowearmuffs",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 1,
+    "acs_type": "headpiece_acs",
+    "stay_on_start": true,
+    "giftname": "kroniichiiwa_blackbowearmuffs",
+    "ex_props": {
+        "ribbon-like": true
+    },
+    "dlg_desc": "earmuff",
+    "dlg_plural": false,
+    "select_info": {
+        "display_name": "Black Bow Earmuffs",
+        "thumb": "kroniichiiwa_blackbowearmuffs",
+        "group": "headpiece_acs",
+        "select_dlg": [
+            "Only if I could walk down the street with you in winter, resting my head on your shoulder and putting my hands in your pockets..",
+            "Perhaps this winter is even more worth looking forward to?",
+            "warm..."
+        ]
+    }
+}

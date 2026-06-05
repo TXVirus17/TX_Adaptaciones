@@ -1,0 +1,21 @@
+{
+    "__author": "kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_bowearrings_red",
+    "img_sit": "kroniichiiwa_bowearrings_red",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 5,
+    "acs_type": "earrings",
+    "stay_on_start": true,
+    "dlg_plural": true,
+    "select_info": {
+        "display_name": "Bow Earrings(red)",
+        "thumb": "kroniichiiwa_bowearrings_red",
+        "group": "earrings"
+    },
+    "giftname": "kroniichiiwa_bowearrings_red"
+}

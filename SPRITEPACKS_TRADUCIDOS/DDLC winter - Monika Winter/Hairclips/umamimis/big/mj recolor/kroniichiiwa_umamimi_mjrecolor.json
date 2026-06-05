@@ -1,0 +1,29 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_umamimi_mjrecolor",
+    "img_sit": "kroniichiiwa_umamimi_mjrecolor",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 1,
+    "acs_type": "headpiece_acs",
+    "mux_type": [
+        "headpiece_acs"
+    ],
+    "stay_on_start": true,
+    "giftname": "umamimi_mjrecolor",
+    "dlg_desc": "headband",
+    "dlg_plural": false,
+    "select_info": {
+        "display_name": "Uma ears(mj recolor)",
+        "thumb": "kroniichiiwa_umamimi_mjrecolor",
+        "group": "headpiece_acs",
+        "select_dlg": [
+            "umapyoi!",
+            "Kimi no Aiba ga!"
+        ]
+    }
+}

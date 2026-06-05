@@ -1,0 +1,27 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 1,
+    "name": "kroniichiiwa_yuurc_himestraighthalfup",
+    "img_sit": "kroniichiiwa_yuurc_himestraighthalfup",
+    "pose_map": {
+        "mpm_type": 0,
+        "default": true,
+        "use_reg_for_l": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "ribbon": true,
+        "halfup": true,
+        "day": true
+    },
+    "select_info": {
+        "display_name": "Hime straight down (Yuu recolor)",
+        "thumb": "kroniichiiwa_yuurc_himestraighthalfup",
+        "group": "hair",
+        "select_dlg": [
+            "cute!"
+        ]
+    },
+    "unlock": true
+}

@@ -1,0 +1,22 @@
+{
+    "__author": "u/kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_purepure_ribbonandears",
+    "img_sit": "kroniichiiwa_purepure_ribbonandears",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 3,
+    "acs_type": "ribbon",
+    "stay_on_start": true,
+    "dlg_desc": "ribbon and ears",
+    "dlg_plural": false,
+    "select_info": {
+        "display_name": "Pure pure ribbon and ears",
+        "thumb": "kroniichiiwa_purepure_ribbonandears",
+        "group": "ribbon"
+    },
+    "giftname": "purepure-acs"
+}

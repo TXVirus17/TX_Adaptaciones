@@ -1,0 +1,26 @@
+{
+    "__author": "kroniichiiwa",
+    "version": 3,
+    "type": 0,
+    "name": "kroniichiiwa_mita_hairstrands_blue",
+    "img_sit": "kroniichiiwa_mita_hairstrands_blue",
+    "pose_map": {
+        "default": "0",
+        "l_default": "5"
+    },
+    "rec_layer": 1,
+    "stay_on_start": true,
+    "dlg_desc": "bangs",
+    "dlg_plural": false,
+    "select_info": {
+
+        "display_name": "Mita's hair strands(blue)",
+        "thumb": "kroniichiiwa_mita_hairstrands_blue",
+        "group": "mask",
+        "select_dlg": [
+            "Please, stay with me-- always and forever.."
+        ]
+    },
+    "giftname": "mita-hairstrands-blue"
+
+}

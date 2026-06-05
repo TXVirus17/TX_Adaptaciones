@@ -1,0 +1,27 @@
+    {
+        "__author": "u/kroniichiiwa",
+        "version": 3,
+        "type": 0,
+        "name": "kroniichiiwa_mita_choker",
+        "img_sit": "kroniichiiwa_mita_choker",
+        "pose_map": {
+            "default": "0",
+            "l_default": "5"
+        },
+        "stay_on_start": true,
+        "select_info": {
+            "display_name": "Mita's choker",
+            "thumb": "kroniichiiwa_mita_choker",
+            "group": "choker"
+        },
+        "rec_layer": 5,
+        "acs_type": "choker",
+        "priority": 5,
+        "dlg_desc": "choker",
+        "dlg_plural": false,
+        "arm_split": {
+            "default": "0",
+            "use_reg_for_l": true
+        },
+        "giftname": "mita-choker"
+    }

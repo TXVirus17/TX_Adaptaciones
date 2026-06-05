@@ -1,0 +1,70 @@
+{
+    "__author": "kroniichiiwa",
+    "version": 3,
+    "type": 2,
+    "name": "kroniichiiwa_ddlcwinter_full",
+    "img_sit": "kroniichiiwa_ddlcwinter_full",
+    "pose_map": {
+        "mpm_type": 0,
+        "p1": true,
+        "p2": true,
+        "p3": true,
+        "p4": true,
+        "p5": true,
+        "p6": true,
+        "p7": true
+    },
+    "stay_on_start": true,
+    "ex_props": {
+        "sweater": true
+    },
+    "select_info": {
+        "display_name": "DDLC Winter - Blue Sweater (with scarf and bag)",
+        "thumb": "kroniichiiwa_ddlcwinter_full",
+        "group": "clothes",
+        "select_dlg": [
+            "so warm~",
+            "This scarf is so long! It would be nice if we could share it~ ",
+            "Winter doesn't seem so cold anymore with you by my side~"
+        ]
+    },
+    "giftname": "kroniichiiwa_ddlcwinter_full",
+    "pose_arms": {
+        "crossed": {
+            "tag": "crossed",
+            "layers": "5^10"
+        },
+        "left-down": {
+            "tag": "down",
+            "layers": "0"
+        },
+        "left-rest": {
+            "tag": "rest",
+            "layers": "10"
+        },
+        "right-down": {
+            "tag": "down",
+            "layers": "0"
+        },
+        "right-point": {
+            "tag": "point",
+            "layers": "0"
+        },
+        "right-restpoint": {
+            "tag": "restpoint",
+            "layers": "10"
+        },
+        "steepling": {
+            "tag": "steepling",
+            "layers": "10"
+        },
+        "def|left-def": {
+            "tag": "def",
+            "layers": "10"
+        },
+        "def|right-def": {
+            "tag": "def",
+            "layers": "5^10"
+        }
+    }
+}

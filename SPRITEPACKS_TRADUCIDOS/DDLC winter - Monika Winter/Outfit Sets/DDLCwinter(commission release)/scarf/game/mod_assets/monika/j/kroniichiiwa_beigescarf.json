@@ -1,0 +1,27 @@
+    {
+        "__author": "kroniichiiwa",
+        "version": 3,
+        "type": 0,
+        "name": "kroniichiiwa_beigescarf",
+        "img_sit": "kroniichiiwa_beigescarf",
+        "pose_map": {
+            "default": "0",
+            "l_default": "5"
+        },
+        "stay_on_start": true,
+        "select_info": {
+            "display_name": "Beige Scarf",
+            "thumb": "kroniichiiwa_beigescarf",
+            "group": "choker"
+        },
+        "rec_layer": 5,
+        "acs_type": "choker",
+        "priority": 5,
+        "dlg_desc": "scarf",
+        "dlg_plural": false,
+        "arm_split": {
+            "default": "0",
+            "use_reg_for_l": true
+        },
+        "giftname": "kroniichiiwa_beigescarf"
+    }
