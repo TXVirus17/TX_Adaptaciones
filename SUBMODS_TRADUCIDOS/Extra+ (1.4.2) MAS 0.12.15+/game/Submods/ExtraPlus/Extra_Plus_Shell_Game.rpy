@@ -1,5 +1,5 @@
 #===========================================================================================
-# MINIGAME#1 (PENDIENTE DE REVISION) SHELL GAME
+# MINIGAME#1 (PENDIENTE DE REVISION) SHELL GAME ...
 #===========================================================================================
 #====Shell Game
 default persistent.sg_max_score = 0
